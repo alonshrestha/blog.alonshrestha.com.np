@@ -1,0 +1,55 @@
+# Site
+name: "Alon Shrestha"
+title: "Alon Shrestha"
+description: "Jekyll okok TEST"
+meta_description: "TEST is all i Need."
+logo: 'assets/images/personal/head1.jpg'
+favicon: 'assets/images/favicon.ico'
+paginate: 6
+url: 'https://blog.alonshrestha.com.np'
+baseurl: ''
+
+# Social Media
+
+email: 'alon.stha01@gmail.com'
+linkedin: https://linkedin.com/in/alonshrestha
+instagram: https://instagram.com/a.l_o.n
+github: https://github.com/alonshrestha
+twitter: https://twitter.com/AlonShrestha
+
+google_analytics: ''
+disqus: 'alonshrestha'
+#sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
+
+# Authors
+authors:
+  alonshrestha:
+    name: Alon Shrestha
+    display_name: Alon Shrestha
+    gravatar: 328cf0c5d7b7464fbc7a35d54a90c778
+    twitter: https://twitter.com/AlonShrestha
+    web: https://alonshrestha.com.np
+    description: " A Computer Science Student "
+
+
+
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+        
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Other
+markdown: kramdown
+highlighter: rouge
