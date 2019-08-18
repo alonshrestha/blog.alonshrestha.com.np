@@ -3,37 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4663a77-1a7e-4644-9ec8-889a22cdc4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/featuredbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/featuredbox.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-01-11-markup-example.md" beforeDir="false" afterPath="$PROJECT_DIR$/_drafts/2018-01-11-markup-example.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-01-12-is-intelligence-enough.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-01-12-powerful-things-markdown-editor.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-01-12-red-riding.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-01-12-tree-of-codes.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2018-01-12-we-all-wait-for-summer.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Windows-Step-to-virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Windows-Step-to-virtualization/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/hypervisor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/hypervisor/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/installation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/installation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/jekyll/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/oracle/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/oracle/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/tutorial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/tutorial/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/virtual-box/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/virtual-box/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/virtualization/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/is-intelligence-enough/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/markup-example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/page2/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/powerful-things-markdown-editor/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/red-riding/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tree-of-codes/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/we-all-wait-for-summer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-21-Backup-and-restore-your-system-to-previous-state-with-SystemBack.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-21-Backup-and-restore-your-system-to-previous-state-with-SystemBack.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +67,7 @@
       <workItem from="1566068650475" duration="979000" />
       <workItem from="1566095435524" duration="5782000" />
       <workItem from="1566103155745" duration="3534000" />
-      <workItem from="1566122994046" duration="4626000" />
+      <workItem from="1566122994046" duration="5334000" />
     </task>
     <servers />
   </component>

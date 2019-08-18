@@ -4,6 +4,7 @@ layout: post
 author: alonshrestha
 categories: [Tutorial, SystemBack, Ubuntu, Linux, Backup, Restore]
 author: alonshrestha
+image: assets/images/blog/2019-07-21/10.jpg
 ---
 ### What is SystemBack?
 
