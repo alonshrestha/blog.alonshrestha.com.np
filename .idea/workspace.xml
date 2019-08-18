@@ -3,20 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e4663a77-1a7e-4644-9ec8-889a22cdc4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-06/221.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-06/345.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/hypervisor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/hypervisor/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/installation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/installation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/oracle/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/oracle/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/tutorial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/tutorial/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/virtual-box/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/virtual-box/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/virtualization/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog/2019-08-06/221.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/blog/2019-08-06/345.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/head.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo-footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/theme1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/theme2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/theme3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/theme4.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,12 +19,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="959" />
-    <option name="y" value="-4" />
-    <option name="width" value="962" />
-    <option name="height" value="1085" />
   </component>
   <component name="ProjectId" id="1ParKoRBWG81tSSwz57JmOrHTeg" />
   <component name="PropertiesComponent">
@@ -85,7 +72,7 @@
       <workItem from="1566068650475" duration="979000" />
       <workItem from="1566095435524" duration="5782000" />
       <workItem from="1566103155745" duration="3534000" />
-      <workItem from="1566122994046" duration="2155000" />
+      <workItem from="1566122994046" duration="2508000" />
     </task>
     <servers />
   </component>
