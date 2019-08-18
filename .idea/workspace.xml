@@ -3,45 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="e4663a77-1a7e-4644-9ec8-889a22cdc4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/newsletter.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/newsletter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Windows-Step-to-virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Windows-Step-to-virtualization/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/backup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/backup/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/blog/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/cloud-server/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/cloud-server/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/com-np/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/com-np/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/domain/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/domain/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/free/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/free/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/github-pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/github-pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-06/221.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-06/345.gif" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/hypervisor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/hypervisor/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/ibm/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/ibm/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/installation/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/installation/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/jekyll/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/linux/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/linux/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/nepal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/nepal/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/oracle/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/oracle/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/restore/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/restore/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/systemback/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/systemback/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/tutorial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/tutorial/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/ubuntu/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/ubuntu/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/virtual-box/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/virtual-box/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/virtualization/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/vmware/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/vmware/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/category/windows/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/windows/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/is-intelligence-enough/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/is-intelligence-enough/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/markup-example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/markup-example/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/page2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/page2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/powerful-things-markdown-editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/powerful-things-markdown-editor/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/red-riding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/red-riding/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/tree-of-codes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tree-of-codes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/we-all-wait-for-summer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/we-all-wait-for-summer/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/2019-08-06/221.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/2019-08-06/345.gif" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +38,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
@@ -104,7 +85,7 @@
       <workItem from="1566068650475" duration="979000" />
       <workItem from="1566095435524" duration="5782000" />
       <workItem from="1566103155745" duration="3534000" />
-      <workItem from="1566122994046" duration="1552000" />
+      <workItem from="1566122994046" duration="2155000" />
     </task>
     <servers />
   </component>
