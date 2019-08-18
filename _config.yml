@@ -4,14 +4,14 @@ title: "Alon Shrestha"
 description: "Jekyll okok TEST"
 meta_description: "TEST is all i Need."
 logo: 'assets/images/personal/head1.jpg'
-favicon: 'assets/images/favicon.ico'
+favicon: assets/images/favicon.png
 paginate: 6
 url: 'https://blog.alonshrestha.com.np'
 baseurl: ''
 
 # Social Media
 
-email: 'alon.stha01@gmail.com'
+email: 'alonshrstha@gmail.com'
 linkedin: https://linkedin.com/in/alonshrestha
 instagram: https://instagram.com/a.l_o.n
 github: https://github.com/alonshrestha
