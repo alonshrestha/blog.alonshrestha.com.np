@@ -3,17 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e4663a77-1a7e-4644-9ec8-889a22cdc4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_includes/newsletter.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/newsletter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/sidebar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Windows-Step-to-virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Windows-Step-to-virtualization/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/custom.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/backup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/backup/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/cloud-server/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/cloud-server/index.html" afterDir="false" />
@@ -36,7 +33,6 @@
       <change beforePath="$PROJECT_DIR$/_site/category/virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/virtualization/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/vmware/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/vmware/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/windows/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/windows/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/contact/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/is-intelligence-enough/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/is-intelligence-enough/index.html" afterDir="false" />
@@ -44,8 +40,6 @@
       <change beforePath="$PROJECT_DIR$/_site/page2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/page2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/powerful-things-markdown-editor/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/powerful-things-markdown-editor/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/red-riding/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/red-riding/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_site/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/tree-of-codes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/tree-of-codes/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/we-all-wait-for-summer/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/we-all-wait-for-summer/index.html" afterDir="false" />
     </list>
@@ -110,7 +104,7 @@
       <workItem from="1566068650475" duration="979000" />
       <workItem from="1566095435524" duration="5782000" />
       <workItem from="1566103155745" duration="3534000" />
-      <workItem from="1566122994046" duration="409000" />
+      <workItem from="1566122994046" duration="1552000" />
     </task>
     <servers />
   </component>
