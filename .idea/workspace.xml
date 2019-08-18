@@ -3,30 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="e4663a77-1a7e-4644-9ec8-889a22cdc4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/2019/06/27/Blogging-with-Github-Pages-and-Jekyll.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/2019/07/20/Register-Domain-.com.np-for-Free.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/blog/2019/07/21/Backup-and-restore-your-system-to-previous-state-with-SystemBack.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-01-11-markup-example.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-01-11-markup-example.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-01-12-powerful-things-markdown-editor.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-01-12-powerful-things-markdown-editor.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-01-12-we-all-wait-for-summer.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2018-01-12-we-all-wait-for-summer.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-06-27-Blogging-with-Github-Pages-and-Jekyll.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-06-27-Blogging-with-Github-Pages-and-Jekyll.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-20-Register-Domain-.com.np-for-Free.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-20-Register-Domain-.com.np-for-Free.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-07-21-Backup-and-restore-your-system-to-previous-state-with-SystemBack.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-07-21-Backup-and-restore-your-system-to-previous-state-with-SystemBack.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-08-03-Introduction-to-Virtualization-Beginners -Guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-03-Introduction-to-Virtualization-Beginners -Guide.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Windows-Step-to-virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Windows-Step-to-virtualization/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/jekyll/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/tutorial/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/tutorial/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/contact/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2018/01/11/markup-example.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2018/01/12/is-intelligence-enough.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2018/01/12/powerful-things-markdown-editor.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2018/01/12/red-riding.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2018/01/12/tree-of-codes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2018/01/12/we-all-wait-for-summer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2019/08/03/Introduction-to-Virtualization-Beginners-Guide.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2019/08/06/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/jekyll/tutorial/2019/08/07/Install-VirtualBox-in-Windows-Step-to-virtualization.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/page2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/page2/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,29 +38,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="21" column="176" selection-start-line="21" selection-start-column="176" selection-end-line="21" selection-end-column="176" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-01-11-markup-example.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="338">
-                <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2018-01-12-is-intelligence-enough.md">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-01-12-tree-of-codes.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor />
@@ -68,19 +49,102 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/post-right-sidebar.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <entry file="file://$PROJECT_DIR$/_posts/2018-01-12-we-all-wait-for-summer.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="130">
+                <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-07-20-Register-Domain-.com.np-for-Free.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="354">
+                <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="117" column="54" selection-start-line="7" selection-end-line="117" selection-end-column="54" />
+        <entry file="file://$PROJECT_DIR$/_includes/important.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2018-01-11-markup-example.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="156">
+                <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-06-27-Blogging-with-Github-Pages-and-Jekyll.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="182">
+                <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-07-21-Backup-and-restore-your-system-to-previous-state-with-SystemBack.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="104">
+                <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="104">
+                <caret line="4" selection-start-line="4" selection-end-line="5" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="130">
+                <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-08-03-Introduction-to-Virtualization-Beginners -Guide.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="104">
+                <caret line="4" column="79" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -93,23 +157,23 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_layouts/post.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_layouts/page.html" />
+        <option value="$PROJECT_DIR$/_layouts/post.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/_posts/2018-01-12-powerful-things-markdown-editor.md" />
+        <option value="$PROJECT_DIR$/_posts/2018-01-12-we-all-wait-for-summer.md" />
+        <option value="$PROJECT_DIR$/_posts/2018-01-11-markup-example.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-06-27-Blogging-with-Github-Pages-and-Jekyll.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-08-03-Introduction-to-Virtualization-Beginners -Guide.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-07-21-Backup-and-restore-your-system-to-previous-state-with-SystemBack.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-07-20-Register-Domain-.com.np-for-Free.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/blog.alonshrestha.com.np.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
+  <component name="ProjectFrameBounds" extendedState="4">
     <option name="y" value="24" />
     <option name="width" value="960" />
     <option name="height" value="1056" />
@@ -129,12 +193,35 @@
             <path>
               <item name="blog.alonshrestha.com.np" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog.alonshrestha.com.np" type="462c0819:PsiDirectoryNode" />
+              <item name="_includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog.alonshrestha.com.np" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog.alonshrestha.com.np" type="462c0819:PsiDirectoryNode" />
               <item name="_layouts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog.alonshrestha.com.np" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog.alonshrestha.com.np" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog.alonshrestha.com.np" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog.alonshrestha.com.np" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog.alonshrestha.com.np" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog.alonshrestha.com.np" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog.alonshrestha.com.np" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog.alonshrestha.com.np" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -146,9 +233,14 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../alonshrestha.com.np" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_includes" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/_includes" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -174,18 +266,18 @@
       <option name="presentableId" value="Default" />
       <updated>1566068649185</updated>
       <workItem from="1566068650475" duration="979000" />
-      <workItem from="1566095435524" duration="1277000" />
+      <workItem from="1566095435524" duration="4180000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2256000" />
+    <option name="totallyTimeSpent" value="5159000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
+    <frame x="0" y="24" width="960" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2524013" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25438598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -198,7 +290,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3299285" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.34" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -210,27 +302,24 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_layouts/post-right-sidebar.html">
+    <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="182">
+          <caret line="34" column="36" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="117" column="54" selection-start-line="7" selection-end-line="117" selection-end-column="54" />
+        <state relative-caret-position="955">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-01-11-markup-example.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="338">
-            <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -242,10 +331,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
+    <entry file="file://$PROJECT_DIR$/_layouts/page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="21" column="176" selection-start-line="21" selection-start-column="176" selection-end-line="21" selection-end-column="176" />
+        <state relative-caret-position="149">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_layouts/post-right-sidebar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-01-12-powerful-things-markdown-editor.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-01-12-red-riding.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-01-11-markup-example.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="156">
+            <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-01-12-we-all-wait-for-summer.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2018-01-12-tree-of-codes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-08-03-Introduction-to-Virtualization-Beginners -Guide.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="104">
+            <caret line="4" column="79" selection-start-line="4" selection-start-column="79" selection-end-line="4" selection-end-column="79" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-07-21-Backup-and-restore-your-system-to-previous-state-with-SystemBack.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="104">
+            <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-06-27-Blogging-with-Github-Pages-and-Jekyll.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="182">
+            <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="104">
+            <caret line="4" selection-start-line="4" selection-end-line="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_includes/important.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-07-20-Register-Domain-.com.np-for-Free.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="354">
+            <caret line="48" column="37" selection-start-line="48" selection-start-column="37" selection-end-line="48" selection-end-column="37" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

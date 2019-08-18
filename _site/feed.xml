@@ -5,8 +5,8 @@
     <description>Jekyll okok TEST</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Aug 2019 08:42:08 +0545</pubDate>
-    <lastBuildDate>Sun, 18 Aug 2019 08:42:08 +0545</lastBuildDate>
+    <pubDate>Sun, 18 Aug 2019 09:38:17 +0545</pubDate>
+    <lastBuildDate>Sun, 18 Aug 2019 09:38:17 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -228,9 +228,19 @@
         <guid isPermaLink="true">http://localhost:4000/Install-VirtualBox-in-Windows-Step-to-virtualization/</guid>
         
         
-        <category>Jekyll</category>
+        <category>Virtualization</category>
         
-        <category>tutorial</category>
+        <category>Virtual Box</category>
+        
+        <category>Oracle</category>
+        
+        <category>Installation</category>
+        
+        <category>Windows</category>
+        
+        <category>Hypervisor</category>
+        
+        <category>Tutorial</category>
         
       </item>
     
@@ -450,9 +460,19 @@
         <guid isPermaLink="true">http://localhost:4000/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/</guid>
         
         
-        <category>Jekyll</category>
+        <category>Virtualization</category>
         
-        <category>tutorial</category>
+        <category>Virtual Box</category>
+        
+        <category>Oracle</category>
+        
+        <category>Installation</category>
+        
+        <category>Linux</category>
+        
+        <category>Hypervisor</category>
+        
+        <category>Tutorial</category>
         
       </item>
     
@@ -521,9 +541,19 @@
         <guid isPermaLink="true">http://localhost:4000/Introduction-to-Virtualization-Beginners-Guide/</guid>
         
         
-        <category>Jekyll</category>
+        <category>Virtualization</category>
         
-        <category>tutorial</category>
+        <category>IBM</category>
+        
+        <category>Hypervisor</category>
+        
+        <category>VMware</category>
+        
+        <category>linux</category>
+        
+        <category>Cloud Server</category>
+        
+        <category>Blog</category>
         
       </item>
     
@@ -679,7 +709,17 @@
         <guid isPermaLink="true">http://localhost:4000/Backup-and-restore-your-system-to-previous-state-with-SystemBack/</guid>
         
         
-        <category>blog</category>
+        <category>Tutorial</category>
+        
+        <category>SystemBack</category>
+        
+        <category>Ubuntu</category>
+        
+        <category>Linux</category>
+        
+        <category>Backup</category>
+        
+        <category>Restore</category>
         
       </item>
     
@@ -752,8 +792,62 @@
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Jump to Step 6 if you can sign in, else continue.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-warning&quot;&gt;&lt;/i&gt; &lt;b&gt;Important:&lt;/b&gt;  Jump to Step 6 if you can sign in, else continue.&lt;/div&gt;--&gt;
+&lt;div class=&quot;alert alert-block&quot;&gt;
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Important:&lt;/b&gt;  Jump to Step 6 if you can sign in, else continue.
+&lt;/div&gt;
+
+&lt;style&gt;
+
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+&lt;/style&gt;
 
 &lt;h4 id=&quot;step-4-register-account&quot;&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Register account&lt;/h4&gt;
 
@@ -769,7 +863,7 @@
 
 &lt;p&gt;Open your Gmail and verify your Gmail account.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/images/2019-07-20/img11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;step-6-sign-in&quot;&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Sign In&lt;/h4&gt;
 
@@ -951,7 +1045,15 @@ Your Name
         <guid isPermaLink="true">http://localhost:4000/Register-Domain-.com.np-for-Free/</guid>
         
         
-        <category>blog</category>
+        <category>Tutorial</category>
+        
+        <category>Free</category>
+        
+        <category>Domain</category>
+        
+        <category>.com.np</category>
+        
+        <category>Nepal</category>
         
       </item>
     
@@ -986,12 +1088,12 @@ Doing research on such media, I came to know about Github Pages and implementing
         <link>http://localhost:4000/Blogging-with-Github-Pages-and-Jekyll/</link>
         <guid isPermaLink="true">http://localhost:4000/Blogging-with-Github-Pages-and-Jekyll/</guid>
         
-        <category>githubpages</category>
         
-        <category>jekyll</category>
+        <category>Blog</category>
         
+        <category>GitHub-Pages</category>
         
-        <category>blog</category>
+        <category>Jekyll</category>
         
       </item>
     

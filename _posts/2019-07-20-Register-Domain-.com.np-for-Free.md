@@ -2,8 +2,9 @@
 title: "Register Domain .com.np for Free"
 layout: post
 author: alonshrestha
-category: blog
-author: alonshrestha
+categories: [Tutorial, Free, Domain, ".com.np", Nepal]
+featured: true
+image:  assets/images/blog/2019-07-20/headnp.png
 ---
 Domain **.com.np** is the property that you can get in Nepal for free. Did you believe it? If you didn't, I will make this real for you.
 
@@ -45,9 +46,8 @@ You will visit the login page. **"Sign in"** with your account or click **"Creat
 
 ![](/assets/images/blog/2019-07-20/img3.png)
 
-```
-Jump to Step 6 if you can sign in, else continue.
-```
+{% include important.html content= " Jump to Step 6 if you can sign in, else continue."  %}
+
 
 #### **Step 4:** Register account
 
@@ -63,7 +63,7 @@ You will receive a verification message in your Gmail.
 
 Open your Gmail and verify your Gmail account.
 
-![](/assets/images/2019-07-20/img11.png)
+![](/assets/images/blog/2019-07-20/img11.png)
 
 
 #### **Step 6:** Sign In

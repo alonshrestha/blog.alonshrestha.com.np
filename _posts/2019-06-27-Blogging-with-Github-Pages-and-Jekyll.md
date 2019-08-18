@@ -4,11 +4,8 @@ title: "Blogging with Github Pages and Jekyll"
 layout: post
 date: 2019-06-27
 image: assets/images/2.jpg
-tag:
-- githubpages
-- jekyll
 star: true
-category: blog
+categories: [Blog, GitHub-Pages, Jekyll]
 author: alonshrestha
 ---
 

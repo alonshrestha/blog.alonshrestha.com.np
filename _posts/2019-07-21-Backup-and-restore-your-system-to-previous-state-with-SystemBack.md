@@ -2,7 +2,7 @@
 title: "Backup and Restore your Linux System to the Previous State with SystemBack"
 layout: post
 author: alonshrestha
-category: blog
+categories: [Tutorial, SystemBack, Ubuntu, Linux, Backup, Restore]
 author: alonshrestha
 ---
 ### What is SystemBack?

@@ -2,7 +2,7 @@
 layout: post
 title:  "Introduction to Virtualization | Beginner's Guide"
 author: alonshrestha
-categories: [ Jekyll, tutorial ]
+categories: [ Virtualization, Virtual Box, Oracle, Installation, Windows, Hypervisor, Tutorial]
 image:  assets/images/blog/2019-08-07/321.jpg
 ---
 VirtualBox is a powerful opensource [virtualization](https://alonshrestha.com.np/Introduction-to-Virtualization-Beginners-Guide/){:target="_blank"} software or platform that provides you to manage and run multiple operating systems as an application at the same time. This masterpiece was developed by [Oracle Corporation](https://www.oracle.com/index.html){:target="_blank"} for enterprise-level and home use. In 2007 the software was invented by [Innotek GmbH](https://www.virtualbox.org/wiki/innotek){:target="_blank"} and later acquired by Oracle in 2010.  This [application](https://en.wikipedia.org/wiki/VirtualBox){:target="_blank"} supports multiple guest operating systems such as Linux, Windows, Solaris, Mac OS, Unices and [others](https://www.virtualbox.org/wiki/Guest_OSes){:target="_blank"}.

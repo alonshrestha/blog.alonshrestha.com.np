@@ -2,7 +2,7 @@
 layout: post
 title:  "Install VirtualBox in Ubuntu | Step to Virtualization"
 author: alonshrestha
-categories: [ Jekyll, tutorial ]
+categories: [ Virtualization, Virtual Box, Oracle, Installation, Linux, Hypervisor, Tutorial]
 
 ---
 <p style="text-align:center;"><img src="/assets/images/blog/2019-08-06/345.gif"/></p>
