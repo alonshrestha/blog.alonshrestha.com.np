@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introduction to Virtualization | Beginner's Guide"
+title:  "Install VirtualBox in Windows | Step to Virtualization"
 author: alonshrestha
 categories: [ Virtualization, Virtual Box, Oracle, Installation, Windows, Hypervisor, Tutorial]
 image:  assets/images/blog/2019-08-07/321.jpg

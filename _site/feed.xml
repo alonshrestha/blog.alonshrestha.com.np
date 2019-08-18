@@ -5,12 +5,12 @@
     <description>Jekyll okok TEST</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Aug 2019 12:17:03 +0545</pubDate>
-    <lastBuildDate>Sun, 18 Aug 2019 12:17:03 +0545</lastBuildDate>
+    <pubDate>Sun, 18 Aug 2019 16:01:43 +0545</pubDate>
+    <lastBuildDate>Sun, 18 Aug 2019 16:01:43 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Introduction to Virtualization | Beginner's Guide</title>
+        <title>Install VirtualBox in Windows | Step to Virtualization</title>
         <description>&lt;p&gt;VirtualBox is a powerful opensource &lt;a href=&quot;https://alonshrestha.com.np/Introduction-to-Virtualization-Beginners-Guide/&quot; target=&quot;_blank&quot;&gt;virtualization&lt;/a&gt; software or platform that provides you to manage and run multiple operating systems as an application at the same time. This masterpiece was developed by &lt;a href=&quot;https://www.oracle.com/index.html&quot; target=&quot;_blank&quot;&gt;Oracle Corporation&lt;/a&gt; for enterprise-level and home use. In 2007 the software was invented by &lt;a href=&quot;https://www.virtualbox.org/wiki/innotek&quot; target=&quot;_blank&quot;&gt;Innotek GmbH&lt;/a&gt; and later acquired by Oracle in 2010.  This &lt;a href=&quot;https://en.wikipedia.org/wiki/VirtualBox&quot; target=&quot;_blank&quot;&gt;application&lt;/a&gt; supports multiple guest operating systems such as Linux, Windows, Solaris, Mac OS, Unices and &lt;a href=&quot;https://www.virtualbox.org/wiki/Guest_OSes&quot; target=&quot;_blank&quot;&gt;others&lt;/a&gt;.&lt;/p&gt;
 
 &lt;blockquote&gt;
