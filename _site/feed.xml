@@ -5,8 +5,8 @@
     <description>Jekyll okok TEST</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 18 Aug 2019 00:26:25 +0545</pubDate>
-    <lastBuildDate>Sun, 18 Aug 2019 00:26:25 +0545</lastBuildDate>
+    <pubDate>Sun, 18 Aug 2019 08:42:08 +0545</pubDate>
+    <lastBuildDate>Sun, 18 Aug 2019 08:42:08 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -224,8 +224,8 @@
 
 </description>
         <pubDate>Wed, 07 Aug 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/jekyll/tutorial/2019/08/07/Install-VirtualBox-in-Windows-Step-to-virtualization.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2019/08/07/Install-VirtualBox-in-Windows-Step-to-virtualization.html</guid>
+        <link>http://localhost:4000/Install-VirtualBox-in-Windows-Step-to-virtualization/</link>
+        <guid isPermaLink="true">http://localhost:4000/Install-VirtualBox-in-Windows-Step-to-virtualization/</guid>
         
         
         <category>Jekyll</category>
@@ -446,8 +446,8 @@
 
 </description>
         <pubDate>Tue, 06 Aug 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/jekyll/tutorial/2019/08/06/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2019/08/06/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.html</guid>
+        <link>http://localhost:4000/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/</link>
+        <guid isPermaLink="true">http://localhost:4000/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/</guid>
         
         
         <category>Jekyll</category>
@@ -517,8 +517,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sat, 03 Aug 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/jekyll/tutorial/2019/08/03/Introduction-to-Virtualization-Beginners-Guide.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2019/08/03/Introduction-to-Virtualization-Beginners-Guide.html</guid>
+        <link>http://localhost:4000/Introduction-to-Virtualization-Beginners-Guide/</link>
+        <guid isPermaLink="true">http://localhost:4000/Introduction-to-Virtualization-Beginners-Guide/</guid>
         
         
         <category>Jekyll</category>
@@ -675,8 +675,8 @@
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 21 Jul 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/blog/2019/07/21/Backup-and-restore-your-system-to-previous-state-with-SystemBack.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/07/21/Backup-and-restore-your-system-to-previous-state-with-SystemBack.html</guid>
+        <link>http://localhost:4000/Backup-and-restore-your-system-to-previous-state-with-SystemBack/</link>
+        <guid isPermaLink="true">http://localhost:4000/Backup-and-restore-your-system-to-previous-state-with-SystemBack/</guid>
         
         
         <category>blog</category>
@@ -947,8 +947,8 @@ Your Name
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 20 Jul 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/blog/2019/07/20/Register-Domain-.com.np-for-Free.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/07/20/Register-Domain-.com.np-for-Free.html</guid>
+        <link>http://localhost:4000/Register-Domain-.com.np-for-Free/</link>
+        <guid isPermaLink="true">http://localhost:4000/Register-Domain-.com.np-for-Free/</guid>
         
         
         <category>blog</category>
@@ -983,8 +983,8 @@ Doing research on such media, I came to know about Github Pages and implementing
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Feel free to write me if you need help.&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Jun 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/blog/2019/06/27/Blogging-with-Github-Pages-and-Jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/blog/2019/06/27/Blogging-with-Github-Pages-and-Jekyll.html</guid>
+        <link>http://localhost:4000/Blogging-with-Github-Pages-and-Jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/Blogging-with-Github-Pages-and-Jekyll/</guid>
         
         <category>githubpages</category>
         
@@ -1002,8 +1002,8 @@ Doing research on such media, I came to know about Github Pages and implementing
 &lt;p&gt;It seems to me that education has a two-fold function to perform in the life of man and in society: the one is utility and the other is culture. Education must enable a man to become more efficient, to achieve with increasing facility the ligitimate goals of his life.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/jekyll/tutorial/2018/01/12/we-all-wait-for-summer.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/12/we-all-wait-for-summer.html</guid>
+        <link>http://localhost:4000/we-all-wait-for-summer/</link>
+        <guid isPermaLink="true">http://localhost:4000/we-all-wait-for-summer/</guid>
         
         
         <category>Jekyll</category>
@@ -1028,8 +1028,8 @@ Doing research on such media, I came to know about Github Pages and implementing
 
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/jekyll/tutorial/2018/01/12/tree-of-codes.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/12/tree-of-codes.html</guid>
+        <link>http://localhost:4000/tree-of-codes/</link>
+        <guid isPermaLink="true">http://localhost:4000/tree-of-codes/</guid>
         
         
         <category>Jekyll</category>
@@ -1053,8 +1053,8 @@ Doing research on such media, I came to know about Github Pages and implementing
 &lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/jekyll/tutorial/2018/01/12/red-riding.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/12/red-riding.html</guid>
+        <link>http://localhost:4000/red-riding/</link>
+        <guid isPermaLink="true">http://localhost:4000/red-riding/</guid>
         
         
         <category>Jekyll</category>
@@ -1107,8 +1107,8 @@ Doing research on such media, I came to know about Github Pages and implementing
 &lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/jekyll/tutorial/2018/01/12/powerful-things-markdown-editor.html</link>
-        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/12/powerful-things-markdown-editor.html</guid>
+        <link>http://localhost:4000/powerful-things-markdown-editor/</link>
+        <guid isPermaLink="true">http://localhost:4000/powerful-things-markdown-editor/</guid>
         
         
         <category>Jekyll</category>
