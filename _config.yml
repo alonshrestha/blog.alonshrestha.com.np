@@ -7,7 +7,7 @@ logo: 'assets/images/personal/head1.jpg'
 favicon: assets/images/favicon.png
 paginate: 6
 url: 'https://blog.alonshrestha.com.np'
-baseurl: 'blog.alonshrestha.com.np'
+baseurl: ''
 
 # Social Media
 
