@@ -4,6 +4,36 @@
     <list default="true" id="e4663a77-1a7e-4644-9ec8-889a22cdc4ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/backup/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/cloud-server/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/com-np/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/domain/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/free/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/github-pages/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/hypervisor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/ibm/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/installation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/jekyll/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/linux/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/nepal/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/oracle/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/restore/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/systemback/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/tutorial/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/ubuntu/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/virtual-box/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/virtualization/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/vmware/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/{{site.url}}/category/windows/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sw.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +48,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_pages" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -30,15 +60,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/assets/images" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/assets/images/personal" />
-      <recent name="$PROJECT_DIR$/_includes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\github\blog.alonshrestha.com.np\_drafts" />
       <recent name="$PROJECT_DIR$/assets/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\blog.alonshrestha.com.np\_pages" />
+      <recent name="D:\github\blog.alonshrestha.com.np\_layouts" />
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets/images/personal" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -69,7 +100,9 @@
       <workItem from="1566103155745" duration="3534000" />
       <workItem from="1566122994046" duration="5531000" />
       <workItem from="1566187506247" duration="11949000" />
-      <workItem from="1566210094936" duration="867000" />
+      <workItem from="1566210094936" duration="3806000" />
+      <workItem from="1566214939474" duration="6362000" />
+      <workItem from="1566207051855" duration="593000" />
     </task>
     <servers />
   </component>
