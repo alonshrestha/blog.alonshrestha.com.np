@@ -48,10 +48,10 @@ plugins:
         
 # Archives
 jekyll-archives:
-  enabled: all
-#    - categories
+  enabled:
+    - categories
   layout: archive
-  permalinks:
+  permalinks: /
     category: '/category/:name/'
     
 # Other

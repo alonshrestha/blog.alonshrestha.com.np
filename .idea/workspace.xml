@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4663a77-1a7e-4644-9ec8-889a22cdc4ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post-right-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post-right-sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-08-03-Introduction-to-Virtualization-Beginners -Guide.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-03-Introduction-to-Virtualization-Beginners -Guide.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-06-Install-VirtualBox-in-Ubuntu-Step-to-Virtualization.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-08-07-Install-VirtualBox-in-Windows-Step-to-virtualization.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Backup-and-restore-your-system-to-previous-state-with-SystemBack/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Blogging-with-Github-Pages-and-Jekyll/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Install-VirtualBox-in-Ubuntu-Step-to-Virtualization/index.html" afterDir="false" />
@@ -21,6 +11,18 @@
       <change beforePath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Introduction-to-Virtualization-Beginners-Guide/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/Register-Domain-.com.np-for-Free/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-03/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-03/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-07/321.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-07/321.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/blog/2019-08-07/microsoft-windows-logo-vector-download-400x400.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/head.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/images/head.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/personal/head.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/assets/images/personal/head1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/_site/assets/images/personal/head1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/backup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/backup/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/category/cloud-server/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/category/cloud-server/index.html" afterDir="false" />
@@ -46,6 +48,19 @@
       <change beforePath="$PROJECT_DIR$/_site/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/contact/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_site/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_site/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/2019-08-03/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/blog/2019-08-03/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/2019-08-07/321.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/blog/2019-08-07/321.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/blog/2019-08-07/microsoft-windows-logo-vector-download-400x400.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/head.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/head.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/personal/head.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/personal/head1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/personal/head1.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +126,7 @@
       <workItem from="1566103155745" duration="3534000" />
       <workItem from="1566122994046" duration="5531000" />
       <workItem from="1566187506247" duration="11949000" />
+      <workItem from="1566210094936" duration="362000" />
     </task>
     <servers />
   </component>
