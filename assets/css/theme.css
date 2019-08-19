@@ -356,6 +356,7 @@ span.post-name a,span.post-read-more a:hover {
     line-height: 1.6;
 }
 .wrapintro {
+    opacity: 0.9;
     background: #fff;
     width: 700px;
     padding: 3rem;
