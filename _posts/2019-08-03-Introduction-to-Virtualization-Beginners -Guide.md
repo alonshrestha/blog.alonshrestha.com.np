@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-right-sidebar
 title:  "Introduction to Virtualization | Beginner's Guide"
 author: alonshrestha
 categories: [Virtualization, IBM, Hypervisor, VMware, linux, Cloud Server, Blog]

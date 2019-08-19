@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-right-sidebar
 title:  "Install VirtualBox in Windows | Step to Virtualization"
 author: alonshrestha
 categories: [ Virtualization, Virtual Box, Oracle, Installation, Windows, Hypervisor, Tutorial]
