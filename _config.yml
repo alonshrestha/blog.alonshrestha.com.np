@@ -3,7 +3,7 @@ name: "Alon Shrestha"
 title: "alon'sTech Blog"
 description: "Blog reg"
 meta_description: "TEST is all i Need."
-logo: 'assets/images/personal/head1.jpg'
+logo: 'assets/images/personal/head.jpg'
 favicon: assets/images/favicon.png
 paginate: 6
 url: 'https://blog.alonshrestha.com.np'
