@@ -8,7 +8,7 @@ favicon: assets/images/favicon.png
 paginate: 6
 url: 'https://blog.alonshrestha.com.np'
 baseurl: ''
-
+include: ["_pages"]
 # Social Media
 
 email: 'alonshrstha@gmail.com'
