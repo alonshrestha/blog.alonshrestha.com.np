@@ -52,7 +52,7 @@ jekyll-archives:
     - categories
   layout: archive
   permalinks:
-    category: '{{site.url}}/category/:name/'
+    category: '/:name/'
     
 # Other
 markdown: kramdown
