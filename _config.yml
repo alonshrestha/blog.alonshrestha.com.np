@@ -1,8 +1,8 @@
 # Site
 name: "Alon Shrestha"
 title: "alon'sTech Blog"
-description: "Blog reg"
-meta_description: "TEST is all i Need."
+description: "Blog related to tech tutorial, product, event, news written in plain and ease to understand"
+meta_description: "Blog related to tech tutorial, product, event, news written in plain and ease to understand"
 logo: 'assets/images/personal/head.jpg'
 favicon: assets/images/favicon.png
 paginate: 6
