@@ -2,12 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>alon'sTech Blog</title>
-    <description>Blog reg</description>
+    <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Aug 2019 07:36:35 +0545</pubDate>
-    <lastBuildDate>Tue, 20 Aug 2019 07:36:35 +0545</lastBuildDate>
+    <pubDate>Fri, 23 Aug 2019 21:21:37 +0545</pubDate>
+    <lastBuildDate>Fri, 23 Aug 2019 21:21:37 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Use Cloudflare for Performance and Security for your Websites</title>
+        <description>&lt;p&gt;Do you wait more than 5 sec for a site to load? Living today, I am sure you won’ t. Many of you haven’t heard about &lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot;&gt;Cloudflare&lt;/a&gt;, unlike if you are interested in networking and cybersecurity. There is a whole thing moving on the internet worldwide through Cloudflare. This article tells you about the Cloudflare, how it works? and why should we use? It is an opensource web-based application that provides content delivery services with security and performance. Most of the people including me use this application for power their websites.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-cloudflare&quot; id=&quot;markdown-toc-what-is-cloudflare&quot;&gt;What is Cloudflare?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-it-works&quot; id=&quot;markdown-toc-how-it-works&quot;&gt;How it works?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#why-use-cloudflare&quot; id=&quot;markdown-toc-why-use-cloudflare&quot;&gt;Why use Cloudflare?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;what-is-cloudflare&quot;&gt;What is Cloudflare?&lt;/h1&gt;
+&lt;p&gt;Cloudflare is one of the biggest networks operating on the Internet. It provides &lt;a href=&quot;https://en.wikipedia.org/wiki/Content_delivery_network&quot; target=&quot;_blank&quot;&gt;Content Delivery Network (CDN)&lt;/a&gt; service,  &lt;a href=&quot;https://www.cloudflare.com/learning/ddos/ddos-mitigation/&quot; target=&quot;_blank&quot;&gt;DDoS mitigation&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Internet_security&quot; target=&quot;_blank&quot;&gt;Internet security&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/DNS_management_software&quot; target=&quot;_blank&quot;&gt;DNS management&lt;/a&gt; service. This act as a middleman between the site visitor and the hosting provider, providing &lt;a href=&quot;https://en.wikipedia.org/wiki/Reverse_proxy&quot;&gt;reverse proxy&lt;/a&gt; to the user for requested sites. This definition doesn’t help you unless you know every element linked in the above definition.&lt;/p&gt;
+&lt;h1 id=&quot;how-it-works&quot;&gt;How it works?&lt;/h1&gt;
+&lt;p&gt;With all that said,  Cloudflare carries multiple features. After activating your sites to Cloudflare, they take your sites as their responsibility.  They are able to filter and analyze all the traffic of your sites. It provides you &lt;a href=&quot;https://www.cloudflare.com/ssl/&quot; target=&quot;_blank&quot;&gt;free SSL/TLS encryption&lt;/a&gt; to your sites and protects from &lt;a href=&quot;https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/&quot; target=&quot;_blank&quot;&gt;DDoS attact&lt;/a&gt;. It also stores your web content in their data center and delivers to their branch server. Now, the  visitors of your websites will be served from the nearest server optimizing the time and performance. Recently, Cloudflare had more than &lt;a href=&quot;https://www.cloudflare.com/network/&quot; target=&quot;_blank&quot;&gt;190 distributed data center&lt;/a&gt; in different location on a world map.&lt;/p&gt;
+
+&lt;h1 id=&quot;why-use-cloudflare&quot;&gt;Why use Cloudflare?&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cloudflare.github.io/&quot; target=&quot;_blank&quot;&gt;Open-source&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/performance/&quot; target=&quot;_blank&quot;&gt;Boot Performance&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/analytics/&quot; target=&quot;_blank&quot;&gt;Accurate Traffic Analytic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/dns/&quot; target=&quot;_blank&quot;&gt;DNS Management&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/ssl/&quot; target=&quot;_blank&quot;&gt;Free SSL/TSL Encryption&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/ddos/under-attack/&quot; target=&quot;_blank&quot;&gt;Block DoS and DDos&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/learning/cdn/how-cdns-reduce-bandwidth-cost/&quot; target=&quot;_blank&quot;&gt;Save Bandwidth&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 20 Aug 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Use-cloudflare-for-preformance-and-security/</link>
+        <guid isPermaLink="true">http://localhost:4000/Use-cloudflare-for-preformance-and-security/</guid>
+        
+        
+        <category>Blog</category>
+        
+        <category>Cloudflare</category>
+        
+        <category>Security</category>
+        
+        <category>DNS</category>
+        
+        <category>Domain Management</category>
+        
+      </item>
     
       <item>
         <title>Install VirtualBox in Windows | Step to Virtualization</title>
