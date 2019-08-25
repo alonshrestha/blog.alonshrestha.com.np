@@ -4,7 +4,7 @@ title:  "Install VirtualBox in Ubuntu | Step to Virtualization"
 author: alonshrestha
 categories: [ Virtualization, Virtual Box, Oracle, Installation, Linux, Hypervisor, Tutorial]
 image: assets/images/blog/2019-08-06/123.jpg
-featured: true
+
 ---
 VirtualBox is a powerful opensource [virtualization](https://alonshrestha.com.np/Introduction-to-Virtualization-Beginners-Guide/){:target="_blank"} software or platform that provides you to manage and run multiple operating systems as an application at the same time. 
 

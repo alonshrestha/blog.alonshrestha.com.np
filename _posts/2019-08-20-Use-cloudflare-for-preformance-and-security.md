@@ -9,6 +9,7 @@ categories:
 - DNS
 - Domain Management
 image: assets/images/blog/2019-08-20/1.jpg
+featured: true
 ---
 
 Do you wait more than 5 sec for a site to load? Living today, I am sure you won' t. Many of you haven't heard about [Cloudflare](https://www.cloudflare.com/){:target="_blank"}, unlike if you are interested in networking and cybersecurity. There is a whole thing moving on the internet worldwide through Cloudflare. This article tells you about the Cloudflare, how it works? and why should we use? It is an opensource web-based application that provides content delivery services with security and performance. Most of the people including me use this application for power their websites.
