@@ -11,7 +11,7 @@ baseurl: ''
 include: ["_pages"]
 # Social Media
 
-email: 'alonshrstha@gmail.com'
+email: 'blog.alonshrestha.com.np@gmail.com'
 linkedin: https://linkedin.com/in/alonshrestha
 instagram: https://instagram.com/a.l_o.n
 github: https://github.com/alonshrestha
@@ -19,7 +19,7 @@ twitter: https://twitter.com/AlonShrestha
 
 google_analytics: 'UA-145866170-1'
 disqus: 'alonshrestha'
-sharethis: "<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5d58bcdfc60153001277ba43&product=social-analytics' async='async'></script>"
+sharethis: "<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d6693485fea9f001288d6b1&product=sticky-share-buttons' async='async'></script>"
 #sharethis: '<script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a6b2fe4fb197a0011c589f6&product=sticky-share-buttons"></script>'
 
 permalink: /:title/
