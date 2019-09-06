@@ -29,6 +29,10 @@
 <lastmod>2019-08-20T00:00:00+05:45</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/</loc>
+<lastmod>2019-09-04T00:00:00+05:45</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -122,6 +126,12 @@
 <loc>http://localhost:4000/category/domain-management/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/page2/</loc>
+<loc>http://localhost:4000/category/portfolio/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/github/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/host/</loc>
 </url>
 </urlset>

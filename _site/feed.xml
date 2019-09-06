@@ -5,9 +5,269 @@
     <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 02 Sep 2019 16:03:01 +0545</pubDate>
-    <lastBuildDate>Mon, 02 Sep 2019 16:03:01 +0545</lastBuildDate>
+    <pubDate>Fri, 06 Sep 2019 16:05:12 +0545</pubDate>
+    <lastBuildDate>Fri, 06 Sep 2019 16:05:12 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Create and Host your Online Portfolio for Free Using Github in 3 Steps</title>
+        <description>&lt;p&gt;Having a personal portfolio website is the best way to impress the employer you want to work with. This allows you to share and showcase your professional ability. This article helps you to create and host your profile using Github within less than 10 minutes.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Github Account&lt;/li&gt;
+  &lt;li&gt;HTML(Markup)/Markdown Language&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;step1-create-new-repository&quot;&gt;Step1: Create new Repository&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-09-05/1.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;After logging in Github, at the top left side, you will find the &lt;code class=&quot;highlighter-rouge&quot;&gt;New&lt;/code&gt; button as shown in the above picture.  Click the button and you will be directed to new repository page as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-09-05/2.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Give a &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; to the repository and click to &lt;code class=&quot;highlighter-rouge&quot;&gt;Create repository&lt;/code&gt; as shown above.&lt;/p&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert-success&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; &lt;b&gt;Tip:&lt;/b&gt; Best name for your profile repository suits your GitHub username for eg: **yourusername.github.io** &lt;/div&gt;--&gt;
+
+&lt;div class=&quot;alert alert-success&quot;&gt;
+    &lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; &lt;b&gt;Tip:&lt;/b&gt; Best name for your profile repository suits your GitHub username for eg: **yourusername.github.io** 
+&lt;/div&gt;
+
+&lt;style&gt;
+
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+&lt;/style&gt;
+
+&lt;h1 id=&quot;step2-setup-repository&quot;&gt;Step2: Setup Repository&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-09-05/3.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Let’s pick a theme for your profile. Go to the &lt;code class=&quot;highlighter-rouge&quot;&gt;setting&lt;/code&gt; and scroll down the page you will find &lt;code class=&quot;highlighter-rouge&quot;&gt;Github Page&lt;/code&gt; as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-09-05/4.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Click on &lt;code class=&quot;highlighter-rouge&quot;&gt;Choose a theme&lt;/code&gt; button and  select a theme you like. In my case it’s &lt;code class=&quot;highlighter-rouge&quot;&gt;MINIMAL&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-09-05/5.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;h1 id=&quot;step3-create-portfolio&quot;&gt;Step3: Create Portfolio&lt;/h1&gt;
+
+&lt;p&gt;Now you will be directed to edit &lt;code class=&quot;highlighter-rouge&quot;&gt;index.md&lt;/code&gt; page. This page will be the home page of your portfolio. Edit this page by replacing with your content using the same syntax or HTML syntax.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;  
+    &lt;span class=&quot;no&quot;&gt;Syntax&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;MarkDown&lt;/span&gt;
+  
+&lt;span class=&quot;c1&quot;&gt;# Heading1 In Markdown&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;## Heading2 In Markdown&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;### Heading1 In Markdown&lt;/span&gt;
+
+	&lt;span class=&quot;no&quot;&gt;Syntax&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Markup&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Heading1&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Markup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;Heading2 In Markup&amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Heading3&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Markup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h3&amp;gt;
+ &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-09-05/8.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert-success&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; &lt;b&gt;Tip:&lt;/b&gt; You can take reference from (https://alonshrestha.github.io/portfolio/) &lt;/div&gt;--&gt;
+
+&lt;div class=&quot;alert alert-success&quot;&gt;
+    &lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; &lt;b&gt;Tip:&lt;/b&gt; You can take reference from (https://alonshrestha.github.io/portfolio/) 
+&lt;/div&gt;
+
+&lt;style&gt;
+
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+&lt;/style&gt;
+
+&lt;p&gt;After completion of writing your content, &lt;code class=&quot;highlighter-rouge&quot;&gt;Commit changes&lt;/code&gt; as shown below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-09-05/6.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, go to settings and scroll down to Github pages you will find a link in which your page is hosted.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-09-05/7.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;bs-callout bs-callout-success&quot;&gt;
+    &lt;h4&gt;Congratulation!!&lt;/h4&gt;
+    You have hosted  your online portfolio. Feel free to write me if you need any help.
+&lt;/div&gt;
+
+&lt;style&gt;
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+&lt;/style&gt;
+
+</description>
+        <pubDate>Wed, 04 Sep 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/</link>
+        <guid isPermaLink="true">http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/</guid>
+        
+        
+        <category>Tutorial</category>
+        
+        <category>Portfolio</category>
+        
+        <category>Github</category>
+        
+        <category>Free</category>
+        
+        <category>Host</category>
+        
+      </item>
     
       <item>
         <title>Use Cloudflare for Performance and Security for your Websites</title>
