@@ -12,7 +12,7 @@ image: assets/images/blog/2019-09-05/main.PNG
 featured: true
 ---
 
-Having a personal portfolio website is the best way to impress the employer you want to work with. This allows you to share and showcase your professional ability. This article helps you to create and host your profile using Github within less than 10 minutes.
+Having a profile website is the best way to impress the employer you want to work with. This allows you to share and showcase your professional ability. This article helps you to create and host your profile using Github within less than 10 minutes.
 
 > **Requirements**
 
