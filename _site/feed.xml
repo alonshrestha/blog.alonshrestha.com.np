@@ -5,13 +5,13 @@
     <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 06 Sep 2019 16:05:12 +0545</pubDate>
-    <lastBuildDate>Fri, 06 Sep 2019 16:05:12 +0545</lastBuildDate>
+    <pubDate>Sat, 07 Sep 2019 11:43:06 +0545</pubDate>
+    <lastBuildDate>Sat, 07 Sep 2019 11:43:06 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Create and Host your Online Portfolio for Free Using Github in 3 Steps</title>
-        <description>&lt;p&gt;Having a personal portfolio website is the best way to impress the employer you want to work with. This allows you to share and showcase your professional ability. This article helps you to create and host your profile using Github within less than 10 minutes.&lt;/p&gt;
+        <description>&lt;p&gt;Having a profile website is the best way to impress the employer you want to work with. This allows you to share and showcase your professional ability. This article helps you to create and host your profile using Github within less than 10 minutes.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
