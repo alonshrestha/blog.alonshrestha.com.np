@@ -864,3 +864,19 @@ iframe {
     .form-group .col-md-6:first-child {   margin-bottom: 1rem;}
     
 }
+/*Table CSS*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

@@ -12,7 +12,11 @@ image: assets/images/blog/2019-09-05/main.PNG
 featured: true
 ---
 
-Having a profile website is the best way to impress the employer you want to work with. This allows you to share and showcase your professional ability. This article helps you to create and host your profile using Github within less than 10 minutes.
+A digital world demands a digitized user profile. And by digitizing profile you are explicitly representing your identity in a customized desktop environment. 
+Making a user profile website is the best way to impress anyone on the go. Having a profile website will have an immediate impact on the employer you want to work with. This allows you to showcase your professional ability and make a mark of your identity online. There are however several ways to make a user profile and host it. 
+
+In this article today, I will be helping you to create and host your profile using Github within less than 10 minutes.
+
 
 > **Requirements**
 
@@ -42,7 +46,7 @@ Click on `Choose a theme` button and  select a theme you like. In my case it's `
 ![](/assets/images/blog/2019-09-05/5.PNG)
 # Step3: Create Portfolio
 
-Now you will be directed to edit `index.md` page. This page will be the home page of your portfolio. Edit this page by replacing with your content using the same syntax or HTML syntax.
+Once you choose a theme, you will be redirected to its ‘index.md’ page. This page will be the homepage of your portfolio. Edit this page with the content suitable with your profile using the same syntax or you can even use the HTML tags.
 
 > **Example**
 
@@ -64,7 +68,7 @@ Now you will be directed to edit `index.md` page. This page will be the home pag
 
 ![](/assets/images/blog/2019-09-05/8.PNG)
 
-{% include tip.html content= "You can take reference from (https://alonshrestha.github.io/portfolio/) " %}
+{% include tip.html  content= "You can take reference from https://alonshrestha.github.io/portfolio/ " %}
 
 After completion of writing your content, `Commit changes` as shown below.
 
@@ -74,4 +78,4 @@ Now, go to settings and scroll down to Github pages you will find a link in whic
 
 ![](/assets/images/blog/2019-09-05/7.PNG)
 
-{% include successCallout.html heading= "Congratulation!!" content= "You have hosted  your online portfolio. Feel free to write me if you need any help." %}
+{% include successCallout.html heading= "Congratulation!!" content= "You have successfully hosted your online portfolio. Drop a comment below if you tried hosting you personal profile or if you have had any problems when doing so." %}
