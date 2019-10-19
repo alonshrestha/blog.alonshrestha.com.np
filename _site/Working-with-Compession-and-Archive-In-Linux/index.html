@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/assets/images/favicon.png">    
+<title>Working With Compession And Archive Files In Linux | Alon Shrestha</title>
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Working With Compession And Archive Files In Linux | alon’sTech Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Working With Compession And Archive Files In Linux" />
+<meta name="author" content="alonshrestha" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. " />
+<meta property="og:description" content="Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. " />
+<link rel="canonical" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/" />
+<meta property="og:url" content="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/" />
+<meta property="og:site_name" content="alon’sTech Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-10-19T00:00:00+05:45" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@alonshrestha" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Working With Compession And Archive Files In Linux","url":"http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/","dateModified":"2019-10-19T00:00:00+05:45","datePublished":"2019-10-19T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. ","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+<link href="/assets/css/theme.css" rel="stylesheet">
+<link href="/assets/css/custom.css" rel="stylesheet">
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d6693485fea9f001288d6b1&product=sticky-share-buttons' async='async'></script>
+    
+
+<!--Crisp online ChatBox-->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="5fd36e42-48e8-483f-b8b6-ed9d98308299";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <!--    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5fe413e-8b5c-4401-ac51-22fd7ac7209c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>-->
+    
+</head>
+    
+
+    
+
+<body class="layout-post">
+
+<div class="sharethis-sticky-share-buttons"></div>
+
+<!-- Begin Menu Navigation
+================================================== -->
+<header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+        <img src="/assets/images/personal/head.jpg" alt="Alon Shrestha">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Begin Menu -->
+        <div class="collapse navbar-collapse" id="navbarsWow">
+            
+            <!-- Begin Menu -->
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">                
+                <a class="nav-link" href="/index.html">Home</a>
+                </li>
+
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
+<!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="">Right Sidebar</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="/archive">Archive</a>-->
+<!--                </li>-->
+
+                <li class="nav-item">                
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">                
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li> 
+                
+<!--                 <li class="nav-item">                -->
+<!--                    <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/affiliates-jekyll-theme">Github</a>-->
+<!--                </li> -->
+                
+                
+    <!--                <li class="nav-item">                -->
+    <!--                    <a class="nav-link highlight" href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip">Download Theme</a>-->
+    <!--                </li> -->
+                
+            </ul>
+            <!-- End Menu -->
+            
+        </div>
+    </div>
+</header>
+    
+
+    
+<!-- End Menu Navigation
+================================================== -->
+    
+<div class="site-content">
+    
+    <div class="container">
+
+    <!-- Site Title
+    ================================================== -->
+
+    <div class="mainheading" style="display:none;">
+        <h1 class="sitetitle">Alon Shrestha</h1>
+        <p class="lead">
+             Blog related to tech tutorial, product, event, news written in plain and ease to understand
+        </p>
+    </div>
+
+
+    <!-- Content
+    ================================================== --> 
+    <div class="main-content">
+        <!-- Begin Article
+================================================== -->
+
+	<div class="row">
+
+		<!-- Sidebar -->
+        <div class="col-sm-4">
+        <div class="sidebar">
+
+        <div class="sidebar-section">
+            <h5><span>Newsletter</span></h5>
+            <!-- Go to your Mailchimp account/Lists/Sign Up Forms/Embedded forms and replace the code below with your own-->
+
+<!-- Begin MailChimp Signup Form-->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+		<form action="https://gmail.us3.list-manage.com/subscribe/post?u=24552ab282fd36f7d33fd5d83&amp;id=266a6fa969" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+	<!--<form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>-->
+	<div id="mc_embed_signup_scroll">
+	<h2>Sign up to get our weekly free guide to selling digital downloads</h2>
+
+<div class="mc-field-group">
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail Address">
+</div>
+		<div class="mc-field-group">
+
+			<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
+		</div>
+		<div class="mc-field-group">
+			<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last Name">
+		</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8aeb20a530e124561927d3bd8_8c3d2d214b" tabindex="-1" value=""></div>
+	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	</div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';fnames[1]='MMERGE1';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/24552ab282fd36f7d33fd5d83/de4957ff2a2abcf66d2432cbb.js");</script>
+<!--End mc_embed_signup-->
+
+        </div>
+
+        <div class="sidebar-section">
+            <h5><span>Useful</span></h5>
+            <ul style="list-none;">
+            <li><a target="_blank" href="https://m.do.co/c/84c9b45d0c47">Digital Ocean</a></li>
+            <li><a target="blank" href="https://stackoverflow.com/">Stack Overflow</a></li>
+            <li><a target="blank" href="https://www.techmeme.com/">Techmeme</a></li>
+            <li><a target="blank" href="https://jekyllthemes.dev">Jekyll Themes</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+             <h5><span>Recommended</span></h5>
+           <a href="https://easydigitaldownloads.com/?ref=2135" title="Sell digital downloads with WordPress, for free"><img src="https://easydigitaldownloads.com/wp-content/uploads/2015/02/300x250-2.png" alt="Sell digital with WordPress, for free" /></a>
+        </div>
+</div>
+        </div>
+
+
+		<!-- Post -->
+        
+
+		<div class="col-sm-8">
+			<div class="mainheading">
+
+                <!-- Post Categories -->
+
+                <div class="after-post-cats">
+                    <ul class="tags mb-4">
+                        
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Archive">Archive</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Compression">Compression</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Linux">Linux</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+
+
+
+                <!--               <div class="after-post-tags">-->
+<!--                    <ul class="tags">-->
+<!--                        -->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Archive">Archive</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Archive</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Compression">Compression</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Compression</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Linux">Linux</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Linux</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                    </ul>-->
+<!--                </div>-->
+                <!-- End Categories -->
+
+                <!-- Post Title -->
+				<h1 class="posttitle">Working With Compession And Archive Files In Linux</h1>
+
+			</div>
+
+			<!-- Post Featured Image -->
+			
+			<!-- End Featured Image -->
+
+			<!-- Post Content -->
+			<div class="article-post">
+				<p>Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. </p>
+
+<h1 id="create-archive">Create Archive</h1>
+<p>To create an archive we use <code class="highlighter-rouge">tar -cf  Archive-file-name.tar  /file-you-want-to-archive</code>.  In below example an archive is created with the name <code class="highlighter-rouge">myFiles.tar</code> for directory  <code class="highlighter-rouge">/home/alon/Documents/</code>.</p>
+
+<p><strong>Example:</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">cf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span> <span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span></code></pre></figure>
+
+<p>if you want to see what is happening while running above command, use <code class="highlighter-rouge">-v</code> option.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">cvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span> <span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span>
+<span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span>
+<span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">passwd</span>
+<span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">newfile</span>
+<span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">oktest</span><span class="p">.</span><span class="nf">tar</span>
+<span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">oktest</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">bz2</span>
+<span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">linkedfile</span></code></pre></figure>
+
+<div class="alert alert-info">
+    <i class="fa fa-info-circle"></i> <b>Note:</b>  In -cvf option ( - ) was not being used in old version of tar.
+</div>
+
+<style>
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block > p,
+    .alert-block > ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+</style>
+
+<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b>  In -cvf option ( - ) was not being used in old version of tar.</div>-->
+
+<h1 id="add-file-in-existing-archive">Add File in Existing Archive</h1>
+<p>While managing archives with tar,  there might be also a case to add a new file in the existing archive. For that, we use <code class="highlighter-rouge">-r</code> options. Syntax <code class="highlighter-rouge">tar -rvf  Archive-file-name.tar  /path-of/file-you-want-to-add-to-the-archive</code>.</p>
+
+<p><strong>Example:</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">rvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span> <span class="sr">/etc/</span><span class="n">hosts</span>
+<span class="sr">/etc/</span><span class="n">hosts</span></code></pre></figure>
+
+<h1 id="update-existing-archive">Update Existing Archive</h1>
+
+<p>To update current existing archive file, we can use the <code class="highlighter-rouge">-u</code> options. Syntax <code class="highlighter-rouge">tar -uvf  Archive-file-name.tar </code></p>
+
+<p><strong>Example:</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">uvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span></code></pre></figure>
+
+<h1 id="monitoring-archive">Monitoring Archive</h1>
+
+<p>You can also view all the files for the archive before extracting. For that, use <code class="highlighter-rouge">-t</code> option. Sytntax <code class="highlighter-rouge">tar -tvf  Archive-file-name.tar </code>.</p>
+
+<p><strong>Example</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">tvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span> <span class="n">alon</span><span class="o">/</span><span class="n">alon</span>         <span class="mi">0</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">19</span> <span class="mi">15</span><span class="p">:</span><span class="mi">28</span> <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span> <span class="n">alon</span><span class="o">/</span><span class="n">alon</span>      <span class="mi">2268</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">19</span> <span class="mi">15</span><span class="p">:</span><span class="mi">27</span> <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">passwd</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span> <span class="n">alon</span><span class="o">/</span><span class="n">alon</span>         <span class="mi">0</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">19</span> <span class="mi">15</span><span class="p">:</span><span class="mi">27</span> <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">newfile</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span> <span class="n">alon</span><span class="o">/</span><span class="n">alon</span>    <span class="mi">235520</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">19</span> <span class="mi">15</span><span class="p">:</span><span class="mi">27</span> <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">oktest</span><span class="p">.</span><span class="nf">tar</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span> <span class="n">alon</span><span class="o">/</span><span class="n">alon</span>     <span class="mi">27291</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">19</span> <span class="mi">15</span><span class="p">:</span><span class="mi">27</span> <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">oktest</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">bz2</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span> <span class="n">alon</span><span class="o">/</span><span class="n">alon</span>         <span class="mi">0</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">19</span> <span class="mi">15</span><span class="p">:</span><span class="mi">27</span> <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">linkedfile</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span> <span class="n">alon</span><span class="o">/</span><span class="n">alon</span>         <span class="mi">0</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">19</span> <span class="mi">15</span><span class="p">:</span><span class="mi">28</span> <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">hosts</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--</span> <span class="n">root</span><span class="o">/</span><span class="n">root</span>         <span class="mi">0</span> <span class="mi">2019</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mo">05</span> <span class="mi">21</span><span class="p">:</span><span class="mi">29</span> <span class="n">etc</span><span class="o">/</span><span class="n">hosts</span></code></pre></figure>
+
+<!--<div markdown="span" class="alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> It's good practice to monitor your archive before extracting it.</div>-->
+
+<div class="alert alert-success">
+    <i class="fa fa-check-square-o"></i> <b>Tip:</b> It's good practice to monitor your archive before extracting it.
+</div>
+
+<style>
+
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block > p,
+    .alert-block > ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+</style>
+
+<h1 id="extracting-archive">Extracting Archive</h1>
+<p>Now its time to extract the content of the archive. For that, use <code class="highlighter-rouge">-x</code> option. Syntax <code class="highlighter-rouge">tar -xvf Archive-file-name.tar</code></p>
+
+<p><strong>Example:</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">passwd</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">newfile</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">oktest</span><span class="p">.</span><span class="nf">tar</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">oktest</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">bz2</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">linkedfile</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">hosts</span>
+<span class="n">etc</span><span class="o">/</span><span class="n">hosts</span></code></pre></figure>
+
+<p>The above command extract the content  of archive in the current directory. To specify your target directory where you want to extract the files. For that, use  <code class="highlighter-rouge">-C</code> option. Syntax <code class="highlighter-rouge">tar -xvf Archive-file-name.tar -C /your-path</code></p>
+
+<p><strong>Example:</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">xvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span> <span class="o">-</span><span class="no">C</span> <span class="sr">/tmp/</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">passwd</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">newfile</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">oktest</span><span class="p">.</span><span class="nf">tar</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">oktest</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">bz2</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">linkedfile</span>
+<span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">hosts</span>
+<span class="n">etc</span><span class="o">/</span><span class="n">hosts</span></code></pre></figure>
+
+<table>
+  <thead>
+    <tr>
+      <th>Options</th>
+      <th>Use</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>c</td>
+      <td>Creates an archive.</td>
+    </tr>
+    <tr>
+      <td>v</td>
+      <td>Shows verbose output while tar is working</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>Used to specify the name of the tar archive that is to be used. Without using this option, the default destination is STDIN for  -x  and STDOUT for  -c .</td>
+    </tr>
+    <tr>
+      <td>t</td>
+      <td>Shows the contents of an archive</td>
+    </tr>
+    <tr>
+      <td>z</td>
+      <td>Compresses/decompresses the archive while creating it, by using gzip</td>
+    </tr>
+    <tr>
+      <td>j</td>
+      <td>Compresses/decompresses the archive by using bzip2</td>
+    </tr>
+    <tr>
+      <td>x</td>
+      <td>Extracts an archive.</td>
+    </tr>
+    <tr>
+      <td>u</td>
+      <td>Updates an archive; only newer files will be written to the archive</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Changes the working directory before performing the command.</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>Appends files to an archive.</td>
+    </tr>
+  </tbody>
+</table>
+
+                <div class="clearfix"></div>
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2019-10-19">19 Oct 2019</time></span>
+                
+                </small>
+            </p>
+
+
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation mt-4 prevnextlinks">
+              
+                <div class="col-md-6 rightborder pl-0">
+                    <a class="thepostlink" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">&laquo; Working With Compession And Archive In Linux</a>
+                </div>
+              
+              
+            </div>
+            <!-- End Prev/Next -->
+
+
+             <!-- Author Box -->
+            
+            <div class="row post-top-meta">
+                <div class="col-md-2">
+                    <img class="author-thumb" src="https://www.gravatar.com/avatar/328cf0c5d7b7464fbc7a35d54a90c778?s=250&d=mm&r=x" alt="Alon Shrestha">
+                </div>
+                <div class="col-md-10">
+                    <a target="_blank" class="link-dark" href="https://alonshrestha.com.np">Alon Shrestha</a><a target="_blank" href="https://twitter.com/AlonShrestha" class="btn follow">Follow</a><br>
+                    <span class="author-description"> A Computer Science Student </span>
+                </div>
+            </div>
+
+
+
+            
+
+
+            <!-- Begin Comments
+            ================================================== -->
+            <section>
+            <div id="comments">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'blog-alonshrestha-com-np'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+            </section>
+            <!--End Comments
+            ================================================== -->
+
+
+
+		</div>
+		<!-- End Post -->
+
+
+
+	</div>
+
+<!-- End Article
+================================================== -->
+    </div>
+
+    </div><!-- /.container --> 
+
+
+
+    <!-- Before Footer
+<!--    ================================================== &ndash;&gt; -->
+    <div class="beforefooter" style="text-align: center;">
+        <div class="container" style="text-align: center;">
+            <div class="row justify-content-center" style="text-align: center;" >
+<!--                <div class="col-md-8">-->
+<!--                    <h3>This is your final call to action area. Shine like a star, make them want you, tell 'em to push that button!</h3>-->
+<!--                    <p>We offer a <span>30 Day Money Back Guarantee</span>, so joining is <span class="risk-free">Risk-Free!</span></p>-->
+<!--                    <a class="btn btn-primary btn-lg" href="#">Join us yesterday</a>-->
+<!--                </div>-->
+                <div class="col-md-4 text-center footersocial" style="text-align: center;">
+                    <h5 style="text-align: center;" >Connect with Me</h5>
+                    <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    <a href="https://instagram.com/a.l_o.n" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/AlonShrestha" target="_blank" ><i class="fa fa-twitter"></i></a>
+                    <a href="mailto:alon.stha01@gmail.com" target="_blank" ><i class="fa fa-envelope-o"></i></a>
+                    <a target="_blank" href="https://linkedin.com/in/alonshrestha"><i class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/alonshrestha" ><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+   </div>
+
+    <!-- Begin Footer
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+<!--            <div class="row">-->
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <a href="/contact">-->
+<!--                <img src="/assets/images/logo-footer.png">-->
+<!--                </a>-->
+<!--    `            </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <h5 class="title">Resources</h5>-->
+<!--                <ul>-->
+<!--                <li><a target="_blank" href="https://m.do.co/c/84c9b45d0c47">Digital Ocean</a></li>-->
+<!--                <li><a target="blank" href="https://www.cloudways.com/en/pricing.php?id=153986&amp;a_bid=005da123">Cloudways</a></li>-->
+<!--                <li><a target="blank" href="http://shareasale.com/r.cfm?b=875645&amp;u=1087935&amp;m=41388&amp;urllink=&amp;afftrack=">Page Speed Test</a></li>-->
+<!--                <li><a target="blank" href="https://www.wowthemes.net/affiliate-area/?utm_source=fromjekyllsidebar&utm_campaign=sidebar">Partner with Us</a></li>-->
+<!--                <li><a target="blank" href="https://www.wowthemes.net/category/jekyll-themes/">Our Jekyll Themes</a></li>-->
+<!--                </ul>-->
+<!--                </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <h5 class="title">Author</h5>-->
+<!--                <ul>-->
+<!--                <li><a href="https://www.wowthemes.net/premium-themes-templates/">About Us</a></li>-->
+<!--                <li><a target="_blank" href="https://www.wowthemes.net/affiliate-area/">Affiliates</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/terms-and-conditions/">License</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/blog/">Blog</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/support/">Contact</a></li>-->
+<!--                </ul>-->
+<!--                </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--&lt;!&ndash;                <div class="footer-widget textwidget">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h5 class="title">Download</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p>Download "Affiliates" theme and use it for your next Jekyll project. If you have a question, a bug report, or if you simply want to say hi, <a href="https://www.wowthemes.net/support/">contact us here</a>.</p> &ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip">Download Theme</a>                    &ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+            <div class="col-sm-12">
+            <div class="copyright" style="text-align: center;">
+                <p style="text-align: center;">
+                    Copyright © 2019 Alon Shrestha <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                </p>
+<!--                Plese, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/-->
+                <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
+    <!-- End Footer
+    ================================================== -->
+
+    
+</div> <!-- /.site-content>
+
+<!-- JavaScript
+================================================== -->
+    
+<script src="/assets/js/jquery.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script type='text/javascript' src='/assets/js/masonry.pkgd.min.js'></script>
+    
+<script src="/assets/js/theme.js"></script>    
+    
+</body>
+    
+</html>

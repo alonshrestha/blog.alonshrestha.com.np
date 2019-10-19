@@ -99,8 +99,9 @@ Now submit your document eg: license, citizen card, passport and cover letter in
     
 {% include callout.html heading=  "Sample of Cover Letter" %}
 
+{% highlight ruby %}
 
-	Date (eg:July 24, 2019)
+Date July 24, 2019
 
 	To,
 	The Host Master
@@ -119,6 +120,8 @@ Now submit your document eg: license, citizen card, passport and cover letter in
 
 	Regards,
 	Your Name
+
+{% endhighlight %}
 
 #### **Step 10:** Complete Registration
 

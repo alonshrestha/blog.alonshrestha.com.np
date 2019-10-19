@@ -5,9 +5,286 @@
     <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 30 Sep 2019 22:23:02 +0545</pubDate>
-    <lastBuildDate>Mon, 30 Sep 2019 22:23:02 +0545</lastBuildDate>
+    <pubDate>Sat, 19 Oct 2019 15:58:14 +0545</pubDate>
+    <lastBuildDate>Sat, 19 Oct 2019 15:58:14 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Working With Compession And Archive Files In Linux</title>
+        <description>&lt;p&gt;Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. &lt;/p&gt;
+
+&lt;h1 id=&quot;create-archive&quot;&gt;Create Archive&lt;/h1&gt;
+&lt;p&gt;To create an archive we use &lt;code class=&quot;highlighter-rouge&quot;&gt;tar -cf  Archive-file-name.tar  /file-you-want-to-archive&lt;/code&gt;.  In below example an archive is created with the name &lt;code class=&quot;highlighter-rouge&quot;&gt;myFiles.tar&lt;/code&gt; for directory  &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/alon/Documents/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;if you want to see what is happening while running above command, use &lt;code class=&quot;highlighter-rouge&quot;&gt;-v&lt;/code&gt; option.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;passwd&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newfile&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oktest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oktest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bz2&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;/home/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linkedfile&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt;  In -cvf option ( - ) was not being used in old version of tar.
+&lt;/div&gt;
+
+&lt;style&gt;
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+&lt;/style&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt;  In -cvf option ( - ) was not being used in old version of tar.&lt;/div&gt;--&gt;
+
+&lt;h1 id=&quot;add-file-in-existing-archive&quot;&gt;Add File in Existing Archive&lt;/h1&gt;
+&lt;p&gt;While managing archives with tar,  there might be also a case to add a new file in the existing archive. For that, we use &lt;code class=&quot;highlighter-rouge&quot;&gt;-r&lt;/code&gt; options. Syntax &lt;code class=&quot;highlighter-rouge&quot;&gt;tar -rvf  Archive-file-name.tar  /path-of/file-you-want-to-add-to-the-archive&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/etc/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;
+&lt;span class=&quot;sr&quot;&gt;/etc/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;update-existing-archive&quot;&gt;Update Existing Archive&lt;/h1&gt;
+
+&lt;p&gt;To update current existing archive file, we can use the &lt;code class=&quot;highlighter-rouge&quot;&gt;-u&lt;/code&gt; options. Syntax &lt;code class=&quot;highlighter-rouge&quot;&gt;tar -uvf  Archive-file-name.tar &lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;monitoring-archive&quot;&gt;Monitoring Archive&lt;/h1&gt;
+
+&lt;p&gt;You can also view all the files for the archive before extracting. For that, use &lt;code class=&quot;highlighter-rouge&quot;&gt;-t&lt;/code&gt; option. Sytntax &lt;code class=&quot;highlighter-rouge&quot;&gt;tar -tvf  Archive-file-name.tar &lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;         &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;      &lt;span class=&quot;mi&quot;&gt;2268&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;passwd&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;         &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newfile&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;235520&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oktest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;     &lt;span class=&quot;mi&quot;&gt;27291&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oktest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bz2&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;         &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linkedfile&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;         &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;         &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;05&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert-success&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; &lt;b&gt;Tip:&lt;/b&gt; It's good practice to monitor your archive before extracting it.&lt;/div&gt;--&gt;
+
+&lt;div class=&quot;alert alert-success&quot;&gt;
+    &lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; &lt;b&gt;Tip:&lt;/b&gt; It's good practice to monitor your archive before extracting it.
+&lt;/div&gt;
+
+&lt;style&gt;
+
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+&lt;/style&gt;
+
+&lt;h1 id=&quot;extracting-archive&quot;&gt;Extracting Archive&lt;/h1&gt;
+&lt;p&gt;Now its time to extract the content of the archive. For that, use &lt;code class=&quot;highlighter-rouge&quot;&gt;-x&lt;/code&gt; option. Syntax &lt;code class=&quot;highlighter-rouge&quot;&gt;tar -xvf Archive-file-name.tar&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;passwd&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newfile&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oktest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oktest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bz2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linkedfile&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The above command extract the content  of archive in the current directory. To specify your target directory where you want to extract the files. For that, use  &lt;code class=&quot;highlighter-rouge&quot;&gt;-C&lt;/code&gt; option. Syntax &lt;code class=&quot;highlighter-rouge&quot;&gt;tar -xvf Archive-file-name.tar -C /your-path&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;C&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/tmp/&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;passwd&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newfile&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oktest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;oktest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bz2&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linkedfile&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Options&lt;/th&gt;
+      &lt;th&gt;Use&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;c&lt;/td&gt;
+      &lt;td&gt;Creates an archive.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;v&lt;/td&gt;
+      &lt;td&gt;Shows verbose output while tar is working&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;f&lt;/td&gt;
+      &lt;td&gt;Used to specify the name of the tar archive that is to be used. Without using this option, the default destination is STDIN for  -x  and STDOUT for  -c .&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;t&lt;/td&gt;
+      &lt;td&gt;Shows the contents of an archive&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;z&lt;/td&gt;
+      &lt;td&gt;Compresses/decompresses the archive while creating it, by using gzip&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;j&lt;/td&gt;
+      &lt;td&gt;Compresses/decompresses the archive by using bzip2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;x&lt;/td&gt;
+      &lt;td&gt;Extracts an archive.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;u&lt;/td&gt;
+      &lt;td&gt;Updates an archive; only newer files will be written to the archive&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;C&lt;/td&gt;
+      &lt;td&gt;Changes the working directory before performing the command.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;r&lt;/td&gt;
+      &lt;td&gt;Appends files to an archive.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sat, 19 Oct 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/</guid>
+        
+        
+        <category>Linux</category>
+        
+        <category>Compression</category>
+        
+        <category>Archive</category>
+        
+      </item>
+    
+      <item>
+        <title>Working With Compession And Archive In Linux</title>
+        <description>
+</description>
+        <pubDate>Sat, 19 Oct 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/</guid>
+        
+        
+        <category>Linux</category>
+        
+        <category>Compression</category>
+        
+        <category>Archive</category>
+        
+      </item>
     
       <item>
         <title>Using Vim Like Pro</title>
@@ -56,6 +333,16 @@
 Making a user profile website is the best way to impress anyone on the go. Having a profile website will have an immediate impact on the employer you want to work with. This allows you to showcase your professional ability and make a mark of your identity online. There are however several ways to make a user profile and host it.&lt;/p&gt;
 
 &lt;p&gt;In this article today, I will be helping you to create and host your profile using Github within less than 10 minutes.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#step1-create-new-repository&quot; id=&quot;markdown-toc-step1-create-new-repository&quot;&gt;Step1: Create new Repository&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step2-setup-repository&quot; id=&quot;markdown-toc-step2-setup-repository&quot;&gt;Step2: Setup Repository&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#step3-create-portfolio&quot; id=&quot;markdown-toc-step3-create-portfolio&quot;&gt;Step3: Create Portfolio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Requirements&lt;/strong&gt;&lt;/p&gt;
@@ -905,506 +1192,6 @@ Making a user profile website is the best way to impress anyone on the go. Havin
         <category>Cloud Server</category>
         
         <category>Blog</category>
-        
-      </item>
-    
-      <item>
-        <title>Backup and Restore your Linux System to the Previous State with SystemBack</title>
-        <description>&lt;h3 id=&quot;what-is-systemback&quot;&gt;What is SystemBack?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;SystemBack&lt;/strong&gt; is an open-source application for Linux which makes it easy to create live backup images of your system and user saved configurations. People who are new to Linux make mistakes with the configuration of system root files and as a result, crash the system. In this case, SystemBack is a helpful application for backing up and restoring your system in the previous state.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Table of Content&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#what-is-systemback&quot; id=&quot;markdown-toc-what-is-systemback&quot;&gt;What is SystemBack?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#advantages&quot; id=&quot;markdown-toc-advantages&quot;&gt;Advantages&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#disadvantages&quot; id=&quot;markdown-toc-disadvantages&quot;&gt;Disadvantages&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#install-systemback-in-ubuntu&quot; id=&quot;markdown-toc-install-systemback-in-ubuntu&quot;&gt;Install SystemBack in Ubuntu&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#how-to-use&quot; id=&quot;markdown-toc-how-to-use&quot;&gt;How to use?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;advantages&quot;&gt;Advantages&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Live boot image.&lt;/li&gt;
-  &lt;li&gt;Easy installation and fast recovery.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;disadvantages&quot;&gt;Disadvantages&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;If your .sblive file is more than 4 GB then, cannot be converted to ISO file.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;install-systemback-in-ubuntu&quot;&gt;Install SystemBack in Ubuntu&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;span class=&quot;evidence&quot;&gt;sudo add-apt-repository ppa:nemh/systemback &lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;evidence&quot;&gt; sudo apt-get update &lt;/span&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;span class=&quot;evidence&quot;&gt; sudo apt-get install systemback &lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/1.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;how-to-use&quot;&gt;How to use?&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;After installation, search application by clicking on windows or simply typing SystemBack in the terminal.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/2.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Enter your password and press OK.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/3.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Now go to Live system create.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/4.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Click Create new for creating a system image.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/5.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/6.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Your system gets back up with a live image. (Time depends on your system size)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/7.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;After that, a .sblive file is being created i.e your system image.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/8.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Select the image file and click to convert to ISO.&lt;/li&gt;
-  &lt;li&gt;You can convert a .sblive file to ISO or can burn to CD/DVD or boot in Pendrive directly.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;alert alert-info&quot;&gt;
-    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; .sblive cannot be converted to ISO if its size is more than 4GB.
-&lt;/div&gt;
-
-&lt;style&gt;
-    .alert {
-        padding: 8px 35px 8px 14px;
-        margin-bottom: 18px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        background-color: #fcf8e3;
-        border: 1px solid #fbeed5;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        color: #c09853;
-    }
-    .alert-heading {
-        color: inherit;
-    }
-    .alert .close {
-        position: relative;
-        top: -2px;
-        right: -21px;
-        line-height: 18px;
-    }
-    .alert-success {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
-        color: #468847;
-    }
-    .alert-danger,
-    .alert-error {
-        background-color: #f2dede;
-        border-color: #eed3d7;
-        color: #b94a48;
-    }
-    .alert-info {
-        background-color: #d9edf7;
-        border-color: #bce8f1;
-        color: #3a87ad;
-    }
-    .alert-block {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-    .alert-block &gt; p,
-    .alert-block &gt; ul {
-        margin-bottom: 0;
-    }
-    .alert-block p + p {
-        margin-top: 5px;
-    }
-
-&lt;/style&gt;
-
-&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; .sblive cannot be converted to ISO if its size is more than 4GB.&lt;/div&gt;--&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Now you can boot your system for installation and restore to the previous state.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 21 Jul 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Backup-and-restore-your-system-to-previous-state-with-SystemBack/</link>
-        <guid isPermaLink="true">http://localhost:4000/Backup-and-restore-your-system-to-previous-state-with-SystemBack/</guid>
-        
-        
-        <category>Tutorial</category>
-        
-        <category>SystemBack</category>
-        
-        <category>Ubuntu</category>
-        
-        <category>Linux</category>
-        
-        <category>Backup</category>
-        
-        <category>Restore</category>
-        
-      </item>
-    
-      <item>
-        <title>Register Domain .com.np for Free</title>
-        <description>&lt;p&gt;Domain &lt;strong&gt;.com.np&lt;/strong&gt; is the property that you can get in Nepal for free. Did you believe it? If you didn’t, I will make this real for you.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/.np&quot; target=&quot;_blank&quot;&gt;.np&lt;/a&gt; is the country top-level domain in Nepal administered by &lt;a href=&quot;http://mos.com.np/&quot; target=&quot;_blank&quot;&gt;Mercantile Communications Pvt. Ltd.&lt;/a&gt; Registration of .np with secondary level like &lt;strong&gt;.com.np&lt;/strong&gt;, &lt;strong&gt;edu.np&lt;/strong&gt;, &lt;strong&gt;org.np&lt;/strong&gt; can be registered by &lt;strong&gt;Neplease&lt;/strong&gt;, &lt;strong&gt;Non-Resident Neplease&lt;/strong&gt; and even by the &lt;strong&gt;foreigners&lt;/strong&gt; having Neplease residential.&lt;/p&gt;
-
-&lt;p&gt;You can have your personal name domain representing your brand, organization, service, etc. I have used my name as domain (&lt;a href=&quot;http://alonshrestha.com.np/&quot; target=&quot;_blank&quot;&gt;alonshrestha.com.np&lt;/a&gt;) for my personal and blog. Follow the procedure below if you need one.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#requirements&quot; id=&quot;markdown-toc-requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#procedure&quot; id=&quot;markdown-toc-procedure&quot;&gt;Procedure&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-1-check-if-the-domain-is-available&quot; id=&quot;markdown-toc-step-1-check-if-the-domain-is-available&quot;&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Check if the domain is available.&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-2-register-domain&quot; id=&quot;markdown-toc-step-2-register-domain&quot;&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Register domain.&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-3-sign-increate-user&quot; id=&quot;markdown-toc-step-3-sign-increate-user&quot;&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Sign in/Create user&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-4-register-account&quot; id=&quot;markdown-toc-step-4-register-account&quot;&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Register account&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-5-activate-your-email&quot; id=&quot;markdown-toc-step-5-activate-your-email&quot;&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Activate your email.&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-6-sign-in&quot; id=&quot;markdown-toc-step-6-sign-in&quot;&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Sign In&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-7-domain-registration&quot; id=&quot;markdown-toc-step-7-domain-registration&quot;&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; Domain Registration&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-8-administrative-contact&quot; id=&quot;markdown-toc-step-8-administrative-contact&quot;&gt;&lt;strong&gt;Step 8:&lt;/strong&gt; Administrative Contact&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-9-submit-your-personal-document&quot; id=&quot;markdown-toc-step-9-submit-your-personal-document&quot;&gt;&lt;strong&gt;Step 9:&lt;/strong&gt; Submit your Personal Document&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-10-complete-registration&quot; id=&quot;markdown-toc-step-10-complete-registration&quot;&gt;&lt;strong&gt;Step 10:&lt;/strong&gt; Complete Registration&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Documents (scanned copy of your citizen card or license or passport)&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Coverletter&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Gmail account&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;procedure&quot;&gt;Procedure&lt;/h2&gt;
-
-&lt;h4 id=&quot;step-1-check-if-the-domain-is-available&quot;&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Check if the domain is available.&lt;/h4&gt;
-
-&lt;p&gt;Browse &lt;a href=&quot;https://register.com.np/&quot; target=&quot;_blank&quot;&gt;https://register.com.np/ &lt;/a&gt; and &lt;strong&gt;“Search”&lt;/strong&gt; for the domain you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-2-register-domain&quot;&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Register domain.&lt;/h4&gt;
-
-&lt;p&gt;If the status of the searched domain is &lt;strong&gt;“Available”&lt;/strong&gt; then click &lt;strong&gt;“Register now”&lt;/strong&gt; to register the domain.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-3-sign-increate-user&quot;&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Sign in/Create user&lt;/h4&gt;
-
-&lt;p&gt;You will visit the login page. &lt;strong&gt;“Sign in”&lt;/strong&gt; with your account or click &lt;strong&gt;“Create user”&lt;/strong&gt; to have new an account.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-warning&quot;&gt;&lt;/i&gt; &lt;b&gt;Important:&lt;/b&gt;  Jump to Step 6 if you can sign in, else continue.&lt;/div&gt;--&gt;
-&lt;div class=&quot;alert alert-block&quot;&gt;
-    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Important:&lt;/b&gt;  Jump to Step 6 if you can sign in, else continue.
-&lt;/div&gt;
-
-&lt;style&gt;
-
-    .alert {
-        padding: 8px 35px 8px 14px;
-        margin-bottom: 18px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        background-color: #fcf8e3;
-        border: 1px solid #fbeed5;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        color: #c09853;
-    }
-    .alert-heading {
-        color: inherit;
-    }
-    .alert .close {
-        position: relative;
-        top: -2px;
-        right: -21px;
-        line-height: 18px;
-    }
-    .alert-success {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
-        color: #468847;
-    }
-    .alert-danger,
-    .alert-error {
-        background-color: #f2dede;
-        border-color: #eed3d7;
-        color: #b94a48;
-    }
-    .alert-info {
-        background-color: #d9edf7;
-        border-color: #bce8f1;
-        color: #3a87ad;
-    }
-    .alert-block {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-    .alert-block &gt; p,
-    .alert-block &gt; ul {
-        margin-bottom: 0;
-    }
-    .alert-block p + p {
-        margin-top: 5px;
-    }
-
-&lt;/style&gt;
-
-&lt;h4 id=&quot;step-4-register-account&quot;&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Register account&lt;/h4&gt;
-
-&lt;p&gt;A user detail form will appear. Fill the form with valid data.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-5-activate-your-email&quot;&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Activate your email.&lt;/h4&gt;
-
-&lt;p&gt;You will receive a verification message in your Gmail.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Open your Gmail and verify your Gmail account.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-6-sign-in&quot;&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Sign In&lt;/h4&gt;
-
-&lt;p&gt;Now you will be again redirected to the login page. Enter your credential and &lt;strong&gt;“Sign in”&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-7-domain-registration&quot;&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; Domain Registration&lt;/h4&gt;
-
-&lt;p&gt;You will see a domain request form. Enter the primary and secondary name server that you are going to use.&lt;/p&gt;
-
-&lt;p&gt;eg: 000webhosting&lt;/p&gt;
-
-&lt;p&gt;Primary Name Server: ns01.000webhost.com&lt;/p&gt;
-
-&lt;p&gt;Secondary Name Server: ns02.000webhost.com&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;alert alert-info&quot;&gt;
-    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; The above-used server name in the picture is of [cloudflare](https://www.cloudflare.com/).
-&lt;/div&gt;
-
-&lt;style&gt;
-    .alert {
-        padding: 8px 35px 8px 14px;
-        margin-bottom: 18px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        background-color: #fcf8e3;
-        border: 1px solid #fbeed5;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        color: #c09853;
-    }
-    .alert-heading {
-        color: inherit;
-    }
-    .alert .close {
-        position: relative;
-        top: -2px;
-        right: -21px;
-        line-height: 18px;
-    }
-    .alert-success {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
-        color: #468847;
-    }
-    .alert-danger,
-    .alert-error {
-        background-color: #f2dede;
-        border-color: #eed3d7;
-        color: #b94a48;
-    }
-    .alert-info {
-        background-color: #d9edf7;
-        border-color: #bce8f1;
-        color: #3a87ad;
-    }
-    .alert-block {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-    .alert-block &gt; p,
-    .alert-block &gt; ul {
-        margin-bottom: 0;
-    }
-    .alert-block p + p {
-        margin-top: 5px;
-    }
-
-&lt;/style&gt;
-
-&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; The above-used server name in the picture is of [cloudflare](https://www.cloudflare.com/).&lt;/div&gt;--&gt;
-
-&lt;h4 id=&quot;step-8-administrative-contact&quot;&gt;&lt;strong&gt;Step 8:&lt;/strong&gt; Administrative Contact&lt;/h4&gt;
-
-&lt;p&gt;Fill the administrative contact form with valid data and submit it.&lt;/p&gt;
-
-&lt;h4 id=&quot;step-9-submit-your-personal-document&quot;&gt;&lt;strong&gt;Step 9:&lt;/strong&gt; Submit your Personal Document&lt;/h4&gt;
-
-&lt;p&gt;Now submit your document eg: license, citizen card, passport and cover letter in .jpg format with less than 300Kb.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;bs-callout bs-callout-primary&quot;&gt;
-    &lt;h4&gt;Sample of Cover Letter&lt;/h4&gt;
-    
-&lt;/div&gt;
-&lt;style&gt;
-    .bs-callout {
-        padding: 20px;
-        margin: 20px 0;
-        border: 1px solid #eee;
-        border-left-width: 5px;
-        border-radius: 3px;
-    }
-    .bs-callout h4 {
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    .bs-callout p:last-child {
-        margin-bottom: 0;
-    }
-    .bs-callout code {
-        border-radius: 3px;
-    }
-    .bs-callout+.bs-callout {
-        margin-top: -5px;
-    }
-    .bs-callout-default {
-        border-left-color: #777;
-    }
-    .bs-callout-default h4 {
-        color: #777;
-    }
-    .bs-callout-primary {
-        border-left-color: #428bca;
-    }
-    .bs-callout-primary h4 {
-        color: #428bca;
-    }
-    .bs-callout-success {
-        border-left-color: #5cb85c;
-    }
-    .bs-callout-success h4 {
-        color: #5cb85c;
-    }
-    .bs-callout-danger {
-        border-left-color: #d9534f;
-    }
-    .bs-callout-danger h4 {
-        color: #d9534f;
-    }
-    .bs-callout-warning {
-        border-left-color: #f0ad4e;
-    }
-    .bs-callout-warning h4 {
-        color: #f0ad4e;
-    }
-    .bs-callout-info {
-        border-left-color: #5bc0de;
-    }
-    .bs-callout-info h4 {
-        color: #5bc0de;
-    }
-&lt;/style&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Date (eg:July 24, 2019)
-
-To,
-The Host Master
-Mercantile Communication Pvt. Ltd
-
-			Subject: Domain Registration
-
-Dear Sir/Madam,
-
-I am writing to you to register a domain for myself by the name &quot;YourDomainName(eg: test.com.np)&quot;.
-I have successfully completed other process of registration as required in the domain registration
-following all the terms and condition.
-It would be very nice if you could help me out in this process. I would always be available to
-provide any more information that you need to complete this process. I look forward to hearing
-from you.
-
-Regards,
-Your Name
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h4 id=&quot;step-10-complete-registration&quot;&gt;&lt;strong&gt;Step 10:&lt;/strong&gt; Complete Registration&lt;/h4&gt;
-
-&lt;p&gt;You have completed your domain registration, wait for the approval by Merchantile. Visit your dashboard you must be able to see a similar image below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 20 Jul 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Register-Domain-.com.np-for-Free/</link>
-        <guid isPermaLink="true">http://localhost:4000/Register-Domain-.com.np-for-Free/</guid>
-        
-        
-        <category>Tutorial</category>
-        
-        <category>Free</category>
-        
-        <category>Domain</category>
-        
-        <category>.com.np</category>
-        
-        <category>Nepal</category>
         
       </item>
     

@@ -17,6 +17,10 @@ Making a user profile website is the best way to impress anyone on the go. Havin
 
 In this article today, I will be helping you to create and host your profile using Github within less than 10 minutes.
 
+> **Table Of Content**
+
+* TOC
+{:toc}
 
 > **Requirements**
 
