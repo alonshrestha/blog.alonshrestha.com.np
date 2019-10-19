@@ -74,7 +74,7 @@ To update current existing archive file, we can use the `-u` options. Syntax `ta
 
 # Monitoring Archive
 
-You can also view all the files for the archive before extracting. For that, use `-t` option. Sytntax `tar -tvf  Archive-file-name.tar `.
+You can also view all the files for the archive before extracting. For that, use `-t` option. Sytntax `tar -tvf  Archive-file-name.tar `
 
 **Example**
 
@@ -114,7 +114,7 @@ etc/hosts
 
 {% endhighlight %}
 
-The above command extract the content  of archive in the current directory. To specify your target directory where you want to extract the files. For that, use  `-C` option. Syntax `tar -xvf Archive-file-name.tar -C /your-path`
+The above command extract the content  of archive in the current directory. To specify your target directory where you want to extract the the file use `-C` option. Syntax `tar -xvf Archive-file-name.tar -C /your-path`
 
 **Example:**
 
@@ -133,9 +133,9 @@ etc/hosts
 {% endhighlight %}
 
 # Using Compression in Archive
-Using compression utility in archive allows you to make files take less disk space by removing the redundancy. In the above exaple, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with seperate utility such as `gzip` or `bzip2`. 
+Using compression utility in archive allows you to make files take less disk space by removing the redundancy. In the above example, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with separate utility such as `gzip` or `bzip2`. 
 
-You can compress the `Archive-file-name.tar` with `gzip` with `Archive-file-name.tar.gz`. For alternative to using gzip, we can use `bzip2` utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.
+You can compress the `Archive-file-name.tar` with `gzip` with `Archive-file-name.tar.gz`. For alternative to using `gzip`, we can use `bzip2` utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.
 
 For compression, simply include  `-z` option for `gzip` and `-j` option for `bzip2`.
 
