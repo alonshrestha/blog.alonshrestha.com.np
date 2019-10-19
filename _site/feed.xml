@@ -5,13 +5,13 @@
     <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Oct 2019 22:25:52 +0545</pubDate>
-    <lastBuildDate>Sat, 19 Oct 2019 22:25:52 +0545</lastBuildDate>
+    <pubDate>Sat, 19 Oct 2019 22:39:29 +0545</pubDate>
+    <lastBuildDate>Sat, 19 Oct 2019 22:39:29 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
         <title>Working with Compression and Archive Files in Linux Using tar</title>
-        <description>&lt;p&gt;Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. &lt;/p&gt;
+        <description>&lt;p&gt;Managing and working with file compression and archive is the most important file-related task in Linux. &lt;code class=&quot;highlighter-rouge&quot;&gt;tar&lt;/code&gt; command is known as &lt;code class=&quot;highlighter-rouge&quot;&gt;Tape ARchive&lt;/code&gt; which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. &lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
