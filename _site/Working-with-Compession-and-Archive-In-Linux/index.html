@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
-<title>Working With Compession And Archive Files In Linux | Alon Shrestha</title>
+<title>Working with Compression and Archive Files in Linux Using tar | Alon Shrestha</title>
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Working With Compession And Archive Files In Linux | alon’sTech Blog</title>
+<title>Working with Compression and Archive Files in Linux Using tar | alon’sTech Blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Working With Compession And Archive Files In Linux" />
+<meta property="og:title" content="Working with Compression and Archive Files in Linux Using tar" />
 <meta name="author" content="alonshrestha" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. " />
@@ -16,13 +16,14 @@
 <link rel="canonical" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/" />
 <meta property="og:url" content="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/" />
 <meta property="og:site_name" content="alon’sTech Blog" />
+<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-19/1.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-19T00:00:00+05:45" />
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@alonshrestha" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Working With Compession And Archive Files In Linux","url":"http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/","dateModified":"2019-10-19T00:00:00+05:45","datePublished":"2019-10-19T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. ","@context":"http://schema.org"}</script>
+{"image":"http://localhost:4000/assets/images/blog/2019-10-19/1.png","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Working with Compression and Archive Files in Linux Using tar","dateModified":"2019-10-19T00:00:00+05:45","url":"http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/","datePublished":"2019-10-19T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. ","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -75,7 +76,7 @@
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
 <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/">Left Sidebar</a>-->
 <!--                    <a class="dropdown-item" href="">Right Sidebar</a>-->
 <!--                    </div>-->
 <!--                </li>-->
@@ -224,6 +225,18 @@
                             <a class="smoothscroll" href="/categories#Linux">Linux</a>
                         </li>
                         
+                        <li>
+                            <a class="smoothscroll" href="/categories#tar">tar</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#tar.bz2">tar.bz2</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#tar.gz">tar.gz</a>
+                        </li>
+                        
                     </ul>
                 </div>
 
@@ -252,22 +265,53 @@
 <!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Linux</a>&ndash;&gt;-->
 <!--                        </li>-->
 <!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#tar">tar</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">tar</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#tar.bz2">tar.bz2</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">tar.bz2</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#tar.gz">tar.gz</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">tar.gz</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
 <!--                    </ul>-->
 <!--                </div>-->
                 <!-- End Categories -->
 
                 <!-- Post Title -->
-				<h1 class="posttitle">Working With Compession And Archive Files In Linux</h1>
+				<h1 class="posttitle">Working with Compression and Archive Files in Linux Using tar</h1>
 
 			</div>
 
 			<!-- Post Featured Image -->
-			
+			<img class="featured-image img-fluid" src="/assets/images/blog/2019-10-19/1.png" alt="Working with Compression and Archive Files in Linux Using tar">
 			<!-- End Featured Image -->
 
 			<!-- Post Content -->
 			<div class="article-post">
 				<p>Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. </p>
+
+<blockquote>
+  <p><strong>Table Of Content</strong></p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#create-archive" id="markdown-toc-create-archive">Create Archive</a></li>
+  <li><a href="#add-file-in-existing-archive" id="markdown-toc-add-file-in-existing-archive">Add File in Existing Archive</a></li>
+  <li><a href="#update-existing-archive" id="markdown-toc-update-existing-archive">Update Existing Archive</a></li>
+  <li><a href="#monitoring-archive" id="markdown-toc-monitoring-archive">Monitoring Archive</a></li>
+  <li><a href="#extracting-archive" id="markdown-toc-extracting-archive">Extracting Archive</a></li>
+  <li><a href="#using-compression-in-archive" id="markdown-toc-using-compression-in-archive">Using Compression in Archive</a></li>
+</ul>
 
 <h1 id="create-archive">Create Archive</h1>
 <p>To create an archive we use <code class="highlighter-rouge">tar -cf  Archive-file-name.tar  /file-you-want-to-archive</code>.  In below example an archive is created with the name <code class="highlighter-rouge">myFiles.tar</code> for directory  <code class="highlighter-rouge">/home/alon/Documents/</code>.</p>
@@ -461,6 +505,34 @@
 <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">hosts</span>
 <span class="n">etc</span><span class="o">/</span><span class="n">hosts</span></code></pre></figure>
 
+<h1 id="using-compression-in-archive">Using Compression in Archive</h1>
+<p>Using compression utility in archive allows you to make files take less disk space by removing the redundancy. In the above exaple, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with seperate utility such as <code class="highlighter-rouge">gzip</code> or <code class="highlighter-rouge">bzip2</code>.</p>
+
+<p>You can compress the <code class="highlighter-rouge">Archive-file-name.tar</code> with <code class="highlighter-rouge">gzip</code> with <code class="highlighter-rouge">Archive-file-name.tar.gz</code>. For alternative to using gzip, we can use <code class="highlighter-rouge">bzip2</code> utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.</p>
+
+<p>For compression, simply include  <code class="highlighter-rouge">-z</code> option for <code class="highlighter-rouge">gzip</code> and <code class="highlighter-rouge">-j</code> option for <code class="highlighter-rouge">bzip2</code>.</p>
+
+<p><strong>Example for tar.gz</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">czvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">gz</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span>
+<span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span></code></pre></figure>
+
+<p><strong>Example for tar.b2z</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">cjvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">bz2</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span>
+<span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span></code></pre></figure>
+
+<p><strong>Example for tar vs tar.gz vs tar.bz2</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">du</span> <span class="o">-</span><span class="n">sh</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span>
+<span class="mi">272</span><span class="no">K</span>    <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span>
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">du</span> <span class="o">-</span><span class="n">sh</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">gz</span>
+<span class="mi">88</span><span class="no">K</span>     <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">gz</span>
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">du</span> <span class="o">-</span><span class="n">sh</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">bz2</span>
+<span class="mi">64</span><span class="no">K</span>     <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span><span class="p">.</span><span class="nf">bz2</span></code></pre></figure>
+
+<p>The below table gives you an overview of the significant options used in tar.</p>
+
 <table>
   <thead>
     <tr>
@@ -512,6 +584,77 @@
   </tbody>
 </table>
 
+<div class="bs-callout bs-callout-danger">
+    <h4>Summary</h4>
+    In this articel, you learned how to manage and work with Linux file management tools. Please free to write me if need any help.
+</div>
+
+<style>
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+</style>
+
+<blockquote>
+  <p><strong>Reference</strong></p>
+  <blockquote>
+    <p>Red Hat® RHCSA™/RHCE® 7 Cert Guide: Red Hat Enterprise Linux 7 (EX200 and EX300) Sander van Vugt.</p>
+  </blockquote>
+</blockquote>
+
                 <div class="clearfix"></div>
 			</div>
 
@@ -529,7 +672,7 @@
             <div class="row PageNavigation mt-4 prevnextlinks">
               
                 <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">&laquo; Working With Compession And Archive In Linux</a>
+                    <a class="thepostlink" href="http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/">&laquo; Create and Host your Online Portfolio for Free Using Github in 3 Steps</a>
                 </div>
               
               

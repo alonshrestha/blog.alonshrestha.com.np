@@ -1,14 +1,24 @@
 ---
-title: Working With Compession And Archive Files In Linux
+title: Working with Compression and Archive Files in Linux Using tar
 layout: post
 author: alonshrestha
 categories:
 - Linux
 - Compression
 - Archive
+- tar
+- tar.gz
+- tar.bz2
+image: assets/images/blog/2019-10-19/1.png
+featured: true
 ---
 
 Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. 
+
+> **Table Of Content**
+
+* TOC
+{:toc}
 
 # Create Archive
 To create an archive we use `tar -cf  Archive-file-name.tar  /file-you-want-to-archive`.  In below example an archive is created with the name `myFiles.tar` for directory  `/home/alon/Documents/`.
@@ -120,8 +130,47 @@ home/alon/Documents/linkedfile
 home/alon/Documents/hosts
 etc/hosts
 
+{% endhighlight %}
+
+# Using Compression in Archive
+Using compression utility in archive allows you to make files take less disk space by removing the redundancy. In the above exaple, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with seperate utility such as `gzip` or `bzip2`. 
+
+You can compress the `Archive-file-name.tar` with `gzip` with `Archive-file-name.tar.gz`. For alternative to using gzip, we can use `bzip2` utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.
+
+For compression, simply include  `-z` option for `gzip` and `-j` option for `bzip2`.
+
+**Example for tar.gz**
+
+{% highlight ruby %}
+
+[alon@localhost ~]$ tar -czvf myFiles.tar.gz myFiles.tar
+myFiles.tar
 
 {% endhighlight %}
+
+**Example for tar.b2z**
+
+{% highlight ruby %}
+
+[alon@localhost ~]$ tar -cjvf myFiles.tar.bz2 myFiles.tar
+myFiles.tar
+
+{% endhighlight %}
+
+**Example for tar vs tar.gz vs tar.bz2**
+
+{% highlight ruby %}
+
+[alon@localhost ~]$ du -sh myFiles.tar
+272K    myFiles.tar
+[alon@localhost ~]$ du -sh myFiles.tar.gz
+88K     myFiles.tar.gz
+[alon@localhost ~]$ du -sh myFiles.tar.bz2
+64K     myFiles.tar.bz2
+
+{% endhighlight %}
+
+The below table gives you an overview of the significant options used in tar.
 
 |Options  |Use  |
 |---|---|---|---|---|
@@ -135,3 +184,8 @@ etc/hosts
 |   u  | Updates an archive; only newer files will be written to the archive |
 |   C  |  Changes the working directory before performing the command.  |
 |   r  |  Appends files to an archive. |
+
+{% include summaryCallout.html heading= "Summary" content= "In this articel, you learned how to manage and work with Linux file management tools. Please free to write me if need any help." %}
+
+> **Reference**
+>  > Red Hat® RHCSA™/RHCE® 7 Cert Guide: Red Hat Enterprise Linux 7 (EX200 and EX300) Sander van Vugt.

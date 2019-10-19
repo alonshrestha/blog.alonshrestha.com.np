@@ -5,13 +5,26 @@
     <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 19 Oct 2019 15:58:14 +0545</pubDate>
-    <lastBuildDate>Sat, 19 Oct 2019 15:58:14 +0545</lastBuildDate>
+    <pubDate>Sat, 19 Oct 2019 22:25:52 +0545</pubDate>
+    <lastBuildDate>Sat, 19 Oct 2019 22:25:52 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Working With Compession And Archive Files In Linux</title>
+        <title>Working with Compression and Archive Files in Linux Using tar</title>
         <description>&lt;p&gt;Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#create-archive&quot; id=&quot;markdown-toc-create-archive&quot;&gt;Create Archive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#add-file-in-existing-archive&quot; id=&quot;markdown-toc-add-file-in-existing-archive&quot;&gt;Add File in Existing Archive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#update-existing-archive&quot; id=&quot;markdown-toc-update-existing-archive&quot;&gt;Update Existing Archive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#monitoring-archive&quot; id=&quot;markdown-toc-monitoring-archive&quot;&gt;Monitoring Archive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#extracting-archive&quot; id=&quot;markdown-toc-extracting-archive&quot;&gt;Extracting Archive&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#using-compression-in-archive&quot; id=&quot;markdown-toc-using-compression-in-archive&quot;&gt;Using Compression in Archive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h1 id=&quot;create-archive&quot;&gt;Create Archive&lt;/h1&gt;
 &lt;p&gt;To create an archive we use &lt;code class=&quot;highlighter-rouge&quot;&gt;tar -cf  Archive-file-name.tar  /file-you-want-to-archive&lt;/code&gt;.  In below example an archive is created with the name &lt;code class=&quot;highlighter-rouge&quot;&gt;myFiles.tar&lt;/code&gt; for directory  &lt;code class=&quot;highlighter-rouge&quot;&gt;/home/alon/Documents/&lt;/code&gt;.&lt;/p&gt;
@@ -205,6 +218,34 @@
 &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Documents&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;h1 id=&quot;using-compression-in-archive&quot;&gt;Using Compression in Archive&lt;/h1&gt;
+&lt;p&gt;Using compression utility in archive allows you to make files take less disk space by removing the redundancy. In the above exaple, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with seperate utility such as &lt;code class=&quot;highlighter-rouge&quot;&gt;gzip&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;bzip2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can compress the &lt;code class=&quot;highlighter-rouge&quot;&gt;Archive-file-name.tar&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;gzip&lt;/code&gt; with &lt;code class=&quot;highlighter-rouge&quot;&gt;Archive-file-name.tar.gz&lt;/code&gt;. For alternative to using gzip, we can use &lt;code class=&quot;highlighter-rouge&quot;&gt;bzip2&lt;/code&gt; utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.&lt;/p&gt;
+
+&lt;p&gt;For compression, simply include  &lt;code class=&quot;highlighter-rouge&quot;&gt;-z&lt;/code&gt; option for &lt;code class=&quot;highlighter-rouge&quot;&gt;gzip&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;-j&lt;/code&gt; option for &lt;code class=&quot;highlighter-rouge&quot;&gt;bzip2&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Example for tar.gz&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;czvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gz&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Example for tar.b2z&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tar&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cjvf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bz2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Example for tar vs tar.gz vs tar.bz2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;du&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;272&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;K&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;du&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gz&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;88&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;K&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;gz&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;du&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sh&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bz2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;64&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;K&lt;/span&gt;     &lt;span class=&quot;n&quot;&gt;myFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;tar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;bz2&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The below table gives you an overview of the significant options used in tar.&lt;/p&gt;
+
 &lt;table&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -255,6 +296,77 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+
+&lt;div class=&quot;bs-callout bs-callout-danger&quot;&gt;
+    &lt;h4&gt;Summary&lt;/h4&gt;
+    In this articel, you learned how to manage and work with Linux file management tools. Please free to write me if need any help.
+&lt;/div&gt;
+
+&lt;style&gt;
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+&lt;/style&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Red Hat® RHCSA™/RHCE® 7 Cert Guide: Red Hat Enterprise Linux 7 (EX200 and EX300) Sander van Vugt.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
 </description>
         <pubDate>Sat, 19 Oct 2019 00:00:00 +0545</pubDate>
         <link>http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/</link>
@@ -267,63 +379,11 @@
         
         <category>Archive</category>
         
-      </item>
-    
-      <item>
-        <title>Working With Compession And Archive In Linux</title>
-        <description>
-</description>
-        <pubDate>Sat, 19 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/</guid>
+        <category>tar</category>
         
+        <category>tar.gz</category>
         
-        <category>Linux</category>
-        
-        <category>Compression</category>
-        
-        <category>Archive</category>
-        
-      </item>
-    
-      <item>
-        <title>Using Vim Like Pro</title>
-        <description>
-</description>
-        <pubDate>Mon, 30 Sep 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Using-Vim-Like-Pro/</link>
-        <guid isPermaLink="true">http://localhost:4000/Using-Vim-Like-Pro/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Reset Root Password Of Mariadb In Centos 7 Rhel7</title>
-        <description>
-</description>
-        <pubDate>Mon, 30 Sep 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-7-RHEL7/</link>
-        <guid isPermaLink="true">http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-7-RHEL7/</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Top 5 Budget Laptops for IT Students in Nepal 2019</title>
-        <description>&lt;p&gt;How do you conclude that the laptop you have chosen gives you the best performance on desired budget? Choosing the finest laptop according to the requirements is indeed a laborious and risky task. Given a budget constraint, deciding what kind of laptop you want and how the performance would be, is quite questionable. Buying a posh laptop which cannot consume resources and a moderate that doesn’t have enough resources to compute your task is probably pouring money down the drain and a total waste of time. Student life pretty much is a phase with lots of time and energy but very little money, therefore every item a student buys is on the budget. But performance is something nobody compromises on. Hence, I bring you today list of top five budget laptops for IT students in 2019.&lt;/p&gt;
-</description>
-        <pubDate>Sun, 08 Sep 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/top-5-budget-Laptops-for-IT-Students-in-Nepal-2019/</link>
-        <guid isPermaLink="true">http://localhost:4000/top-5-budget-Laptops-for-IT-Students-in-Nepal-2019/</guid>
-        
-        
-        <category>Review</category>
-        
-        <category>Budget</category>
-        
-        <category>laptop</category>
-        
-        <category>Top 5</category>
+        <category>tar.bz2</category>
         
       </item>
     
@@ -1192,6 +1252,545 @@ Making a user profile website is the best way to impress anyone on the go. Havin
         <category>Cloud Server</category>
         
         <category>Blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Backup and Restore your Linux System to the Previous State with SystemBack</title>
+        <description>&lt;h3 id=&quot;what-is-systemback&quot;&gt;What is SystemBack?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;SystemBack&lt;/strong&gt; is an open-source application for Linux which makes it easy to create live backup images of your system and user saved configurations. People who are new to Linux make mistakes with the configuration of system root files and as a result, crash the system. In this case, SystemBack is a helpful application for backing up and restoring your system in the previous state.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Table of Content&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#what-is-systemback&quot; id=&quot;markdown-toc-what-is-systemback&quot;&gt;What is SystemBack?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#advantages&quot; id=&quot;markdown-toc-advantages&quot;&gt;Advantages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#disadvantages&quot; id=&quot;markdown-toc-disadvantages&quot;&gt;Disadvantages&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#install-systemback-in-ubuntu&quot; id=&quot;markdown-toc-install-systemback-in-ubuntu&quot;&gt;Install SystemBack in Ubuntu&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#how-to-use&quot; id=&quot;markdown-toc-how-to-use&quot;&gt;How to use?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;advantages&quot;&gt;Advantages&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Live boot image.&lt;/li&gt;
+  &lt;li&gt;Easy installation and fast recovery.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;disadvantages&quot;&gt;Disadvantages&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If your .sblive file is more than 4 GB then, cannot be converted to ISO file.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;install-systemback-in-ubuntu&quot;&gt;Install SystemBack in Ubuntu&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;span class=&quot;evidence&quot;&gt;sudo add-apt-repository ppa:nemh/systemback &lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;evidence&quot;&gt; sudo apt-get update &lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span class=&quot;evidence&quot;&gt; sudo apt-get install systemback &lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/1.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-use&quot;&gt;How to use?&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;After installation, search application by clicking on windows or simply typing SystemBack in the terminal.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/2.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Enter your password and press OK.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/3.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now go to Live system create.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/4.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Click Create new for creating a system image.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/5.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/6.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Your system gets back up with a live image. (Time depends on your system size)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/7.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;After that, a .sblive file is being created i.e your system image.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-21/8.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Select the image file and click to convert to ISO.&lt;/li&gt;
+  &lt;li&gt;You can convert a .sblive file to ISO or can burn to CD/DVD or boot in Pendrive directly.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; .sblive cannot be converted to ISO if its size is more than 4GB.
+&lt;/div&gt;
+
+&lt;style&gt;
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+&lt;/style&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; .sblive cannot be converted to ISO if its size is more than 4GB.&lt;/div&gt;--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Now you can boot your system for installation and restore to the previous state.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 21 Jul 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Backup-and-restore-your-system-to-previous-state-with-SystemBack/</link>
+        <guid isPermaLink="true">http://localhost:4000/Backup-and-restore-your-system-to-previous-state-with-SystemBack/</guid>
+        
+        
+        <category>Tutorial</category>
+        
+        <category>SystemBack</category>
+        
+        <category>Ubuntu</category>
+        
+        <category>Linux</category>
+        
+        <category>Backup</category>
+        
+        <category>Restore</category>
+        
+      </item>
+    
+      <item>
+        <title>Register Domain .com.np for Free</title>
+        <description>&lt;p&gt;Domain &lt;strong&gt;.com.np&lt;/strong&gt; is the property that you can get in Nepal for free. Did you believe it? If you didn’t, I will make this real for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/.np&quot; target=&quot;_blank&quot;&gt;.np&lt;/a&gt; is the country top-level domain in Nepal administered by &lt;a href=&quot;http://mos.com.np/&quot; target=&quot;_blank&quot;&gt;Mercantile Communications Pvt. Ltd.&lt;/a&gt; Registration of .np with secondary level like &lt;strong&gt;.com.np&lt;/strong&gt;, &lt;strong&gt;edu.np&lt;/strong&gt;, &lt;strong&gt;org.np&lt;/strong&gt; can be registered by &lt;strong&gt;Neplease&lt;/strong&gt;, &lt;strong&gt;Non-Resident Neplease&lt;/strong&gt; and even by the &lt;strong&gt;foreigners&lt;/strong&gt; having Neplease residential.&lt;/p&gt;
+
+&lt;p&gt;You can have your personal name domain representing your brand, organization, service, etc. I have used my name as domain (&lt;a href=&quot;http://alonshrestha.com.np/&quot; target=&quot;_blank&quot;&gt;alonshrestha.com.np&lt;/a&gt;) for my personal and blog. Follow the procedure below if you need one.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#requirements&quot; id=&quot;markdown-toc-requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#procedure&quot; id=&quot;markdown-toc-procedure&quot;&gt;Procedure&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-1-check-if-the-domain-is-available&quot; id=&quot;markdown-toc-step-1-check-if-the-domain-is-available&quot;&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Check if the domain is available.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-2-register-domain&quot; id=&quot;markdown-toc-step-2-register-domain&quot;&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Register domain.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-3-sign-increate-user&quot; id=&quot;markdown-toc-step-3-sign-increate-user&quot;&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Sign in/Create user&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-4-register-account&quot; id=&quot;markdown-toc-step-4-register-account&quot;&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Register account&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-5-activate-your-email&quot; id=&quot;markdown-toc-step-5-activate-your-email&quot;&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Activate your email.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-6-sign-in&quot; id=&quot;markdown-toc-step-6-sign-in&quot;&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Sign In&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-7-domain-registration&quot; id=&quot;markdown-toc-step-7-domain-registration&quot;&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; Domain Registration&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-8-administrative-contact&quot; id=&quot;markdown-toc-step-8-administrative-contact&quot;&gt;&lt;strong&gt;Step 8:&lt;/strong&gt; Administrative Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-9-submit-your-personal-document&quot; id=&quot;markdown-toc-step-9-submit-your-personal-document&quot;&gt;&lt;strong&gt;Step 9:&lt;/strong&gt; Submit your Personal Document&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#step-10-complete-registration&quot; id=&quot;markdown-toc-step-10-complete-registration&quot;&gt;&lt;strong&gt;Step 10:&lt;/strong&gt; Complete Registration&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Documents (scanned copy of your citizen card or license or passport)&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Coverletter&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Gmail account&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;procedure&quot;&gt;Procedure&lt;/h2&gt;
+
+&lt;h4 id=&quot;step-1-check-if-the-domain-is-available&quot;&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Check if the domain is available.&lt;/h4&gt;
+
+&lt;p&gt;Browse &lt;a href=&quot;https://register.com.np/&quot; target=&quot;_blank&quot;&gt;https://register.com.np/ &lt;/a&gt; and &lt;strong&gt;“Search”&lt;/strong&gt; for the domain you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-2-register-domain&quot;&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Register domain.&lt;/h4&gt;
+
+&lt;p&gt;If the status of the searched domain is &lt;strong&gt;“Available”&lt;/strong&gt; then click &lt;strong&gt;“Register now”&lt;/strong&gt; to register the domain.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-3-sign-increate-user&quot;&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Sign in/Create user&lt;/h4&gt;
+
+&lt;p&gt;You will visit the login page. &lt;strong&gt;“Sign in”&lt;/strong&gt; with your account or click &lt;strong&gt;“Create user”&lt;/strong&gt; to have new an account.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-warning&quot;&gt;&lt;/i&gt; &lt;b&gt;Important:&lt;/b&gt;  Jump to Step 6 if you can sign in, else continue.&lt;/div&gt;--&gt;
+&lt;div class=&quot;alert alert-block&quot;&gt;
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Important:&lt;/b&gt;  Jump to Step 6 if you can sign in, else continue.
+&lt;/div&gt;
+
+&lt;style&gt;
+
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+&lt;/style&gt;
+
+&lt;h4 id=&quot;step-4-register-account&quot;&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Register account&lt;/h4&gt;
+
+&lt;p&gt;A user detail form will appear. Fill the form with valid data.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-5-activate-your-email&quot;&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Activate your email.&lt;/h4&gt;
+
+&lt;p&gt;You will receive a verification message in your Gmail.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Open your Gmail and verify your Gmail account.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-6-sign-in&quot;&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Sign In&lt;/h4&gt;
+
+&lt;p&gt;Now you will be again redirected to the login page. Enter your credential and &lt;strong&gt;“Sign in”&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;step-7-domain-registration&quot;&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; Domain Registration&lt;/h4&gt;
+
+&lt;p&gt;You will see a domain request form. Enter the primary and secondary name server that you are going to use.&lt;/p&gt;
+
+&lt;p&gt;eg: 000webhosting&lt;/p&gt;
+
+&lt;p&gt;Primary Name Server: ns01.000webhost.com&lt;/p&gt;
+
+&lt;p&gt;Secondary Name Server: ns02.000webhost.com&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; The above-used server name in the picture is of [cloudflare](https://www.cloudflare.com/).
+&lt;/div&gt;
+
+&lt;style&gt;
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+&lt;/style&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; The above-used server name in the picture is of [cloudflare](https://www.cloudflare.com/).&lt;/div&gt;--&gt;
+
+&lt;h4 id=&quot;step-8-administrative-contact&quot;&gt;&lt;strong&gt;Step 8:&lt;/strong&gt; Administrative Contact&lt;/h4&gt;
+
+&lt;p&gt;Fill the administrative contact form with valid data and submit it.&lt;/p&gt;
+
+&lt;h4 id=&quot;step-9-submit-your-personal-document&quot;&gt;&lt;strong&gt;Step 9:&lt;/strong&gt; Submit your Personal Document&lt;/h4&gt;
+
+&lt;p&gt;Now submit your document eg: license, citizen card, passport and cover letter in .jpg format with less than 300Kb.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;bs-callout bs-callout-primary&quot;&gt;
+    &lt;h4&gt;Sample of Cover Letter&lt;/h4&gt;
+    
+&lt;/div&gt;
+&lt;style&gt;
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+&lt;/style&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;July&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;
+
+	&lt;span class=&quot;no&quot;&gt;To&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;no&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Host&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Master&lt;/span&gt;
+	&lt;span class=&quot;no&quot;&gt;Mercantile&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Communication&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Pvt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Ltd&lt;/span&gt;
+	
+				&lt;span class=&quot;no&quot;&gt;Subject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Domain&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Registration&lt;/span&gt;
+
+	&lt;span class=&quot;no&quot;&gt;Dear&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Madam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+
+	&lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;am&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;writing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;register&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myself&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;YourDomainName(eg: test.com.np)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+	&lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;successfully&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;completed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;process&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registration&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;required&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registration&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;following&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;terms&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+	&lt;span class=&quot;no&quot;&gt;It&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;would&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;very&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nice&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;could&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;me&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;would&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;available&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;provide&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;any&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;information&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;need&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;complete&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;look&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hearing&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+
+	&lt;span class=&quot;no&quot;&gt;Regards&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;no&quot;&gt;Your&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Name&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h4 id=&quot;step-10-complete-registration&quot;&gt;&lt;strong&gt;Step 10:&lt;/strong&gt; Complete Registration&lt;/h4&gt;
+
+&lt;p&gt;You have completed your domain registration, wait for the approval by Merchantile. Visit your dashboard you must be able to see a similar image below.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 20 Jul 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Register-Domain-.com.np-for-Free/</link>
+        <guid isPermaLink="true">http://localhost:4000/Register-Domain-.com.np-for-Free/</guid>
+        
+        
+        <category>Tutorial</category>
+        
+        <category>Free</category>
+        
+        <category>Domain</category>
+        
+        <category>.com.np</category>
+        
+        <category>Nepal</category>
+        
+      </item>
+    
+      <item>
+        <title>Blogging with Github Pages and Jekyll</title>
+        <description>&lt;p&gt;This is my first blog with &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Pages&lt;/a&gt;. I used to have tech-related blogs and online portfolio on &lt;a href=&quot;https://wordpress.com/&quot; target=&quot;_blank&quot;&gt;WordPress&lt;/a&gt; which seems to be very easy for everyone. Having a programming background and using WordPress for blogging was not satisfying for me. First thing, I wanted to have my own custom design web page and second, use my personal domain &lt;em&gt;alonshrestha.com.np&lt;/em&gt;. I could have done this using Wordpress or other media donating some money.
+Doing research on such media, I came to know about Github Pages and implementing it is the whole output I got here. Thought to share with you guys as working example.&lt;/p&gt;
+
+&lt;p&gt;I choose Github Pages and Jekyll for hosting my pages and didn’t believe the secret that &lt;a href=&quot;https://wordpress.com/&quot; target=&quot;_blank&quot;&gt;WordPress&lt;/a&gt; is the king when it comes to blog and hosting.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; is a markdown language used for generating a static page and Github Pages is the static page hosting media. If you are posting on different media this helps you to migrate your blogs without any cost and lost in Github Pages.&lt;/p&gt;
+
+&lt;h2 id=&quot;using-github-pages&quot;&gt;Using Github Pages&lt;/h2&gt;
+&lt;h4 id=&quot;pros&quot;&gt;Pros&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Free of cost&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Security and Reliability&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Use Custom Domain&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Custom Theme&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fast because of a static page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;No Database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;cons&quot;&gt;Cons&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Programming and GitHub knowledge are required&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Feel free to write me if you need help.&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Jun 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Blogging-with-Github-Pages-and-Jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/Blogging-with-Github-Pages-and-Jekyll/</guid>
+        
+        
+        <category>Blog</category>
+        
+        <category>GitHub-Pages</category>
+        
+        <category>Jekyll</category>
         
       </item>
     

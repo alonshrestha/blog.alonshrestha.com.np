@@ -9,7 +9,6 @@ categories:
 - Free
 - Host
 image: assets/images/blog/2019-09-05/main.PNG
-featured: true
 ---
 
 A digital world demands a digitized user profile. And by digitizing profile you are explicitly representing your identity in a customized desktop environment. 
