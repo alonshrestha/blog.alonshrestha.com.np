@@ -388,7 +388,7 @@
 <!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b>  In -cvf option ( - ) was not being used in old version of tar.</div>-->
 
 <h1 id="add-file-in-existing-archive">Add File in Existing Archive</h1>
-<p>While managing archives with tar,  there might be also a case to add a new file in the existing archive. For that, we use <code class="highlighter-rouge">-r</code> options. Syntax <code class="highlighter-rouge">tar -rvf  Archive-file-name.tar  /path-of/file-you-want-to-add-to-the-archive</code>.</p>
+<p>While managing archives with tar,  there might also be a case to add a new file in the existing archive. For that, we use <code class="highlighter-rouge">-r</code> options. Syntax <code class="highlighter-rouge">tar -rvf  Archive-file-name.tar  /path-of/file-you-want-to-add-to-the-archive</code>.</p>
 
 <p><strong>Example:</strong></p>
 
@@ -405,7 +405,7 @@
 
 <h1 id="monitoring-archive">Monitoring Archive</h1>
 
-<p>You can also view all the files for the archive before extracting. For that, use <code class="highlighter-rouge">-t</code> option. Sytntax <code class="highlighter-rouge">tar -tvf  Archive-file-name.tar </code>.</p>
+<p>You can also view all the files for the archive before extracting. For that, use <code class="highlighter-rouge">-t</code> option. Sytntax <code class="highlighter-rouge">tar -tvf  Archive-file-name.tar </code></p>
 
 <p><strong>Example</strong></p>
 
@@ -491,7 +491,7 @@
 <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">hosts</span>
 <span class="n">etc</span><span class="o">/</span><span class="n">hosts</span></code></pre></figure>
 
-<p>The above command extract the content  of archive in the current directory. To specify your target directory where you want to extract the files. For that, use  <code class="highlighter-rouge">-C</code> option. Syntax <code class="highlighter-rouge">tar -xvf Archive-file-name.tar -C /your-path</code></p>
+<p>The above command extracts the content of archive in the current directory. To specify your target directory where you want to extract the the file use <code class="highlighter-rouge">-C</code> option. Syntax <code class="highlighter-rouge">tar -xvf Archive-file-name.tar -C /your-path</code></p>
 
 <p><strong>Example:</strong></p>
 
@@ -506,9 +506,9 @@
 <span class="n">etc</span><span class="o">/</span><span class="n">hosts</span></code></pre></figure>
 
 <h1 id="using-compression-in-archive">Using Compression in Archive</h1>
-<p>Using compression utility in archive allows you to make files take less disk space by removing the redundancy. In the above exaple, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with seperate utility such as <code class="highlighter-rouge">gzip</code> or <code class="highlighter-rouge">bzip2</code>.</p>
+<p>Using compression utility in archive allows you to make files that take less disk space by removing the redundancy. In the above example, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with separate utility such as <code class="highlighter-rouge">gzip</code> or <code class="highlighter-rouge">bzip2</code>.</p>
 
-<p>You can compress the <code class="highlighter-rouge">Archive-file-name.tar</code> with <code class="highlighter-rouge">gzip</code> with <code class="highlighter-rouge">Archive-file-name.tar.gz</code>. For alternative to using gzip, we can use <code class="highlighter-rouge">bzip2</code> utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.</p>
+<p>You can compress the <code class="highlighter-rouge">Archive-file-name.tar</code> with <code class="highlighter-rouge">gzip</code> with <code class="highlighter-rouge">Archive-file-name.tar.gz</code>. For alternative to using <code class="highlighter-rouge">gzip</code>, we can use <code class="highlighter-rouge">bzip2</code> utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.</p>
 
 <p>For compression, simply include  <code class="highlighter-rouge">-z</code> option for <code class="highlighter-rouge">gzip</code> and <code class="highlighter-rouge">-j</code> option for <code class="highlighter-rouge">bzip2</code>.</p>
 
@@ -586,7 +586,7 @@
 
 <div class="bs-callout bs-callout-danger">
     <h4>Summary</h4>
-    In this articel, you learned how to manage and work with Linux file management tools. Please free to write me if need any help.
+    In this articel, you learned how to manage and work with Linux file management tools. Please feel free to write me if need any help.
 </div>
 
 <style>

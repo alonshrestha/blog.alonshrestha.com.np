@@ -48,7 +48,7 @@ if you want to see what is happening while running above command, use `-v` optio
 {% include note.html content= " In -cvf option ( - ) was not being used in old version of tar." %}
 
 # Add File in Existing Archive
-While managing archives with tar,  there might be also a case to add a new file in the existing archive. For that, we use `-r` options. Syntax `tar -rvf  Archive-file-name.tar  /path-of/file-you-want-to-add-to-the-archive`. 
+While managing archives with tar,  there might also be a case to add a new file in the existing archive. For that, we use `-r` options. Syntax `tar -rvf  Archive-file-name.tar  /path-of/file-you-want-to-add-to-the-archive`. 
 
 **Example:**
 
@@ -114,7 +114,7 @@ etc/hosts
 
 {% endhighlight %}
 
-The above command extract the content  of archive in the current directory. To specify your target directory where you want to extract the the file use `-C` option. Syntax `tar -xvf Archive-file-name.tar -C /your-path`
+The above command extracts the content of archive in the current directory. To specify your target directory where you want to extract the the file use `-C` option. Syntax `tar -xvf Archive-file-name.tar -C /your-path`
 
 **Example:**
 
@@ -133,7 +133,7 @@ etc/hosts
 {% endhighlight %}
 
 # Using Compression in Archive
-Using compression utility in archive allows you to make files take less disk space by removing the redundancy. In the above example, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with separate utility such as `gzip` or `bzip2`. 
+Using compression utility in archive allows you to make files that take less disk space by removing the redundancy. In the above example, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with separate utility such as `gzip` or `bzip2`. 
 
 You can compress the `Archive-file-name.tar` with `gzip` with `Archive-file-name.tar.gz`. For alternative to using `gzip`, we can use `bzip2` utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.
 
@@ -185,7 +185,7 @@ The below table gives you an overview of the significant options used in tar.
 |   C  |  Changes the working directory before performing the command.  |
 |   r  |  Appends files to an archive. |
 
-{% include summaryCallout.html heading= "Summary" content= "In this articel, you learned how to manage and work with Linux file management tools. Please free to write me if need any help." %}
+{% include summaryCallout.html heading= "Summary" content= "In this articel, you learned how to manage and work with Linux file management tools. Please feel free to write me if need any help." %}
 
 > **Reference**
 >  > Red Hat® RHCSA™/RHCE® 7 Cert Guide: Red Hat Enterprise Linux 7 (EX200 and EX300) Sander van Vugt.
