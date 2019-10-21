@@ -37,6 +37,10 @@
 <lastmod>2019-10-19T00:00:00+05:45</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/</loc>
+<lastmod>2019-10-20T00:00:00+05:45</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -152,5 +156,14 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/tar-bz2/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/links/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/soft-links/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/hard-links/</loc>
 </url>
 </urlset>
