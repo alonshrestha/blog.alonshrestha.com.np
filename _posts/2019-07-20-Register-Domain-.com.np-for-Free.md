@@ -3,7 +3,6 @@ title: "Register Domain .com.np for Free"
 layout: post
 author: alonshrestha
 categories: [Tutorial, Free, Domain, ".com.np", Nepal]
-featured: true
 image:  assets/images/blog/2019-07-20/headnp.png
 ---
 Domain **.com.np** is the property that you can get in Nepal for free. Did you believe it? If you didn't, I will make this real for you.
