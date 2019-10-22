@@ -498,13 +498,16 @@
 </style>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#creating link again</span>
+
 <span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="nb">test</span> <span class="n">link</span>
 
 <span class="c1">#using -rf</span>
 
 <span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">link</span><span class="o">/</span>
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span>
-<span class="n">link</span>  <span class="nb">test</span>
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
+<span class="n">total</span> <span class="mi">0</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">4</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">01</span><span class="p">:</span><span class="mi">08</span> <span class="n">link</span> <span class="o">-&gt;</span> <span class="nb">test</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">6</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">01</span><span class="p">:</span><span class="mi">08</span> <span class="nb">test</span>
 
 <span class="c1">#you will still see the link exist, but your original directory test will be empty.</span>
 

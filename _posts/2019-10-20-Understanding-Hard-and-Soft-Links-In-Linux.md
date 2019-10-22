@@ -121,13 +121,16 @@ Removing links on Linux is a bit risky task to do. You might create an error wor
 
 {% highlight ruby %}
 #creating link again
+
 [alon@localhost ~]$ ln -s test link
 
 #using -rf
 
 [alon@localhost ~]$ rm -rf link/
-[alon@localhost ~]$ ls
-link  test
+[alon@localhost ~]$ ls -l
+total 0
+lrwxrwxrwx. 1 0 0 4 Oct 22 01:08 link -> test
+drwxr-xr-x. 2 0 0 6 Oct 22 01:08 test
 
 #you will still see the link exist, but your original directory test will be empty.
 
