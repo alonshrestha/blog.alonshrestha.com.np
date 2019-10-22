@@ -93,7 +93,7 @@ total 4
 
 {% endhighlight %}
 
-{% include note.html content= " For creating hard links you must be the owner that file." %}
+{% include note.html content= " For creating hard links you must be the owner of that file." %}
 
 # Removing Links
 Removing links on Linux is a bit risky task to do. You might create an error working program or loses the data. Below shows the example of removing links.
@@ -120,6 +120,9 @@ Removing links on Linux is a bit risky task to do. You might create an error wor
 {% include warning.html content= " Do not use -r or -f to remove link. You will lose the data from the original file." %}
 
 {% highlight ruby %}
+#creating link again
+[alon@localhost ~]$ ln -s test link
+
 #using -rf
 
 [alon@localhost ~]$ rm -rf link/

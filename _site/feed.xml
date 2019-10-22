@@ -5,8 +5,8 @@
     <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Oct 2019 01:46:54 +0545</pubDate>
-    <lastBuildDate>Tue, 22 Oct 2019 01:46:54 +0545</lastBuildDate>
+    <pubDate>Tue, 22 Oct 2019 08:32:08 +0545</pubDate>
+    <lastBuildDate>Tue, 22 Oct 2019 08:32:08 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -98,7 +98,7 @@
 &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--.&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;158&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jun&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;2013&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
-    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt;  For creating hard links you must be the owner that file.
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt;  For creating hard links you must be the owner of that file.
 &lt;/div&gt;
 
 &lt;style&gt;
@@ -152,7 +152,7 @@
 
 &lt;/style&gt;
 
-&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt;  For creating hard links you must be the owner that file.&lt;/div&gt;--&gt;
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt;  For creating hard links you must be the owner of that file.&lt;/div&gt;--&gt;
 
 &lt;h1 id=&quot;removing-links&quot;&gt;Removing Links&lt;/h1&gt;
 &lt;p&gt;Removing links on Linux is a bit risky task to do. You might create an error working program or loses the data. Below shows the example of removing links.&lt;/p&gt;
@@ -230,7 +230,10 @@
     }
 &lt;/style&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#using -rf&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#creating link again&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ln&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;test&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#using -rf&lt;/span&gt;
 
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rf&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt;
