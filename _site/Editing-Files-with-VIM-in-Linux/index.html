@@ -4,26 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
-<title>Understanding links on Linux | Alon Shrestha</title>
+<title>Editing files with Vim in Linux  |  Beginner's Guide | Alon Shrestha</title>
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Understanding links on Linux | alon’sTech Blog</title>
+<title>Editing files with Vim in Linux Beginner’s Guide | alon’sTech Blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Understanding links on Linux" />
+<meta property="og:title" content="Editing files with Vim in Linux Beginner’s Guide" />
 <meta name="author" content="alonshrestha" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux." />
-<meta property="og:description" content="Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux." />
-<link rel="canonical" href="http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/" />
-<meta property="og:url" content="http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/" />
+<meta name="description" content="Editing files is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available." />
+<meta property="og:description" content="Editing files is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available." />
+<link rel="canonical" href="http://localhost:4000/Editing-Files-with-VIM-in-Linux/" />
+<meta property="og:url" content="http://localhost:4000/Editing-Files-with-VIM-in-Linux/" />
 <meta property="og:site_name" content="alon’sTech Blog" />
-<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-20/4.png" />
+<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-22/3.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-10-20T00:00:00+05:45" />
+<meta property="article:published_time" content="2019-10-22T00:00:00+05:45" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@alonshrestha" />
 <script type="application/ld+json">
-{"image":"http://localhost:4000/assets/images/blog/2019-10-20/4.png","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Understanding links on Linux","dateModified":"2019-10-20T00:00:00+05:45","url":"http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/","datePublished":"2019-10-20T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux.","@context":"http://schema.org"}</script>
+{"image":"http://localhost:4000/assets/images/blog/2019-10-22/3.png","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Editing files with Vim in Linux Beginner’s Guide","dateModified":"2019-10-22T00:00:00+05:45","url":"http://localhost:4000/Editing-Files-with-VIM-in-Linux/","datePublished":"2019-10-22T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Editing-Files-with-VIM-in-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Editing files is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -76,8 +76,8 @@
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
 <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">Left Sidebar</a>-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Editing-Files-with-VIM-in-Linux/">Right Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="">Right Sidebar</a>-->
 <!--                    </div>-->
 <!--                </li>-->
 
@@ -214,11 +214,11 @@
                         
                         
                         <li>
-                            <a class="smoothscroll" href="/categories#Hard-Links">Hard Links</a>
+                            <a class="smoothscroll" href="/categories#Edit">Edit</a>
                         </li>
                         
                         <li>
-                            <a class="smoothscroll" href="/categories#Links">Links</a>
+                            <a class="smoothscroll" href="/categories#Files">Files</a>
                         </li>
                         
                         <li>
@@ -226,7 +226,11 @@
                         </li>
                         
                         <li>
-                            <a class="smoothscroll" href="/categories#Soft-Links">Soft Links</a>
+                            <a class="smoothscroll" href="/categories#vi">vi</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#vim">vim</a>
                         </li>
                         
                     </ul>
@@ -240,15 +244,15 @@
 <!--                        -->
 <!--                        -->
 <!--                        <li>-->
-<!--                            <a class="smoothscroll" href="/categories#Hard-Links">Hard Links</a>-->
+<!--                            <a class="smoothscroll" href="/categories#Edit">Edit</a>-->
 
-<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Hard Links</a>&ndash;&gt;-->
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Edit</a>&ndash;&gt;-->
 <!--                        </li>-->
 <!--                        -->
 <!--                        <li>-->
-<!--                            <a class="smoothscroll" href="/categories#Links">Links</a>-->
+<!--                            <a class="smoothscroll" href="/categories#Files">Files</a>-->
 
-<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Links</a>&ndash;&gt;-->
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Files</a>&ndash;&gt;-->
 <!--                        </li>-->
 <!--                        -->
 <!--                        <li>-->
@@ -258,9 +262,15 @@
 <!--                        </li>-->
 <!--                        -->
 <!--                        <li>-->
-<!--                            <a class="smoothscroll" href="/categories#Soft-Links">Soft Links</a>-->
+<!--                            <a class="smoothscroll" href="/categories#vi">vi</a>-->
 
-<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Soft Links</a>&ndash;&gt;-->
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">vi</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#vim">vim</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">vim</a>&ndash;&gt;-->
 <!--                        </li>-->
 <!--                        -->
 <!--                    </ul>-->
@@ -268,104 +278,68 @@
                 <!-- End Categories -->
 
                 <!-- Post Title -->
-				<h1 class="posttitle">Understanding links on Linux</h1>
+				<h1 class="posttitle">Editing files with Vim in Linux  |  Beginner's Guide</h1>
 
 			</div>
 
 			<!-- Post Featured Image -->
-			<img class="featured-image img-fluid" src="/assets/images/blog/2019-10-20/4.png" alt="Understanding links on Linux">
+			<img class="featured-image img-fluid" src="/assets/images/blog/2019-10-22/3.png" alt="Editing files with Vim in Linux  |  Beginner's Guide">
 			<!-- End Featured Image -->
 
 			<!-- Post Content -->
 			<div class="article-post">
-				<p><code class="highlighter-rouge">Links</code> are assigned to file on Linux which works as <code class="highlighter-rouge">aliases</code>. There are two types of links on Linux <code class="highlighter-rouge">symbolic links</code> and <code class="highlighter-rouge">hard links</code>. In this article, we will learn how to use and manage links on Linux.</p>
+				<p>Editing <code class="highlighter-rouge">files</code> is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.</p>
 
 <blockquote>
   <p><strong>Table Of Content</strong></p>
 </blockquote>
 
 <ul id="markdown-toc">
-  <li><a href="#hard-links" id="markdown-toc-hard-links">Hard Links</a></li>
-  <li><a href="#symbolic-links" id="markdown-toc-symbolic-links">Symbolic Links</a></li>
-  <li><a href="#creating-links" id="markdown-toc-creating-links">Creating Links</a></li>
-  <li><a href="#removing-links" id="markdown-toc-removing-links">Removing Links</a></li>
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#basic-workflow-of-vim" id="markdown-toc-basic-workflow-of-vim">Basic Workflow of Vim</a>    <ul>
+      <li><a href="#installing-vim" id="markdown-toc-installing-vim">Installing Vim</a></li>
+      <li><a href="#opening-files" id="markdown-toc-opening-files">Opening Files</a></li>
+      <li><a href="#editing-files" id="markdown-toc-editing-files">Editing Files</a></li>
+      <li><a href="#saving-files" id="markdown-toc-saving-files">Saving Files</a></li>
+    </ul>
+  </li>
 </ul>
 
-<blockquote>
-  <p><strong>Requirements</strong></p>
-</blockquote>
+<h1 id="introduction">Introduction</h1>
+<p><strong><a href="https://www.vim.org/" target="_blank">vi</a></strong>  which stands for <code class="highlighter-rouge">Visual Interface</code> is one of the oldest and widely used text editors among the other text editors. Even some other text editors are easier to use, vi is only the text editor which will be in the continuous update and available. This is the main reason why every Linux user should know about vi text editor.</p>
 
+<p><strong><a href="https://www.vim.org/" target="_blank">Vim</a></strong> is an improved version of the vi editor. Vim is highly configured and upgraded with many features such as:</p>
 <ul>
-  <li>Must have basic knowledge about the organization of the <code class="highlighter-rouge">Linux file system</code>.</li>
+  <li>Screen Editing</li>
+  <li>Syntax Highlighting</li>
+  <li>Colour Formatting</li>
+  <li>Spell Checking</li>
+  <li>Scripting Multiple Languages</li>
 </ul>
 
-<h1 id="hard-links">Hard Links</h1>
-<p>On Linux, every file has an <code class="highlighter-rouge">inode</code>, and in the inode, administrative information is stored. Information like :</p>
+<p>Vim uses important modes like command mode, visual mode, and input mode. In <code class="highlighter-rouge">Command Mode</code> user can just enter the command and cannot change the content of the file. <code class="highlighter-rouge">Input Mode</code> allows the user to change the content of the file. The user first opens the <code class="highlighter-rouge">Vim</code> enters the command mode and using <code class="highlighter-rouge">i</code> keystroke enters the insert mode and <code class="highlighter-rouge">v</code> for <code class="highlighter-rouge">Visual Mode</code>.</p>
 
-<ul>
-  <li>Data block where the file content is stored</li>
-  <li>Creation, access and modification date</li>
-  <li>Permission </li>
-  <li>File owners</li>
-</ul>
+<h1 id="basic-workflow-of-vim">Basic Workflow of Vim</h1>
+<p>Working with all the commands of vim is not easy. Just use a minimal set of commands and use them often for remembrance. The below example shows you the minimum keystrokes that every vim user must know.</p>
 
-<p>are stored in the inode.  From the above information, one important information is not stored in the inode i.e the <code class="highlighter-rouge">name</code> of the file. Names are itself stored in the directory, and each filename knows which inode to address for further file information.</p>
+<h2 id="installing-vim">Installing Vim</h2>
+<p>By default <code class="highlighter-rouge">vi</code> is installed in your system. For using upgrade version you need to install <code class="highlighter-rouge">vim</code> manually.</p>
 
-<p>Simply understanding <code class="highlighter-rouge">hard links</code>, giving a name while creating a file, this name is called hard links. On Linux single file can have multiple hard links that enable you to access the file from multiple different locations.</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#For Ubutnu</span>
 
-<p>Some of the restrictions applied to hard links are as follows:</p>
-<ul>
-  <li>Hard links cannot be created to directories</li>
-  <li>If the last name of the multiple aliases of the original file is removed, then the content is also removed.</li>
-  <li>All the hard links should be on the same device.</li>
-</ul>
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">vim</span> <span class="o">-</span><span class="n">y</span>
 
-<p>When you create multiple hard links of a file, there is no difference between the first hard link and the last hard link you have created. If the first hard link that exists is removed, then it does not impact other hard links.</p>
+<span class="c1">#For Centos</span>
 
-<h1 id="symbolic-links">Symbolic Links</h1>
-<p><code class="highlighter-rouge">Symbolic Links</code> are also known as <code class="highlighter-rouge">soft links</code>. This is more flexible than hard links. The advantages and disadvantage of symbolic links are:</p>
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">vim</span> <span class="o">-</span><span class="n">y</span></code></pre></figure>
 
-<p><strong>Advantages</strong></p>
-<ul>
-  <li>This link directly to the name of the file rather than inode.</li>
-  <li>They can link to file as well as directories on other devices.</li>
-</ul>
+<h2 id="opening-files">Opening Files</h2>
+<p>In the below example using vim command file hosts will open.</p>
 
-<p><strong>Disadvantage</strong></p>
-<ul>
-  <li>When the original file is removed, the symbolic link becomes invalid and does’t work any longer.</li>
-</ul>
-
-<h1 id="creating-links">Creating Links</h1>
-<p>For creating links on Linux <code class="highlighter-rouge">ln</code> command is used. If you want to create a symbolic link, use the <code class="highlighter-rouge">-s</code> option and then specify your source and target file or directory.</p>
-
-<p><strong>Example for Symbolic Link</strong></p>
-
-<p>Creating a soft link in the current directory</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="no">Documents</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="sr">/etc/</span>
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="no">Documents</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
-<span class="n">total</span> <span class="mi">0</span>
-<span class="n">lrwxrwxrwx</span><span class="o">.</span> <span class="mi">1</span> <span class="n">alon</span> <span class="n">alon</span> <span class="mi">5</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">00</span><span class="p">:</span><span class="mi">20</span> <span class="n">etc</span> <span class="o">-&gt;</span> <span class="sr">/etc/</span></code></pre></figure>
-
-<p>Creating soft link in specified directory</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="no">Documents</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="sr">/home/</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span>
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="n">tmp</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
-<span class="n">total</span> <span class="mi">0</span>
-<span class="n">lrwxrwxrwx</span><span class="o">.</span> <span class="mi">1</span> <span class="n">alon</span> <span class="n">alon</span>  <span class="mi">6</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">00</span><span class="p">:</span><span class="mi">45</span> <span class="n">home</span> <span class="o">-&gt;</span> <span class="sr">/home/</span>
-
-<span class="c1"># soft link to the /home is created on /tmp</span></code></pre></figure>
-
-<p><strong>Example for Hard Link</strong></p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">root</span><span class="vi">@localhost</span> <span class="no">Data</span><span class="p">]</span><span class="c1"># ln /etc/hosts .</span>
-<span class="p">[</span><span class="n">root</span><span class="vi">@localhost</span> <span class="no">Data</span><span class="p">]</span><span class="c1"># ls -l</span>
-<span class="n">total</span> <span class="mi">4</span>
-<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--.</span> <span class="mi">3</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">158</span> <span class="no">Jun</span>  <span class="mi">7</span>  <span class="mi">2013</span> <span class="n">hosts</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">vim</span> <span class="sr">/etc/</span><span class="n">hosts</span></code></pre></figure>
 
 <div class="alert alert-info">
-    <i class="fa fa-info-circle"></i> <b>Note:</b>  For creating hard links you must be the owner of that file.
+    <i class="fa fa-info-circle"></i> <b>Note:</b> When you try to open files in vim that does not exist, but the path is available, vim will inform you that you are editing a new file, and create the file when you save it.
 </div>
 
 <style>
@@ -419,35 +393,94 @@
 
 </style>
 
-<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b>  For creating hard links you must be the owner of that file.</div>-->
+<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> When you try to open files in vim that does not exist, but the path is available, vim will inform you that you are editing a new file, and create the file when you save it.</div>-->
 
-<h1 id="removing-links">Removing Links</h1>
-<p>Removing links on Linux is a bit risky task to do. You might create an error working program or loses the data. Below shows the example of removing links.</p>
+<p>Now vim will open the hosts file and start with <code class="highlighter-rouge">command mode</code> . You will find the information about the file in the <code class="highlighter-rouge">bottom  left</code> as (filename, number of lines, number of character) and <code class="highlighter-rouge">bottom right</code> current cursor position(line, character) and what part of file is displayed (ALL for all, Top for the first lines of file, Bot for bottom of a file or % to indicate where in the file you are).</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#create directory in your home directory</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost4</span> <span class="n">localhost4</span><span class="p">.</span><span class="nf">localdomain4</span>
+<span class="o">::</span><span class="mi">1</span>         <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost6</span> <span class="n">localhost6</span><span class="p">.</span><span class="nf">localdomain6</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="s2">"/etc/hosts"</span> <span class="p">[</span><span class="n">readonly</span><span class="p">]</span> <span class="mi">2</span><span class="no">L</span><span class="p">,</span> <span class="mi">158</span><span class="no">C</span>                              <span class="mi">1</span><span class="p">,</span><span class="mi">1</span>           <span class="no">All</span></code></pre></figure>
 
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">mkdir</span> <span class="nb">test</span>
+<h2 id="editing-files">Editing Files</h2>
+<p>For editing the file, first switch from <code class="highlighter-rouge">command mode</code> to <code class="highlighter-rouge">insert mode</code>, Use can use below command table for switching to insert mode.</p>
 
-<span class="c1">#copy /etc/hosts in test directory</span>
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>Switches to insert mode. Start inserting before the current cursor position.</td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>Switches to insert mode. Start inserting after the current cursor position.</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>Move the cursor to the start of the line and switch to insert mode.</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Move the cursor to the end of the line and switch to insert mode.</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>Switch to replace mode. Here text is not inserted, but the character of the file is replaced with the character you enter.</td>
+    </tr>
+    <tr>
+      <td>o</td>
+      <td>Open a new line below the current one, and switch to insert mode.</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>Open a new line above the current one, and switch to insert mode.</td>
+    </tr>
+  </tbody>
+</table>
 
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">cp</span> <span class="sr">/etc/</span><span class="n">hosts</span> <span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="nb">test</span><span class="o">/</span>
+<p>The below example shows editing a file by inserting <code class="highlighter-rouge">127.0.0.0      mylocalhost.com</code>.</p>
 
-<span class="c1">#create soft link of test as link</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost4</span> <span class="n">localhost4</span><span class="p">.</span><span class="nf">localdomain4</span>
+<span class="o">::</span><span class="mi">1</span>         <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost6</span> <span class="n">localhost6</span><span class="p">.</span><span class="nf">localdomain6</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">mylocalhost</span><span class="p">.</span><span class="nf">com</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">--</span> <span class="no">INSERT</span> <span class="o">--</span>                                                  <span class="mi">3</span><span class="p">,</span><span class="mi">28</span>          <span class="no">All</span></code></pre></figure>
 
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="nb">test</span> <span class="n">link</span>
+<p><code class="highlighter-rouge">--INSERT--</code> or <code class="highlighter-rouge">--REPLACE--</code> indicates that you are in insert or replace mode. Press <code class="highlighter-rouge">Esc</code> to return back to command mode.</p>
 
-<span class="c1">#remove link</span>
-
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">rm</span> <span class="n">link</span></code></pre></figure>
-
-<!--<div markdown="span" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b>  Do not use -r or -f to remove link. You will lose the data from the original file.</div>-->
-
-<div class="alert alert-error">
-    <i class="fa fa-exclamation-circle"></i> <b>Warning:</b>  Do not use -r or -f to remove link. You will lose the data from the original file.
+<div class="alert alert-info">
+    <i class="fa fa-info-circle"></i> <b>Note:</b> Esc will always cancel the current command or returns to command mode. 
 </div>
 
 <style>
-
     .alert {
         padding: 8px 35px 8px 14px;
         margin-bottom: 18px;
@@ -495,27 +528,137 @@
     .alert-block p + p {
         margin-top: 5px;
     }
+
 </style>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#creating link again</span>
+<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Esc will always cancel the current command or returns to command mode. </div>-->
 
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="nb">test</span> <span class="n">link</span>
+<h2 id="saving-files">Saving Files</h2>
+<p>In vim file is saved from <code class="highlighter-rouge">ex mode</code>. For entering ex mode simply press <code class="highlighter-rouge">:</code> within command mode. After entering ex mode use the below command as your need.</p>
 
-<span class="c1">#using -rf</span>
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>:wq</td>
+      <td>Save and quit the file.</td>
+    </tr>
+    <tr>
+      <td>:w</td>
+      <td>Write the file and remain in the editor.</td>
+    </tr>
+    <tr>
+      <td>:w <filename></filename></td>
+      <td>Save the file name under the different file name.</td>
+    </tr>
+    <tr>
+      <td>:x</td>
+      <td>Save the file if there are unsaved changes and quit.</td>
+    </tr>
+    <tr>
+      <td>:q</td>
+      <td>Quit the file.</td>
+    </tr>
+    <tr>
+      <td>:q!</td>
+      <td>Quit the file ignoring any unsaved changes.</td>
+    </tr>
+  </tbody>
+</table>
 
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">link</span><span class="o">/</span>
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
-<span class="n">total</span> <span class="mi">0</span>
-<span class="n">lrwxrwxrwx</span><span class="o">.</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">4</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">01</span><span class="p">:</span><span class="mi">08</span> <span class="n">link</span> <span class="o">-&gt;</span> <span class="nb">test</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">6</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">01</span><span class="p">:</span><span class="mi">08</span> <span class="nb">test</span>
+<p>The below example shows saving the file using <code class="highlighter-rouge">:wq</code> command and press enter.</p>
 
-<span class="c1">#you will still see the link exist, but your original directory test will be empty.</span>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost4</span> <span class="n">localhost4</span><span class="p">.</span><span class="nf">localdomain4</span>
+<span class="o">::</span><span class="mi">1</span>         <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost6</span> <span class="n">localhost6</span><span class="p">.</span><span class="nf">localdomain6</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">mylocalhost</span><span class="p">.</span><span class="nf">com</span>
 
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="nb">test</span><span class="o">/</span></code></pre></figure>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="ss">:wq!</span></code></pre></figure>
+
+<p>The below table shows some other useful command that allows you to work with vim more easily.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>v</td>
+      <td>Enters in visual mode. This allows you to select a block of text using the arrow keys. Use  d  to cut, or  y  to copy the selection.</td>
+    </tr>
+    <tr>
+      <td>dd</td>
+      <td>Deletes the current line</td>
+    </tr>
+    <tr>
+      <td>yy</td>
+      <td>Copies the current line</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>Pastes the current selection.</td>
+    </tr>
+    <tr>
+      <td>u</td>
+      <td>Undo the last command.</td>
+    </tr>
+    <tr>
+      <td>Ctrl+r</td>
+      <td>Redoes the last undo</td>
+    </tr>
+    <tr>
+      <td>gg</td>
+      <td>Goes to the first line in the document</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Goes to the last line in the document.</td>
+    </tr>
+    <tr>
+      <td>/key</td>
+      <td>Searches for the text key  from the current cursor position forward.</td>
+    </tr>
+    <tr>
+      <td>?key</td>
+      <td>Searches for  text key  from the current cursor position backward</td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td>Goes to the first position in the current line.</td>
+    </tr>
+    <tr>
+      <td>$</td>
+      <td>Goes to the last position in the current line.</td>
+    </tr>
+    <tr>
+      <td>!ls</td>
+      <td>Adds the output of  ls  (or any other command) in the current file</td>
+    </tr>
+    <tr>
+      <td>:%s/oldKey/newKey/g</td>
+      <td>Replaces all occurrences of  oldKey  with  newKey .</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="bs-callout bs-callout-danger">
     <h4>Summary</h4>
-    In this articel, you learned how to manage and work with links on Linux. Please feel free to write me if need any help.
+    In this articel, you learned the basic workflow of vim editor. Please feel free to write me if need any help.
 </div>
 
 <style>
@@ -590,7 +733,7 @@
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="2019-10-20">20 Oct 2019</time></span>
+                <span class="post-date"><time class="post-date" datetime="2019-10-22">22 Oct 2019</time></span>
                 
                 </small>
             </p>
@@ -601,13 +744,9 @@
             <div class="row PageNavigation mt-4 prevnextlinks">
               
                 <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">&laquo; Working with Compression and Archive Files in Linux Using tar</a>
+                    <a class="thepostlink" href="http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/">&laquo; Understanding links on Linux</a>
                 </div>
               
-              
-                <div class="col-md-6 text-right pr-0">
-                    <a class="thepostlink" href="http://localhost:4000/Editing-Files-with-VIM-in-Linux/">Editing files with Vim in Linux  |  Beginner's Guide &raquo;</a>
-                </div>
               
             </div>
             <!-- End Prev/Next -->

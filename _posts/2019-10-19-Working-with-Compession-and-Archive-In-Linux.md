@@ -173,7 +173,7 @@ myFiles.tar
 The below table gives you an overview of the significant options used in tar.
 
 |Options  |Use  |
-|---|---|---|---|---|
+|---|---|
 | c  | Creates an archive. |
 | v  | Shows verbose output while tar is working |
 | f  |   Used to specify the name of the tar archive that is to be used. Without using this option, the default destination is STDIN for  -x  and STDOUT for  -c .     |

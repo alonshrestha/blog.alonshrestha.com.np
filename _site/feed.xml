@@ -5,9 +5,467 @@
     <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Oct 2019 08:38:34 +0545</pubDate>
-    <lastBuildDate>Tue, 22 Oct 2019 08:38:34 +0545</lastBuildDate>
+    <pubDate>Fri, 25 Oct 2019 01:06:19 +0545</pubDate>
+    <lastBuildDate>Fri, 25 Oct 2019 01:06:19 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Editing files with Vim in Linux  |  Beginner's Guide</title>
+        <description>&lt;p&gt;Editing &lt;code class=&quot;highlighter-rouge&quot;&gt;files&lt;/code&gt; is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#introduction&quot; id=&quot;markdown-toc-introduction&quot;&gt;Introduction&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#basic-workflow-of-vim&quot; id=&quot;markdown-toc-basic-workflow-of-vim&quot;&gt;Basic Workflow of Vim&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#installing-vim&quot; id=&quot;markdown-toc-installing-vim&quot;&gt;Installing Vim&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#opening-files&quot; id=&quot;markdown-toc-opening-files&quot;&gt;Opening Files&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#editing-files&quot; id=&quot;markdown-toc-editing-files&quot;&gt;Editing Files&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#saving-files&quot; id=&quot;markdown-toc-saving-files&quot;&gt;Saving Files&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.vim.org/&quot; target=&quot;_blank&quot;&gt;vi&lt;/a&gt;&lt;/strong&gt;  which stands for &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Interface&lt;/code&gt; is one of the oldest and widely used text editors among the other text editors. Even some other text editors are easier to use, vi is only the text editor which will be in the continuous update and available. This is the main reason why every Linux user should know about vi text editor.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.vim.org/&quot; target=&quot;_blank&quot;&gt;Vim&lt;/a&gt;&lt;/strong&gt; is an improved version of the vi editor. Vim is highly configured and upgraded with many features such as:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Screen Editing&lt;/li&gt;
+  &lt;li&gt;Syntax Highlighting&lt;/li&gt;
+  &lt;li&gt;Colour Formatting&lt;/li&gt;
+  &lt;li&gt;Spell Checking&lt;/li&gt;
+  &lt;li&gt;Scripting Multiple Languages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Vim uses important modes like command mode, visual mode, and input mode. In &lt;code class=&quot;highlighter-rouge&quot;&gt;Command Mode&lt;/code&gt; user can just enter the command and cannot change the content of the file. &lt;code class=&quot;highlighter-rouge&quot;&gt;Input Mode&lt;/code&gt; allows the user to change the content of the file. The user first opens the &lt;code class=&quot;highlighter-rouge&quot;&gt;Vim&lt;/code&gt; enters the command mode and using &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; keystroke enters the insert mode and &lt;code class=&quot;highlighter-rouge&quot;&gt;v&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Mode&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h1 id=&quot;basic-workflow-of-vim&quot;&gt;Basic Workflow of Vim&lt;/h1&gt;
+&lt;p&gt;Working with all the commands of vim is not easy. Just use a minimal set of commands and use them often for remembrance. The below example shows you the minimum keystrokes that every vim user must know.&lt;/p&gt;
+
+&lt;h2 id=&quot;installing-vim&quot;&gt;Installing Vim&lt;/h2&gt;
+&lt;p&gt;By default &lt;code class=&quot;highlighter-rouge&quot;&gt;vi&lt;/code&gt; is installed in your system. For using upgrade version you need to install &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt; manually.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#For Ubutnu&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apt&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;#For Centos&lt;/span&gt;
+
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vim&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;opening-files&quot;&gt;Opening Files&lt;/h2&gt;
+&lt;p&gt;In the below example using vim command file hosts will open.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vim&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/etc/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hosts&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; When you try to open files in vim that does not exist, but the path is available, vim will inform you that you are editing a new file, and create the file when you save it.
+&lt;/div&gt;
+
+&lt;style&gt;
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+&lt;/style&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; When you try to open files in vim that does not exist, but the path is available, vim will inform you that you are editing a new file, and create the file when you save it.&lt;/div&gt;--&gt;
+
+&lt;p&gt;Now vim will open the hosts file and start with &lt;code class=&quot;highlighter-rouge&quot;&gt;command mode&lt;/code&gt; . You will find the information about the file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom  left&lt;/code&gt; as (filename, number of lines, number of character) and &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom right&lt;/code&gt; current cursor position(line, character) and what part of file is displayed (ALL for all, Top for the first lines of file, Bot for bottom of a file or % to indicate where in the file you are).&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain4&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;         &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain6&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;s2&quot;&gt;&quot;/etc/hosts&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readonly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;158&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;                              &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;           &lt;span class=&quot;no&quot;&gt;All&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h2 id=&quot;editing-files&quot;&gt;Editing Files&lt;/h2&gt;
+&lt;p&gt;For editing the file, first switch from &lt;code class=&quot;highlighter-rouge&quot;&gt;command mode&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;insert mode&lt;/code&gt;, Use can use below command table for switching to insert mode.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Command&lt;/th&gt;
+      &lt;th&gt;Explanation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;i&lt;/td&gt;
+      &lt;td&gt;Switches to insert mode. Start inserting before the current cursor position.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;Switches to insert mode. Start inserting after the current cursor position.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;I&lt;/td&gt;
+      &lt;td&gt;Move the cursor to the start of the line and switch to insert mode.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A&lt;/td&gt;
+      &lt;td&gt;Move the cursor to the end of the line and switch to insert mode.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;R&lt;/td&gt;
+      &lt;td&gt;Switch to replace mode. Here text is not inserted, but the character of the file is replaced with the character you enter.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;o&lt;/td&gt;
+      &lt;td&gt;Open a new line below the current one, and switch to insert mode.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;O&lt;/td&gt;
+      &lt;td&gt;Open a new line above the current one, and switch to insert mode.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The below example shows editing a file by inserting &lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.0      mylocalhost.com&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain4&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;         &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain6&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;mylocalhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;                                                  &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;          &lt;span class=&quot;no&quot;&gt;All&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--INSERT--&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;--REPLACE--&lt;/code&gt; indicates that you are in insert or replace mode. Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Esc&lt;/code&gt; to return back to command mode.&lt;/p&gt;
+
+&lt;div class=&quot;alert alert-info&quot;&gt;
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; Esc will always cancel the current command or returns to command mode. 
+&lt;/div&gt;
+
+&lt;style&gt;
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block &gt; p,
+    .alert-block &gt; ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+&lt;/style&gt;
+
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; Esc will always cancel the current command or returns to command mode. &lt;/div&gt;--&gt;
+
+&lt;h2 id=&quot;saving-files&quot;&gt;Saving Files&lt;/h2&gt;
+&lt;p&gt;In vim file is saved from &lt;code class=&quot;highlighter-rouge&quot;&gt;ex mode&lt;/code&gt;. For entering ex mode simply press &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; within command mode. After entering ex mode use the below command as your need.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Command&lt;/th&gt;
+      &lt;th&gt;Explanation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:wq&lt;/td&gt;
+      &lt;td&gt;Save and quit the file.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:w&lt;/td&gt;
+      &lt;td&gt;Write the file and remain in the editor.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:w &lt;filename&gt;&lt;/filename&gt;&lt;/td&gt;
+      &lt;td&gt;Save the file name under the different file name.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:x&lt;/td&gt;
+      &lt;td&gt;Save the file if there are unsaved changes and quit.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:q&lt;/td&gt;
+      &lt;td&gt;Quit the file.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:q!&lt;/td&gt;
+      &lt;td&gt;Quit the file ignoring any unsaved changes.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;The below example shows saving the file using &lt;code class=&quot;highlighter-rouge&quot;&gt;:wq&lt;/code&gt; command and press enter.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain4&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;         &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain6&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;mylocalhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;:wq!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The below table shows some other useful command that allows you to work with vim more easily.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Command&lt;/th&gt;
+      &lt;th&gt;Explanation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;v&lt;/td&gt;
+      &lt;td&gt;Enters in visual mode. This allows you to select a block of text using the arrow keys. Use  d  to cut, or  y  to copy the selection.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;dd&lt;/td&gt;
+      &lt;td&gt;Deletes the current line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;yy&lt;/td&gt;
+      &lt;td&gt;Copies the current line&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;p&lt;/td&gt;
+      &lt;td&gt;Pastes the current selection.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;u&lt;/td&gt;
+      &lt;td&gt;Undo the last command.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ctrl+r&lt;/td&gt;
+      &lt;td&gt;Redoes the last undo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gg&lt;/td&gt;
+      &lt;td&gt;Goes to the first line in the document&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;G&lt;/td&gt;
+      &lt;td&gt;Goes to the last line in the document.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/key&lt;/td&gt;
+      &lt;td&gt;Searches for the text key  from the current cursor position forward.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;?key&lt;/td&gt;
+      &lt;td&gt;Searches for  text key  from the current cursor position backward&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^&lt;/td&gt;
+      &lt;td&gt;Goes to the first position in the current line.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;$&lt;/td&gt;
+      &lt;td&gt;Goes to the last position in the current line.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;!ls&lt;/td&gt;
+      &lt;td&gt;Adds the output of  ls  (or any other command) in the current file&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:%s/oldKey/newKey/g&lt;/td&gt;
+      &lt;td&gt;Replaces all occurrences of  oldKey  with  newKey .&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;bs-callout bs-callout-danger&quot;&gt;
+    &lt;h4&gt;Summary&lt;/h4&gt;
+    In this articel, you learned the basic workflow of vim editor. Please feel free to write me if need any help.
+&lt;/div&gt;
+
+&lt;style&gt;
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+&lt;/style&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Reference&lt;/strong&gt;&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;Red Hat® RHCSA™/RHCE® 7 Cert Guide: Red Hat Enterprise Linux 7 (EX200 and EX300) Sander van Vugt.&lt;/p&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Tue, 22 Oct 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Editing-Files-with-VIM-in-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/Editing-Files-with-VIM-in-Linux/</guid>
+        
+        
+        <category>Linux</category>
+        
+        <category>Files</category>
+        
+        <category>Edit</category>
+        
+        <category>vim</category>
+        
+        <category>vi</category>
+        
+      </item>
     
       <item>
         <title>Understanding links on Linux</title>
@@ -2074,46 +2532,6 @@ Making a user profile website is the best way to impress anyone on the go. Havin
         <category>.com.np</category>
         
         <category>Nepal</category>
-        
-      </item>
-    
-      <item>
-        <title>Blogging with Github Pages and Jekyll</title>
-        <description>&lt;p&gt;This is my first blog with &lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot;&gt;Github Pages&lt;/a&gt;. I used to have tech-related blogs and online portfolio on &lt;a href=&quot;https://wordpress.com/&quot; target=&quot;_blank&quot;&gt;WordPress&lt;/a&gt; which seems to be very easy for everyone. Having a programming background and using WordPress for blogging was not satisfying for me. First thing, I wanted to have my own custom design web page and second, use my personal domain &lt;em&gt;alonshrestha.com.np&lt;/em&gt;. I could have done this using Wordpress or other media donating some money.
-Doing research on such media, I came to know about Github Pages and implementing it is the whole output I got here. Thought to share with you guys as working example.&lt;/p&gt;
-
-&lt;p&gt;I choose Github Pages and Jekyll for hosting my pages and didn’t believe the secret that &lt;a href=&quot;https://wordpress.com/&quot; target=&quot;_blank&quot;&gt;WordPress&lt;/a&gt; is the king when it comes to blog and hosting.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot;&gt;Jekyll&lt;/a&gt; is a markdown language used for generating a static page and Github Pages is the static page hosting media. If you are posting on different media this helps you to migrate your blogs without any cost and lost in Github Pages.&lt;/p&gt;
-
-&lt;h2 id=&quot;using-github-pages&quot;&gt;Using Github Pages&lt;/h2&gt;
-&lt;h4 id=&quot;pros&quot;&gt;Pros&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Free of cost&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Security and Reliability&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Use Custom Domain&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Custom Theme&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Fast because of a static page&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;No Database&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&quot;cons&quot;&gt;Cons&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Programming and GitHub knowledge are required&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Feel free to write me if you need help.&lt;/code&gt;&lt;/p&gt;
-</description>
-        <pubDate>Thu, 27 Jun 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Blogging-with-Github-Pages-and-Jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/Blogging-with-Github-Pages-and-Jekyll/</guid>
-        
-        
-        <category>Blog</category>
-        
-        <category>GitHub-Pages</category>
-        
-        <category>Jekyll</category>
         
       </item>
     
