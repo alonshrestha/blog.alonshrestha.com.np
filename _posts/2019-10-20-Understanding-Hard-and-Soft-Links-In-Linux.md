@@ -4,6 +4,8 @@ layout: post
 author: alonshrestha
 categories:
 - Linux
+- Ubuntu
+- Centos
 - Links
 - Soft Links
 - Hard Links

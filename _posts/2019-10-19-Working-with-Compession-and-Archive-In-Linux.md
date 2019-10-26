@@ -4,6 +4,8 @@ layout: post
 author: alonshrestha
 categories:
 - Linux
+- Ubuntu
+- Centos
 - Compression
 - Archive
 - tar
