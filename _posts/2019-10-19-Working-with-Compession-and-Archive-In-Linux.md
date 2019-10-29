@@ -1,5 +1,5 @@
 ---
-title: Working with Compression and Archive Files in Linux Using tar
+title: Working with Compression and Archive Files on Linux Using tar
 layout: post
 author: alonshrestha
 categories:
