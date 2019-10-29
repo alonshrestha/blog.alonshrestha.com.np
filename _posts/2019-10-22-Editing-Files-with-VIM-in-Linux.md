@@ -11,6 +11,7 @@ categories:
 - vim
 - vi
 image: assets/images/blog/2019-10-22/3.png
+featured: true
 ---
 
 Editing `files` is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.

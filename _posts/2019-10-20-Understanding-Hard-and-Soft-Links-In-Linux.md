@@ -10,7 +10,7 @@ categories:
 - Soft Links
 - Hard Links
 image: assets/images/blog/2019-10-20/4.png
-featured: true
+
 ---
 
 `Links` are assigned to file on Linux which works as `aliases`. There are two types of links on Linux `symbolic links` and `hard links`. In this article, we will learn how to use and manage links on Linux.

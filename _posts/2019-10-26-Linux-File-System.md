@@ -11,6 +11,7 @@ categories:
 - Hierarchy
 - Types
 image: assets/images/blog/2019-10-26/1.png
+featured: true
 ---
 
 All the files on the Linux are organized into a single inverted tree directory which is also known as [file system hierarchy](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard){:target= "_blank"}. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.
