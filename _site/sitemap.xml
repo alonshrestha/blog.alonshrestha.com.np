@@ -49,6 +49,10 @@
 <lastmod>2019-10-26T00:00:00+05:45</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/Types-of-command-on-Linux-Shell/</loc>
+<lastmod>2019-10-29T00:00:00+05:45</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -200,6 +204,15 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/types/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/shell/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/command/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/bash/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>
