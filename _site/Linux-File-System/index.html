@@ -4,26 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
-<title>Understanding links on Linux | Alon Shrestha</title>
+<title>Understanding Linux File System Hierarchy and its Types | Alon Shrestha</title>
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Understanding links on Linux | alon’sTech Blog</title>
+<title>Understanding Linux File System Hierarchy and its Types | alon’sTech Blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Understanding links on Linux" />
+<meta property="og:title" content="Understanding Linux File System Hierarchy and its Types" />
 <meta name="author" content="alonshrestha" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux." />
-<meta property="og:description" content="Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux." />
-<link rel="canonical" href="http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/" />
-<meta property="og:url" content="http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/" />
+<meta name="description" content="All the files on the Linux are organized into a single inverted tree directory which is also known as file system hierarchy. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy." />
+<meta property="og:description" content="All the files on the Linux are organized into a single inverted tree directory which is also known as file system hierarchy. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy." />
+<link rel="canonical" href="http://localhost:4000/Linux-File-System/" />
+<meta property="og:url" content="http://localhost:4000/Linux-File-System/" />
 <meta property="og:site_name" content="alon’sTech Blog" />
-<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-20/4.png" />
+<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-26/1.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-10-20T00:00:00+05:45" />
+<meta property="article:published_time" content="2019-10-26T00:00:00+05:45" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@alonshrestha" />
 <script type="application/ld+json">
-{"image":"http://localhost:4000/assets/images/blog/2019-10-20/4.png","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Understanding links on Linux","dateModified":"2019-10-20T00:00:00+05:45","url":"http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/","datePublished":"2019-10-20T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux.","@context":"http://schema.org"}</script>
+{"image":"http://localhost:4000/assets/images/blog/2019-10-26/1.png","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Understanding Linux File System Hierarchy and its Types","dateModified":"2019-10-26T00:00:00+05:45","url":"http://localhost:4000/Linux-File-System/","datePublished":"2019-10-26T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Linux-File-System/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"All the files on the Linux are organized into a single inverted tree directory which is also known as file system hierarchy. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -76,8 +76,8 @@
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
 <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">Left Sidebar</a>-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Editing-Files-with-VIM-in-Linux/">Right Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Editing-Files-with-VIM-in-Linux/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="">Right Sidebar</a>-->
 <!--                    </div>-->
 <!--                </li>-->
 
@@ -218,11 +218,11 @@
                         </li>
                         
                         <li>
-                            <a class="smoothscroll" href="/categories#Hard-Links">Hard Links</a>
+                            <a class="smoothscroll" href="/categories#Files">Files</a>
                         </li>
                         
                         <li>
-                            <a class="smoothscroll" href="/categories#Links">Links</a>
+                            <a class="smoothscroll" href="/categories#Hierarchy">Hierarchy</a>
                         </li>
                         
                         <li>
@@ -230,7 +230,11 @@
                         </li>
                         
                         <li>
-                            <a class="smoothscroll" href="/categories#Soft-Links">Soft Links</a>
+                            <a class="smoothscroll" href="/categories#System">System</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Types">Types</a>
                         </li>
                         
                         <li>
@@ -254,15 +258,15 @@
 <!--                        </li>-->
 <!--                        -->
 <!--                        <li>-->
-<!--                            <a class="smoothscroll" href="/categories#Hard-Links">Hard Links</a>-->
+<!--                            <a class="smoothscroll" href="/categories#Files">Files</a>-->
 
-<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Hard Links</a>&ndash;&gt;-->
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Files</a>&ndash;&gt;-->
 <!--                        </li>-->
 <!--                        -->
 <!--                        <li>-->
-<!--                            <a class="smoothscroll" href="/categories#Links">Links</a>-->
+<!--                            <a class="smoothscroll" href="/categories#Hierarchy">Hierarchy</a>-->
 
-<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Links</a>&ndash;&gt;-->
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Hierarchy</a>&ndash;&gt;-->
 <!--                        </li>-->
 <!--                        -->
 <!--                        <li>-->
@@ -272,9 +276,15 @@
 <!--                        </li>-->
 <!--                        -->
 <!--                        <li>-->
-<!--                            <a class="smoothscroll" href="/categories#Soft-Links">Soft Links</a>-->
+<!--                            <a class="smoothscroll" href="/categories#System">System</a>-->
 
-<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Soft Links</a>&ndash;&gt;-->
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">System</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Types">Types</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Types</a>&ndash;&gt;-->
 <!--                        </li>-->
 <!--                        -->
 <!--                        <li>-->
@@ -288,254 +298,203 @@
                 <!-- End Categories -->
 
                 <!-- Post Title -->
-				<h1 class="posttitle">Understanding links on Linux</h1>
+				<h1 class="posttitle">Understanding Linux File System Hierarchy and its Types</h1>
 
 			</div>
 
 			<!-- Post Featured Image -->
-			<img class="featured-image img-fluid" src="/assets/images/blog/2019-10-20/4.png" alt="Understanding links on Linux">
+			<img class="featured-image img-fluid" src="/assets/images/blog/2019-10-26/1.png" alt="Understanding Linux File System Hierarchy and its Types">
 			<!-- End Featured Image -->
 
 			<!-- Post Content -->
 			<div class="article-post">
-				<p><code class="highlighter-rouge">Links</code> are assigned to file on Linux which works as <code class="highlighter-rouge">aliases</code>. There are two types of links on Linux <code class="highlighter-rouge">symbolic links</code> and <code class="highlighter-rouge">hard links</code>. In this article, we will learn how to use and manage links on Linux.</p>
+				<p>All the files on the Linux are organized into a single inverted tree directory which is also known as <a href="https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard">file system hierarchy</a>. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.</p>
 
 <blockquote>
   <p><strong>Table Of Content</strong></p>
 </blockquote>
 
 <ul id="markdown-toc">
-  <li><a href="#hard-links" id="markdown-toc-hard-links">Hard Links</a></li>
-  <li><a href="#symbolic-links" id="markdown-toc-symbolic-links">Symbolic Links</a></li>
-  <li><a href="#creating-links" id="markdown-toc-creating-links">Creating Links</a></li>
-  <li><a href="#removing-links" id="markdown-toc-removing-links">Removing Links</a></li>
+  <li><a href="#linux-file-system-types" id="markdown-toc-linux-file-system-types">Linux File System Types</a></li>
+  <li><a href="#linux-file-system-hierarchy" id="markdown-toc-linux-file-system-hierarchy">Linux File System Hierarchy</a></li>
 </ul>
 
-<blockquote>
-  <p><strong>Requirements</strong></p>
-</blockquote>
+<h1 id="linux-file-system-types">Linux File System Types</h1>
 
-<ul>
-  <li>Must have basic knowledge about the organization of the <code class="highlighter-rouge">Linux file system</code>.</li>
-</ul>
+<p>Linux provides different types of file system formats for partitioning the disk which is listed below. Each has its own merits of the use.</p>
 
-<h1 id="hard-links">Hard Links</h1>
-<p>On Linux, every file has an <code class="highlighter-rouge">inode</code>, and in the inode, administrative information is stored. Information like :</p>
+<table>
+  <thead>
+    <tr>
+      <th>File System</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ext:</strong></td>
+      <td>A basic file system having lot of limitation and no longer in use.</td>
+    </tr>
+    <tr>
+      <td><strong>Ext2:</strong></td>
+      <td>Upgrade version of Ext which allows 2 TB of data and not in use anymore.</td>
+    </tr>
+    <tr>
+      <td><strong>Ext3:</strong></td>
+      <td>Upgrade of Ext2. Does not support file recovery and disk snapshots.</td>
+    </tr>
+    <tr>
+      <td><strong>Ext4:</strong></td>
+      <td>Upgrade of Ext3. Allows large file of data upto 16TB with significant speed.</td>
+    </tr>
+    <tr>
+      <td><strong>XFS</strong></td>
+      <td>Default file system in RHEL 7. Allows data upto 500 TB</td>
+    </tr>
+    <tr>
+      <td><strong>BtrFS</strong></td>
+      <td>New file system not yet supported but will be include in later updates.</td>
+    </tr>
+    <tr>
+      <td><strong>NTFS</strong></td>
+      <td>Not Supported on RHEL</td>
+    </tr>
+    <tr>
+      <td><strong>VFAT</strong></td>
+      <td>Equivalent to the FAT32. Useful to use on USB thumb drive.</td>
+    </tr>
+  </tbody>
+</table>
 
-<ul>
-  <li>Data block where the file content is stored</li>
-  <li>Creation, access and modification date</li>
-  <li>Permission </li>
-  <li>File owners</li>
-</ul>
+<h1 id="linux-file-system-hierarchy">Linux File System Hierarchy</h1>
 
-<p>are stored in the inode.  From the above information, one important information is not stored in the inode i.e the <code class="highlighter-rouge">name</code> of the file. Names are itself stored in the directory, and each filename knows which inode to address for further file information.</p>
+<p>In the Linux file system hierarchy, the root of the tree is said to be on the top of the hierarchy,  and the branches of directories and subdirectories  as shown in the below image.</p>
 
-<p>Simply understanding <code class="highlighter-rouge">hard links</code>, giving a name while creating a file, this name is called hard links. On Linux single file can have multiple hard links that enable you to access the file from multiple different locations.</p>
+<p><img src="/assets/images/blog/2019-10-26/img1.png" alt="" /></p>
 
-<p>Some of the restrictions applied to hard links are as follows:</p>
-<ul>
-  <li>Hard links cannot be created to directories</li>
-  <li>If the last name of the multiple aliases of the original file is removed, then the content is also removed.</li>
-  <li>All the hard links should be on the same device.</li>
-</ul>
+<p>You can try in your machine <code class="highlighter-rouge">ls -l /</code> to see this directories as shown below.</p>
 
-<p>When you create multiple hard links of a file, there is no difference between the first hard link and the last hard link you have created. If the first hard link that exists is removed, then it does not impact other hard links.</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">/</span>
+<span class="n">total</span> <span class="mi">36</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span>   <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">7</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">02</span> <span class="n">bin</span> <span class="o">-&gt;</span> <span class="n">usr</span><span class="o">/</span><span class="n">bin</span>
+<span class="n">dr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">5</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Sep</span> <span class="mi">12</span> <span class="mi">15</span><span class="p">:</span><span class="mi">22</span> <span class="n">boot</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">3</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">08</span><span class="p">:</span><span class="mi">51</span> <span class="n">data</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">19</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">3120</span> <span class="no">Sep</span> <span class="mi">25</span> <span class="mi">17</span><span class="p">:</span><span class="mi">14</span> <span class="n">dev</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">82</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">8192</span> <span class="no">Sep</span> <span class="mi">25</span> <span class="mi">17</span><span class="p">:</span><span class="mi">14</span> <span class="n">etc</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">3</span> <span class="n">root</span> <span class="n">root</span>   <span class="mi">17</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">home</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span>   <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">7</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">02</span> <span class="n">lib</span> <span class="o">-&gt;</span> <span class="n">usr</span><span class="o">/</span><span class="n">lib</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span>   <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">9</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">02</span> <span class="n">lib64</span> <span class="o">-&gt;</span> <span class="n">usr</span><span class="o">/</span><span class="n">lib64</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">media</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">mnt</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">5</span> <span class="n">root</span> <span class="n">root</span>   <span class="mi">76</span> <span class="no">Sep</span> <span class="mi">23</span> <span class="mi">14</span><span class="p">:</span><span class="mi">36</span> <span class="n">opt</span>
+<span class="n">dr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">115</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">0</span> <span class="no">Sep</span> <span class="mi">25</span> <span class="mi">17</span><span class="p">:</span><span class="mi">14</span> <span class="nb">proc</span>
+<span class="n">dr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">---.</span>   <span class="mi">7</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Sep</span> <span class="mi">23</span> <span class="mi">15</span><span class="p">:</span><span class="mi">24</span> <span class="n">root</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">26</span> <span class="n">root</span> <span class="n">root</span>  <span class="mi">740</span> <span class="no">Oct</span> <span class="mi">29</span> <span class="mi">18</span><span class="p">:</span><span class="mo">06</span> <span class="n">run</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span>   <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">8</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">02</span> <span class="n">sbin</span> <span class="o">-&gt;</span> <span class="n">usr</span><span class="o">/</span><span class="n">sbin</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">srv</span>
+<span class="n">dr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">13</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">0</span> <span class="no">Sep</span> <span class="mi">25</span> <span class="mi">17</span><span class="p">:</span><span class="mi">14</span> <span class="n">sys</span>
+<span class="n">drwxrwxrwt</span><span class="o">.</span>   <span class="mi">9</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Oct</span> <span class="mi">29</span> <span class="mo">04</span><span class="p">:</span><span class="mi">50</span> <span class="n">tmp</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">13</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">03</span> <span class="n">usr</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">21</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Jul</span> <span class="mi">22</span> <span class="mi">14</span><span class="p">:</span><span class="mo">05</span> <span class="n">var</span></code></pre></figure>
 
-<h1 id="symbolic-links">Symbolic Links</h1>
-<p><code class="highlighter-rouge">Symbolic Links</code> are also known as <code class="highlighter-rouge">soft links</code>. This is more flexible than hard links. The advantages and disadvantage of symbolic links are:</p>
+<p>Form the above sketch you can see <code class="highlighter-rouge">-&gt;</code> symbol pointing multiple directories in  <code class="highlighter-rouge">/usr/</code> directory.  This indicates that the directories  <code class="highlighter-rouge">bin</code> , <code class="highlighter-rouge">lib</code> , <code class="highlighter-rouge">lib64</code> and <code class="highlighter-rouge">sbin</code> are the <a href="https://blog.alonshrestha.com.np/Understanding-Hard-and-Soft-Links-In-Linux/" target="_blank">symbolic links</a> from <code class="highlighter-rouge">/usr/</code>.</p>
 
-<p><strong>Advantages</strong></p>
-<ul>
-  <li>This link directly to the name of the file rather than inode.</li>
-  <li>They can link to file as well as directories on other devices.</li>
-</ul>
+<p>Table below describes the directories</p>
 
-<p><strong>Disadvantage</strong></p>
-<ul>
-  <li>When the original file is removed, the symbolic link becomes invalid and does’t work any longer.</li>
-</ul>
-
-<h1 id="creating-links">Creating Links</h1>
-<p>For creating links on Linux <code class="highlighter-rouge">ln</code> command is used. If you want to create a symbolic link, use the <code class="highlighter-rouge">-s</code> option and then specify your source and target file or directory.</p>
-
-<p><strong>Example for Symbolic Link</strong></p>
-
-<p>Creating a soft link in the current directory</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="no">Documents</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="sr">/etc/</span>
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="no">Documents</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
-<span class="n">total</span> <span class="mi">0</span>
-<span class="n">lrwxrwxrwx</span><span class="o">.</span> <span class="mi">1</span> <span class="n">alon</span> <span class="n">alon</span> <span class="mi">5</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">00</span><span class="p">:</span><span class="mi">20</span> <span class="n">etc</span> <span class="o">-&gt;</span> <span class="sr">/etc/</span></code></pre></figure>
-
-<p>Creating soft link in specified directory</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="no">Documents</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="sr">/home/</span> <span class="o">/</span><span class="n">tmp</span><span class="o">/</span>
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="n">tmp</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
-<span class="n">total</span> <span class="mi">0</span>
-<span class="n">lrwxrwxrwx</span><span class="o">.</span> <span class="mi">1</span> <span class="n">alon</span> <span class="n">alon</span>  <span class="mi">6</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">00</span><span class="p">:</span><span class="mi">45</span> <span class="n">home</span> <span class="o">-&gt;</span> <span class="sr">/home/</span>
-
-<span class="c1"># soft link to the /home is created on /tmp</span></code></pre></figure>
-
-<p><strong>Example for Hard Link</strong></p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">root</span><span class="vi">@localhost</span> <span class="no">Data</span><span class="p">]</span><span class="c1"># ln /etc/hosts .</span>
-<span class="p">[</span><span class="n">root</span><span class="vi">@localhost</span> <span class="no">Data</span><span class="p">]</span><span class="c1"># ls -l</span>
-<span class="n">total</span> <span class="mi">4</span>
-<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--.</span> <span class="mi">3</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">158</span> <span class="no">Jun</span>  <span class="mi">7</span>  <span class="mi">2013</span> <span class="n">hosts</span></code></pre></figure>
-
-<div class="alert alert-info">
-    <i class="fa fa-info-circle"></i> <b>Note:</b>  For creating hard links you must be the owner of that file.
-</div>
-
-<style>
-    .alert {
-        padding: 8px 35px 8px 14px;
-        margin-bottom: 18px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        background-color: #fcf8e3;
-        border: 1px solid #fbeed5;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        color: #c09853;
-    }
-    .alert-heading {
-        color: inherit;
-    }
-    .alert .close {
-        position: relative;
-        top: -2px;
-        right: -21px;
-        line-height: 18px;
-    }
-    .alert-success {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
-        color: #468847;
-    }
-    .alert-danger,
-    .alert-error {
-        background-color: #f2dede;
-        border-color: #eed3d7;
-        color: #b94a48;
-    }
-    .alert-info {
-        background-color: #d9edf7;
-        border-color: #bce8f1;
-        color: #3a87ad;
-    }
-    .alert-block {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-    .alert-block > p,
-    .alert-block > ul {
-        margin-bottom: 0;
-    }
-    .alert-block p + p {
-        margin-top: 5px;
-    }
-
-</style>
-
-<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b>  For creating hard links you must be the owner of that file.</div>-->
-
-<h1 id="removing-links">Removing Links</h1>
-<p>Removing links on Linux is a bit risky task to do. You might create an error working program or loses the data. Below shows the example of removing links.</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#create directory in your home directory</span>
-
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">mkdir</span> <span class="nb">test</span>
-
-<span class="c1">#copy /etc/hosts in test directory</span>
-
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">cp</span> <span class="sr">/etc/</span><span class="n">hosts</span> <span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="nb">test</span><span class="o">/</span>
-
-<span class="c1">#create soft link of test as link</span>
-
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="nb">test</span> <span class="n">link</span>
-
-<span class="c1">#remove link</span>
-
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">rm</span> <span class="n">link</span></code></pre></figure>
-
-<!--<div markdown="span" class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b>  Do not use -r or -f to remove link. You will lose the data from the original file.</div>-->
-
-<div class="alert alert-error">
-    <i class="fa fa-exclamation-circle"></i> <b>Warning:</b>  Do not use -r or -f to remove link. You will lose the data from the original file.
-</div>
-
-<style>
-
-    .alert {
-        padding: 8px 35px 8px 14px;
-        margin-bottom: 18px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        background-color: #fcf8e3;
-        border: 1px solid #fbeed5;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        color: #c09853;
-    }
-    .alert-heading {
-        color: inherit;
-    }
-    .alert .close {
-        position: relative;
-        top: -2px;
-        right: -21px;
-        line-height: 18px;
-    }
-    .alert-success {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
-        color: #468847;
-    }
-    .alert-danger,
-    .alert-error {
-        background-color: #f2dede;
-        border-color: #eed3d7;
-        color: #b94a48;
-    }
-    .alert-info {
-        background-color: #d9edf7;
-        border-color: #bce8f1;
-        color: #3a87ad;
-    }
-    .alert-block {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-    .alert-block > p,
-    .alert-block > ul {
-        margin-bottom: 0;
-    }
-    .alert-block p + p {
-        margin-top: 5px;
-    }
-</style>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#creating link again</span>
-
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="nb">test</span> <span class="n">link</span>
-
-<span class="c1">#using -rf</span>
-
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="n">link</span><span class="o">/</span>
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span>
-<span class="n">total</span> <span class="mi">0</span>
-<span class="n">lrwxrwxrwx</span><span class="o">.</span> <span class="mi">1</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">4</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">01</span><span class="p">:</span><span class="mi">08</span> <span class="n">link</span> <span class="o">-&gt;</span> <span class="nb">test</span>
-<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="mi">0</span> <span class="mi">0</span> <span class="mi">6</span> <span class="no">Oct</span> <span class="mi">22</span> <span class="mo">01</span><span class="p">:</span><span class="mi">08</span> <span class="nb">test</span>
-
-<span class="c1">#you will still see the link exist, but your original directory test will be empty.</span>
-
-<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="nb">test</span><span class="o">/</span></code></pre></figure>
+<table>
+  <thead>
+    <tr>
+      <th>Directory</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>/</strong></td>
+      <td>Know as <code class="highlighter-rouge">root</code> directory where file system tree starts.</td>
+    </tr>
+    <tr>
+      <td><strong>/bin</strong></td>
+      <td>Contains <code class="highlighter-rouge">binaries files</code> of the application or program that can be run. Essential during boot.</td>
+    </tr>
+    <tr>
+      <td><strong>/boot</strong></td>
+      <td>Contains all the files and directories that are need to <code class="highlighter-rouge">boot</code> the Linux kernel.</td>
+    </tr>
+    <tr>
+      <td><strong>/dev</strong></td>
+      <td>Contains device files that allows to access <code class="highlighter-rouge">physical devices</code>. Many of these file are generated at boot time. Essential during boot.</td>
+    </tr>
+    <tr>
+      <td><strong>/etc</strong></td>
+      <td>Know as <code class="highlighter-rouge">every thing to configure</code>. Contains the configuration files that are used by the application and services.</td>
+    </tr>
+    <tr>
+      <td><strong>/home</strong></td>
+      <td>This drectory is used for local user <code class="highlighter-rouge">home directory</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/lib, /lib64</strong></td>
+      <td>Contains the shared libraries that are used by the application in <code class="highlighter-rouge">/boot</code>  <code class="highlighter-rouge">/sbin</code> and <code class="highlighter-rouge">bin</code></td>
+    </tr>
+    <tr>
+      <td><strong>/media</strong></td>
+      <td>Contains the files of the <code class="highlighter-rouge">external storage</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/mnt</strong></td>
+      <td>Contains files that allows for <code class="highlighter-rouge">mounting</code> the devices.</td>
+    </tr>
+    <tr>
+      <td><strong>/opt</strong></td>
+      <td>This is used to install <code class="highlighter-rouge">optional package</code> not from the Linux distribution repositories .</td>
+    </tr>
+    <tr>
+      <td><strong>/sbin</strong></td>
+      <td>Similar to <code class="highlighter-rouge">/bin</code>. Contains all the binaries that superuser needs.</td>
+    </tr>
+    <tr>
+      <td><strong>/srv</strong></td>
+      <td>Directory that may be used for data by services like <code class="highlighter-rouge">HTTP</code>, <code class="highlighter-rouge">NFS</code> and <code class="highlighter-rouge">TCP</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/run</strong></td>
+      <td>System application use this directory for storing temporary file for their own need.</td>
+    </tr>
+    <tr>
+      <td><strong>/tmp</strong></td>
+      <td>This directory contains <code class="highlighter-rouge">temporary files</code> which gets <code class="highlighter-rouge">deleted</code> while system boot without waring.</td>
+    </tr>
+    <tr>
+      <td><strong>/usr</strong></td>
+      <td>Contains subdirectories including programs, libraries, documentation etc. for all user-related programs. This is not needed for boot.</td>
+    </tr>
+    <tr>
+      <td><strong>/var</strong></td>
+      <td>Contains <code class="highlighter-rouge">system log</code> files which size changes dynamically.</td>
+    </tr>
+    <tr>
+      <td><strong>/root</strong></td>
+      <td>Home directory of <code class="highlighter-rouge">root user</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/proc</strong></td>
+      <td>Contains files that give infromation about <code class="highlighter-rouge">kernel and CPU</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/sys</strong></td>
+      <td>Similar to <code class="highlighter-rouge">/proc</code> that contains information about the connected devices from your computer.</td>
+    </tr>
+    <tr>
+      <td><strong>/lost+found</strong></td>
+      <td>Files that are saved during <code class="highlighter-rouge">system failures</code>.</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="bs-callout bs-callout-danger">
     <h4>Summary</h4>
-    In this articel, you learned how to manage and work with links on Linux. Please feel free to write me if need any help.
+    In this articel, you learned the concept of Linux file system types and hiearchy. Please feel free to write me if need any help.
 </div>
 
 <style>
@@ -597,12 +556,6 @@
     }
 </style>
 
-<blockquote>
-  <p><strong>Reference</strong></p>
-  <blockquote>
-    <p>Red Hat® RHCSA™/RHCE® 7 Cert Guide: Red Hat Enterprise Linux 7 (EX200 and EX300) Sander van Vugt.</p>
-  </blockquote>
-</blockquote>
 
                 <div class="clearfix"></div>
 			</div>
@@ -610,7 +563,7 @@
             <!-- Post Date -->
             <p>
             <small>
-                <span class="post-date"><time class="post-date" datetime="2019-10-20">20 Oct 2019</time></span>
+                <span class="post-date"><time class="post-date" datetime="2019-10-26">26 Oct 2019</time></span>
                 
                 </small>
             </p>
@@ -621,13 +574,9 @@
             <div class="row PageNavigation mt-4 prevnextlinks">
               
                 <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">&laquo; Working with Compression and Archive Files in Linux Using tar</a>
+                    <a class="thepostlink" href="http://localhost:4000/Editing-Files-with-VIM-in-Linux/">&laquo; Editing files with Vim in Linux  |  Beginner's Guide</a>
                 </div>
               
-              
-                <div class="col-md-6 text-right pr-0">
-                    <a class="thepostlink" href="http://localhost:4000/Editing-Files-with-VIM-in-Linux/">Editing files with Vim in Linux  |  Beginner's Guide &raquo;</a>
-                </div>
               
             </div>
             <!-- End Prev/Next -->

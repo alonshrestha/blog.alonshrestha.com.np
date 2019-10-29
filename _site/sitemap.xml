@@ -45,6 +45,10 @@
 <lastmod>2019-10-22T00:00:00+05:45</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/Linux-File-System/</loc>
+<lastmod>2019-10-26T00:00:00+05:45</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -147,6 +151,9 @@
 <loc>http://localhost:4000/category/host/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/category/centos/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/category/compression/</loc>
 </url>
 <url>
@@ -181,6 +188,15 @@
 </url>
 <url>
 <loc>http://localhost:4000/category/vi/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/system/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/hierarchy/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/category/types/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>

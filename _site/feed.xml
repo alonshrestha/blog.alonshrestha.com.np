@@ -5,9 +5,281 @@
     <description>Blog related to tech tutorial, product, event, news written in plain and ease to understand</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 25 Oct 2019 01:06:19 +0545</pubDate>
-    <lastBuildDate>Fri, 25 Oct 2019 01:06:19 +0545</lastBuildDate>
+    <pubDate>Tue, 29 Oct 2019 20:11:21 +0545</pubDate>
+    <lastBuildDate>Tue, 29 Oct 2019 20:11:21 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Understanding Linux File System Hierarchy and its Types</title>
+        <description>&lt;p&gt;All the files on the Linux are organized into a single inverted tree directory which is also known as &lt;a href=&quot;https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard&quot;&gt;file system hierarchy&lt;/a&gt;. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#linux-file-system-types&quot; id=&quot;markdown-toc-linux-file-system-types&quot;&gt;Linux File System Types&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#linux-file-system-hierarchy&quot; id=&quot;markdown-toc-linux-file-system-hierarchy&quot;&gt;Linux File System Hierarchy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;linux-file-system-types&quot;&gt;Linux File System Types&lt;/h1&gt;
+
+&lt;p&gt;Linux provides different types of file system formats for partitioning the disk which is listed below. Each has its own merits of the use.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;File System&lt;/th&gt;
+      &lt;th&gt;Explanation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ext:&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;A basic file system having lot of limitation and no longer in use.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ext2:&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Upgrade version of Ext which allows 2 TB of data and not in use anymore.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ext3:&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Upgrade of Ext2. Does not support file recovery and disk snapshots.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ext4:&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Upgrade of Ext3. Allows large file of data upto 16TB with significant speed.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;XFS&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Default file system in RHEL 7. Allows data upto 500 TB&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;BtrFS&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;New file system not yet supported but will be include in later updates.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;NTFS&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Not Supported on RHEL&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;VFAT&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Equivalent to the FAT32. Useful to use on USB thumb drive.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;linux-file-system-hierarchy&quot;&gt;Linux File System Hierarchy&lt;/h1&gt;
+
+&lt;p&gt;In the Linux file system hierarchy, the root of the tree is said to be on the top of the hierarchy,  and the branches of directories and subdirectories  as shown in the below image.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-10-26/img1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;You can try in your machine &lt;code class=&quot;highlighter-rouge&quot;&gt;ls -l /&lt;/code&gt; to see this directories as shown below.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;36&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lrwxrwxrwx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bin&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sep&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;boot&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;08&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;51&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3120&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sep&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;dev&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;82&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8192&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sep&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;etc&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Apr&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;2018&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lrwxrwxrwx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lrwxrwxrwx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lib64&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lib64&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Apr&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;2018&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;media&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Apr&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;2018&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mnt&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;76&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sep&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;36&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;opt&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;115&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sep&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;proc&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;---.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sep&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;740&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Oct&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;06&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;lrwxrwxrwx&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sbin&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sbin&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Apr&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;2018&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;srv&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;dr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sep&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxrwxrwt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Oct&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;04&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tmp&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;03&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;05&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Form the above sketch you can see &lt;code class=&quot;highlighter-rouge&quot;&gt;-&amp;gt;&lt;/code&gt; symbol pointing multiple directories in  &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/&lt;/code&gt; directory.  This indicates that the directories  &lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;lib&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;lib64&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;sbin&lt;/code&gt; are the &lt;a href=&quot;https://blog.alonshrestha.com.np/Understanding-Hard-and-Soft-Links-In-Linux/&quot; target=&quot;_blank&quot;&gt;symbolic links&lt;/a&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Table below describes the directories&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Directory&lt;/th&gt;
+      &lt;th&gt;Explanation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Know as &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; directory where file system tree starts.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/bin&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains &lt;code class=&quot;highlighter-rouge&quot;&gt;binaries files&lt;/code&gt; of the application or program that can be run. Essential during boot.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/boot&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains all the files and directories that are need to &lt;code class=&quot;highlighter-rouge&quot;&gt;boot&lt;/code&gt; the Linux kernel.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/dev&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains device files that allows to access &lt;code class=&quot;highlighter-rouge&quot;&gt;physical devices&lt;/code&gt;. Many of these file are generated at boot time. Essential during boot.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/etc&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Know as &lt;code class=&quot;highlighter-rouge&quot;&gt;every thing to configure&lt;/code&gt;. Contains the configuration files that are used by the application and services.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/home&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;This drectory is used for local user &lt;code class=&quot;highlighter-rouge&quot;&gt;home directory&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/lib, /lib64&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains the shared libraries that are used by the application in &lt;code class=&quot;highlighter-rouge&quot;&gt;/boot&lt;/code&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;/sbin&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/media&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains the files of the &lt;code class=&quot;highlighter-rouge&quot;&gt;external storage&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/mnt&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains files that allows for &lt;code class=&quot;highlighter-rouge&quot;&gt;mounting&lt;/code&gt; the devices.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/opt&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;This is used to install &lt;code class=&quot;highlighter-rouge&quot;&gt;optional package&lt;/code&gt; not from the Linux distribution repositories .&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/sbin&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Similar to &lt;code class=&quot;highlighter-rouge&quot;&gt;/bin&lt;/code&gt;. Contains all the binaries that superuser needs.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/srv&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Directory that may be used for data by services like &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NFS&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;TCP&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/run&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;System application use this directory for storing temporary file for their own need.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/tmp&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;This directory contains &lt;code class=&quot;highlighter-rouge&quot;&gt;temporary files&lt;/code&gt; which gets &lt;code class=&quot;highlighter-rouge&quot;&gt;deleted&lt;/code&gt; while system boot without waring.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/usr&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains subdirectories including programs, libraries, documentation etc. for all user-related programs. This is not needed for boot.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/var&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains &lt;code class=&quot;highlighter-rouge&quot;&gt;system log&lt;/code&gt; files which size changes dynamically.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/root&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Home directory of &lt;code class=&quot;highlighter-rouge&quot;&gt;root user&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/proc&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Contains files that give infromation about &lt;code class=&quot;highlighter-rouge&quot;&gt;kernel and CPU&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/sys&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Similar to &lt;code class=&quot;highlighter-rouge&quot;&gt;/proc&lt;/code&gt; that contains information about the connected devices from your computer.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;/lost+found&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Files that are saved during &lt;code class=&quot;highlighter-rouge&quot;&gt;system failures&lt;/code&gt;.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;bs-callout bs-callout-danger&quot;&gt;
+    &lt;h4&gt;Summary&lt;/h4&gt;
+    In this articel, you learned the concept of Linux file system types and hiearchy. Please feel free to write me if need any help.
+&lt;/div&gt;
+
+&lt;style&gt;
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+&lt;/style&gt;
+
+</description>
+        <pubDate>Sat, 26 Oct 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Linux-File-System/</link>
+        <guid isPermaLink="true">http://localhost:4000/Linux-File-System/</guid>
+        
+        
+        <category>Linux</category>
+        
+        <category>Ubuntu</category>
+        
+        <category>Centos</category>
+        
+        <category>Files</category>
+        
+        <category>System</category>
+        
+        <category>Hierarchy</category>
+        
+        <category>Types</category>
+        
+      </item>
     
       <item>
         <title>Editing files with Vim in Linux  |  Beginner's Guide</title>
@@ -457,6 +729,10 @@
         
         <category>Linux</category>
         
+        <category>Ubuntu</category>
+        
+        <category>Centos</category>
+        
         <category>Files</category>
         
         <category>Edit</category>
@@ -781,6 +1057,10 @@
         
         
         <category>Linux</category>
+        
+        <category>Ubuntu</category>
+        
+        <category>Centos</category>
         
         <category>Links</category>
         
@@ -1155,6 +1435,10 @@
         
         
         <category>Linux</category>
+        
+        <category>Ubuntu</category>
+        
+        <category>Centos</category>
         
         <category>Compression</category>
         
@@ -2199,339 +2483,6 @@ Making a user profile website is the best way to impress anyone on the go. Havin
         <category>Backup</category>
         
         <category>Restore</category>
-        
-      </item>
-    
-      <item>
-        <title>Register Domain .com.np for Free</title>
-        <description>&lt;p&gt;Domain &lt;strong&gt;.com.np&lt;/strong&gt; is the property that you can get in Nepal for free. Did you believe it? If you didn’t, I will make this real for you.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/.np&quot; target=&quot;_blank&quot;&gt;.np&lt;/a&gt; is the country top-level domain in Nepal administered by &lt;a href=&quot;http://mos.com.np/&quot; target=&quot;_blank&quot;&gt;Mercantile Communications Pvt. Ltd.&lt;/a&gt; Registration of .np with secondary level like &lt;strong&gt;.com.np&lt;/strong&gt;, &lt;strong&gt;edu.np&lt;/strong&gt;, &lt;strong&gt;org.np&lt;/strong&gt; can be registered by &lt;strong&gt;Neplease&lt;/strong&gt;, &lt;strong&gt;Non-Resident Neplease&lt;/strong&gt; and even by the &lt;strong&gt;foreigners&lt;/strong&gt; having Neplease residential.&lt;/p&gt;
-
-&lt;p&gt;You can have your personal name domain representing your brand, organization, service, etc. I have used my name as domain (&lt;a href=&quot;http://alonshrestha.com.np/&quot; target=&quot;_blank&quot;&gt;alonshrestha.com.np&lt;/a&gt;) for my personal and blog. Follow the procedure below if you need one.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#requirements&quot; id=&quot;markdown-toc-requirements&quot;&gt;Requirements&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#procedure&quot; id=&quot;markdown-toc-procedure&quot;&gt;Procedure&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-1-check-if-the-domain-is-available&quot; id=&quot;markdown-toc-step-1-check-if-the-domain-is-available&quot;&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Check if the domain is available.&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-2-register-domain&quot; id=&quot;markdown-toc-step-2-register-domain&quot;&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Register domain.&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-3-sign-increate-user&quot; id=&quot;markdown-toc-step-3-sign-increate-user&quot;&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Sign in/Create user&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-4-register-account&quot; id=&quot;markdown-toc-step-4-register-account&quot;&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Register account&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-5-activate-your-email&quot; id=&quot;markdown-toc-step-5-activate-your-email&quot;&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Activate your email.&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-6-sign-in&quot; id=&quot;markdown-toc-step-6-sign-in&quot;&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Sign In&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-7-domain-registration&quot; id=&quot;markdown-toc-step-7-domain-registration&quot;&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; Domain Registration&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-8-administrative-contact&quot; id=&quot;markdown-toc-step-8-administrative-contact&quot;&gt;&lt;strong&gt;Step 8:&lt;/strong&gt; Administrative Contact&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-9-submit-your-personal-document&quot; id=&quot;markdown-toc-step-9-submit-your-personal-document&quot;&gt;&lt;strong&gt;Step 9:&lt;/strong&gt; Submit your Personal Document&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-10-complete-registration&quot; id=&quot;markdown-toc-step-10-complete-registration&quot;&gt;&lt;strong&gt;Step 10:&lt;/strong&gt; Complete Registration&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Documents (scanned copy of your citizen card or license or passport)&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Coverletter&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;Gmail account&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;procedure&quot;&gt;Procedure&lt;/h2&gt;
-
-&lt;h4 id=&quot;step-1-check-if-the-domain-is-available&quot;&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Check if the domain is available.&lt;/h4&gt;
-
-&lt;p&gt;Browse &lt;a href=&quot;https://register.com.np/&quot; target=&quot;_blank&quot;&gt;https://register.com.np/ &lt;/a&gt; and &lt;strong&gt;“Search”&lt;/strong&gt; for the domain you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-2-register-domain&quot;&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Register domain.&lt;/h4&gt;
-
-&lt;p&gt;If the status of the searched domain is &lt;strong&gt;“Available”&lt;/strong&gt; then click &lt;strong&gt;“Register now”&lt;/strong&gt; to register the domain.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-3-sign-increate-user&quot;&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Sign in/Create user&lt;/h4&gt;
-
-&lt;p&gt;You will visit the login page. &lt;strong&gt;“Sign in”&lt;/strong&gt; with your account or click &lt;strong&gt;“Create user”&lt;/strong&gt; to have new an account.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-warning&quot;&gt;&lt;/i&gt; &lt;b&gt;Important:&lt;/b&gt;  Jump to Step 6 if you can sign in, else continue.&lt;/div&gt;--&gt;
-&lt;div class=&quot;alert alert-block&quot;&gt;
-    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Important:&lt;/b&gt;  Jump to Step 6 if you can sign in, else continue.
-&lt;/div&gt;
-
-&lt;style&gt;
-
-    .alert {
-        padding: 8px 35px 8px 14px;
-        margin-bottom: 18px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        background-color: #fcf8e3;
-        border: 1px solid #fbeed5;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        color: #c09853;
-    }
-    .alert-heading {
-        color: inherit;
-    }
-    .alert .close {
-        position: relative;
-        top: -2px;
-        right: -21px;
-        line-height: 18px;
-    }
-    .alert-success {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
-        color: #468847;
-    }
-    .alert-danger,
-    .alert-error {
-        background-color: #f2dede;
-        border-color: #eed3d7;
-        color: #b94a48;
-    }
-    .alert-info {
-        background-color: #d9edf7;
-        border-color: #bce8f1;
-        color: #3a87ad;
-    }
-    .alert-block {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-    .alert-block &gt; p,
-    .alert-block &gt; ul {
-        margin-bottom: 0;
-    }
-    .alert-block p + p {
-        margin-top: 5px;
-    }
-
-&lt;/style&gt;
-
-&lt;h4 id=&quot;step-4-register-account&quot;&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Register account&lt;/h4&gt;
-
-&lt;p&gt;A user detail form will appear. Fill the form with valid data.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img4.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-5-activate-your-email&quot;&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Activate your email.&lt;/h4&gt;
-
-&lt;p&gt;You will receive a verification message in your Gmail.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img5.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Open your Gmail and verify your Gmail account.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img11.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-6-sign-in&quot;&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Sign In&lt;/h4&gt;
-
-&lt;p&gt;Now you will be again redirected to the login page. Enter your credential and &lt;strong&gt;“Sign in”&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img6.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&quot;step-7-domain-registration&quot;&gt;&lt;strong&gt;Step 7:&lt;/strong&gt; Domain Registration&lt;/h4&gt;
-
-&lt;p&gt;You will see a domain request form. Enter the primary and secondary name server that you are going to use.&lt;/p&gt;
-
-&lt;p&gt;eg: 000webhosting&lt;/p&gt;
-
-&lt;p&gt;Primary Name Server: ns01.000webhost.com&lt;/p&gt;
-
-&lt;p&gt;Secondary Name Server: ns02.000webhost.com&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;alert alert-info&quot;&gt;
-    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; The above-used server name in the picture is of [cloudflare](https://www.cloudflare.com/).
-&lt;/div&gt;
-
-&lt;style&gt;
-    .alert {
-        padding: 8px 35px 8px 14px;
-        margin-bottom: 18px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        background-color: #fcf8e3;
-        border: 1px solid #fbeed5;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        color: #c09853;
-    }
-    .alert-heading {
-        color: inherit;
-    }
-    .alert .close {
-        position: relative;
-        top: -2px;
-        right: -21px;
-        line-height: 18px;
-    }
-    .alert-success {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
-        color: #468847;
-    }
-    .alert-danger,
-    .alert-error {
-        background-color: #f2dede;
-        border-color: #eed3d7;
-        color: #b94a48;
-    }
-    .alert-info {
-        background-color: #d9edf7;
-        border-color: #bce8f1;
-        color: #3a87ad;
-    }
-    .alert-block {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-    .alert-block &gt; p,
-    .alert-block &gt; ul {
-        margin-bottom: 0;
-    }
-    .alert-block p + p {
-        margin-top: 5px;
-    }
-
-&lt;/style&gt;
-
-&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; The above-used server name in the picture is of [cloudflare](https://www.cloudflare.com/).&lt;/div&gt;--&gt;
-
-&lt;h4 id=&quot;step-8-administrative-contact&quot;&gt;&lt;strong&gt;Step 8:&lt;/strong&gt; Administrative Contact&lt;/h4&gt;
-
-&lt;p&gt;Fill the administrative contact form with valid data and submit it.&lt;/p&gt;
-
-&lt;h4 id=&quot;step-9-submit-your-personal-document&quot;&gt;&lt;strong&gt;Step 9:&lt;/strong&gt; Submit your Personal Document&lt;/h4&gt;
-
-&lt;p&gt;Now submit your document eg: license, citizen card, passport and cover letter in .jpg format with less than 300Kb.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img9.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;bs-callout bs-callout-primary&quot;&gt;
-    &lt;h4&gt;Sample of Cover Letter&lt;/h4&gt;
-    
-&lt;/div&gt;
-&lt;style&gt;
-    .bs-callout {
-        padding: 20px;
-        margin: 20px 0;
-        border: 1px solid #eee;
-        border-left-width: 5px;
-        border-radius: 3px;
-    }
-    .bs-callout h4 {
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    .bs-callout p:last-child {
-        margin-bottom: 0;
-    }
-    .bs-callout code {
-        border-radius: 3px;
-    }
-    .bs-callout+.bs-callout {
-        margin-top: -5px;
-    }
-    .bs-callout-default {
-        border-left-color: #777;
-    }
-    .bs-callout-default h4 {
-        color: #777;
-    }
-    .bs-callout-primary {
-        border-left-color: #428bca;
-    }
-    .bs-callout-primary h4 {
-        color: #428bca;
-    }
-    .bs-callout-success {
-        border-left-color: #5cb85c;
-    }
-    .bs-callout-success h4 {
-        color: #5cb85c;
-    }
-    .bs-callout-danger {
-        border-left-color: #d9534f;
-    }
-    .bs-callout-danger h4 {
-        color: #d9534f;
-    }
-    .bs-callout-warning {
-        border-left-color: #f0ad4e;
-    }
-    .bs-callout-warning h4 {
-        color: #f0ad4e;
-    }
-    .bs-callout-info {
-        border-left-color: #5bc0de;
-    }
-    .bs-callout-info h4 {
-        color: #5bc0de;
-    }
-&lt;/style&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;Date&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;July&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2019&lt;/span&gt;
-
-	&lt;span class=&quot;no&quot;&gt;To&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	&lt;span class=&quot;no&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Host&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Master&lt;/span&gt;
-	&lt;span class=&quot;no&quot;&gt;Mercantile&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Communication&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Pvt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Ltd&lt;/span&gt;
-	
-				&lt;span class=&quot;no&quot;&gt;Subject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Domain&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Registration&lt;/span&gt;
-
-	&lt;span class=&quot;no&quot;&gt;Dear&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Madam&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-
-	&lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;am&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;writing&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;register&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myself&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;YourDomainName(eg: test.com.np)&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
-	&lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;have&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;successfully&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;completed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;other&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;process&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registration&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;required&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registration&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;following&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;all&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;terms&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
-	&lt;span class=&quot;no&quot;&gt;It&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;would&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;very&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nice&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;could&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;me&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;would&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;always&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;available&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;provide&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;any&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;information&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;that&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;need&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;complete&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;this&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;process&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;I&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;look&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;forward&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hearing&lt;/span&gt;
-	&lt;span class=&quot;n&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
-
-	&lt;span class=&quot;no&quot;&gt;Regards&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-	&lt;span class=&quot;no&quot;&gt;Your&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Name&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h4 id=&quot;step-10-complete-registration&quot;&gt;&lt;strong&gt;Step 10:&lt;/strong&gt; Complete Registration&lt;/h4&gt;
-
-&lt;p&gt;You have completed your domain registration, wait for the approval by Merchantile. Visit your dashboard you must be able to see a similar image below.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-07-20/img10.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-</description>
-        <pubDate>Sat, 20 Jul 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Register-Domain-.com.np-for-Free/</link>
-        <guid isPermaLink="true">http://localhost:4000/Register-Domain-.com.np-for-Free/</guid>
-        
-        
-        <category>Tutorial</category>
-        
-        <category>Free</category>
-        
-        <category>Domain</category>
-        
-        <category>.com.np</category>
-        
-        <category>Nepal</category>
         
       </item>
     
