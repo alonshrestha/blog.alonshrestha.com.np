@@ -5,7 +5,7 @@ author: alonshrestha
 categories:
 - Linux
 - Ubuntu
-- Centos
+- CentOS
 - Files
 - System
 - Hierarchy
@@ -101,8 +101,8 @@ Table below describes the directories
 | **/usr** | Contains subdirectories including programs, libraries, documentation etc. for all user-related programs. This is not needed for boot. |
 | **/var** |  Contains `system log` files which size changes dynamically. |
 | **/root** |  Home directory of `root user`. |
-| **/proc** |  Contains files that give infromation about `kernel and CPU`.  |
+| **/proc** |  Contains files that give information about `kernel and CPU`.  |
 | **/sys** | Similar to `/proc` that contains information about the connected devices from your computer.   |
 | **/lost+found** | Files that are saved during `system failures`.  |
 
-{% include summaryCallout.html heading= "Summary" content= "In this articel, you learned the concept of Linux file system types and hiearchy. Please feel free to write me if need any help." %}
+{% include summaryCallout.html heading= "Summary" content= "In this article, you learned the concept of Linux file system types and hierarchy. Please feel free to write me if need any help." %}
