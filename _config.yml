@@ -5,7 +5,7 @@ description: "Blog related to tech tutorial, product, event, news written in pla
 meta_description: "Blog related to tech tutorial, product, event, news written in plain and ease to understand"
 logo: 'assets/images/personal/head.jpg'
 favicon: assets/images/favicon.png
-paginate: 10
+paginate: 8
 url: 'https://blog.alonshrestha.com.np'
 baseurl: ''
 include: ["_pages"]
