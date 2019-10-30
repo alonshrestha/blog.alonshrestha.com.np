@@ -1,8 +1,8 @@
 # Site
 name: "Alon Shrestha"
 title: "alon'sTech Blog"
-description: "Blog related to tech tutorial, product, event, news written in plain and ease to understand"
-meta_description: "Blog related to tech tutorial, product, event, news written in plain and ease to understand"
+description: "Blog related to linux tutorial, tech product, events and news."
+meta_description: "Blog related to linux tutorial, tech product, events and news."
 logo: 'assets/images/personal/head.jpg'
 favicon: assets/images/favicon.png
 paginate: 8
@@ -15,7 +15,7 @@ email: 'blog.alonshrestha.com.np@gmail.com'
 linkedin: https://linkedin.com/in/alonshrestha
 instagram: https://instagram.com/a.l_o.n
 github: https://github.com/alonshrestha
-twitter: https://twitter.com/AlonShrestha
+twitter: https://twitter.com/stechalon
 
 google_analytics: 'UA-146776244-1'
 disqus: 'blog-alonshrestha-com-np'
