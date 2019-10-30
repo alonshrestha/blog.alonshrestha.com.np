@@ -10,5 +10,4 @@ categories:
 - Bash
 - Internal Command
 - External Command
-image: assets/images/blog/2019-10-29/cmd.png
 ---
