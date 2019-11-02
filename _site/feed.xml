@@ -5,9 +5,197 @@
     <description>Blog related to linux tutorial, tech product, events and news.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Oct 2019 22:54:58 +0545</pubDate>
-    <lastBuildDate>Wed, 30 Oct 2019 22:54:58 +0545</lastBuildDate>
+    <pubDate>Sat, 02 Nov 2019 16:51:30 +0545</pubDate>
+    <lastBuildDate>Sat, 02 Nov 2019 16:51:30 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? | Kubernetes</title>
+        <description>&lt;p&gt;I got this error while checking the version of &lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@shrestha&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# kubectl version&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Client&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Major&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Minor&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;v1.16.2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitCommit&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;c97fe5036ef3df2967d086711e6c0c405941e14b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitTreeState&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;clean&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BuildDate&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;2019-10-15T19:18:23Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GoVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;go1.12.10&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Compiler&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;gc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Platform&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;linux/amd64&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;connection&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8080&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;was&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;refused&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;did&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;you&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;specify&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;right&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;host&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;port?&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;The below solution worked for me.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delete&lt;/span&gt; 
+&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;First delete minikube with command &lt;code class=&quot;highlighter-rouge&quot;&gt;minikube delete&lt;/code&gt; and start with &lt;code class=&quot;highlighter-rouge&quot;&gt;minikube start --vm-driver none&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I still got the issue at &lt;code class=&quot;highlighter-rouge&quot;&gt;first hit&lt;/code&gt;. It gets stuck at &lt;code class=&quot;highlighter-rouge&quot;&gt;Waiting for: apiserver&lt;/code&gt; operation. This might be the issue from my internet.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;err&quot;&gt;⌛&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Waiting&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;for: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;apiserver&lt;/span&gt;
+
+
+&lt;span class=&quot;err&quot;&gt;💣&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Wait&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;failed&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;❌&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;APISERVER_TIMEOUT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;waiting&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;apiserver: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timed&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;out&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;waiting&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;condition&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;💡&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Suggestion&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;VPN&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;firewall&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interfering&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;with&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;HTTP&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;access&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;VM&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Alternatively&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;different&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;VM&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;driver: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sigs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;k8s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;📘&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Documentation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sigs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;k8s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;networking&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vpn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;⁉️&lt;/span&gt;   &lt;span class=&quot;no&quot;&gt;Related&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;issues:
+    
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;▪&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kubernetes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;issues&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4302&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;😿&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;If&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;above&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;advice&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;does&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;please&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;us&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;know: 
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;👉&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kubernetes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;issues&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choose&lt;/span&gt;
+  &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;At the &lt;code class=&quot;highlighter-rouge&quot;&gt;second hit&lt;/code&gt;. This worked for me.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@shrestha&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# minikube delete&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;🔄&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Uninstalling&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Kubernetes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;16.2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kubeadm&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;🔥&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Deleting&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;minikube&quot;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;none&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;💔&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;minikube&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cluster&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;has&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;been&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deleted&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;🔥&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Successfully&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deleted&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;profile&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;minikube&quot;&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@shrestha&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# minikube start --vm-driver none&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;🙄&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;5.2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Ubuntu&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;18.04&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;🤹&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Running&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;CPUs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Memory&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5937&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;MB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Disk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;47804&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;MB&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;ℹ&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;️&lt;/span&gt;   &lt;span class=&quot;no&quot;&gt;OS&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;release&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Ubuntu&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;18.04&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;LTS&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;🐳&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Preparing&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Kubernetes&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;16.2&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;on&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Docker&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'18.09.7'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+    
+&lt;span class=&quot;err&quot;&gt;▪&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;kubelet&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;resolv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;conf&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/run/s&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ystemd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resolv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;conf&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;🚜&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Pulling&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;images&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;🚀&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Launching&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Kubernetes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt; 
+&lt;span class=&quot;err&quot;&gt;🤹&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Configuring&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;host&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;environment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;⚠&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;️&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;The&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'none'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;provides&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;limited&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;isolation&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;may&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reduce&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;system&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;security&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;reliability&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;⚠&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;️&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;For&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;more&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;information&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;see:
+&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;👉&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;sigs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;k8s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;io&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;docs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;reference&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;drivers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;⚠&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;️&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;kubectl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;configuration&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;will&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stored&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/root
+⚠
+️  To use kubectl or minikube commands as your own user, you may need to relocate them. For example, to overwrite your own settings, run:
+
+    
+▪
+sudo mv /&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;kube&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/root/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;minikube&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$HOME&lt;/span&gt;
+    
+&lt;span class=&quot;err&quot;&gt;▪&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;chown&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$USER&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;kube&lt;/span&gt; &lt;span class=&quot;vg&quot;&gt;$HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;minikube&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;💡&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;This&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;can&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;also&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;be&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;done&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;automatically&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;by&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;setting&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;env&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;CHANGE_MINIKUBE_NONE_USER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;⌛&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Waiting&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;for: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;apiserver&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;🏄&lt;/span&gt;
+  &lt;span class=&quot;no&quot;&gt;Done&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kubectl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;now&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;configured&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;minikube&quot;&lt;/span&gt;
+  
+  
+&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@shrestha&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# kubectl version&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Client&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Major&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Minor&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;v1.16.2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitCommit&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;c97fe5036ef3df2967d086711e6c0c405941e14b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitTreeState&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;clean&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BuildDate&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;2019-10-15T19:18:23Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GoVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;go1.12.10&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Compiler&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;gc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Platform&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;linux/amd64&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;no&quot;&gt;Server&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Major&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Minor&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;v1.16.2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitCommit&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;c97fe5036ef3df2967d086711e6c0c405941e14b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitTreeState&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;clean&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BuildDate&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;2019-10-15T19:09:08Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GoVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;go1.12.10&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Compiler&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;gc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Platform&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;linux/amd64&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Please write me in the comment if you need help.&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 02 Nov 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/</link>
+        <guid isPermaLink="true">http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/</guid>
+        
+        
+        <category>Linux</category>
+        
+        <category>Docker</category>
+        
+        <category>Kubernetes</category>
+        
+        <category>port</category>
+        
+        <category>right</category>
+        
+        <category>permission</category>
+        
+        <category>tech</category>
+        
+        <category>tech tips</category>
+        
+        <category>Linux tips</category>
+        
+        <category>Installation</category>
+        
+      </item>
+    
+      <item>
+        <title>Using Wildcards on Linux | How is this helpful?</title>
+        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Wildcards&lt;/code&gt; make your workflow a lot easier when you are working with files. Wildcards are the character that allows you to &lt;code class=&quot;highlighter-rouge&quot;&gt;search&lt;/code&gt; any class of characters in &lt;code class=&quot;highlighter-rouge&quot;&gt;shell command&lt;/code&gt; in Linux or other operating systems. This increases your efficiency of search. There are different types of wildcards which are described below.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Wildcards&lt;/th&gt;
+      &lt;th&gt;Explanation&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;Search for ultimate number of characters.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;?&lt;/td&gt;
+      &lt;td&gt;Search for specific character that can be any.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;[ ]&lt;/td&gt;
+      &lt;td&gt;Search for the range of character that is specified between the square brackets.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Fri, 01 Nov 2019 00:00:00 +0545</pubDate>
+        <link>http://localhost:4000/Working-on-wildcards-on-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/Working-on-wildcards-on-Linux/</guid>
+        
+        
+        <category>Linux</category>
+        
+        <category>Shell</category>
+        
+        <category>Command</category>
+        
+        <category>Types</category>
+        
+        <category>Bash</category>
+        
+        <category>Internal Command</category>
+        
+        <category>External Command</category>
+        
+        <category>tech</category>
+        
+        <category>tech tips</category>
+        
+        <category>Linux tips</category>
+        
+      </item>
     
       <item>
         <title>Internal Command Vs External Command | Linux Shell</title>
@@ -2288,288 +2476,6 @@ Making a user profile website is the best way to impress anyone on the go. Havin
         <category>Free</category>
         
         <category>Host</category>
-        
-      </item>
-    
-      <item>
-        <title>Use Cloudflare for Performance and Security for your Websites</title>
-        <description>&lt;p&gt;Do you wait more than 5 sec for a site to load? As far as I am concerned, you surely don’t. Many of you haven’t heard about &lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot;&gt;Cloudflare&lt;/a&gt;, unlike if you are interested in networking and cybersecurity. There is a full factor moving on the web worldwide through Cloudflare. In this article we will be discussing on Cloudflare, how does it work and why should we use it.  Cloudflare is an opensource web-based application that provides content delivery services with security and performance. Most of the people including me use this application for power their websites.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#what-is-cloudflare&quot; id=&quot;markdown-toc-what-is-cloudflare&quot;&gt;What is Cloudflare?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#how-it-works&quot; id=&quot;markdown-toc-how-it-works&quot;&gt;How it works?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#why-use-cloudflare&quot; id=&quot;markdown-toc-why-use-cloudflare&quot;&gt;Why use Cloudflare?&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;what-is-cloudflare&quot;&gt;What is Cloudflare?&lt;/h1&gt;
-&lt;p&gt;Cloudflare is one of the biggest networks operating on the Internet. It provides &lt;a href=&quot;https://en.wikipedia.org/wiki/Content_delivery_network&quot; target=&quot;_blank&quot;&gt;Content Delivery Network (CDN)&lt;/a&gt; service,  &lt;a href=&quot;https://www.cloudflare.com/learning/ddos/ddos-mitigation/&quot; target=&quot;_blank&quot;&gt;DDoS mitigation&lt;/a&gt;, &lt;a href=&quot;https://en.wikipedia.org/wiki/Internet_security&quot; target=&quot;_blank&quot;&gt;Internet security&lt;/a&gt; and &lt;a href=&quot;https://en.wikipedia.org/wiki/DNS_management_software&quot; target=&quot;_blank&quot;&gt;DNS management&lt;/a&gt; service. This act as a middleman between the site visitor and the hosting provider, providing &lt;a href=&quot;https://en.wikipedia.org/wiki/Reverse_proxy&quot;&gt;reverse proxy&lt;/a&gt; to the user for requested sites. This definition doesn’t help you unless you know every element linked in the above definition.&lt;/p&gt;
-&lt;h1 id=&quot;how-it-works&quot;&gt;How it works?&lt;/h1&gt;
-&lt;p&gt;With all that said,  Cloudflare carries multiple features. After activating your sites to Cloudflare, they take your sites as their responsibility.  They are able to filter and analyze all the traffic of your sites. It provides you &lt;a href=&quot;https://www.cloudflare.com/ssl/&quot; target=&quot;_blank&quot;&gt;free SSL/TLS encryption&lt;/a&gt; to your sites and protects from &lt;a href=&quot;https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/&quot; target=&quot;_blank&quot;&gt;DDoS attact&lt;/a&gt;. It also stores your web content in their data center and delivers to their branch server. Now, the  visitors of your websites will be served from the nearest server optimizing the time and performance. Recently, Cloudflare had more than &lt;a href=&quot;https://www.cloudflare.com/network/&quot; target=&quot;_blank&quot;&gt;190 distributed data center&lt;/a&gt; in different location on a world map.&lt;/p&gt;
-
-&lt;h1 id=&quot;why-use-cloudflare&quot;&gt;Why use Cloudflare?&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://cloudflare.github.io/&quot; target=&quot;_blank&quot;&gt;Open-source&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/performance/&quot; target=&quot;_blank&quot;&gt;Boot Performance&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/analytics/&quot; target=&quot;_blank&quot;&gt;Accurate Traffic Analytic&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/dns/&quot; target=&quot;_blank&quot;&gt;DNS Management&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/ssl/&quot; target=&quot;_blank&quot;&gt;Free SSL/TSL Encryption&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/ddos/under-attack/&quot; target=&quot;_blank&quot;&gt;Block DoS and DDos&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/learning/cdn/how-cdns-reduce-bandwidth-cost/&quot; target=&quot;_blank&quot;&gt;Save Bandwidth&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Tue, 20 Aug 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Use-cloudflare-for-preformance-and-security/</link>
-        <guid isPermaLink="true">http://localhost:4000/Use-cloudflare-for-preformance-and-security/</guid>
-        
-        
-        <category>Blog</category>
-        
-        <category>Cloudflare</category>
-        
-        <category>Security</category>
-        
-        <category>DNS</category>
-        
-        <category>Domain Management</category>
-        
-      </item>
-    
-      <item>
-        <title>Install VirtualBox in Windows | Step to Virtualization</title>
-        <description>&lt;p&gt;VirtualBox is a powerful opensource &lt;a href=&quot;https://alonshrestha.com.np/Introduction-to-Virtualization-Beginners-Guide/&quot; target=&quot;_blank&quot;&gt;virtualization&lt;/a&gt; software or platform that provides you to manage and run multiple operating systems as an application at the same time. This masterpiece was developed by &lt;a href=&quot;https://www.oracle.com/index.html&quot; target=&quot;_blank&quot;&gt;Oracle Corporation&lt;/a&gt; for enterprise-level and home use. In 2007 the software was invented by &lt;a href=&quot;https://www.virtualbox.org/wiki/innotek&quot; target=&quot;_blank&quot;&gt;Innotek GmbH&lt;/a&gt; and later acquired by Oracle in 2010.  This &lt;a href=&quot;https://en.wikipedia.org/wiki/VirtualBox&quot; target=&quot;_blank&quot;&gt;application&lt;/a&gt; supports multiple guest operating systems such as Linux, Windows, Solaris, Mac OS, Unices and &lt;a href=&quot;https://www.virtualbox.org/wiki/Guest_OSes&quot; target=&quot;_blank&quot;&gt;others&lt;/a&gt;.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Table of Content&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#installation&quot; id=&quot;markdown-toc-installation&quot;&gt;Installation&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-1-download-virtualbox&quot; id=&quot;markdown-toc-step-1-download-virtualbox&quot;&gt;Step 1: Download VirtualBox&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-2-install-virtualbox&quot; id=&quot;markdown-toc-step-2-install-virtualbox&quot;&gt;Step 2: Install VirtualBox&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#step-3-setup-extension-in-virtualbox-optional&quot; id=&quot;markdown-toc-step-3-setup-extension-in-virtualbox-optional&quot;&gt;Step 3: Setup Extension in VirtualBox (Optional)&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;installation&quot;&gt;Installation&lt;/h1&gt;
-&lt;h2 id=&quot;step-1-download-virtualbox&quot;&gt;Step 1: Download VirtualBox&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Visit Oracle VirtualBox website &lt;a href=&quot;https://www.virtualbox.org/&quot; target=&quot;_blank&quot;&gt;https://www.virtualbox.org/ &lt;/a&gt; and go to the download as show in the picture below.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/1.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Now select the Windows hosts platform.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/2.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Save the Downlaod file.&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;Now download the extension pack. This helps you to connect your virtual machine with USB 2.0 and USB 3.0.&lt;/strong&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/3.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;alert alert-info&quot;&gt;
-    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; Extension is not required to run VirtualBox. **This is optional**
-&lt;/div&gt;
-
-&lt;style&gt;
-    .alert {
-        padding: 8px 35px 8px 14px;
-        margin-bottom: 18px;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        background-color: #fcf8e3;
-        border: 1px solid #fbeed5;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        color: #c09853;
-    }
-    .alert-heading {
-        color: inherit;
-    }
-    .alert .close {
-        position: relative;
-        top: -2px;
-        right: -21px;
-        line-height: 18px;
-    }
-    .alert-success {
-        background-color: #dff0d8;
-        border-color: #d6e9c6;
-        color: #468847;
-    }
-    .alert-danger,
-    .alert-error {
-        background-color: #f2dede;
-        border-color: #eed3d7;
-        color: #b94a48;
-    }
-    .alert-info {
-        background-color: #d9edf7;
-        border-color: #bce8f1;
-        color: #3a87ad;
-    }
-    .alert-block {
-        padding-top: 14px;
-        padding-bottom: 14px;
-    }
-    .alert-block &gt; p,
-    .alert-block &gt; ul {
-        margin-bottom: 0;
-    }
-    .alert-block p + p {
-        margin-top: 5px;
-    }
-
-&lt;/style&gt;
-
-&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; Extension is not required to run VirtualBox. **This is optional**&lt;/div&gt;--&gt;
-
-&lt;h2 id=&quot;step-2-install-virtualbox&quot;&gt;Step 2: Install VirtualBox&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Open and run the package from your Download directory.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/4.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;You will see an installation window of VirtualBox. Click Next.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/6.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Go to Browse if you want to install in different location or Next for defalut.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/7.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Select the features for your desktop and Install.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/10.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Click Finish after the installation is completed.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/11.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;step-3-setup-extension-in-virtualbox-optional&quot;&gt;Step 3: Setup Extension in VirtualBox (Optional)&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Run the application. Go to Files -&amp;gt; Preferences -&amp;gt; Extensions and Add the extension from your Download Folder.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/12.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Select the extension&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/5.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Agree on the policy and complete the setup. Now you will be able to see similar as shown below&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-08-07/14.PNG&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;div class=&quot;bs-callout bs-callout-success&quot;&gt;
-    &lt;h4&gt;Congratulation!!&lt;/h4&gt;
-    Your installation is completed. Feel free to write me  if you face any probelm.
-&lt;/div&gt;
-
-&lt;style&gt;
-    .bs-callout {
-        padding: 20px;
-        margin: 20px 0;
-        border: 1px solid #eee;
-        border-left-width: 5px;
-        border-radius: 3px;
-    }
-    .bs-callout h4 {
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    .bs-callout p:last-child {
-        margin-bottom: 0;
-    }
-    .bs-callout code {
-        border-radius: 3px;
-    }
-    .bs-callout+.bs-callout {
-        margin-top: -5px;
-    }
-    .bs-callout-default {
-        border-left-color: #777;
-    }
-    .bs-callout-default h4 {
-        color: #777;
-    }
-    .bs-callout-primary {
-        border-left-color: #428bca;
-    }
-    .bs-callout-primary h4 {
-        color: #428bca;
-    }
-    .bs-callout-success {
-        border-left-color: #5cb85c;
-    }
-    .bs-callout-success h4 {
-        color: #5cb85c;
-    }
-    .bs-callout-danger {
-        border-left-color: #d9534f;
-    }
-    .bs-callout-danger h4 {
-        color: #d9534f;
-    }
-    .bs-callout-warning {
-        border-left-color: #f0ad4e;
-    }
-    .bs-callout-warning h4 {
-        color: #f0ad4e;
-    }
-    .bs-callout-info {
-        border-left-color: #5bc0de;
-    }
-    .bs-callout-info h4 {
-        color: #5bc0de;
-    }
-&lt;/style&gt;
-
-</description>
-        <pubDate>Wed, 07 Aug 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Install-VirtualBox-in-Windows-Step-to-virtualization/</link>
-        <guid isPermaLink="true">http://localhost:4000/Install-VirtualBox-in-Windows-Step-to-virtualization/</guid>
-        
-        
-        <category>Virtualization</category>
-        
-        <category>Virtual Box</category>
-        
-        <category>Oracle</category>
-        
-        <category>Installation</category>
-        
-        <category>Windows</category>
-        
-        <category>Hypervisor</category>
-        
-        <category>Tutorial</category>
         
       </item>
     

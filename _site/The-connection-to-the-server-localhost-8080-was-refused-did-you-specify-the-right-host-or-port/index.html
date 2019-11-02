@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/assets/images/favicon.png">    
+<title>SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? | Kubernetes | Alon Shrestha</title>
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? Kubernetes | alon’sTech Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? Kubernetes" />
+<meta name="author" content="alonshrestha" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="I got this error while checking the version of kubectl" />
+<meta property="og:description" content="I got this error while checking the version of kubectl" />
+<link rel="canonical" href="http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/" />
+<meta property="og:url" content="http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/" />
+<meta property="og:site_name" content="alon’sTech Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-11-02T00:00:00+05:45" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@alonshrestha" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? Kubernetes","dateModified":"2019-11-02T00:00:00+05:45","url":"http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/","datePublished":"2019-11-02T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"I got this error while checking the version of kubectl","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+<link href="/assets/css/theme.css" rel="stylesheet">
+<link href="/assets/css/custom.css" rel="stylesheet">
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d6693485fea9f001288d6b1&product=sticky-share-buttons' async='async'></script>
+    
+
+<!--Crisp online ChatBox-->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="5fd36e42-48e8-483f-b8b6-ed9d98308299";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <!--    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5fe413e-8b5c-4401-ac51-22fd7ac7209c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>-->
+    
+</head>
+    
+
+    
+
+<body class="layout-post">
+
+<div class="sharethis-sticky-share-buttons"></div>
+
+<!-- Begin Menu Navigation
+================================================== -->
+<header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+        <img src="/assets/images/personal/head.jpg" alt="Alon Shrestha">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Begin Menu -->
+        <div class="collapse navbar-collapse" id="navbarsWow">
+            
+            <!-- Begin Menu -->
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">                
+                <a class="nav-link" href="/index.html">Home</a>
+                </li>
+
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
+<!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Working-on-wildcards-on-Linux/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="">Right Sidebar</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="/archive">Archive</a>-->
+<!--                </li>-->
+
+                <li class="nav-item">                
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">                
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li> 
+                
+<!--                 <li class="nav-item">                -->
+<!--                    <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/affiliates-jekyll-theme">Github</a>-->
+<!--                </li> -->
+                
+                
+    <!--                <li class="nav-item">                -->
+    <!--                    <a class="nav-link highlight" href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip">Download Theme</a>-->
+    <!--                </li> -->
+                
+            </ul>
+            <!-- End Menu -->
+            
+        </div>
+    </div>
+</header>
+    
+
+    
+<!-- End Menu Navigation
+================================================== -->
+    
+<div class="site-content">
+    
+    <div class="container">
+
+    <!-- Site Title
+    ================================================== -->
+
+    <div class="mainheading" style="display:none;">
+        <h1 class="sitetitle">Alon Shrestha</h1>
+        <p class="lead">
+             Blog related to linux tutorial, tech product, events and news.
+        </p>
+    </div>
+
+
+    <!-- Content
+    ================================================== --> 
+    <div class="main-content">
+        <!-- Begin Article
+================================================== -->
+
+	<div class="row">
+
+		<!-- Sidebar -->
+        <div class="col-sm-4">
+        <div class="sidebar">
+
+        <div class="sidebar-section">
+            <h5><span>Newsletter</span></h5>
+            <!-- Go to your Mailchimp account/Lists/Sign Up Forms/Embedded forms and replace the code below with your own-->
+
+<!-- Begin MailChimp Signup Form-->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+		<form action="https://gmail.us3.list-manage.com/subscribe/post?u=24552ab282fd36f7d33fd5d83&amp;id=266a6fa969" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+	<!--<form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>-->
+	<div id="mc_embed_signup_scroll">
+	<h2>Sign up to get my weekly free guide</h2>
+
+<div class="mc-field-group">
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail Address">
+</div>
+		<div class="mc-field-group">
+
+			<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
+		</div>
+		<div class="mc-field-group">
+			<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last Name">
+		</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8aeb20a530e124561927d3bd8_8c3d2d214b" tabindex="-1" value=""></div>
+	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	</div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';fnames[1]='MMERGE1';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/24552ab282fd36f7d33fd5d83/de4957ff2a2abcf66d2432cbb.js");</script>
+<!--End mc_embed_signup-->
+
+        </div>
+
+        <div class="sidebar-section">
+            <h5><span>Useful</span></h5>
+            <ul style="list-none;">
+            <li><a target="_blank" href="https://m.do.co/c/84c9b45d0c47">Digital Ocean</a></li>
+            <li><a target="blank" href="https://stackoverflow.com/">Stack Overflow</a></li>
+<!--            <li><a target="blank" href="https://www.techmeme.com/">Techmeme</a></li>-->
+<!--            <li><a target="blank" href="https://jekyllthemes.dev">Jekyll Themes</a></li>-->
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+             <h5><span>Recommended</span></h5>
+           <a href="https://easydigitaldownloads.com/?ref=2135" title="Sell digital downloads with WordPress, for free"><img src="https://easydigitaldownloads.com/wp-content/uploads/2015/02/300x250-2.png" alt="Sell digital with WordPress, for free" /></a>
+        </div>
+</div>
+        </div>
+
+
+		<!-- Post -->
+        
+
+		<div class="col-sm-8">
+			<div class="mainheading">
+
+                <!-- Post Categories -->
+
+                <div class="after-post-cats">
+                    <ul class="tags mb-4">
+                        
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Docker">Docker</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Installation">Installation</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Kubernetes">Kubernetes</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Linux">Linux</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Linux-tips">Linux tips</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#permission">permission</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#port">port</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#right">right</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#tech">tech</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#tech-tips">tech tips</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+
+
+
+                <!--               <div class="after-post-tags">-->
+<!--                    <ul class="tags">-->
+<!--                        -->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Docker">Docker</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Docker</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Installation">Installation</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Installation</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Kubernetes">Kubernetes</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Kubernetes</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Linux">Linux</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Linux</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Linux-tips">Linux tips</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Linux tips</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#permission">permission</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">permission</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#port">port</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">port</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#right">right</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">right</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#tech">tech</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">tech</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#tech-tips">tech tips</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">tech tips</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                    </ul>-->
+<!--                </div>-->
+                <!-- End Categories -->
+
+                <!-- Post Title -->
+				<h1 class="posttitle">SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? | Kubernetes</h1>
+
+			</div>
+
+			<!-- Post Featured Image -->
+			
+			<!-- End Featured Image -->
+
+			<!-- Post Content -->
+			<div class="article-post">
+				<p>I got this error while checking the version of <code class="highlighter-rouge">kubectl</code></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">root</span><span class="vi">@shrestha</span><span class="ss">:/</span><span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="c1"># kubectl version</span>
+<span class="no">Client</span> <span class="no">Version</span><span class="p">:</span> <span class="n">version</span><span class="o">.</span><span class="no">Info</span><span class="p">{</span><span class="no">Major</span><span class="ss">:"1"</span><span class="p">,</span> <span class="no">Minor</span><span class="ss">:"16"</span><span class="p">,</span> <span class="no">GitVersion</span><span class="ss">:"v1.16.2"</span><span class="p">,</span> <span class="no">GitCommit</span><span class="ss">:"c97fe5036ef3df2967d086711e6c0c405941e14b"</span><span class="p">,</span> <span class="no">GitTreeState</span><span class="ss">:"clean"</span><span class="p">,</span> <span class="no">BuildDate</span><span class="ss">:"2019-10-15T19:18:23Z"</span><span class="p">,</span> <span class="no">GoVersion</span><span class="ss">:"go1.12.10"</span><span class="p">,</span> <span class="no">Compiler</span><span class="ss">:"gc"</span><span class="p">,</span> <span class="no">Platform</span><span class="ss">:"linux/amd64"</span><span class="p">}</span>
+<span class="no">The</span> <span class="n">connection</span> <span class="n">to</span> <span class="n">the</span> <span class="n">server</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">8080</span> <span class="n">was</span> <span class="n">refused</span> <span class="o">-</span> <span class="n">did</span> <span class="n">you</span> <span class="n">specify</span> <span class="n">the</span> <span class="n">right</span> <span class="n">host</span> <span class="n">or</span> <span class="n">port?</span></code></pre></figure>
+
+<p>The below solution worked for me.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">minikube</span> <span class="n">delete</span> 
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">minikube</span> <span class="n">start</span> <span class="o">--</span><span class="n">vm</span><span class="o">-</span><span class="n">driver</span> <span class="n">none</span></code></pre></figure>
+
+<p>First delete minikube with command <code class="highlighter-rouge">minikube delete</code> and start with <code class="highlighter-rouge">minikube start --vm-driver none</code>.</p>
+
+<p>I still got the issue at <code class="highlighter-rouge">first hit</code>. It gets stuck at <code class="highlighter-rouge">Waiting for: apiserver</code> operation. This might be the issue from my internet.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">⌛</span>
+  <span class="no">Waiting</span> <span class="ss">for: </span><span class="n">apiserver</span>
+
+
+<span class="err">💣</span>
+  <span class="no">Wait</span> <span class="n">failed</span>
+<span class="err">❌</span>
+  <span class="no">Error</span><span class="p">:</span> <span class="p">[</span><span class="no">APISERVER_TIMEOUT</span><span class="p">]</span> <span class="n">waiting</span> <span class="k">for</span> <span class="ss">apiserver: </span><span class="n">timed</span> <span class="n">out</span> <span class="n">waiting</span> <span class="k">for</span> <span class="n">the</span> <span class="n">condition</span>
+<span class="err">💡</span>
+  <span class="no">Suggestion</span><span class="p">:</span> <span class="no">A</span> <span class="no">VPN</span> <span class="n">or</span> <span class="n">firewall</span> <span class="n">is</span> <span class="n">interfering</span> <span class="n">with</span> <span class="no">HTTP</span> <span class="n">access</span> <span class="n">to</span> <span class="n">the</span> <span class="n">minikube</span> <span class="no">VM</span><span class="o">.</span> <span class="no">Alternatively</span><span class="p">,</span> <span class="n">try</span> <span class="n">a</span> <span class="n">different</span> <span class="no">VM</span> <span class="ss">driver: </span><span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">minikube</span><span class="p">.</span><span class="nf">sigs</span><span class="p">.</span><span class="nf">k8s</span><span class="p">.</span><span class="nf">io</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">start</span><span class="o">/</span>
+<span class="err">📘</span>
+  <span class="no">Documentation</span><span class="p">:</span> <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">minikube</span><span class="p">.</span><span class="nf">sigs</span><span class="p">.</span><span class="nf">k8s</span><span class="p">.</span><span class="nf">io</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">reference</span><span class="o">/</span><span class="n">networking</span><span class="o">/</span><span class="n">vpn</span><span class="o">/</span>
+<span class="err">⁉️</span>   <span class="no">Related</span> <span class="ss">issues:
+    
+</span><span class="err">▪</span>
+<span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">kubernetes</span><span class="o">/</span><span class="n">minikube</span><span class="o">/</span><span class="n">issues</span><span class="o">/</span><span class="mi">4302</span>
+
+<span class="err">😿</span>
+  <span class="no">If</span> <span class="n">the</span> <span class="n">above</span> <span class="n">advice</span> <span class="n">does</span> <span class="n">not</span> <span class="n">help</span><span class="p">,</span> <span class="n">please</span> <span class="n">let</span> <span class="n">us</span> <span class="ss">know: 
+</span><span class="err">👉</span>
+  <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">github</span><span class="p">.</span><span class="nf">com</span><span class="o">/</span><span class="n">kubernetes</span><span class="o">/</span><span class="n">minikube</span><span class="o">/</span><span class="n">issues</span><span class="o">/</span><span class="n">new</span><span class="o">/</span><span class="n">choose</span>
+  </code></pre></figure>
+
+<p>At the <code class="highlighter-rouge">second hit</code>. This worked for me.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">root</span><span class="vi">@shrestha</span><span class="ss">:/</span><span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="c1"># minikube delete</span>
+
+<span class="err">🔄</span>
+  <span class="no">Uninstalling</span> <span class="no">Kubernetes</span> <span class="n">v1</span><span class="o">.</span><span class="mf">16.2</span> <span class="n">using</span> <span class="n">kubeadm</span> <span class="o">...</span>
+<span class="err">🔥</span>
+  <span class="no">Deleting</span> <span class="s2">"minikube"</span> <span class="k">in</span> <span class="n">none</span> <span class="o">...</span>
+<span class="err">💔</span>
+  <span class="no">The</span> <span class="s2">"minikube"</span> <span class="n">cluster</span> <span class="n">has</span> <span class="n">been</span> <span class="n">deleted</span><span class="o">.</span>
+<span class="err">🔥</span>
+  <span class="no">Successfully</span> <span class="n">deleted</span> <span class="n">profile</span> <span class="s2">"minikube"</span>
+
+
+<span class="n">root</span><span class="vi">@shrestha</span><span class="ss">:/</span><span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="c1"># minikube start --vm-driver none</span>
+
+<span class="err">🙄</span>
+  <span class="n">minikube</span> <span class="n">v1</span><span class="o">.</span><span class="mf">5.2</span> <span class="n">on</span> <span class="no">Ubuntu</span> <span class="mf">18.04</span>
+<span class="err">🤹</span>
+  <span class="no">Running</span> <span class="n">on</span> <span class="n">localhost</span> <span class="p">(</span><span class="no">CPUs</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="no">Memory</span><span class="o">=</span><span class="mi">5937</span><span class="no">MB</span><span class="p">,</span> <span class="no">Disk</span><span class="o">=</span><span class="mi">47804</span><span class="no">MB</span><span class="p">)</span> <span class="o">...</span>
+<span class="err">ℹ</span>
+<span class="err">️</span>   <span class="no">OS</span> <span class="n">release</span> <span class="n">is</span> <span class="no">Ubuntu</span> <span class="mf">18.04</span><span class="o">.</span><span class="mi">3</span> <span class="no">LTS</span>
+<span class="err">🐳</span>
+  <span class="no">Preparing</span> <span class="no">Kubernetes</span> <span class="n">v1</span><span class="o">.</span><span class="mf">16.2</span> <span class="n">on</span> <span class="no">Docker</span> <span class="s1">'18.09.7'</span> <span class="o">...</span>
+    
+<span class="err">▪</span>
+<span class="n">kubelet</span><span class="p">.</span><span class="nf">resolv</span><span class="o">-</span><span class="n">conf</span><span class="o">=</span><span class="sr">/run/s</span><span class="n">ystemd</span><span class="o">/</span><span class="n">resolve</span><span class="o">/</span><span class="n">resolv</span><span class="p">.</span><span class="nf">conf</span>
+<span class="err">🚜</span>
+  <span class="no">Pulling</span> <span class="n">images</span> <span class="o">...</span>
+<span class="err">🚀</span>
+  <span class="no">Launching</span> <span class="no">Kubernetes</span> <span class="o">...</span> 
+<span class="err">🤹</span>
+  <span class="no">Configuring</span> <span class="n">local</span> <span class="n">host</span> <span class="n">environment</span> <span class="o">...</span>
+
+<span class="err">⚠</span>
+<span class="err">️</span>  <span class="no">The</span> <span class="s1">'none'</span> <span class="n">driver</span> <span class="n">provides</span> <span class="n">limited</span> <span class="n">isolation</span> <span class="n">and</span> <span class="n">may</span> <span class="n">reduce</span> <span class="nb">system</span> <span class="n">security</span> <span class="n">and</span> <span class="n">reliability</span><span class="o">.</span>
+<span class="err">⚠</span>
+<span class="err">️</span>  <span class="no">For</span> <span class="n">more</span> <span class="n">information</span><span class="p">,</span> <span class="ss">see:
+</span><span class="err">👉</span>
+  <span class="n">https</span><span class="ss">:/</span><span class="o">/</span><span class="n">minikube</span><span class="p">.</span><span class="nf">sigs</span><span class="p">.</span><span class="nf">k8s</span><span class="p">.</span><span class="nf">io</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">reference</span><span class="o">/</span><span class="n">drivers</span><span class="o">/</span><span class="n">none</span><span class="o">/</span>
+
+<span class="err">⚠</span>
+<span class="err">️</span>  <span class="n">kubectl</span> <span class="n">and</span> <span class="n">minikube</span> <span class="n">configuration</span> <span class="n">will</span> <span class="n">be</span> <span class="n">stored</span> <span class="k">in</span> <span class="sr">/root
+⚠
+️  To use kubectl or minikube commands as your own user, you may need to relocate them. For example, to overwrite your own settings, run:
+
+    
+▪
+sudo mv /</span><span class="n">root</span><span class="o">/</span><span class="p">.</span><span class="nf">kube</span> <span class="sr">/root/</span><span class="p">.</span><span class="nf">minikube</span> <span class="vg">$HOME</span>
+    
+<span class="err">▪</span>
+<span class="n">sudo</span> <span class="n">chown</span> <span class="o">-</span><span class="no">R</span> <span class="vg">$USER</span> <span class="vg">$HOME</span><span class="o">/</span><span class="p">.</span><span class="nf">kube</span> <span class="vg">$HOME</span><span class="o">/</span><span class="p">.</span><span class="nf">minikube</span>
+
+<span class="err">💡</span>
+  <span class="no">This</span> <span class="n">can</span> <span class="n">also</span> <span class="n">be</span> <span class="n">done</span> <span class="n">automatically</span> <span class="n">by</span> <span class="n">setting</span> <span class="n">the</span> <span class="n">env</span> <span class="n">var</span> <span class="no">CHANGE_MINIKUBE_NONE_USER</span><span class="o">=</span><span class="kp">true</span>
+<span class="err">⌛</span>
+  <span class="no">Waiting</span> <span class="ss">for: </span><span class="n">apiserver</span>
+<span class="err">🏄</span>
+  <span class="no">Done</span><span class="o">!</span> <span class="n">kubectl</span> <span class="n">is</span> <span class="n">now</span> <span class="n">configured</span> <span class="n">to</span> <span class="n">use</span> <span class="s2">"minikube"</span>
+  
+  
+<span class="n">root</span><span class="vi">@shrestha</span><span class="ss">:/</span><span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="c1"># kubectl version</span>
+<span class="no">Client</span> <span class="no">Version</span><span class="p">:</span> <span class="n">version</span><span class="o">.</span><span class="no">Info</span><span class="p">{</span><span class="no">Major</span><span class="ss">:"1"</span><span class="p">,</span> <span class="no">Minor</span><span class="ss">:"16"</span><span class="p">,</span> <span class="no">GitVersion</span><span class="ss">:"v1.16.2"</span><span class="p">,</span> <span class="no">GitCommit</span><span class="ss">:"c97fe5036ef3df2967d086711e6c0c405941e14b"</span><span class="p">,</span> <span class="no">GitTreeState</span><span class="ss">:"clean"</span><span class="p">,</span> <span class="no">BuildDate</span><span class="ss">:"2019-10-15T19:18:23Z"</span><span class="p">,</span> <span class="no">GoVersion</span><span class="ss">:"go1.12.10"</span><span class="p">,</span> <span class="no">Compiler</span><span class="ss">:"gc"</span><span class="p">,</span> <span class="no">Platform</span><span class="ss">:"linux/amd64"</span><span class="p">}</span>
+<span class="no">Server</span> <span class="no">Version</span><span class="p">:</span> <span class="n">version</span><span class="o">.</span><span class="no">Info</span><span class="p">{</span><span class="no">Major</span><span class="ss">:"1"</span><span class="p">,</span> <span class="no">Minor</span><span class="ss">:"16"</span><span class="p">,</span> <span class="no">GitVersion</span><span class="ss">:"v1.16.2"</span><span class="p">,</span> <span class="no">GitCommit</span><span class="ss">:"c97fe5036ef3df2967d086711e6c0c405941e14b"</span><span class="p">,</span> <span class="no">GitTreeState</span><span class="ss">:"clean"</span><span class="p">,</span> <span class="no">BuildDate</span><span class="ss">:"2019-10-15T19:09:08Z"</span><span class="p">,</span> <span class="no">GoVersion</span><span class="ss">:"go1.12.10"</span><span class="p">,</span> <span class="no">Compiler</span><span class="ss">:"gc"</span><span class="p">,</span> <span class="no">Platform</span><span class="ss">:"linux/amd64"</span><span class="p">}</span></code></pre></figure>
+
+<p><code class="highlighter-rouge">Please write me in the comment if you need help.</code></p>
+
+                <div class="clearfix"></div>
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2019-11-02">02 Nov 2019</time></span>
+                
+                </small>
+            </p>
+
+
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation mt-4 prevnextlinks">
+              
+                <div class="col-md-6 rightborder pl-0">
+                    <a class="thepostlink" href="http://localhost:4000/Working-on-wildcards-on-Linux/">&laquo; Using Wildcards on Linux | How is this helpful?</a>
+                </div>
+              
+              
+            </div>
+            <!-- End Prev/Next -->
+
+
+             <!-- Author Box -->
+            
+            <div class="row post-top-meta">
+                <div class="col-md-2">
+                    <img class="author-thumb" src="https://www.gravatar.com/avatar/328cf0c5d7b7464fbc7a35d54a90c778?s=250&d=mm&r=x" alt="Alon Shrestha">
+                </div>
+                <div class="col-md-10">
+                    <a target="_blank" class="link-dark" href="https://alonshrestha.com.np">Alon Shrestha</a><a target="_blank" href="https://twitter.com/StechAlon" class="btn follow">Follow</a><br>
+                    <span class="author-description"> A Computer Science Student </span>
+                </div>
+            </div>
+
+
+
+            
+
+
+            <!-- Begin Comments
+            ================================================== -->
+            <section>
+            <div id="comments">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'blog-alonshrestha-com-np'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+            </section>
+            <!--End Comments
+            ================================================== -->
+
+
+
+		</div>
+		<!-- End Post -->
+
+
+
+	</div>
+
+<!-- End Article
+================================================== -->
+    </div>
+
+    </div><!-- /.container --> 
+
+
+
+    <!-- Before Footer
+<!--    ================================================== &ndash;&gt; -->
+    <div class="beforefooter" style="text-align: center;">
+        <div class="container" style="text-align: center;">
+            <div class="row justify-content-center" style="text-align: center;" >
+<!--                <div class="col-md-8">-->
+<!--                    <h3>This is your final call to action area. Shine like a star, make them want you, tell 'em to push that button!</h3>-->
+<!--                    <p>We offer a <span>30 Day Money Back Guarantee</span>, so joining is <span class="risk-free">Risk-Free!</span></p>-->
+<!--                    <a class="btn btn-primary btn-lg" href="#">Join us yesterday</a>-->
+<!--                </div>-->
+                <div class="col-md-4 text-center footersocial" style="text-align: center;">
+                    <h5 style="text-align: center;" >Connect with Me</h5>
+                    <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    <a href="https://www.facebook.com/Alons-Tech-Blog-100359161411871/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://instagram.com/a.l_o.n" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/stechalon" target="_blank" ><i class="fa fa-twitter"></i></a>
+                    <a href="mailto:blog.alonshrestha.com.np@gmail.com" target="_blank" ><i class="fa fa-envelope-o"></i></a>
+                    <a target="_blank" href="https://linkedin.com/in/alonshrestha"><i class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/alonshrestha" ><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+   </div>
+
+    <!-- Begin Footer
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+<!--            <div class="row">-->
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <a href="/contact">-->
+<!--                <img src="/assets/images/logo-footer.png">-->
+<!--                </a>-->
+<!--    `            </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <h5 class="title">Resources</h5>-->
+<!--                <ul>-->
+<!--                <li><a target="_blank" href="https://m.do.co/c/84c9b45d0c47">Digital Ocean</a></li>-->
+<!--                <li><a target="blank" href="https://www.cloudways.com/en/pricing.php?id=153986&amp;a_bid=005da123">Cloudways</a></li>-->
+<!--                <li><a target="blank" href="http://shareasale.com/r.cfm?b=875645&amp;u=1087935&amp;m=41388&amp;urllink=&amp;afftrack=">Page Speed Test</a></li>-->
+<!--                <li><a target="blank" href="https://www.wowthemes.net/affiliate-area/?utm_source=fromjekyllsidebar&utm_campaign=sidebar">Partner with Us</a></li>-->
+<!--                <li><a target="blank" href="https://www.wowthemes.net/category/jekyll-themes/">Our Jekyll Themes</a></li>-->
+<!--                </ul>-->
+<!--                </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <h5 class="title">Author</h5>-->
+<!--                <ul>-->
+<!--                <li><a href="https://www.wowthemes.net/premium-themes-templates/">About Us</a></li>-->
+<!--                <li><a target="_blank" href="https://www.wowthemes.net/affiliate-area/">Affiliates</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/terms-and-conditions/">License</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/blog/">Blog</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/support/">Contact</a></li>-->
+<!--                </ul>-->
+<!--                </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--&lt;!&ndash;                <div class="footer-widget textwidget">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h5 class="title">Download</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p>Download "Affiliates" theme and use it for your next Jekyll project. If you have a question, a bug report, or if you simply want to say hi, <a href="https://www.wowthemes.net/support/">contact us here</a>.</p> &ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip">Download Theme</a>                    &ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+            <div class="col-sm-12">
+            <div class="copyright" style="text-align: center;">
+                <p style="text-align: center;">
+                    Copyright © 2019 Alon Shrestha <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                </p>
+<!--                Plese, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/-->
+                <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
+    <!-- End Footer
+    ================================================== -->
+
+    
+</div> <!-- /.site-content>
+
+<!-- JavaScript
+================================================== -->
+    
+<script src="/assets/js/jquery.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script type='text/javascript' src='/assets/js/masonry.pkgd.min.js'></script>
+    
+<script src="/assets/js/theme.js"></script>    
+    
+</body>
+    
+</html>
