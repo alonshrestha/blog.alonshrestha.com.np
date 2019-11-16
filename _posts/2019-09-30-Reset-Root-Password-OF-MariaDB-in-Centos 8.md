@@ -1,10 +1,10 @@
 ---
-title: Reset MariaDB Root Password on Centos 8 | Recovery Guide
+title: Reset MariaDB Root Password on CentOS 8
 layout: post
 author: alonshrestha
 categories:
 - Linux
-- Centos 8
+- CentOS 8
 - Mariadb
 - mysql
 - password
@@ -16,9 +16,9 @@ image: assets/images/blog/2019-09-30/1.png
 featured: true
 ---
 
-MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centos 8.
+[MariaDB](https://mariadb.org/){:target="_blank"} root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on [centOS 8](https://www.centos.org/){:target="blank"}.
 
-{% include note.html content= "You should have root access on the server to reset mariadb root password." %}
+{% include note.html content= "You must have root access on the server to reset mariadb root password." %}
 
 > **Table Of Content**
 
@@ -90,7 +90,7 @@ After using the `mysql` database, update the password of root user. For that use
 {%highlight ruby%}
 MariaDB [mysql]> update user SET PASSWORD=PASSWORD("yourNewStrongPassword") WHERE USER='root';
 {%endhighlight%}
-Flush Privileges usign command `flush privileges;`
+Flush Privileges using command `flush privileges;`
 {%highlight ruby%}
 MariaDB [mysql]> flush privileges;
 {%endhighlight%}
@@ -101,7 +101,7 @@ Bye
 {%endhighlight%}
 
 # Kill mysql and mysqld_safe processor
-Find the pid value of `mysql` and `mysqld_safe` processor using command `ps aux | grep mysqld_safe`.
+Find the pid value of `mysql` and `mysqld_safe` processor using command `ps aux | grep mysqld_safe` and `ps aux | grep mysql`.
 
 {%highlight ruby%}
 [alon@localhost ~]$ ps aux | grep mysqld_safe
@@ -149,3 +149,6 @@ MariaDB [(none)]> exit
 Bye
 
 {%endhighlight%}
+
+
+{% include summaryCallout.html heading= "Summary" content= "In this article, you learned how to reset MariaDB root password on centOS 8. Please feel free to write me if you need any help." %}

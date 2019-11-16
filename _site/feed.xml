@@ -5,8 +5,8 @@
     <description>Blog related to linux tutorial, tech product, events and news.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 16 Nov 2019 18:34:51 +0545</pubDate>
-    <lastBuildDate>Sat, 16 Nov 2019 18:34:51 +0545</lastBuildDate>
+    <pubDate>Sat, 16 Nov 2019 18:54:06 +0545</pubDate>
+    <lastBuildDate>Sat, 16 Nov 2019 18:54:06 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -2385,11 +2385,11 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
       </item>
     
       <item>
-        <title>Reset MariaDB Root Password on Centos 8 | Recovery Guide</title>
-        <description>&lt;p&gt;MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centos 8.&lt;/p&gt;
+        <title>Reset MariaDB Root Password on CentOS 8</title>
+        <description>&lt;p&gt;&lt;a href=&quot;https://mariadb.org/&quot; target=&quot;_blank&quot;&gt;MariaDB&lt;/a&gt; root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on &lt;a href=&quot;https://www.centos.org/&quot; target=&quot;blank&quot;&gt;centOS 8&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
-    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; You should have root access on the server to reset mariadb root password.
+    &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; You must have root access on the server to reset mariadb root password.
 &lt;/div&gt;
 
 &lt;style&gt;
@@ -2443,7 +2443,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 &lt;/style&gt;
 
-&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; You should have root access on the server to reset mariadb root password.&lt;/div&gt;--&gt;
+&lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; You must have root access on the server to reset mariadb root password.&lt;/div&gt;--&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
@@ -2560,7 +2560,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;yourNewStrongPassword&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;USER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Flush Privileges usign command &lt;code class=&quot;highlighter-rouge&quot;&gt;flush privileges;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Flush Privileges using command &lt;code class=&quot;highlighter-rouge&quot;&gt;flush privileges;&lt;/code&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flush&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;privileges&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -2570,7 +2570,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;span class=&quot;no&quot;&gt;Bye&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;kill-mysql-and-mysqld_safe-processor&quot;&gt;Kill mysql and mysqld_safe processor&lt;/h1&gt;
-&lt;p&gt;Find the pid value of &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mysqld_safe&lt;/code&gt; processor using command &lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep mysqld_safe&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Find the pid value of &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mysqld_safe&lt;/code&gt; processor using command &lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep mysqld_safe&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep mysql&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aux&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysqld_safe&lt;/span&gt;
 
@@ -2608,6 +2608,71 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 &lt;span class=&quot;no&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exit&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;Bye&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;bs-callout bs-callout-danger&quot;&gt;
+    &lt;h4&gt;Summary&lt;/h4&gt;
+    In this article, you learned how to reset MariaDB root password on centOS 8. Please feel free to write me if you need any help.
+&lt;/div&gt;
+
+&lt;style&gt;
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+&lt;/style&gt;
+
 </description>
         <pubDate>Mon, 30 Sep 2019 00:00:00 +0545</pubDate>
         <link>http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-8/</link>
@@ -2616,7 +2681,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
         
         <category>Linux</category>
         
-        <category>Centos 8</category>
+        <category>CentOS 8</category>
         
         <category>Mariadb</category>
         

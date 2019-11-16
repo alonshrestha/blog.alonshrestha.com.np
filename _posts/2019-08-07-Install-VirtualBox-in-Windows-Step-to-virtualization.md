@@ -65,4 +65,4 @@ VirtualBox is a powerful opensource [virtualization](https://alonshrestha.com.np
 
 ![](/assets/images/blog/2019-08-07/14.PNG)
 
-{% include successCallout.html heading= "Congratulation!!" content= "Your installation is completed. Feel free to write me  if you face any probelm." %}
+{% include successCallout.html heading= "Congratulation!!" content= "Your installation is completed. Feel free to write me  if you face any problem." %}

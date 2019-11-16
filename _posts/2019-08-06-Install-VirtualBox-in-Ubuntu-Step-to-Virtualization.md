@@ -67,4 +67,4 @@ This masterpiece was developed by [Oracle Corporation](https://www.oracle.com/in
 ![](/assets/images/blog/2019-08-06/11.png)
 
 
-{% include successCallout.html heading= "Congratulation!!" content= "Your installation is completed. Feel free to write me  if you face any probelm." %}
+{% include successCallout.html heading= "Congratulation!!" content= "Your installation is completed. Feel free to write me  if you face any problem." %}
