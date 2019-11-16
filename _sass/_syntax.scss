@@ -64,8 +64,9 @@
 
 //-------------------------------------------------------------
 
-.highlight pre { background-color: #323235; }
-.highlight .hll { background-color: #272822; }
+.highlight pre { background-color: #000000 ; }
+//#323235 #242401
+.highlight .hll { background-color:whitesmoke ; } //#272822
 .highlight .c { color: #a3a19f} /* Comment */
 .highlight .err { color: #960050; background-color: #1e0010 } /* Error */
 .highlight .k { color: #66d9ef } /* Keyword */

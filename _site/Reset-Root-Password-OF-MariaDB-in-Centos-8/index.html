@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="/assets/images/favicon.png">    
+<title>Reset MariaDB Root Password on Centos 8 | Recovery Guide | Alon Shrestha</title>
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Reset MariaDB Root Password on Centos 8 Recovery Guide | alon’sTech Blog</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Reset MariaDB Root Password on Centos 8 Recovery Guide" />
+<meta name="author" content="alonshrestha" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centos 8." />
+<meta property="og:description" content="MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centos 8." />
+<link rel="canonical" href="http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-8/" />
+<meta property="og:url" content="http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-8/" />
+<meta property="og:site_name" content="alon’sTech Blog" />
+<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-09-30/1.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-09-30T00:00:00+05:45" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@alonshrestha" />
+<script type="application/ld+json">
+{"image":"http://localhost:4000/assets/images/blog/2019-09-30/1.png","@type":"BlogPosting","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Reset MariaDB Root Password on Centos 8 Recovery Guide","dateModified":"2019-09-30T00:00:00+05:45","url":"http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-8/","datePublished":"2019-09-30T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-8/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centos 8.","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i" rel="stylesheet">
+<link href="/assets/css/theme.css" rel="stylesheet">
+<link href="/assets/css/custom.css" rel="stylesheet">
+
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5d6693485fea9f001288d6b1&product=sticky-share-buttons' async='async'></script>
+    
+
+<!--Crisp online ChatBox-->
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="5fd36e42-48e8-483f-b8b6-ed9d98308299";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+    <!--    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c5fe413e-8b5c-4401-ac51-22fd7ac7209c";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>-->
+    
+</head>
+    
+
+    
+
+<body class="layout-post">
+
+<div class="sharethis-sticky-share-buttons"></div>
+
+<!-- Begin Menu Navigation
+================================================== -->
+<header class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsWow" aria-controls="navbarsWow" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="container">
+
+        <!-- Begin Logo -->
+        <a class="navbar-brand" href="/">
+        <img src="/assets/images/personal/head.jpg" alt="Alon Shrestha">
+        </a>
+        <!-- End Logo -->
+
+        <!-- Begin Menu -->
+        <div class="collapse navbar-collapse" id="navbarsWow">
+            
+            <!-- Begin Menu -->
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">                
+                <a class="nav-link" href="/index.html">Home</a>
+                </li>
+
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
+<!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">Right Sidebar</a>-->
+<!--                    </div>-->
+<!--                </li>-->
+
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="/archive">Archive</a>-->
+<!--                </li>-->
+
+                <li class="nav-item">                
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">                
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li> 
+                
+<!--                 <li class="nav-item">                -->
+<!--                    <a target="_blank" class="nav-link" href="https://github.com/wowthemesnet/affiliates-jekyll-theme">Github</a>-->
+<!--                </li> -->
+                
+                
+    <!--                <li class="nav-item">                -->
+    <!--                    <a class="nav-link highlight" href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip">Download Theme</a>-->
+    <!--                </li> -->
+                
+            </ul>
+            <!-- End Menu -->
+            
+        </div>
+    </div>
+</header>
+    
+
+    
+<!-- End Menu Navigation
+================================================== -->
+    
+<div class="site-content">
+    
+    <div class="container">
+
+    <!-- Site Title
+    ================================================== -->
+
+    <div class="mainheading" style="display:none;">
+        <h1 class="sitetitle">Alon Shrestha</h1>
+        <p class="lead">
+             Blog related to linux tutorial, tech product, events and news.
+        </p>
+    </div>
+
+
+    <!-- Content
+    ================================================== --> 
+    <div class="main-content">
+        <!-- Begin Article
+================================================== -->
+
+	<div class="row">
+
+		<!-- Sidebar -->
+        <div class="col-sm-4">
+        <div class="sidebar">
+
+        <div class="sidebar-section">
+            <h5><span>Newsletter</span></h5>
+            <!-- Go to your Mailchimp account/Lists/Sign Up Forms/Embedded forms and replace the code below with your own-->
+
+<!-- Begin MailChimp Signup Form-->
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; }
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+		<form action="https://gmail.us3.list-manage.com/subscribe/post?u=24552ab282fd36f7d33fd5d83&amp;id=266a6fa969" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+	<!--<form action="https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>-->
+	<div id="mc_embed_signup_scroll">
+	<h2>Sign up to get my weekly free guide</h2>
+
+<div class="mc-field-group">
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-mail Address">
+</div>
+		<div class="mc-field-group">
+
+			<input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="First Name">
+		</div>
+		<div class="mc-field-group">
+			<input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="Last Name">
+		</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_8aeb20a530e124561927d3bd8_8c3d2d214b" tabindex="-1" value=""></div>
+	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+	</div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='text';fnames[1]='MMERGE1';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='text';fnames[4]='MMERGE4';ftypes[4]='text';fnames[5]='MMERGE5';ftypes[5]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/24552ab282fd36f7d33fd5d83/de4957ff2a2abcf66d2432cbb.js");</script>
+<!--End mc_embed_signup-->
+
+        </div>
+
+        <div class="sidebar-section">
+            <h5><span>Useful</span></h5>
+            <ul style="list-none;">
+            <li><a target="_blank" href="https://m.do.co/c/84c9b45d0c47">Digital Ocean</a></li>
+            <li><a target="blank" href="https://stackoverflow.com/">Stack Overflow</a></li>
+<!--            <li><a target="blank" href="https://www.techmeme.com/">Techmeme</a></li>-->
+<!--            <li><a target="blank" href="https://jekyllthemes.dev">Jekyll Themes</a></li>-->
+            </ul>
+        </div>
+
+        <div class="sidebar-section">
+             <h5><span>Recommended</span></h5>
+           <a href="https://easydigitaldownloads.com/?ref=2135" title="Sell digital downloads with WordPress, for free"><img src="https://easydigitaldownloads.com/wp-content/uploads/2015/02/300x250-2.png" alt="Sell digital with WordPress, for free" /></a>
+        </div>
+</div>
+        </div>
+
+
+		<!-- Post -->
+        
+
+		<div class="col-sm-8">
+			<div class="mainheading">
+
+                <!-- Post Categories -->
+
+                <div class="after-post-cats">
+                    <ul class="tags mb-4">
+                        
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Centos-8">Centos 8</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Linux">Linux</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Linux-tips">Linux tips</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#Mariadb">Mariadb</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#mysql">mysql</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#password">password</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#reset">reset</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#tech">tech</a>
+                        </li>
+                        
+                        <li>
+                            <a class="smoothscroll" href="/categories#tech-tips">tech tips</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+
+
+
+                <!--               <div class="after-post-tags">-->
+<!--                    <ul class="tags">-->
+<!--                        -->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Centos-8">Centos 8</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Centos 8</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Linux">Linux</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Linux</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Linux-tips">Linux tips</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Linux tips</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#Mariadb">Mariadb</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">Mariadb</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#mysql">mysql</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">mysql</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#password">password</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">password</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#reset">reset</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">reset</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#tech">tech</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">tech</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                        <li>-->
+<!--                            <a class="smoothscroll" href="/categories#tech-tips">tech tips</a>-->
+
+<!--                            &lt;!&ndash; <a href="/category/{ category | slugify }}/">tech tips</a>&ndash;&gt;-->
+<!--                        </li>-->
+<!--                        -->
+<!--                    </ul>-->
+<!--                </div>-->
+                <!-- End Categories -->
+
+                <!-- Post Title -->
+				<h1 class="posttitle">Reset MariaDB Root Password on Centos 8 | Recovery Guide</h1>
+
+			</div>
+
+			<!-- Post Featured Image -->
+			<img class="featured-image img-fluid" src="/assets/images/blog/2019-09-30/1.png" alt="Reset MariaDB Root Password on Centos 8 | Recovery Guide">
+			<!-- End Featured Image -->
+
+			<!-- Post Content -->
+			<div class="article-post">
+				<p>MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centos 8.</p>
+
+<div class="alert alert-info">
+    <i class="fa fa-info-circle"></i> <b>Note:</b> You should have root access on the server to reset mariadb root password.
+</div>
+
+<style>
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block > p,
+    .alert-block > ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+</style>
+
+<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> You should have root access on the server to reset mariadb root password.</div>-->
+
+<blockquote>
+  <p><strong>Table Of Content</strong></p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#stop-mariadb-server" id="markdown-toc-stop-mariadb-server">Stop MariaDB Server</a></li>
+  <li><a href="#start-mariadb-server-with-safe-mode" id="markdown-toc-start-mariadb-server-with-safe-mode">Start MariaDB Server with Safe Mode</a></li>
+  <li><a href="#login-to-mariadb-server-as-root" id="markdown-toc-login-to-mariadb-server-as-root">Login to MariaDB Server as Root</a></li>
+  <li><a href="#change-mariadb-root-password" id="markdown-toc-change-mariadb-root-password">Change MariaDB Root Password</a></li>
+  <li><a href="#kill-mysql-and-mysqld_safe-processor" id="markdown-toc-kill-mysql-and-mysqld_safe-processor">Kill mysql and mysqld_safe processor</a></li>
+  <li><a href="#restart-mariadb" id="markdown-toc-restart-mariadb">Restart MariaDB</a></li>
+  <li><a href="#login-to-mariadb" id="markdown-toc-login-to-mariadb">Login to MariaDB</a></li>
+</ul>
+
+<h1 id="stop-mariadb-server">Stop MariaDB Server</h1>
+<p>First you need to down your mariaDB server. For that use the command <code class="highlighter-rouge">sudo systemctl stop mariadb</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">stop</span> <span class="n">mariadb</span></code></pre></figure>
+
+<h1 id="start-mariadb-server-with-safe-mode">Start MariaDB Server with Safe Mode</h1>
+<p>Start mariadb server with safe mode using <code class="highlighter-rouge">mysqld_safe</code>. For that use the command <code class="highlighter-rouge">sudo mysqld_safe --skip-grant-tables &amp;</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">mysqld_safe</span> <span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">grant</span><span class="o">-</span><span class="n">tables</span> <span class="o">&amp;</span></code></pre></figure>
+
+<p>After entering the above command, if you got <code class="highlighter-rouge">hang</code> as shown below, press <code class="highlighter-rouge">enter</code>.  This will redirect you again to command line.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">root</span><span class="vi">@localhost</span> <span class="n">alon</span><span class="p">]</span><span class="c1"># mysqld_safe --skip-grant-tables &amp;</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="mi">1892</span>
+<span class="p">[</span><span class="n">root</span><span class="vi">@localhost</span> <span class="n">alon</span><span class="p">]</span><span class="c1"># 191116 17:21:13 mysqld_safe Logging to '/var/log/mariadb/mariadb.log'.</span>
+<span class="mi">191116</span> <span class="mi">17</span><span class="p">:</span><span class="mi">21</span><span class="p">:</span><span class="mi">13</span> <span class="n">mysqld_safe</span> <span class="no">Starting</span> <span class="n">mysqld</span> <span class="n">daemon</span> <span class="n">with</span> <span class="n">databases</span> <span class="n">from</span> <span class="sr">/var/</span><span class="n">lib</span><span class="o">/</span><span class="n">mysql</span></code></pre></figure>
+
+<!--<div markdown="span" class="alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Using --skip-grant-tables  runs the server without grants, which allows you to enter into the server without password and it is possible for user from other networks to connect to the server. </div>-->
+
+<div class="alert alert-success">
+    <i class="fa fa-check-square-o"></i> <b>Tip:</b> Using --skip-grant-tables  runs the server without grants, which allows you to enter into the server without password and it is possible for user from other networks to connect to the server. 
+</div>
+
+<style>
+
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block > p,
+    .alert-block > ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+</style>
+
+<h1 id="login-to-mariadb-server-as-root">Login to MariaDB Server as Root</h1>
+<p>Now, you will be able  to login in mariaDB as <code class="highlighter-rouge">root</code> user. For that use the command <code class="highlighter-rouge">mysql -u root</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span></code></pre></figure>
+
+<p>You will be login to the mariadb server.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span>
+<span class="no">Welcome</span> <span class="n">to</span> <span class="n">the</span> <span class="no">MariaDB</span> <span class="n">monitor</span><span class="o">.</span>  <span class="no">Commands</span> <span class="k">end</span> <span class="n">with</span> <span class="p">;</span> <span class="n">or</span> <span class="p">\</span><span class="n">g</span><span class="o">.</span>
+<span class="no">Your</span> <span class="no">MariaDB</span> <span class="n">connection</span> <span class="nb">id</span> <span class="n">is</span> <span class="mi">2</span>
+<span class="no">Server</span> <span class="ss">version: </span><span class="mf">5.5</span><span class="o">.</span><span class="mi">60</span><span class="o">-</span><span class="no">MariaDB</span> <span class="no">MariaDB</span> <span class="no">Server</span>
+
+<span class="no">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="no">Oracle</span><span class="p">,</span> <span class="no">MariaDB</span> <span class="no">Corporation</span> <span class="no">Ab</span> <span class="n">and</span> <span class="n">others</span><span class="o">.</span>
+
+<span class="no">Type</span> <span class="s1">'help;'</span> <span class="n">or</span> <span class="s1">'\h'</span> <span class="k">for</span> <span class="n">help</span><span class="o">.</span> <span class="no">Type</span> <span class="s1">'\c'</span> <span class="n">to</span> <span class="n">clear</span> <span class="n">the</span> <span class="n">current</span> <span class="n">input</span> <span class="n">statement</span><span class="o">.</span>
+
+<span class="no">MariaDB</span> <span class="p">[(</span><span class="n">none</span><span class="p">)]</span><span class="o">&gt;</span></code></pre></figure>
+
+<h1 id="change-mariadb-root-password">Change MariaDB Root Password</h1>
+<p>First change the database. For that use the command <code class="highlighter-rouge">use mysql;</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">MariaDB</span> <span class="p">[(</span><span class="n">none</span><span class="p">)]</span><span class="o">&gt;</span> <span class="n">use</span> <span class="n">mysql</span><span class="p">;</span></code></pre></figure>
+
+<p>After using the <code class="highlighter-rouge">mysql</code> database, update the password of root user. For that use the command <code class="highlighter-rouge">update user SET PASSWORD=PASSWORD("yourNewStrongPassword") WHERE USER='root';</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">MariaDB</span> <span class="p">[</span><span class="n">mysql</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">update</span> <span class="n">user</span> <span class="no">SET</span> <span class="no">PASSWORD</span><span class="o">=</span><span class="no">PASSWORD</span><span class="p">(</span><span class="s2">"yourNewStrongPassword"</span><span class="p">)</span> <span class="no">WHERE</span> <span class="no">USER</span><span class="o">=</span><span class="s1">'root'</span><span class="p">;</span></code></pre></figure>
+
+<p>Flush Privileges usign command <code class="highlighter-rouge">flush privileges;</code></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">MariaDB</span> <span class="p">[</span><span class="n">mysql</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">flush</span> <span class="n">privileges</span><span class="p">;</span></code></pre></figure>
+
+<p>Exit from mariadb.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">MariaDB</span> <span class="p">[</span><span class="n">mysql</span><span class="p">]</span><span class="o">&gt;</span> <span class="nb">exit</span>
+<span class="no">Bye</span></code></pre></figure>
+
+<h1 id="kill-mysql-and-mysqld_safe-processor">Kill mysql and mysqld_safe processor</h1>
+<p>Find the pid value of <code class="highlighter-rouge">mysql</code> and <code class="highlighter-rouge">mysqld_safe</code> processor using command <code class="highlighter-rouge">ps aux | grep mysqld_safe</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ps</span> <span class="n">aux</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">mysqld_safe</span>
+
+<span class="n">root</span>      <span class="mi">1892</span>  <span class="mf">0.0</span>  <span class="mf">0.0</span> <span class="mi">113312</span>  <span class="mi">1652</span> <span class="n">pts</span><span class="o">/</span><span class="mi">0</span>    <span class="no">S</span>    <span class="mi">17</span><span class="p">:</span><span class="mi">21</span>   <span class="mi">0</span><span class="p">:</span><span class="mo">00</span> <span class="o">/</span><span class="n">bin</span><span class="o">/</span><span class="n">sh</span> <span class="sr">/bin/m</span><span class="n">ysqld_safe</span> <span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">grant</span><span class="o">-</span><span class="n">tables</span>
+<span class="n">root</span>      <span class="mi">2062</span>  <span class="mf">0.0</span>  <span class="mf">0.2</span> <span class="mi">239088</span>  <span class="mi">4160</span> <span class="n">pts</span><span class="o">/</span><span class="mi">0</span>    <span class="no">T</span>    <span class="mi">17</span><span class="p">:</span><span class="mi">28</span>   <span class="mi">0</span><span class="p">:</span><span class="mo">00</span> <span class="n">sudo</span> <span class="n">mysqld_safe</span> <span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">grant</span><span class="o">-</span><span class="n">tables</span>
+<span class="n">alon</span>      <span class="mi">2288</span>  <span class="mf">0.0</span>  <span class="mf">0.0</span> <span class="mi">112708</span>   <span class="mi">988</span> <span class="n">pts</span><span class="o">/</span><span class="mi">0</span>    <span class="no">R</span><span class="o">+</span>   <span class="mi">17</span><span class="p">:</span><span class="mi">56</span>   <span class="mi">0</span><span class="p">:</span><span class="mo">00</span> <span class="n">grep</span> <span class="o">--</span><span class="n">color</span><span class="o">=</span><span class="n">auto</span> <span class="n">mysqld_safe</span></code></pre></figure>
+
+<p>Now kill the processor using command <code class="highlighter-rouge">kill -9</code></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">kill</span> <span class="o">-</span><span class="mi">9</span> <span class="mi">1892</span>
+
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">kill</span> <span class="o">-</span><span class="mi">9</span> <span class="mi">2062</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span>  <span class="no">Killed</span>                  <span class="n">sudo</span> <span class="n">mysqld_safe</span> <span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">grant</span><span class="o">-</span><span class="n">tables</span></code></pre></figure>
+
+<h1 id="restart-mariadb">Restart MariaDB</h1>
+<p>Use the command <code class="highlighter-rouge">sudo systemctl stop mariadb</code> and <code class="highlighter-rouge">sudo systemctl stop mariadb</code></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">stop</span> <span class="n">mariadb</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">mariadb</span></code></pre></figure>
+
+<h1 id="login-to-mariadb">Login to MariaDB</h1>
+<p>Use Command <code class="highlighter-rouge">mysql -u root -p</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="nb">p</span>
+
+<span class="no">Enter</span> <span class="ss">password:
+</span><span class="no">Welcome</span> <span class="n">to</span> <span class="n">the</span> <span class="no">MariaDB</span> <span class="n">monitor</span><span class="o">.</span>  <span class="no">Commands</span> <span class="k">end</span> <span class="n">with</span> <span class="p">;</span> <span class="n">or</span> <span class="p">\</span><span class="n">g</span><span class="o">.</span>
+<span class="no">Your</span> <span class="no">MariaDB</span> <span class="n">connection</span> <span class="nb">id</span> <span class="n">is</span> <span class="mi">8</span>
+<span class="no">Server</span> <span class="ss">version: </span><span class="mf">5.5</span><span class="o">.</span><span class="mi">60</span><span class="o">-</span><span class="no">MariaDB</span> <span class="no">MariaDB</span> <span class="no">Server</span>
+
+<span class="no">Copyright</span> <span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="mi">2000</span><span class="p">,</span> <span class="mi">2018</span><span class="p">,</span> <span class="no">Oracle</span><span class="p">,</span> <span class="no">MariaDB</span> <span class="no">Corporation</span> <span class="no">Ab</span> <span class="n">and</span> <span class="n">others</span><span class="o">.</span>
+
+<span class="no">Type</span> <span class="s1">'help;'</span> <span class="n">or</span> <span class="s1">'\h'</span> <span class="k">for</span> <span class="n">help</span><span class="o">.</span> <span class="no">Type</span> <span class="s1">'\c'</span> <span class="n">to</span> <span class="n">clear</span> <span class="n">the</span> <span class="n">current</span> <span class="n">input</span> <span class="n">statement</span><span class="o">.</span>
+
+<span class="no">MariaDB</span> <span class="p">[(</span><span class="n">none</span><span class="p">)]</span><span class="o">&gt;</span> <span class="nb">exit</span>
+<span class="no">Bye</span></code></pre></figure>
+
+                <div class="clearfix"></div>
+			</div>
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2019-09-30">30 Sep 2019</time></span>
+                
+                </small>
+            </p>
+
+
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation mt-4 prevnextlinks">
+              
+                <div class="col-md-6 rightborder pl-0">
+                    <a class="thepostlink" href="http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/">&laquo; Create and Host your Online Portfolio for Free Using Github in 3 Steps</a>
+                </div>
+              
+              
+                <div class="col-md-6 text-right pr-0">
+                    <a class="thepostlink" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/">Working with Compression and Archive Files on Linux Using tar &raquo;</a>
+                </div>
+              
+            </div>
+            <!-- End Prev/Next -->
+
+
+             <!-- Author Box -->
+            
+            <div class="row post-top-meta">
+                <div class="col-md-2">
+                    <img class="author-thumb" src="https://www.gravatar.com/avatar/328cf0c5d7b7464fbc7a35d54a90c778?s=250&d=mm&r=x" alt="Alon Shrestha">
+                </div>
+                <div class="col-md-10">
+                    <a target="_blank" class="link-dark" href="https://alonshrestha.com.np">Alon Shrestha</a><a target="_blank" href="https://twitter.com/StechAlon" class="btn follow">Follow</a><br>
+                    <span class="author-description"> A Computer Science Student </span>
+                </div>
+            </div>
+
+
+
+            
+
+
+            <!-- Begin Comments
+            ================================================== -->
+            <section>
+            <div id="comments">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'blog-alonshrestha-com-np'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+            </section>
+            <!--End Comments
+            ================================================== -->
+
+
+
+		</div>
+		<!-- End Post -->
+
+
+
+	</div>
+
+<!-- End Article
+================================================== -->
+    </div>
+
+    </div><!-- /.container --> 
+
+
+
+    <!-- Before Footer
+<!--    ================================================== &ndash;&gt; -->
+    <div class="beforefooter" style="text-align: center;">
+        <div class="container" style="text-align: center;">
+            <div class="row justify-content-center" style="text-align: center;" >
+<!--                <div class="col-md-8">-->
+<!--                    <h3>This is your final call to action area. Shine like a star, make them want you, tell 'em to push that button!</h3>-->
+<!--                    <p>We offer a <span>30 Day Money Back Guarantee</span>, so joining is <span class="risk-free">Risk-Free!</span></p>-->
+<!--                    <a class="btn btn-primary btn-lg" href="#">Join us yesterday</a>-->
+<!--                </div>-->
+                <div class="col-md-4 text-center footersocial" style="text-align: center;">
+                    <h5 style="text-align: center;" >Connect with Me</h5>
+                    <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    <a href="https://www.facebook.com/Alons-Tech-Blog-100359161411871/" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://instagram.com/a.l_o.n" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/stechalon" target="_blank" ><i class="fa fa-twitter"></i></a>
+                    <a href="mailto:blog.alonshrestha.com.np@gmail.com" target="_blank" ><i class="fa fa-envelope-o"></i></a>
+                    <a target="_blank" href="https://linkedin.com/in/alonshrestha"><i class="fa fa-linkedin"></i></a>
+                    <a target="_blank" href="https://github.com/alonshrestha" ><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+   </div>
+
+    <!-- Begin Footer
+    ================================================== -->
+    <footer class="footer">
+
+        <div class="container">
+
+<!--            <div class="row">-->
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <a href="/contact">-->
+<!--                <img src="/assets/images/logo-footer.png">-->
+<!--                </a>-->
+<!--    `            </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <h5 class="title">Resources</h5>-->
+<!--                <ul>-->
+<!--                <li><a target="_blank" href="https://m.do.co/c/84c9b45d0c47">Digital Ocean</a></li>-->
+<!--                <li><a target="blank" href="https://www.cloudways.com/en/pricing.php?id=153986&amp;a_bid=005da123">Cloudways</a></li>-->
+<!--                <li><a target="blank" href="http://shareasale.com/r.cfm?b=875645&amp;u=1087935&amp;m=41388&amp;urllink=&amp;afftrack=">Page Speed Test</a></li>-->
+<!--                <li><a target="blank" href="https://www.wowthemes.net/affiliate-area/?utm_source=fromjekyllsidebar&utm_campaign=sidebar">Partner with Us</a></li>-->
+<!--                <li><a target="blank" href="https://www.wowthemes.net/category/jekyll-themes/">Our Jekyll Themes</a></li>-->
+<!--                </ul>-->
+<!--                </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--                <div class="footer-widget">-->
+<!--                <h5 class="title">Author</h5>-->
+<!--                <ul>-->
+<!--                <li><a href="https://www.wowthemes.net/premium-themes-templates/">About Us</a></li>-->
+<!--                <li><a target="_blank" href="https://www.wowthemes.net/affiliate-area/">Affiliates</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/terms-and-conditions/">License</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/blog/">Blog</a></li>-->
+<!--                <li><a href="https://www.wowthemes.net/support/">Contact</a></li>-->
+<!--                </ul>-->
+<!--                </div>-->
+<!--                </div>-->
+
+<!--                <div class="col-sm-3">-->
+<!--&lt;!&ndash;                <div class="footer-widget textwidget">&ndash;&gt;-->
+<!--&lt;!&ndash;                    <h5 class="title">Download</h5>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <p>Download "Affiliates" theme and use it for your next Jekyll project. If you have a question, a bug report, or if you simply want to say hi, <a href="https://www.wowthemes.net/support/">contact us here</a>.</p> &ndash;&gt;-->
+<!--&lt;!&ndash;                    <a href="https://github.com/wowthemesnet/affiliates-jekyll-theme/archive/master.zip">Download Theme</a>                    &ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                </div>&ndash;&gt;-->
+<!--            </div>-->
+            <div class="col-sm-12">
+            <div class="copyright" style="text-align: center;">
+                <p style="text-align: center;">
+                    Copyright © 2019 Alon Shrestha <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                </p>
+<!--                Plese, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/-->
+                <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a>
+                </p>
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
+    <!-- End Footer
+    ================================================== -->
+
+    
+</div> <!-- /.site-content>
+
+<!-- JavaScript
+================================================== -->
+    
+<script src="/assets/js/jquery.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    
+<script type='text/javascript' src='/assets/js/masonry.pkgd.min.js'></script>
+    
+<script src="/assets/js/theme.js"></script>    
+    
+</body>
+    
+</html>
