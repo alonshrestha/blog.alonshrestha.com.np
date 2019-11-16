@@ -12,7 +12,7 @@ categories:
 - tech
 - tech tips
 - Linux tips
-image: assets/images/blog/2019-09-30/1.png
+image: assets/images/blog/2019-11-15/1.png
 featured: true
 ---
 
