@@ -1,6 +1,6 @@
 ---
 layout: post-right-sidebar
-title:  "Install VirtualBox in Ubuntu | Step to Virtualization"
+title:  "Install VirtualBox in Ubuntu Downloading from virtualbox.org | Step to Virtualization"
 author: alonshrestha
 categories: [ Virtualization, Virtual Box, Oracle, Installation, Linux, Hypervisor, Tutorial]
 image: assets/images/blog/2019-08-06/123.jpg
