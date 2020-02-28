@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
-<title>Working with Compression and Archive Files on Linux Using tar | Alon Shrestha</title>
+<title>tar Command in Linux with Example | Alon Shrestha</title>
 <!-- Begin Jekyll SEO tag v2.5.0 -->
-<title>Working with Compression and Archive Files on Linux Using tar | alon’sTech Blog</title>
+<title>tar Command in Linux with Example | alon’sTech Blog</title>
 <meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Working with Compression and Archive Files on Linux Using tar" />
+<meta property="og:title" content="tar Command in Linux with Example" />
 <meta name="author" content="alonshrestha" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. " />
 <meta property="og:description" content="Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. " />
-<link rel="canonical" href="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/" />
-<meta property="og:url" content="http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/" />
+<link rel="canonical" href="http://localhost:4000/tar-in-Linux/" />
+<meta property="og:url" content="http://localhost:4000/tar-in-Linux/" />
 <meta property="og:site_name" content="alon’sTech Blog" />
 <meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-19/1.png" />
 <meta property="og:type" content="article" />
@@ -23,7 +23,7 @@
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@alonshrestha" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"http://localhost:4000/assets/images/blog/2019-10-19/1.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"url":"http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/","headline":"Working with Compression and Archive Files on Linux Using tar","dateModified":"2019-10-19T00:00:00+05:45","datePublished":"2019-10-19T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Working-with-Compession-and-Archive-In-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. ","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","image":"http://localhost:4000/assets/images/blog/2019-10-19/1.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"url":"http://localhost:4000/tar-in-Linux/","headline":"tar Command in Linux with Example","dateModified":"2019-10-19T00:00:00+05:45","datePublished":"2019-10-19T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tar-in-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. ","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -76,8 +76,8 @@
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
 <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/">Left Sidebar</a>-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/">Right Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Portfolio-using-Github/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4000/Links-in-Linux/">Right Sidebar</a>-->
 <!--                    </div>-->
 <!--                </li>-->
 
@@ -308,12 +308,12 @@
                 <!-- End Categories -->
 
                 <!-- Post Title -->
-				<h1 class="posttitle">Working with Compression and Archive Files on Linux Using tar</h1>
+				<h1 class="posttitle">tar Command in Linux with Example</h1>
 
 			</div>
 
 			<!-- Post Featured Image -->
-			<img class="featured-image img-fluid" src="/assets/images/blog/2019-10-19/1.png" alt="Working with Compression and Archive Files on Linux Using tar">
+			<img class="featured-image img-fluid" src="/assets/images/blog/2019-10-19/1.png" alt="tar Command in Linux with Example">
 			<!-- End Featured Image -->
 
 			<!-- Post Content -->
@@ -692,12 +692,12 @@
             <div class="row PageNavigation mt-4 prevnextlinks">
               
                 <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/Create-and-host-your-online-portfolio-for-free-Usign-Github/">&laquo; Create and Host your Online Portfolio for Free Using Github in 3 Steps</a>
+                    <a class="thepostlink" href="http://localhost:4000/Portfolio-using-Github/">&laquo; How to Create a Portfolio in Github</a>
                 </div>
               
               
                 <div class="col-md-6 text-right pr-0">
-                    <a class="thepostlink" href="http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/">Understanding links on Linux &raquo;</a>
+                    <a class="thepostlink" href="http://localhost:4000/Links-in-Linux/">Creating Hard and Soft Links in Linux &raquo;</a>
                 </div>
               
             </div>

@@ -1,4 +1,4 @@
-    ---
+---
 title: "Linux File System Hierarchy"
 layout: post
 author: alonshrestha

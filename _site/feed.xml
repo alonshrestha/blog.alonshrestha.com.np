@@ -5,12 +5,12 @@
     <description>Blog related to linux tutorial, tech product, events and news.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 24 Feb 2020 09:11:50 +0545</pubDate>
-    <lastBuildDate>Mon, 24 Feb 2020 09:11:50 +0545</lastBuildDate>
+    <pubDate>Fri, 28 Feb 2020 09:29:45 +0545</pubDate>
+    <lastBuildDate>Fri, 28 Feb 2020 09:29:45 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
-        <title>Using Screen Command on Linux | How this helps and Why you should use it?</title>
+        <title>Using Screen in Linux with Cheat Sheet</title>
         <description>&lt;p&gt;Screen command on Linux is a useful utility for those people who work on multiple screen using SSH session. This command allows you to open multiple session in a terminal even if you are not in a graphical session. This also allows you to share a session with other users or to attach and detach to a remote terminal session. Screen command is used when you need to perform a long-running task on a remote machine.&lt;/p&gt;
 &lt;h1 id=&quot;installing-screen&quot;&gt;Installing Screen&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;Debian base system&lt;/strong&gt;&lt;/p&gt;
@@ -268,7 +268,7 @@
       </item>
     
       <item>
-        <title>Reset MariaDB Root Password on CentOS 8</title>
+        <title>Hwo to Reset MYSQL/MariaDB Root Password in CentOS 8</title>
         <description>&lt;p&gt;&lt;a href=&quot;https://mariadb.org/&quot; target=&quot;_blank&quot;&gt;MariaDB&lt;/a&gt; root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on &lt;a href=&quot;https://www.centos.org/&quot; target=&quot;blank&quot;&gt;centOS 8&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
@@ -558,8 +558,8 @@
 
 </description>
         <pubDate>Fri, 15 Nov 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-8/</link>
-        <guid isPermaLink="true">http://localhost:4000/Reset-Root-Password-OF-MariaDB-in-Centos-8/</guid>
+        <link>http://localhost:4000/reset-root-password-mysql-mariadb/</link>
+        <guid isPermaLink="true">http://localhost:4000/reset-root-password-mysql-mariadb/</guid>
         
         
         <category>Linux</category>
@@ -717,7 +717,7 @@ sudo mv /&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span 
       </item>
     
       <item>
-        <title>Using Wildcards on Linux | How is this helpful?</title>
+        <title>Wildcards in Linux with Examples</title>
         <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Wildcards&lt;/code&gt; make your workflow a lot easier when you are working with files. Wildcards are the character that allows you to &lt;code class=&quot;highlighter-rouge&quot;&gt;search&lt;/code&gt; any class of characters in &lt;code class=&quot;highlighter-rouge&quot;&gt;shell command&lt;/code&gt; in Linux or other operating systems. This increases your efficiency of search. There are different types of wildcards which are described below.&lt;/p&gt;
 
 &lt;table&gt;
@@ -924,8 +924,8 @@ The below example shows all the matched files starting with the range of &lt;cod
 
 </description>
         <pubDate>Fri, 01 Nov 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Working-on-wildcards-on-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/Working-on-wildcards-on-Linux/</guid>
+        <link>http://localhost:4000/wildcards-in-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/wildcards-in-Linux/</guid>
         
         
         <category>Linux</category>
@@ -949,7 +949,7 @@ The below example shows all the matched files starting with the range of &lt;cod
       </item>
     
       <item>
-        <title>Internal Command Vs External Command | Linux Shell</title>
+        <title>Internal and External Command in Linux Shell</title>
         <description>&lt;h1 id=&quot;internal-command&quot;&gt;Internal Command&lt;/h1&gt;
 &lt;p&gt;This type of command is the part of the system which is already loaded in the system. They are independent and can be executed at any time from the memory. Execution of this command is assumed to be fast because of the shell builtin. Some of the examples of this are &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;history&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;help&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;kill&lt;/code&gt; etc. To see the list of  the builtin command type &lt;code class=&quot;highlighter-rouge&quot;&gt;help&lt;/code&gt; in your shell.&lt;/p&gt;
 
@@ -1132,8 +1132,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 </description>
         <pubDate>Wed, 30 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Internal-Command-vs-External-Command/</link>
-        <guid isPermaLink="true">http://localhost:4000/Internal-Command-vs-External-Command/</guid>
+        <link>http://localhost:4000/internal-and-external-cmd/</link>
+        <guid isPermaLink="true">http://localhost:4000/internal-and-external-cmd/</guid>
         
         
         <category>Linux</category>
@@ -1159,7 +1159,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
       </item>
     
       <item>
-        <title>Create Custom Command on Linux</title>
+        <title>Create Custom Commands in Linux</title>
         <description>&lt;p&gt;Linux provides users to create custom commands on the terminal. This allows users to execute the command in terminal and function according to the need. For custom command Linux uses &lt;code class=&quot;highlighter-rouge&quot;&gt;aliases&lt;/code&gt; command type.&lt;/p&gt;
 
 &lt;h1 id=&quot;aliases&quot;&gt;Aliases&lt;/h1&gt;
@@ -1285,7 +1285,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
       </item>
     
       <item>
-        <title>3 types of Command on Linux Shell</title>
+        <title>Types of Command in Linux</title>
         <description>&lt;p&gt;There are three kind of command found on &lt;a href=&quot;https://en.wikipedia.org/wiki/Bash_(Unix_shell)&quot; target=&quot;_blank&quot;&gt;Linux Bash Shell (Bourne Again Shell)&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -1498,8 +1498,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 </description>
         <pubDate>Tue, 29 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Types-of-command-on-Linux-Shell/</link>
-        <guid isPermaLink="true">http://localhost:4000/Types-of-command-on-Linux-Shell/</guid>
+        <link>http://localhost:4000/Types-of-command-on-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/Types-of-command-on-Linux/</guid>
         
         
         <category>Linux</category>
@@ -1515,7 +1515,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
       </item>
     
       <item>
-        <title>Understanding Linux File System Hierarchy and its Types</title>
+        <title>Linux File System Hierarchy</title>
         <description>&lt;p&gt;All the files on the Linux are organized into a single inverted tree directory which is also known as &lt;a href=&quot;https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard&quot;&gt;file system hierarchy&lt;/a&gt;. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -1787,7 +1787,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
       </item>
     
       <item>
-        <title>Editing files with Vim on Linux  |  Beginner's Guide</title>
+        <title>Vim in linux Cheat Sheet</title>
         <description>&lt;p&gt;Editing &lt;code class=&quot;highlighter-rouge&quot;&gt;files&lt;/code&gt; is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -2228,8 +2228,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 22 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Editing-Files-with-VIM-in-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/Editing-Files-with-VIM-in-Linux/</guid>
+        <link>http://localhost:4000/VIM-in-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/VIM-in-Linux/</guid>
         
         
         <category>Linux</category>
@@ -2249,7 +2249,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
       </item>
     
       <item>
-        <title>Understanding links on Linux</title>
+        <title>Creating Hard and Soft Links in Linux</title>
         <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Links&lt;/code&gt; are assigned to file on Linux which works as &lt;code class=&quot;highlighter-rouge&quot;&gt;aliases&lt;/code&gt;. There are two types of links on Linux &lt;code class=&quot;highlighter-rouge&quot;&gt;symbolic links&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;hard links&lt;/code&gt;. In this article, we will learn how to use and manage links on Linux.&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -2557,8 +2557,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 20 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/Understanding-Hard-and-Soft-Links-In-Linux/</guid>
+        <link>http://localhost:4000/Links-in-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4000/Links-in-Linux/</guid>
         
         
         <category>Linux</category>
