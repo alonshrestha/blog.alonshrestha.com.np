@@ -1,5 +1,5 @@
     ---
-title: Linux File System Hierarchy
+title: "Linux File System Hierarchy"
 layout: post
 author: alonshrestha
 categories:
