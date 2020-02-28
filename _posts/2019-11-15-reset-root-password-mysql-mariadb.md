@@ -1,5 +1,5 @@
 ---
-title: Reset MariaDB Root Password on CentOS 8
+title: Hwo to Reset MYSQL/MariaDB Root Password on CentOS 8
 layout: post
 author: alonshrestha
 categories:
