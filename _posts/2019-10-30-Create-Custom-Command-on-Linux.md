@@ -1,5 +1,5 @@
 ---
-title: Create Custom Command on Linux
+title: Create Custom Commands in Linux
 layout: post
 author: alonshrestha
 categories:

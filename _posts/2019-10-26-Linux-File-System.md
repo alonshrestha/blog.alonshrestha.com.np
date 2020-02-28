@@ -1,5 +1,5 @@
----
-title: Understanding Linux File System Hierarchy and its Types
+    ---
+title: Linux File System Hierarchy
 layout: post
 author: alonshrestha
 categories:

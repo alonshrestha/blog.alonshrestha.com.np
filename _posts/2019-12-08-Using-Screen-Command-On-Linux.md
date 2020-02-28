@@ -1,5 +1,5 @@
 ---
-title: Using Screen on Linux with Cheat Sheet 
+title: Using Screen in Linux with Cheat Sheet 
 layout: post
 author: alonshrestha
 categories:

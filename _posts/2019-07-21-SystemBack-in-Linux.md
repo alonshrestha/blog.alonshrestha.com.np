@@ -1,5 +1,5 @@
 ---
-title: "Backup and Restore your Linux System to the Previous State with SystemBack"
+title: "How to Install SystemBack in Ubuntu"
 layout: post
 author: alonshrestha
 categories: [Tutorial, SystemBack, Ubuntu, Linux, Backup, Restore]

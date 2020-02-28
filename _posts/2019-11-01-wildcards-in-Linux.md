@@ -1,5 +1,5 @@
 ---
-title: Wildcards on Linux with Example
+title: Wildcards in Linux with Examples
 layout: post
 author: alonshrestha
 categories:

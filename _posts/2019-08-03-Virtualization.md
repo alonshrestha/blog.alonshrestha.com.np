@@ -1,6 +1,6 @@
 ---
 layout: post-right-sidebar
-title:  "Introduction to Virtualization | Beginner's Guide"
+title:  "What is Virtualization - Beginner's Guide"
 author: alonshrestha
 categories: [Virtualization, IBM, Hypervisor, VMware, linux, Cloud Server, Blog]
 image:  assets/images/blog/2019-08-03/4.jpg

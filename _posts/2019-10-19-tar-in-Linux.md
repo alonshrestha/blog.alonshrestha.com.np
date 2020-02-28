@@ -1,5 +1,5 @@
 ---
-title: Working with Compression and Archive Files on Linux Using tar
+title: tar Command in Linux with Example
 layout: post
 author: alonshrestha
 categories:

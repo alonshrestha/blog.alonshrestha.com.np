@@ -1,5 +1,5 @@
 ---
-title: Editing files with Vim on Linux  |  Beginner's Guide
+title: Vim in linux Cheat Sheet
 layout: post
 author: alonshrestha
 categories:

@@ -1,5 +1,5 @@
 ---
-title: Understanding links on Linux
+title: Creating Hard and Soft Links in Linux
 layout: post
 author: alonshrestha
 categories:

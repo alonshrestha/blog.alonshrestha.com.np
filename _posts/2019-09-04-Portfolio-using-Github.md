@@ -1,5 +1,5 @@
 ---
-title: Create and Host your Online Portfolio for Free Using Github in 3 Steps
+title: How to Create a Portfolio in Github
 layout: post
 author: alonshrestha
 categories:

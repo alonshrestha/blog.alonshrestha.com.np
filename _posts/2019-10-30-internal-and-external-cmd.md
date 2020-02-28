@@ -1,5 +1,5 @@
 ---
-title: 3 types of Command on Linux Shell
+title: Internal and External Command in Linux Shell
 layout: post
 author: alonshrestha
 categories:
@@ -8,41 +8,12 @@ categories:
 - Command
 - Types
 - Bash
-image: assets/images/blog/2019-10-29/cmd.png
+- Internal Command
+- External Command
+- tech
+- tech tips
+- Linux tips
 ---
-
-There are three kind of command found on [Linux Bash Shell (Bourne Again Shell)](https://en.wikipedia.org/wiki/Bash_(Unix_shell)){:target="_blank"}. 
-
-* Aliases
-* Internal Command
-* External Command
-
-# Aliases
-This kind of commands are set by user as their need. Some aliases are provided by default on Linux.  You can find the overview of command `alias` in your shell by typing alias.
-
-**Example**
-{% highlight ruby %}
-
-[alon@localhost ~]$ alias
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias grep='grep --color=auto'
-alias l.='ls -d .* --color=auto'
-alias ll='ls -l --color=auto'
-alias ls='ls --color=auto'
-alias which='alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'
-
-
-{% endhighlight %}
-
-You can create your own alias. For that, follow this syntax `alias yourCommand ` = `commandYouWantToReplace `.
-
-**Example**
-{%highlight ruby%}
-[alon@localhost ~]$ alias move=mv
-[alon@localhost ~]$ move testFile /tmp/
-[alon@localhost ~]$ alias mv=move
-{%endhighlight%}
 
 # Internal Command
 This type of command is the part of the system which is already loaded in the system. They are independent and can be executed at any time from the memory. Execution of this command is assumed to be fast because of the shell builtin. Some of the examples of this are `cd`, `source`, `history`, `help`, `kill` etc. To see the list of  the builtin command type `help` in your shell. 
@@ -110,4 +81,4 @@ These commands are not built into the shell. For executing the `external command
 mv is /usr/bin/cat
 {%endhighlight%}
 
-{% include summaryCallout.html heading= "Summary" content= "In this article, you learned about the types of command on Linux shell. Please feel free to write me if need any help." %}
+{% include summaryCallout.html heading= "Summary" content= "In this article, you learned difference about internal and external command on Linux. Please feel free to write me if need any help." %}
