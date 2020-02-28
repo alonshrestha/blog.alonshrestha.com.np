@@ -1,5 +1,5 @@
 ---
-title: Using Screen Command on Linux | How this helps and Why you should use it?
+title: Using Screen on Linux with Cheat Sheet 
 layout: post
 author: alonshrestha
 categories:
