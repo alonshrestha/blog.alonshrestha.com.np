@@ -1,5 +1,5 @@
 ---
-title: Vim in linux Cheat Sheet
+title: Vim in linux with Cheat Sheet
 layout: post
 author: alonshrestha
 categories:
