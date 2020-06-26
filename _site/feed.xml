@@ -5,8 +5,8 @@
     <description>Blog related to linux tutorial, tech product, events and news.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Feb 2020 09:30:59 +0545</pubDate>
-    <lastBuildDate>Fri, 28 Feb 2020 09:30:59 +0545</lastBuildDate>
+    <pubDate>Fri, 26 Jun 2020 15:01:06 +0545</pubDate>
+    <lastBuildDate>Fri, 26 Jun 2020 15:01:06 +0545</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -1516,7 +1516,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
     
       <item>
         <title>Linux File System Hierarchy</title>
-        <description>&lt;p&gt;All the files on the Linux are organized into a single inverted tree directory which is also known as &lt;a href=&quot;https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard&quot;&gt;file system hierarchy&lt;/a&gt;. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.&lt;/p&gt;
+        <description>&lt;p&gt;All the files on the &lt;a href=&quot;https://stechalon.com/category/linux&quot;&gt;Linux&lt;/a&gt; are organized into a single inverted tree directory which is also known as &lt;a href=&quot;https://stechalon.com/linux-file-system-explained/&quot;&gt;file system hierarchy&lt;/a&gt;. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
@@ -1576,7 +1576,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 &lt;h1 id=&quot;linux-file-system-hierarchy&quot;&gt;Linux File System Hierarchy&lt;/h1&gt;
 
-&lt;p&gt;In the Linux file system hierarchy, the root of the tree is said to be on the top of the hierarchy,  and the branches of directories and subdirectories  as shown in the below image.&lt;/p&gt;
+&lt;p&gt;In the &lt;a href=&quot;https://stechalon.com/linux-file-system-explained/#1-linux-file-system-hierarchy&quot;&gt;Linux file system hierarchy&lt;/a&gt;, the root of the tree is said to be on the top of the hierarchy,  and the branches of directories and subdirectories  as shown in the below image.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-10-26/img1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
@@ -1787,7 +1787,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
       </item>
     
       <item>
-        <title>Vim in linux Cheat Sheet</title>
+        <title>Vim in linux with Cheat Sheet</title>
         <description>&lt;p&gt;Editing &lt;code class=&quot;highlighter-rouge&quot;&gt;files&lt;/code&gt; is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.&lt;/p&gt;
 
 &lt;blockquote&gt;

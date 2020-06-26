@@ -8,7 +8,7 @@ image: assets/images/blog/2019-07-21/10.jpg
 ---
 ### What is SystemBack?
 
-**SystemBack** is an open-source application for Linux which makes it easy to create live backup images of your system and user saved configurations. People who are new to Linux make mistakes with the configuration of system root files and as a result, crash the system. In this case, SystemBack is a helpful application for backing up and restoring your system in the previous state.
+**SystemBack** is an open-source application for [Linux](https://stechalon.com/category/linux/){:target="_blank"} which makes it easy to create live backup images of your system and user saved configurations. People who are new to Linux make mistakes with the configuration of system root files and as a result, crash the system. In this case, SystemBack is a helpful application for backing up and restoring your system in the previous state.
 
 > **Table of Content**
 
