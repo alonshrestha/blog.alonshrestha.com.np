@@ -6,7 +6,7 @@ meta_description: "Blog related to linux tutorial, tech product, events and news
 logo: 'assets/images/personal/head.jpg'
 favicon: assets/images/favicon.png
 paginate: 8
-url: 'https://stechalon.com'
+url: 'https://blog.alonshrestha.com.np'
 baseurl: ''
 include: ["_pages"]
 # Social Media
