@@ -7,6 +7,8 @@ image: assets/images/2.jpg
 star: true
 categories: [Blog, GitHub-Pages, Jekyll]
 author: alonshrestha
+redirect_to:
+  - https://stechalon.com/start-blogging-with-jekyll-github-pages
 ---
 
 This is my first [blog](https://stechalon.com/register-com-np-domain-free-in-nepal/){:target="_blank"} with [Github Pages](https://pages.github.com/){:target="_blank"}. I used to have tech-related blogs and online portfolio on WordPress named [stechalon.com](https://stechalon.com/){:target="_blank"} which seems to be very easy for everyone. Having a programming background and using WordPress for blogging was not satisfying for me. First thing, I wanted to have my own custom design web page and second, use my personal domain _alonshrestha.com.np_. I could have done this using Wordpress or other media donating some money.
