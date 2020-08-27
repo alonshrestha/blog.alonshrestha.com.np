@@ -9,6 +9,8 @@ categories:
 - Free
 - Host
 image: assets/images/blog/2019-09-05/main.PNG
+redirect_to:
+    - https://stechalon.com/create-online-portfolio-using-github-pages
 ---
 
 A digital world demands a digitized user profile. And by digitizing profile you are explicitly representing your identity in a customized desktop environment. 
@@ -55,13 +57,13 @@ Once you choose a theme, you will be redirected to its ‘index.md’ page. This
 
 {% highlight ruby %}
   
-    Syntax for MarkDown
+Syntax for MarkDown
   
 # Heading1 In Markdown
 ## Heading2 In Markdown
 ### Heading1 In Markdown
 
-	Syntax for Markup
+Syntax for MarkDown In HTML
 
 <h1>Heading1 In Markup</h1>
 <h2>Heading2 In Markup</h2>

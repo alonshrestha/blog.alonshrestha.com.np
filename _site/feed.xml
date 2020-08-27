@@ -5,8 +5,8 @@
     <description>Blog related to linux tutorial, tech product, events and news.</description>
     <link>http://localhost:4001/</link>
     <atom:link href="http://localhost:4001/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 27 Aug 2020 12:06:52 +0545</pubDate>
-    <lastBuildDate>Thu, 27 Aug 2020 12:06:52 +0545</lastBuildDate>
+    <pubDate>Thu, 27 Aug 2020 15:40:30 +0545</pubDate>
+    <lastBuildDate>Thu, 27 Aug 2020 15:40:30 +0545</lastBuildDate>
     <generator>Jekyll v4.1.1</generator>
     
       <item>

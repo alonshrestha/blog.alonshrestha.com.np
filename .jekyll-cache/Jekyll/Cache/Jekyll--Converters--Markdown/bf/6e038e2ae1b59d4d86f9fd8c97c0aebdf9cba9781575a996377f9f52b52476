@@ -1,4 +1,4 @@
-I"Ã"<p>A digital world demands a digitized user profile. And by digitizing profile you are explicitly representing your identity in a customized desktop environment. 
+I"À"<p>A digital world demands a digitized user profile. And by digitizing profile you are explicitly representing your identity in a customized desktop environment. 
 Making a user profile website is the best way to impress anyone on the go. Having a profile website will have an immediate impact on the employer you want to work with. This allows you to showcase your professional ability and make a mark of your identity online. There are however several ways to make a user profile and host it.</p>
 
 <p>In this article today, I will be helping you to create and host your profile using Github within less than 10 minutes.</p>
@@ -107,13 +107,13 @@ Making a user profile website is the best way to impress anyone on the go. Havin
 </blockquote>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby">  
-    <span class="no">Syntax</span> <span class="k">for</span> <span class="no">MarkDown</span>
+<span class="no">Syntax</span> <span class="k">for</span> <span class="no">MarkDown</span>
   
 <span class="c1"># Heading1 In Markdown</span>
 <span class="c1">## Heading2 In Markdown</span>
 <span class="c1">### Heading1 In Markdown</span>
 
-	<span class="no">Syntax</span> <span class="k">for</span> <span class="no">Markup</span>
+<span class="no">Syntax</span> <span class="k">for</span> <span class="no">MarkDown</span>
 
 <span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="no">Heading1</span> <span class="no">In</span> <span class="no">Markup</span><span class="o">&lt;</span><span class="sr">/h1&gt;
 &lt;h2&gt;Heading2 In Markup&lt;/</span><span class="n">h2</span><span class="o">&gt;</span>
