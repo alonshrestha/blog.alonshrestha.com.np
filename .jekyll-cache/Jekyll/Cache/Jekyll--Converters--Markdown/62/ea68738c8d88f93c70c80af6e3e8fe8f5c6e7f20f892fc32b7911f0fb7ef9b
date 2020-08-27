@@ -1,0 +1,249 @@
+I"nG<p>All the files on the <a href="https://stechalon.com/category/linux">Linux</a> are organized into a single inverted tree directory which is also known as <a href="https://stechalon.com/linux-file-system-explained/">file system hierarchy</a>. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.</p>
+
+<blockquote>
+  <p><strong>Table Of Content</strong></p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#linux-file-system-types" id="markdown-toc-linux-file-system-types">Linux File System Types</a></li>
+  <li><a href="#linux-file-system-hierarchy" id="markdown-toc-linux-file-system-hierarchy">Linux File System Hierarchy</a></li>
+</ul>
+
+<h1 id="linux-file-system-types">Linux File System Types</h1>
+
+<p>Linux provides different types of file system formats for partitioning the disk which is listed below. Each has its own merits of the use.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>File System</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Ext:</strong></td>
+      <td>A basic file system having lot of limitation and no longer in use.</td>
+    </tr>
+    <tr>
+      <td><strong>Ext2:</strong></td>
+      <td>Upgrade version of Ext which allows 2 TB of data and not in use anymore.</td>
+    </tr>
+    <tr>
+      <td><strong>Ext3:</strong></td>
+      <td>Upgrade of Ext2. Does not support file recovery and disk snapshots.</td>
+    </tr>
+    <tr>
+      <td><strong>Ext4:</strong></td>
+      <td>Upgrade of Ext3. Allows large file of data upto 16TB with significant speed.</td>
+    </tr>
+    <tr>
+      <td><strong>XFS</strong></td>
+      <td>Default file system in RHEL 7. Allows data upto 500 TB</td>
+    </tr>
+    <tr>
+      <td><strong>BtrFS</strong></td>
+      <td>New file system not yet supported but will be include in later updates.</td>
+    </tr>
+    <tr>
+      <td><strong>NTFS</strong></td>
+      <td>Not Supported on RHEL</td>
+    </tr>
+    <tr>
+      <td><strong>VFAT</strong></td>
+      <td>Equivalent to the FAT32. Useful to use on USB thumb drive.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 id="linux-file-system-hierarchy">Linux File System Hierarchy</h1>
+
+<p>In the <a href="https://stechalon.com/linux-file-system-explained/#1-linux-file-system-hierarchy">Linux file system hierarchy</a>, the root of the tree is said to be on the top of the hierarchy,  and the branches of directories and subdirectories  as shown in the below image.</p>
+
+<p><img src="/assets/images/blog/2019-10-26/img1.png" alt="" /></p>
+
+<p>You can try in your machine <code class="language-plaintext highlighter-rouge">ls -l /</code> to see this directories as shown below.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">/</span>
+<span class="n">total</span> <span class="mi">36</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span>   <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">7</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">02</span> <span class="n">bin</span> <span class="o">-&gt;</span> <span class="n">usr</span><span class="o">/</span><span class="n">bin</span>
+<span class="n">dr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">5</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Sep</span> <span class="mi">12</span> <span class="mi">15</span><span class="p">:</span><span class="mi">22</span> <span class="n">boot</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">3</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">08</span><span class="p">:</span><span class="mi">51</span> <span class="n">data</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">19</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">3120</span> <span class="no">Sep</span> <span class="mi">25</span> <span class="mi">17</span><span class="p">:</span><span class="mi">14</span> <span class="n">dev</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">82</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">8192</span> <span class="no">Sep</span> <span class="mi">25</span> <span class="mi">17</span><span class="p">:</span><span class="mi">14</span> <span class="n">etc</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">3</span> <span class="n">root</span> <span class="n">root</span>   <span class="mi">17</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">home</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span>   <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">7</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">02</span> <span class="n">lib</span> <span class="o">-&gt;</span> <span class="n">usr</span><span class="o">/</span><span class="n">lib</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span>   <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">9</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">02</span> <span class="n">lib64</span> <span class="o">-&gt;</span> <span class="n">usr</span><span class="o">/</span><span class="n">lib64</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">media</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">mnt</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">5</span> <span class="n">root</span> <span class="n">root</span>   <span class="mi">76</span> <span class="no">Sep</span> <span class="mi">23</span> <span class="mi">14</span><span class="p">:</span><span class="mi">36</span> <span class="n">opt</span>
+<span class="n">dr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">115</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">0</span> <span class="no">Sep</span> <span class="mi">25</span> <span class="mi">17</span><span class="p">:</span><span class="mi">14</span> <span class="nb">proc</span>
+<span class="n">dr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">---.</span>   <span class="mi">7</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Sep</span> <span class="mi">23</span> <span class="mi">15</span><span class="p">:</span><span class="mi">24</span> <span class="n">root</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">26</span> <span class="n">root</span> <span class="n">root</span>  <span class="mi">740</span> <span class="no">Oct</span> <span class="mi">29</span> <span class="mi">18</span><span class="p">:</span><span class="mo">06</span> <span class="n">run</span>
+<span class="n">lrwxrwxrwx</span><span class="o">.</span>   <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">8</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">02</span> <span class="n">sbin</span> <span class="o">-&gt;</span> <span class="n">usr</span><span class="o">/</span><span class="n">sbin</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>   <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">srv</span>
+<span class="n">dr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">13</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">0</span> <span class="no">Sep</span> <span class="mi">25</span> <span class="mi">17</span><span class="p">:</span><span class="mi">14</span> <span class="n">sys</span>
+<span class="n">drwxrwxrwt</span><span class="o">.</span>   <span class="mi">9</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Oct</span> <span class="mi">29</span> <span class="mo">04</span><span class="p">:</span><span class="mi">50</span> <span class="n">tmp</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">13</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">03</span> <span class="n">usr</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">21</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Jul</span> <span class="mi">22</span> <span class="mi">14</span><span class="p">:</span><span class="mo">05</span> <span class="n">var</span></code></pre></figure>
+
+<p>Form the above sketch you can see <code class="language-plaintext highlighter-rouge">-&gt;</code> symbol pointing multiple directories in  <code class="language-plaintext highlighter-rouge">/usr/</code> directory.  This indicates that the directories  <code class="language-plaintext highlighter-rouge">bin</code> , <code class="language-plaintext highlighter-rouge">lib</code> , <code class="language-plaintext highlighter-rouge">lib64</code> and <code class="language-plaintext highlighter-rouge">sbin</code> are the <a href="https://blog.alonshrestha.com.np/Understanding-Hard-and-Soft-Links-In-Linux/" target="_blank">symbolic links</a> from <code class="language-plaintext highlighter-rouge">/usr/</code>.</p>
+
+<p>Table below describes the directories</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Directory</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>/</strong></td>
+      <td>Know as <code class="language-plaintext highlighter-rouge">root</code> directory where file system tree starts.</td>
+    </tr>
+    <tr>
+      <td><strong>/bin</strong></td>
+      <td>Contains <code class="language-plaintext highlighter-rouge">binaries files</code> of the application or program that can be run. Essential during boot.</td>
+    </tr>
+    <tr>
+      <td><strong>/boot</strong></td>
+      <td>Contains all the files and directories that are need to <code class="language-plaintext highlighter-rouge">boot</code> the Linux kernel.</td>
+    </tr>
+    <tr>
+      <td><strong>/dev</strong></td>
+      <td>Contains device files that allows to access <code class="language-plaintext highlighter-rouge">physical devices</code>. Many of these file are generated at boot time. Essential during boot.</td>
+    </tr>
+    <tr>
+      <td><strong>/etc</strong></td>
+      <td>Know as <code class="language-plaintext highlighter-rouge">every thing to configure</code>. Contains the configuration files that are used by the application and services.</td>
+    </tr>
+    <tr>
+      <td><strong>/home</strong></td>
+      <td>This drectory is used for local user <code class="language-plaintext highlighter-rouge">home directory</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/lib, /lib64</strong></td>
+      <td>Contains the shared libraries that are used by the application in <code class="language-plaintext highlighter-rouge">/boot</code>  <code class="language-plaintext highlighter-rouge">/sbin</code> and <code class="language-plaintext highlighter-rouge">bin</code></td>
+    </tr>
+    <tr>
+      <td><strong>/media</strong></td>
+      <td>Contains the files of the <code class="language-plaintext highlighter-rouge">external storage</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/mnt</strong></td>
+      <td>Contains files that allows for <code class="language-plaintext highlighter-rouge">mounting</code> the devices.</td>
+    </tr>
+    <tr>
+      <td><strong>/opt</strong></td>
+      <td>This is used to install <code class="language-plaintext highlighter-rouge">optional package</code> not from the Linux distribution repositories .</td>
+    </tr>
+    <tr>
+      <td><strong>/sbin</strong></td>
+      <td>Similar to <code class="language-plaintext highlighter-rouge">/bin</code>. Contains all the binaries that superuser needs.</td>
+    </tr>
+    <tr>
+      <td><strong>/srv</strong></td>
+      <td>Directory that may be used for data by services like <code class="language-plaintext highlighter-rouge">HTTP</code>, <code class="language-plaintext highlighter-rouge">NFS</code> and <code class="language-plaintext highlighter-rouge">TCP</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/run</strong></td>
+      <td>System application use this directory for storing temporary file for their own need.</td>
+    </tr>
+    <tr>
+      <td><strong>/tmp</strong></td>
+      <td>This directory contains <code class="language-plaintext highlighter-rouge">temporary files</code> which gets <code class="language-plaintext highlighter-rouge">deleted</code> while system boot without waring.</td>
+    </tr>
+    <tr>
+      <td><strong>/usr</strong></td>
+      <td>Contains subdirectories including programs, libraries, documentation etc. for all user-related programs. This is not needed for boot.</td>
+    </tr>
+    <tr>
+      <td><strong>/var</strong></td>
+      <td>Contains <code class="language-plaintext highlighter-rouge">system log</code> files which size changes dynamically.</td>
+    </tr>
+    <tr>
+      <td><strong>/root</strong></td>
+      <td>Home directory of <code class="language-plaintext highlighter-rouge">root user</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/proc</strong></td>
+      <td>Contains files that give information about <code class="language-plaintext highlighter-rouge">kernel and CPU</code>.</td>
+    </tr>
+    <tr>
+      <td><strong>/sys</strong></td>
+      <td>Similar to <code class="language-plaintext highlighter-rouge">/proc</code> that contains information about the connected devices from your computer.</td>
+    </tr>
+    <tr>
+      <td><strong>/lost+found</strong></td>
+      <td>Files that are saved during <code class="language-plaintext highlighter-rouge">system failures</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="bs-callout bs-callout-danger">
+    <h4>Summary</h4>
+    In this article, you learned the concept of Linux file system types and hierarchy. Please feel free to write me if need any help.
+</div>
+
+<style>
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+</style>
+
+:ET

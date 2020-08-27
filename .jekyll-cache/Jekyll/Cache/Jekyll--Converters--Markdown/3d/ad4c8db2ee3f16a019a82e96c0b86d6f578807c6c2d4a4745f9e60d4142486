@@ -1,0 +1,95 @@
+I"3<p>Linux provides users to create custom commands on the terminal. This allows users to execute the command in terminal and function according to the need. For custom command Linux uses <code class="language-plaintext highlighter-rouge">aliases</code> command type.</p>
+
+<h1 id="aliases">Aliases</h1>
+<p>This kind of commands are set by user as their need. Some aliases are provided by default on Linux.  You can find the overview of command <code class="language-plaintext highlighter-rouge">alias</code> in your shell by typing alias.</p>
+
+<p><strong>Example</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="k">alias</span>
+<span class="k">alias</span> <span class="n">egrep</span><span class="o">=</span><span class="s1">'egrep --color=auto'</span>
+<span class="k">alias</span> <span class="n">fgrep</span><span class="o">=</span><span class="s1">'fgrep --color=auto'</span>
+<span class="k">alias</span> <span class="n">grep</span><span class="o">=</span><span class="s1">'grep --color=auto'</span>
+<span class="k">alias</span> <span class="n">l</span><span class="p">.</span><span class="nf">=</span><span class="s1">'ls -d .* --color=auto'</span>
+<span class="k">alias</span> <span class="n">ll</span><span class="o">=</span><span class="s1">'ls -l --color=auto'</span>
+<span class="k">alias</span> <span class="n">ls</span><span class="o">=</span><span class="s1">'ls --color=auto'</span>
+<span class="k">alias</span> <span class="n">which</span><span class="o">=</span><span class="s1">'alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'</span></code></pre></figure>
+
+<p>You can create your own alias. For that, follow this syntax <code class="language-plaintext highlighter-rouge">alias yourCommand </code> = <code class="language-plaintext highlighter-rouge">commandYouWantToReplace </code>.</p>
+
+<p><strong>Example</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="k">alias</span> <span class="n">move</span><span class="o">=</span><span class="n">mv</span>
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">move</span> <span class="n">testFile</span> <span class="sr">/tmp/</span>
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="k">alias</span> <span class="n">mv</span><span class="o">=</span><span class="n">move</span></code></pre></figure>
+
+<p><strong>Example</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="k">alias</span> <span class="n">testPrint</span><span class="o">=</span><span class="n">echo</span>
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">testPrint</span> <span class="no">This</span> <span class="n">is</span> <span class="n">blog</span><span class="p">.</span><span class="nf">alonshrestha</span><span class="p">.</span><span class="nf">com</span><span class="p">.</span><span class="nf">np</span>
+<span class="no">This</span> <span class="n">is</span> <span class="n">blog</span><span class="p">.</span><span class="nf">alonshrestha</span><span class="p">.</span><span class="nf">com</span><span class="p">.</span><span class="nf">np</span></code></pre></figure>
+
+<div class="bs-callout bs-callout-danger">
+    <h4>Summary</h4>
+    In this article, you learned how to create custom command on Linux. Please feel free to write me if need any help.
+</div>
+
+<style>
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+</style>
+
+:ET

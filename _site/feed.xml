@@ -3,11 +3,11 @@
   <channel>
     <title>alon'sTech Blog</title>
     <description>Blog related to linux tutorial, tech product, events and news.</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Aug 2020 21:52:29 +0545</pubDate>
-    <lastBuildDate>Sat, 08 Aug 2020 21:52:29 +0545</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <link>http://localhost:4001/</link>
+    <atom:link href="http://localhost:4001/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 27 Aug 2020 10:54:25 +0545</pubDate>
+    <lastBuildDate>Thu, 27 Aug 2020 10:54:25 +0545</lastBuildDate>
+    <generator>Jekyll v4.1.1</generator>
     
       <item>
         <title>Using Screen in Linux with Cheat Sheet</title>
@@ -21,7 +21,7 @@
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stechalon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;yum&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;After completing installation check its version by typing &lt;code class=&quot;highlighter-rouge&quot;&gt;screen -v&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;After completing installation check its version by typing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen -v&lt;/code&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stechalon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;Screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.01&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;devel&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;GNU&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;May&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;06&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
@@ -126,18 +126,18 @@
 
 &lt;h1 id=&quot;working-with-screen-command&quot;&gt;Working with Screen Command&lt;/h1&gt;
 &lt;h2 id=&quot;starting-screen&quot;&gt;Starting Screen&lt;/h2&gt;
-&lt;p&gt;To star a screen type &lt;code class=&quot;highlighter-rouge&quot;&gt;screen&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;To star a screen type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen&lt;/code&gt; command.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stechalon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;starting-screen-with-session-name&quot;&gt;Starting Screen with Session Name&lt;/h2&gt;
-&lt;p&gt;To star a screen with session name type &lt;code class=&quot;highlighter-rouge&quot;&gt;screen -S session_Name&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;To star a screen with session name type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen -S session_Name&lt;/code&gt; command.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stechalon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;top&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;show-screen-parameter&quot;&gt;Show Screen Parameter&lt;/h2&gt;
 
-&lt;p&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl+a - ? &lt;/code&gt; to show screen parameter.&lt;/p&gt;
+&lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Ctrl+a - ? &lt;/code&gt; to show screen parameter.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;                       &lt;span class=&quot;no&quot;&gt;Screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bindings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;page&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;
 
@@ -172,12 +172,12 @@
 &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Sockets&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/var/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;run&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;detach-screen&quot;&gt;Detach Screen&lt;/h2&gt;
-&lt;p&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;screen -d ID&lt;/code&gt; so that this can be reattach in future.&lt;/p&gt;
+&lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen -d ID&lt;/code&gt; so that this can be reattach in future.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stechalon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;d&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3784&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;reattach-screen&quot;&gt;Reattach Screen&lt;/h2&gt;
-&lt;p&gt;Type &lt;code class=&quot;highlighter-rouge&quot;&gt;screen -r ID&lt;/code&gt; for the screen which was previously detached.&lt;/p&gt;
+&lt;p&gt;Type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;screen -r ID&lt;/code&gt; for the screen which was previously detached.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stechalon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2077&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -247,8 +247,8 @@
 
 </description>
         <pubDate>Sun, 08 Dec 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Using-Screen-Command-On-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/Using-Screen-Command-On-Linux/</guid>
+        <link>http://localhost:4001/Using-Screen-Command-On-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4001/Using-Screen-Command-On-Linux/</guid>
         
         
         <category>Linux</category>
@@ -343,16 +343,16 @@
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;stop-mariadb-server&quot;&gt;Stop MariaDB Server&lt;/h1&gt;
-&lt;p&gt;First you need to down your mariaDB server. For that use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl stop mariadb&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First you need to down your mariaDB server. For that use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl stop mariadb&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;systemctl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mariadb&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;start-mariadb-server-with-safe-mode&quot;&gt;Start MariaDB Server with Safe Mode&lt;/h1&gt;
-&lt;p&gt;Start mariadb server with safe mode using &lt;code class=&quot;highlighter-rouge&quot;&gt;mysqld_safe&lt;/code&gt;. For that use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo mysqld_safe --skip-grant-tables &amp;amp;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Start mariadb server with safe mode using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mysqld_safe&lt;/code&gt;. For that use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo mysqld_safe --skip-grant-tables &amp;amp;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysqld_safe&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;skip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tables&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;After entering the above command, if you got &lt;code class=&quot;highlighter-rouge&quot;&gt;hang&lt;/code&gt; as shown below, press &lt;code class=&quot;highlighter-rouge&quot;&gt;enter&lt;/code&gt;.  This will redirect you again to command line.&lt;/p&gt;
+&lt;p&gt;After entering the above command, if you got &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hang&lt;/code&gt; as shown below, press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;enter&lt;/code&gt;.  This will redirect you again to command line.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# mysqld_safe --skip-grant-tables &amp;amp;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1892&lt;/span&gt;
@@ -417,7 +417,7 @@
 &lt;/style&gt;
 
 &lt;h1 id=&quot;login-to-mariadb-server-as-root&quot;&gt;Login to MariaDB Server as Root&lt;/h1&gt;
-&lt;p&gt;Now, you will be able  to login in mariaDB as &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; user. For that use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql -u root&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Now, you will be able  to login in mariaDB as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt; user. For that use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mysql -u root&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -435,15 +435,15 @@
 &lt;span class=&quot;no&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;change-mariadb-root-password&quot;&gt;Change MariaDB Root Password&lt;/h1&gt;
-&lt;p&gt;First change the database. For that use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;use mysql;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First change the database. For that use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;use mysql;&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;After using the &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql&lt;/code&gt; database, update the password of root user. For that use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;update user SET PASSWORD=PASSWORD(&quot;yourNewStrongPassword&quot;) WHERE USER='root';&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mysql&lt;/code&gt; database, update the password of root user. For that use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;update user SET PASSWORD=PASSWORD(&quot;yourNewStrongPassword&quot;) WHERE USER='root';&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;SET&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;PASSWORD&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;yourNewStrongPassword&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;USER&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'root'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Flush Privileges using command &lt;code class=&quot;highlighter-rouge&quot;&gt;flush privileges;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Flush Privileges using command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flush privileges;&lt;/code&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;MariaDB&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;flush&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;privileges&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
@@ -453,7 +453,7 @@
 &lt;span class=&quot;no&quot;&gt;Bye&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;kill-mysql-and-mysqld_safe-processor&quot;&gt;Kill mysql and mysqld_safe processor&lt;/h1&gt;
-&lt;p&gt;Find the pid value of &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;mysqld_safe&lt;/code&gt; processor using command &lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep mysqld_safe&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep mysql&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Find the pid value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mysql&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mysqld_safe&lt;/code&gt; processor using command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ps aux | grep mysqld_safe&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ps aux | grep mysql&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ps&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;aux&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysqld_safe&lt;/span&gt;
 
@@ -461,7 +461,7 @@
 &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;      &lt;span class=&quot;mi&quot;&gt;2062&lt;/span&gt;  &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;  &lt;span class=&quot;mf&quot;&gt;0.2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;239088&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;4160&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;    &lt;span class=&quot;no&quot;&gt;T&lt;/span&gt;    &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysqld_safe&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;skip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tables&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;      &lt;span class=&quot;mi&quot;&gt;2288&lt;/span&gt;  &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt;  &lt;span class=&quot;mf&quot;&gt;0.0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;112708&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;988&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;    &lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;56&lt;/span&gt;   &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;00&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grep&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysqld_safe&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Now kill the processor using command &lt;code class=&quot;highlighter-rouge&quot;&gt;kill -9&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Now kill the processor using command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kill -9&lt;/code&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;kill&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1892&lt;/span&gt;
 
@@ -469,14 +469,14 @@
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;Killed&lt;/span&gt;                  &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysqld_safe&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;skip&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;grant&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tables&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;restart-mariadb&quot;&gt;Restart MariaDB&lt;/h1&gt;
-&lt;p&gt;Use the command &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl stop mariadb&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl stop mariadb&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Use the command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl stop mariadb&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo systemctl stop mariadb&lt;/code&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;systemctl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mariadb&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;systemctl&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mariadb&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;login-to-mariadb&quot;&gt;Login to MariaDB&lt;/h1&gt;
-&lt;p&gt;Use Command &lt;code class=&quot;highlighter-rouge&quot;&gt;mysql -u root -p&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Use Command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mysql -u root -p&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mysql&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;p&lt;/span&gt;
 
@@ -558,8 +558,8 @@
 
 </description>
         <pubDate>Fri, 15 Nov 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/reset-root-password-mysql-mariadb/</link>
-        <guid isPermaLink="true">http://localhost:4000/reset-root-password-mysql-mariadb/</guid>
+        <link>http://localhost:4001/reset-root-password-mysql-mariadb/</link>
+        <guid isPermaLink="true">http://localhost:4001/reset-root-password-mysql-mariadb/</guid>
         
         
         <category>Linux</category>
@@ -584,7 +584,7 @@
     
       <item>
         <title>SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? | Kubernetes</title>
-        <description>&lt;p&gt;I got this error while checking the version of &lt;code class=&quot;highlighter-rouge&quot;&gt;kubectl&lt;/code&gt;&lt;/p&gt;
+        <description>&lt;p&gt;I got this error while checking the version of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kubectl&lt;/code&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@shrestha&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# kubectl version&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;Client&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Major&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Minor&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;v1.16.2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitCommit&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;c97fe5036ef3df2967d086711e6c0c405941e14b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitTreeState&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;clean&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BuildDate&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;2019-10-15T19:18:23Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GoVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;go1.12.10&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Compiler&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;gc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Platform&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;linux/amd64&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
@@ -595,9 +595,9 @@
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;delete&lt;/span&gt; 
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;start&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;vm&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;driver&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;none&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;First delete minikube with command &lt;code class=&quot;highlighter-rouge&quot;&gt;minikube delete&lt;/code&gt; and start with &lt;code class=&quot;highlighter-rouge&quot;&gt;minikube start --vm-driver none&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;First delete minikube with command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minikube delete&lt;/code&gt; and start with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;minikube start --vm-driver none&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;I still got the issue at &lt;code class=&quot;highlighter-rouge&quot;&gt;first hit&lt;/code&gt;. It gets stuck at &lt;code class=&quot;highlighter-rouge&quot;&gt;Waiting for: apiserver&lt;/code&gt; operation. This might be the issue from my internet.&lt;/p&gt;
+&lt;p&gt;I still got the issue at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;first hit&lt;/code&gt;. It gets stuck at &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Waiting for: apiserver&lt;/code&gt; operation. This might be the issue from my internet.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;err&quot;&gt;⌛&lt;/span&gt;
   &lt;span class=&quot;no&quot;&gt;Waiting&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;for: &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;apiserver&lt;/span&gt;
@@ -622,7 +622,7 @@
   &lt;span class=&quot;n&quot;&gt;https&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;com&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kubernetes&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;minikube&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;issues&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choose&lt;/span&gt;
   &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;At the &lt;code class=&quot;highlighter-rouge&quot;&gt;second hit&lt;/code&gt;. This worked for me.&lt;/p&gt;
+&lt;p&gt;At the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;second hit&lt;/code&gt;. This worked for me.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@shrestha&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# minikube delete&lt;/span&gt;
 
@@ -687,11 +687,11 @@ sudo mv /&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span 
 &lt;span class=&quot;no&quot;&gt;Client&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Major&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Minor&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;v1.16.2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitCommit&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;c97fe5036ef3df2967d086711e6c0c405941e14b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitTreeState&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;clean&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BuildDate&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;2019-10-15T19:18:23Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GoVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;go1.12.10&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Compiler&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;gc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Platform&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;linux/amd64&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;Server&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Version&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Major&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;1&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Minor&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;16&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;v1.16.2&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitCommit&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;c97fe5036ef3df2967d086711e6c0c405941e14b&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GitTreeState&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;clean&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;BuildDate&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;2019-10-15T19:09:08Z&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;GoVersion&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;go1.12.10&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Compiler&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;gc&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Platform&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:&quot;linux/amd64&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Please write me in the comment if you need help.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Please write me in the comment if you need help.&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Sat, 02 Nov 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/</link>
-        <guid isPermaLink="true">http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/</guid>
+        <link>http://localhost:4001/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/</link>
+        <guid isPermaLink="true">http://localhost:4001/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/</guid>
         
         
         <category>Linux</category>
@@ -718,7 +718,7 @@ sudo mv /&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span 
     
       <item>
         <title>Wildcards in Linux with Examples</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Wildcards&lt;/code&gt; make your workflow a lot easier when you are working with files. Wildcards are the character that allows you to &lt;code class=&quot;highlighter-rouge&quot;&gt;search&lt;/code&gt; any class of characters in &lt;code class=&quot;highlighter-rouge&quot;&gt;shell command&lt;/code&gt; in Linux or other operating systems. This increases your efficiency of search. There are different types of wildcards which are described below.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Wildcards&lt;/code&gt; make your workflow a lot easier when you are working with files. Wildcards are the character that allows you to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;search&lt;/code&gt; any class of characters in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;shell command&lt;/code&gt; in Linux or other operating systems. This increases your efficiency of search. There are different types of wildcards which are described below.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -754,8 +754,8 @@ sudo mv /&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;root&lt;/span&gt;&lt;span 
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;an-asterisk---&quot;&gt;An Asterisk ( * )&lt;/h1&gt;
-&lt;p&gt;Command used &lt;code class=&quot;highlighter-rouge&quot;&gt;ls -l /etc/sudo*&lt;/code&gt;
-The below examle shows all  the matched files of string appearing after &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;Command used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -l /etc/sudo*&lt;/code&gt;
+The below examle shows all  the matched files of string appearing after &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sudo&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc&lt;/code&gt; directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
 
@@ -765,8 +765,8 @@ The below examle shows all  the matched files of string appearing after &lt;code
 &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-----.&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3181&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Oct&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;2018&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sudo&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ldap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;conf&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;question-mark---&quot;&gt;Question Mark ( ? )&lt;/h1&gt;
-&lt;p&gt;Command used &lt;code class=&quot;highlighter-rouge&quot;&gt;ls /etc/rc?.d&lt;/code&gt;
-The below example show all the matched files beginning  wiht the string &lt;code class=&quot;highlighter-rouge&quot;&gt;rc&lt;/code&gt; followed by any single character and end with &lt;code class=&quot;highlighter-rouge&quot;&gt;.d&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Command used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls /etc/rc?.d&lt;/code&gt;
+The below example show all the matched files beginning  wiht the string &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rc&lt;/code&gt; followed by any single character and end with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.d&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example for Single Character&lt;/strong&gt;&lt;/p&gt;
 
@@ -794,8 +794,8 @@ The below example show all the matched files beginning  wiht the string &lt;code
 
 &lt;p&gt;&lt;strong&gt;Example for Multiple Character&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Command used &lt;code class=&quot;highlighter-rouge&quot;&gt;ls /etc/r??.d&lt;/code&gt;. 
-The below example show all the matched files beginning  wiht the string &lt;code class=&quot;highlighter-rouge&quot;&gt;r&lt;/code&gt; followed by any double character and end with &lt;code class=&quot;highlighter-rouge&quot;&gt;.d&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Command used &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls /etc/r??.d&lt;/code&gt;. 
+The below example show all the matched files beginning  wiht the string &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;r&lt;/code&gt; followed by any double character and end with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.d&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/etc/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r?&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;d&lt;/span&gt;
 &lt;span class=&quot;sr&quot;&gt;/etc/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rc0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;d&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
@@ -820,8 +820,8 @@ The below example show all the matched files beginning  wiht the string &lt;code
 &lt;span class=&quot;no&quot;&gt;K50netconsole&lt;/span&gt;  &lt;span class=&quot;no&quot;&gt;K90network&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;bracket----&quot;&gt;Bracket ( [ ] )&lt;/h1&gt;
-&lt;p&gt;Command used  &lt;code class=&quot;highlighter-rouge&quot;&gt;ls- l /etc/[w-y]*&lt;/code&gt;
-The below example shows all the matched files starting with the range of &lt;code class=&quot;highlighter-rouge&quot;&gt;w-y&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Command used  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls- l /etc/[w-y]*&lt;/code&gt;
+The below example shows all the matched files starting with the range of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;w-y&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/etc/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rw&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--.&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4479&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;May&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt; &lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;46&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;etc&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wgetrc&lt;/span&gt;
@@ -924,8 +924,8 @@ The below example shows all the matched files starting with the range of &lt;cod
 
 </description>
         <pubDate>Fri, 01 Nov 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/wildcards-in-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/wildcards-in-Linux/</guid>
+        <link>http://localhost:4001/wildcards-in-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4001/wildcards-in-Linux/</guid>
         
         
         <category>Linux</category>
@@ -951,7 +951,7 @@ The below example shows all the matched files starting with the range of &lt;cod
       <item>
         <title>Internal and External Command in Linux Shell</title>
         <description>&lt;h1 id=&quot;internal-command&quot;&gt;Internal Command&lt;/h1&gt;
-&lt;p&gt;This type of command is the part of the system which is already loaded in the system. They are independent and can be executed at any time from the memory. Execution of this command is assumed to be fast because of the shell builtin. Some of the examples of this are &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;history&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;help&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;kill&lt;/code&gt; etc. To see the list of  the builtin command type &lt;code class=&quot;highlighter-rouge&quot;&gt;help&lt;/code&gt; in your shell.&lt;/p&gt;
+&lt;p&gt;This type of command is the part of the system which is already loaded in the system. They are independent and can be executed at any time from the memory. Execution of this command is assumed to be fast because of the shell builtin. Some of the examples of this are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;history&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;help&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kill&lt;/code&gt; etc. To see the list of  the builtin command type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;help&lt;/code&gt; in your shell.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;GNU&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;46&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;release&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x86_64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;redhat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linux&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gnu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -1002,7 +1002,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
  &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;                                                                                             &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;COMMANDS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;external-command&quot;&gt;External Command&lt;/h1&gt;
-&lt;p&gt;These commands are not built into the shell. For executing the &lt;code class=&quot;highlighter-rouge&quot;&gt;external command&lt;/code&gt; shell needs to look for the &lt;code class=&quot;highlighter-rouge&quot;&gt;$PATH Variable&lt;/code&gt; of the command. While executing the external command new process has to be release. These commands take more time to execute compared to internal command. Example of external command are &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;mv&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;cp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;less&lt;/code&gt; etc.&lt;/p&gt;
+&lt;p&gt;These commands are not built into the shell. For executing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;external command&lt;/code&gt; shell needs to look for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$PATH Variable&lt;/code&gt; of the command. While executing the external command new process has to be release. These commands take more time to execute compared to internal command. Example of external command are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; , &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mv&lt;/code&gt; , &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cp&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;less&lt;/code&gt; etc.&lt;/p&gt;
 
 &lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert-success&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; &lt;b&gt;Tip:&lt;/b&gt; You can find out whether a command is internal or external by `type` command. Eg: type cat &lt;/div&gt;--&gt;
 
@@ -1132,8 +1132,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 </description>
         <pubDate>Wed, 30 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/internal-and-external-cmd/</link>
-        <guid isPermaLink="true">http://localhost:4000/internal-and-external-cmd/</guid>
+        <link>http://localhost:4001/internal-and-external-cmd/</link>
+        <guid isPermaLink="true">http://localhost:4001/internal-and-external-cmd/</guid>
         
         
         <category>Linux</category>
@@ -1160,10 +1160,10 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
     
       <item>
         <title>Create Custom Commands in Linux</title>
-        <description>&lt;p&gt;Linux provides users to create custom commands on the terminal. This allows users to execute the command in terminal and function according to the need. For custom command Linux uses &lt;code class=&quot;highlighter-rouge&quot;&gt;aliases&lt;/code&gt; command type.&lt;/p&gt;
+        <description>&lt;p&gt;Linux provides users to create custom commands on the terminal. This allows users to execute the command in terminal and function according to the need. For custom command Linux uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aliases&lt;/code&gt; command type.&lt;/p&gt;
 
 &lt;h1 id=&quot;aliases&quot;&gt;Aliases&lt;/h1&gt;
-&lt;p&gt;This kind of commands are set by user as their need. Some aliases are provided by default on Linux.  You can find the overview of command &lt;code class=&quot;highlighter-rouge&quot;&gt;alias&lt;/code&gt; in your shell by typing alias.&lt;/p&gt;
+&lt;p&gt;This kind of commands are set by user as their need. Some aliases are provided by default on Linux.  You can find the overview of command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alias&lt;/code&gt; in your shell by typing alias.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
 
@@ -1176,7 +1176,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls --color=auto'&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;which&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;You can create your own alias. For that, follow this syntax &lt;code class=&quot;highlighter-rouge&quot;&gt;alias yourCommand &lt;/code&gt; = &lt;code class=&quot;highlighter-rouge&quot;&gt;commandYouWantToReplace &lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can create your own alias. For that, follow this syntax &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alias yourCommand &lt;/code&gt; = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commandYouWantToReplace &lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
 
@@ -1256,8 +1256,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 </description>
         <pubDate>Wed, 30 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Create-Custom-Command-on-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/Create-Custom-Command-on-Linux/</guid>
+        <link>http://localhost:4001/Create-Custom-Command-on-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4001/Create-Custom-Command-on-Linux/</guid>
         
         
         <category>Linux</category>
@@ -1295,7 +1295,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;aliases&quot;&gt;Aliases&lt;/h1&gt;
-&lt;p&gt;This kind of commands are set by user as their need. Some aliases are provided by default on Linux.  You can find the overview of command &lt;code class=&quot;highlighter-rouge&quot;&gt;alias&lt;/code&gt; in your shell by typing alias.&lt;/p&gt;
+&lt;p&gt;This kind of commands are set by user as their need. Some aliases are provided by default on Linux.  You can find the overview of command &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alias&lt;/code&gt; in your shell by typing alias.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
 
@@ -1308,7 +1308,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ls --color=auto'&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;which&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'alias | /usr/bin/which --tty-only --read-alias --show-dot --show-tilde'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;You can create your own alias. For that, follow this syntax &lt;code class=&quot;highlighter-rouge&quot;&gt;alias yourCommand &lt;/code&gt; = &lt;code class=&quot;highlighter-rouge&quot;&gt;commandYouWantToReplace &lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;You can create your own alias. For that, follow this syntax &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alias yourCommand &lt;/code&gt; = &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;commandYouWantToReplace &lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
 
@@ -1317,7 +1317,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mv&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;move&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;internal-command&quot;&gt;Internal Command&lt;/h1&gt;
-&lt;p&gt;This type of command is the part of the system which is already loaded in the system. They are independent and can be executed at any time from the memory. Execution of this command is assumed to be fast because of the shell builtin. Some of the examples of this are &lt;code class=&quot;highlighter-rouge&quot;&gt;cd&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;history&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;help&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;kill&lt;/code&gt; etc. To see the list of  the builtin command type &lt;code class=&quot;highlighter-rouge&quot;&gt;help&lt;/code&gt; in your shell.&lt;/p&gt;
+&lt;p&gt;This type of command is the part of the system which is already loaded in the system. They are independent and can be executed at any time from the memory. Execution of this command is assumed to be fast because of the shell builtin. Some of the examples of this are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;source&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;history&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;help&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kill&lt;/code&gt; etc. To see the list of  the builtin command type &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;help&lt;/code&gt; in your shell.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt;
 &lt;span class=&quot;no&quot;&gt;GNU&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bash&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;version&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;46&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;release&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x86_64&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;redhat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linux&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gnu&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -1368,7 +1368,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
  &lt;span class=&quot;n&quot;&gt;help&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;dms&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pattern&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;                                                                                             &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;COMMANDS&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h1 id=&quot;external-command&quot;&gt;External Command&lt;/h1&gt;
-&lt;p&gt;These commands are not built into the shell. For executing the &lt;code class=&quot;highlighter-rouge&quot;&gt;external command&lt;/code&gt; shell needs to look for the &lt;code class=&quot;highlighter-rouge&quot;&gt;$PATH Variable&lt;/code&gt; of the command. While executing the external command new process has to be release. These commands take more time to execute compared to internal command. Example of external command are &lt;code class=&quot;highlighter-rouge&quot;&gt;cat&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;mv&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;cp&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;less&lt;/code&gt; etc.&lt;/p&gt;
+&lt;p&gt;These commands are not built into the shell. For executing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;external command&lt;/code&gt; shell needs to look for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$PATH Variable&lt;/code&gt; of the command. While executing the external command new process has to be release. These commands take more time to execute compared to internal command. Example of external command are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cat&lt;/code&gt; , &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mv&lt;/code&gt; , &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cp&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;less&lt;/code&gt; etc.&lt;/p&gt;
 
 &lt;!--&lt;div markdown=&quot;span&quot; class=&quot;alert-success&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-check-square-o&quot;&gt;&lt;/i&gt; &lt;b&gt;Tip:&lt;/b&gt; You can find out whether a command is internal or external by `type` command. Eg: type cat &lt;/div&gt;--&gt;
 
@@ -1498,8 +1498,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 </description>
         <pubDate>Tue, 29 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Types-of-command-on-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/Types-of-command-on-Linux/</guid>
+        <link>http://localhost:4001/Types-of-command-on-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4001/Types-of-command-on-Linux/</guid>
         
         
         <category>Linux</category>
@@ -1580,7 +1580,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 &lt;p&gt;&lt;img src=&quot;/assets/images/blog/2019-10-26/img1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;You can try in your machine &lt;code class=&quot;highlighter-rouge&quot;&gt;ls -l /&lt;/code&gt; to see this directories as shown below.&lt;/p&gt;
+&lt;p&gt;You can try in your machine &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ls -l /&lt;/code&gt; to see this directories as shown below.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alon&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@localhost&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;total&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;36&lt;/span&gt;
@@ -1605,7 +1605,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;09&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;03&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;usr&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;drwxr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;root&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4096&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Jul&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;05&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Form the above sketch you can see &lt;code class=&quot;highlighter-rouge&quot;&gt;-&amp;gt;&lt;/code&gt; symbol pointing multiple directories in  &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/&lt;/code&gt; directory.  This indicates that the directories  &lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;lib&lt;/code&gt; , &lt;code class=&quot;highlighter-rouge&quot;&gt;lib64&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;sbin&lt;/code&gt; are the &lt;a href=&quot;https://blog.alonshrestha.com.np/Understanding-Hard-and-Soft-Links-In-Linux/&quot; target=&quot;_blank&quot;&gt;symbolic links&lt;/a&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Form the above sketch you can see &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&amp;gt;&lt;/code&gt; symbol pointing multiple directories in  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/&lt;/code&gt; directory.  This indicates that the directories  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bin&lt;/code&gt; , &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib&lt;/code&gt; , &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;lib64&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;sbin&lt;/code&gt; are the &lt;a href=&quot;https://blog.alonshrestha.com.np/Understanding-Hard-and-Soft-Links-In-Linux/&quot; target=&quot;_blank&quot;&gt;symbolic links&lt;/a&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/usr/&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Table below describes the directories&lt;/p&gt;
 
@@ -1619,51 +1619,51 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
   &lt;tbody&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Know as &lt;code class=&quot;highlighter-rouge&quot;&gt;root&lt;/code&gt; directory where file system tree starts.&lt;/td&gt;
+      &lt;td&gt;Know as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root&lt;/code&gt; directory where file system tree starts.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/bin&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Contains &lt;code class=&quot;highlighter-rouge&quot;&gt;binaries files&lt;/code&gt; of the application or program that can be run. Essential during boot.&lt;/td&gt;
+      &lt;td&gt;Contains &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;binaries files&lt;/code&gt; of the application or program that can be run. Essential during boot.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/boot&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Contains all the files and directories that are need to &lt;code class=&quot;highlighter-rouge&quot;&gt;boot&lt;/code&gt; the Linux kernel.&lt;/td&gt;
+      &lt;td&gt;Contains all the files and directories that are need to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;boot&lt;/code&gt; the Linux kernel.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/dev&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Contains device files that allows to access &lt;code class=&quot;highlighter-rouge&quot;&gt;physical devices&lt;/code&gt;. Many of these file are generated at boot time. Essential during boot.&lt;/td&gt;
+      &lt;td&gt;Contains device files that allows to access &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;physical devices&lt;/code&gt;. Many of these file are generated at boot time. Essential during boot.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/etc&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Know as &lt;code class=&quot;highlighter-rouge&quot;&gt;every thing to configure&lt;/code&gt;. Contains the configuration files that are used by the application and services.&lt;/td&gt;
+      &lt;td&gt;Know as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;every thing to configure&lt;/code&gt;. Contains the configuration files that are used by the application and services.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/home&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;This drectory is used for local user &lt;code class=&quot;highlighter-rouge&quot;&gt;home directory&lt;/code&gt;.&lt;/td&gt;
+      &lt;td&gt;This drectory is used for local user &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;home directory&lt;/code&gt;.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/lib, /lib64&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Contains the shared libraries that are used by the application in &lt;code class=&quot;highlighter-rouge&quot;&gt;/boot&lt;/code&gt;  &lt;code class=&quot;highlighter-rouge&quot;&gt;/sbin&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;bin&lt;/code&gt;&lt;/td&gt;
+      &lt;td&gt;Contains the shared libraries that are used by the application in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/boot&lt;/code&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/sbin&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bin&lt;/code&gt;&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/media&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Contains the files of the &lt;code class=&quot;highlighter-rouge&quot;&gt;external storage&lt;/code&gt;.&lt;/td&gt;
+      &lt;td&gt;Contains the files of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;external storage&lt;/code&gt;.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/mnt&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Contains files that allows for &lt;code class=&quot;highlighter-rouge&quot;&gt;mounting&lt;/code&gt; the devices.&lt;/td&gt;
+      &lt;td&gt;Contains files that allows for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mounting&lt;/code&gt; the devices.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/opt&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;This is used to install &lt;code class=&quot;highlighter-rouge&quot;&gt;optional package&lt;/code&gt; not from the Linux distribution repositories .&lt;/td&gt;
+      &lt;td&gt;This is used to install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;optional package&lt;/code&gt; not from the Linux distribution repositories .&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/sbin&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Similar to &lt;code class=&quot;highlighter-rouge&quot;&gt;/bin&lt;/code&gt;. Contains all the binaries that superuser needs.&lt;/td&gt;
+      &lt;td&gt;Similar to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/bin&lt;/code&gt;. Contains all the binaries that superuser needs.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/srv&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Directory that may be used for data by services like &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;NFS&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;TCP&lt;/code&gt;.&lt;/td&gt;
+      &lt;td&gt;Directory that may be used for data by services like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HTTP&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;NFS&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TCP&lt;/code&gt;.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/run&lt;/strong&gt;&lt;/td&gt;
@@ -1671,7 +1671,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/tmp&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;This directory contains &lt;code class=&quot;highlighter-rouge&quot;&gt;temporary files&lt;/code&gt; which gets &lt;code class=&quot;highlighter-rouge&quot;&gt;deleted&lt;/code&gt; while system boot without waring.&lt;/td&gt;
+      &lt;td&gt;This directory contains &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;temporary files&lt;/code&gt; which gets &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;deleted&lt;/code&gt; while system boot without waring.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/usr&lt;/strong&gt;&lt;/td&gt;
@@ -1679,23 +1679,23 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/var&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Contains &lt;code class=&quot;highlighter-rouge&quot;&gt;system log&lt;/code&gt; files which size changes dynamically.&lt;/td&gt;
+      &lt;td&gt;Contains &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;system log&lt;/code&gt; files which size changes dynamically.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/root&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Home directory of &lt;code class=&quot;highlighter-rouge&quot;&gt;root user&lt;/code&gt;.&lt;/td&gt;
+      &lt;td&gt;Home directory of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;root user&lt;/code&gt;.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/proc&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Contains files that give information about &lt;code class=&quot;highlighter-rouge&quot;&gt;kernel and CPU&lt;/code&gt;.&lt;/td&gt;
+      &lt;td&gt;Contains files that give information about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;kernel and CPU&lt;/code&gt;.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/sys&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Similar to &lt;code class=&quot;highlighter-rouge&quot;&gt;/proc&lt;/code&gt; that contains information about the connected devices from your computer.&lt;/td&gt;
+      &lt;td&gt;Similar to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/proc&lt;/code&gt; that contains information about the connected devices from your computer.&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;td&gt;&lt;strong&gt;/lost+found&lt;/strong&gt;&lt;/td&gt;
-      &lt;td&gt;Files that are saved during &lt;code class=&quot;highlighter-rouge&quot;&gt;system failures&lt;/code&gt;.&lt;/td&gt;
+      &lt;td&gt;Files that are saved during &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;system failures&lt;/code&gt;.&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1766,8 +1766,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 </description>
         <pubDate>Sat, 26 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Linux-File-System/</link>
-        <guid isPermaLink="true">http://localhost:4000/Linux-File-System/</guid>
+        <link>http://localhost:4001/Linux-File-System/</link>
+        <guid isPermaLink="true">http://localhost:4001/Linux-File-System/</guid>
         
         
         <category>Linux</category>
@@ -1788,7 +1788,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
     
       <item>
         <title>Vim in linux with Cheat Sheet</title>
-        <description>&lt;p&gt;Editing &lt;code class=&quot;highlighter-rouge&quot;&gt;files&lt;/code&gt; is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.&lt;/p&gt;
+        <description>&lt;p&gt;Editing &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;files&lt;/code&gt; is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
@@ -1806,7 +1806,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.vim.org/&quot; target=&quot;_blank&quot;&gt;vi&lt;/a&gt;&lt;/strong&gt;  which stands for &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Interface&lt;/code&gt; is one of the oldest and widely used text editors among the other text editors. Even some other text editors are easier to use, vi is only the text editor which will be in the continuous update and available. This is the main reason why every Linux user should know about vi text editor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.vim.org/&quot; target=&quot;_blank&quot;&gt;vi&lt;/a&gt;&lt;/strong&gt;  which stands for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Visual Interface&lt;/code&gt; is one of the oldest and widely used text editors among the other text editors. Even some other text editors are easier to use, vi is only the text editor which will be in the continuous update and available. This is the main reason why every Linux user should know about vi text editor.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://www.vim.org/&quot; target=&quot;_blank&quot;&gt;Vim&lt;/a&gt;&lt;/strong&gt; is an improved version of the vi editor. Vim is highly configured and upgraded with many features such as:&lt;/p&gt;
 &lt;ul&gt;
@@ -1817,13 +1817,13 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
   &lt;li&gt;Scripting Multiple Languages&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Vim uses important modes like command mode, visual mode, and input mode. In &lt;code class=&quot;highlighter-rouge&quot;&gt;Command Mode&lt;/code&gt; user can just enter the command and cannot change the content of the file. &lt;code class=&quot;highlighter-rouge&quot;&gt;Input Mode&lt;/code&gt; allows the user to change the content of the file. The user first opens the &lt;code class=&quot;highlighter-rouge&quot;&gt;Vim&lt;/code&gt; enters the command mode and using &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; keystroke enters the insert mode and &lt;code class=&quot;highlighter-rouge&quot;&gt;v&lt;/code&gt; for &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Mode&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Vim uses important modes like command mode, visual mode, and input mode. In &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Command Mode&lt;/code&gt; user can just enter the command and cannot change the content of the file. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Input Mode&lt;/code&gt; allows the user to change the content of the file. The user first opens the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Vim&lt;/code&gt; enters the command mode and using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt; keystroke enters the insert mode and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;v&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Visual Mode&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h1 id=&quot;basic-workflow-of-vim&quot;&gt;Basic Workflow of Vim&lt;/h1&gt;
 &lt;p&gt;Working with all the commands of vim is not easy. Just use a minimal set of commands and use them often for remembrance. The below example shows you the minimum keystrokes that every vim user must know.&lt;/p&gt;
 
 &lt;h2 id=&quot;installing-vim&quot;&gt;Installing Vim&lt;/h2&gt;
-&lt;p&gt;By default &lt;code class=&quot;highlighter-rouge&quot;&gt;vi&lt;/code&gt; is installed in your system. For using upgrade version you need to install &lt;code class=&quot;highlighter-rouge&quot;&gt;vim&lt;/code&gt; manually.&lt;/p&gt;
+&lt;p&gt;By default &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vi&lt;/code&gt; is installed in your system. For using upgrade version you need to install &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vim&lt;/code&gt; manually.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;c1&quot;&gt;#For Ubutnu&lt;/span&gt;
 
@@ -1895,7 +1895,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 
 &lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; When you try to open files in vim that does not exist, but the path is available, vim will inform you that you are editing a new file, and create the file when you save it.&lt;/div&gt;--&gt;
 
-&lt;p&gt;Now vim will open the hosts file and start with &lt;code class=&quot;highlighter-rouge&quot;&gt;command mode&lt;/code&gt; . You will find the information about the file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom  left&lt;/code&gt; as (filename, number of lines, number of character) and &lt;code class=&quot;highlighter-rouge&quot;&gt;bottom right&lt;/code&gt; current cursor position(line, character) and what part of file is displayed (ALL for all, Top for the first lines of file, Bot for bottom of a file or % to indicate where in the file you are).&lt;/p&gt;
+&lt;p&gt;Now vim will open the hosts file and start with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;command mode&lt;/code&gt; . You will find the information about the file in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bottom  left&lt;/code&gt; as (filename, number of lines, number of character) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;bottom right&lt;/code&gt; current cursor position(line, character) and what part of file is displayed (ALL for all, Top for the first lines of file, Bot for bottom of a file or % to indicate where in the file you are).&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain4&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;         &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain6&lt;/span&gt;
@@ -1916,7 +1916,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;span class=&quot;s2&quot;&gt;&quot;/etc/hosts&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;readonly&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;L&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;158&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;C&lt;/span&gt;                              &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;           &lt;span class=&quot;no&quot;&gt;All&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;h2 id=&quot;editing-files&quot;&gt;Editing Files&lt;/h2&gt;
-&lt;p&gt;For editing the file, first switch from &lt;code class=&quot;highlighter-rouge&quot;&gt;command mode&lt;/code&gt; to &lt;code class=&quot;highlighter-rouge&quot;&gt;insert mode&lt;/code&gt;, Use can use below command table for switching to insert mode.&lt;/p&gt;
+&lt;p&gt;For editing the file, first switch from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;command mode&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;insert mode&lt;/code&gt;, Use can use below command table for switching to insert mode.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -1957,7 +1957,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;The below example shows editing a file by inserting &lt;code class=&quot;highlighter-rouge&quot;&gt;127.0.0.0      mylocalhost.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The below example shows editing a file by inserting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;127.0.0.0      mylocalhost.com&lt;/code&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain4&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;         &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain6&lt;/span&gt;
@@ -1974,7 +1974,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;span class=&quot;o&quot;&gt;~&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;INSERT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;                                                  &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;          &lt;span class=&quot;no&quot;&gt;All&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--INSERT--&lt;/code&gt; or &lt;code class=&quot;highlighter-rouge&quot;&gt;--REPLACE--&lt;/code&gt; indicates that you are in insert or replace mode. Press &lt;code class=&quot;highlighter-rouge&quot;&gt;Esc&lt;/code&gt; to return back to command mode.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--INSERT--&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;--REPLACE--&lt;/code&gt; indicates that you are in insert or replace mode. Press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Esc&lt;/code&gt; to return back to command mode.&lt;/p&gt;
 
 &lt;div class=&quot;alert alert-info&quot;&gt;
     &lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; Esc will always cancel the current command or returns to command mode. 
@@ -2034,7 +2034,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;!--&lt;div markdown=&quot;span&quot; class=&quot;note&quot; role=&quot;alert&quot;&gt;&lt;i class=&quot;fa fa-info-circle&quot;&gt;&lt;/i&gt; &lt;b&gt;Note:&lt;/b&gt; Esc will always cancel the current command or returns to command mode. &lt;/div&gt;--&gt;
 
 &lt;h2 id=&quot;saving-files&quot;&gt;Saving Files&lt;/h2&gt;
-&lt;p&gt;In vim file is saved from &lt;code class=&quot;highlighter-rouge&quot;&gt;ex mode&lt;/code&gt;. For entering ex mode simply press &lt;code class=&quot;highlighter-rouge&quot;&gt;:&lt;/code&gt; within command mode. After entering ex mode use the below command as your need.&lt;/p&gt;
+&lt;p&gt;In vim file is saved from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ex mode&lt;/code&gt;. For entering ex mode simply press &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt; within command mode. After entering ex mode use the below command as your need.&lt;/p&gt;
 
 &lt;table&gt;
   &lt;thead&gt;
@@ -2071,7 +2071,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;The below example shows saving the file using &lt;code class=&quot;highlighter-rouge&quot;&gt;:wq&lt;/code&gt; command and press enter.&lt;/p&gt;
+&lt;p&gt;The below example shows saving the file using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:wq&lt;/code&gt; command and press enter.&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;mf&quot;&gt;127.0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;   &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain4&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;         &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;localhost6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;localdomain6&lt;/span&gt;
@@ -2228,8 +2228,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;/blockquote&gt;
 </description>
         <pubDate>Tue, 22 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/VIM-in-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/VIM-in-Linux/</guid>
+        <link>http://localhost:4001/VIM-in-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4001/VIM-in-Linux/</guid>
         
         
         <category>Linux</category>
@@ -2250,7 +2250,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
     
       <item>
         <title>Creating Hard and Soft Links in Linux</title>
-        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Links&lt;/code&gt; are assigned to file on Linux which works as &lt;code class=&quot;highlighter-rouge&quot;&gt;aliases&lt;/code&gt;. There are two types of links on Linux &lt;code class=&quot;highlighter-rouge&quot;&gt;symbolic links&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;hard links&lt;/code&gt;. In this article, we will learn how to use and manage links on Linux.&lt;/p&gt;
+        <description>&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Links&lt;/code&gt; are assigned to file on Linux which works as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;aliases&lt;/code&gt;. There are two types of links on Linux &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;symbolic links&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hard links&lt;/code&gt;. In this article, we will learn how to use and manage links on Linux.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Table Of Content&lt;/strong&gt;&lt;/p&gt;
@@ -2268,11 +2268,11 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;/blockquote&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Must have basic knowledge about the organization of the &lt;code class=&quot;highlighter-rouge&quot;&gt;Linux file system&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Must have basic knowledge about the organization of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Linux file system&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;hard-links&quot;&gt;Hard Links&lt;/h1&gt;
-&lt;p&gt;On Linux, every file has an &lt;code class=&quot;highlighter-rouge&quot;&gt;inode&lt;/code&gt;, and in the inode, administrative information is stored. Information like :&lt;/p&gt;
+&lt;p&gt;On Linux, every file has an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;inode&lt;/code&gt;, and in the inode, administrative information is stored. Information like :&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Data block where the file content is stored&lt;/li&gt;
@@ -2281,9 +2281,9 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
   &lt;li&gt;File owners&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;are stored in the inode.  From the above information, one important information is not stored in the inode i.e the &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; of the file. Names are itself stored in the directory, and each filename knows which inode to address for further file information.&lt;/p&gt;
+&lt;p&gt;are stored in the inode.  From the above information, one important information is not stored in the inode i.e the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;name&lt;/code&gt; of the file. Names are itself stored in the directory, and each filename knows which inode to address for further file information.&lt;/p&gt;
 
-&lt;p&gt;Simply understanding &lt;code class=&quot;highlighter-rouge&quot;&gt;hard links&lt;/code&gt;, giving a name while creating a file, this name is called hard links. On Linux single file can have multiple hard links that enable you to access the file from multiple different locations.&lt;/p&gt;
+&lt;p&gt;Simply understanding &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;hard links&lt;/code&gt;, giving a name while creating a file, this name is called hard links. On Linux single file can have multiple hard links that enable you to access the file from multiple different locations.&lt;/p&gt;
 
 &lt;p&gt;Some of the restrictions applied to hard links are as follows:&lt;/p&gt;
 &lt;ul&gt;
@@ -2295,7 +2295,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;p&gt;When you create multiple hard links of a file, there is no difference between the first hard link and the last hard link you have created. If the first hard link that exists is removed, then it does not impact other hard links.&lt;/p&gt;
 
 &lt;h1 id=&quot;symbolic-links&quot;&gt;Symbolic Links&lt;/h1&gt;
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Symbolic Links&lt;/code&gt; are also known as &lt;code class=&quot;highlighter-rouge&quot;&gt;soft links&lt;/code&gt;. This is more flexible than hard links. The advantages and disadvantage of symbolic links are:&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Symbolic Links&lt;/code&gt; are also known as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;soft links&lt;/code&gt;. This is more flexible than hard links. The advantages and disadvantage of symbolic links are:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Advantages&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
@@ -2309,7 +2309,7 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;creating-links&quot;&gt;Creating Links&lt;/h1&gt;
-&lt;p&gt;For creating links on Linux &lt;code class=&quot;highlighter-rouge&quot;&gt;ln&lt;/code&gt; command is used. If you want to create a symbolic link, use the &lt;code class=&quot;highlighter-rouge&quot;&gt;-s&lt;/code&gt; option and then specify your source and target file or directory.&lt;/p&gt;
+&lt;p&gt;For creating links on Linux &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ln&lt;/code&gt; command is used. If you want to create a symbolic link, use the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-s&lt;/code&gt; option and then specify your source and target file or directory.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Example for Symbolic Link&lt;/strong&gt;&lt;/p&gt;
 
@@ -2557,8 +2557,8 @@ Use `&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;man&lt;/span&gt; &lt;span clas
 &lt;/blockquote&gt;
 </description>
         <pubDate>Sun, 20 Oct 2019 00:00:00 +0545</pubDate>
-        <link>http://localhost:4000/Links-in-Linux/</link>
-        <guid isPermaLink="true">http://localhost:4000/Links-in-Linux/</guid>
+        <link>http://localhost:4001/Links-in-Linux/</link>
+        <guid isPermaLink="true">http://localhost:4001/Links-in-Linux/</guid>
         
         
         <category>Linux</category>

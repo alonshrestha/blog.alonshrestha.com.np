@@ -5,25 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
 <title>tar Command in Linux with Example | Alon Shrestha</title>
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>tar Command in Linux with Example | alon’sTech Blog</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="tar Command in Linux with Example" />
 <meta name="author" content="alonshrestha" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. " />
 <meta property="og:description" content="Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. " />
-<link rel="canonical" href="http://localhost:4000/tar-in-Linux/" />
-<meta property="og:url" content="http://localhost:4000/tar-in-Linux/" />
+<link rel="canonical" href="http://localhost:4001/tar-in-Linux/" />
+<meta property="og:url" content="http://localhost:4001/tar-in-Linux/" />
 <meta property="og:site_name" content="alon’sTech Blog" />
-<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-19/1.png" />
+<meta property="og:image" content="http://localhost:4001/assets/images/blog/2019-10-19/1.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-19T00:00:00+05:45" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4001/assets/images/blog/2019-10-19/1.png" />
+<meta property="twitter:title" content="tar Command in Linux with Example" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@alonshrestha" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"http://localhost:4000/assets/images/blog/2019-10-19/1.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"tar Command in Linux with Example","dateModified":"2019-10-19T00:00:00+05:45","url":"http://localhost:4000/tar-in-Linux/","datePublished":"2019-10-19T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tar-in-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. ","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","image":"http://localhost:4001/assets/images/blog/2019-10-19/1.png","url":"http://localhost:4001/tar-in-Linux/","headline":"tar Command in Linux with Example","datePublished":"2019-10-19T00:00:00+05:45","dateModified":"2019-10-19T00:00:00+05:45","author":{"@type":"Person","name":"alonshrestha"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4001/assets/images/personal/head.jpg"},"name":"alonshrestha"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4001/tar-in-Linux/"},"description":"Managing and working with file compression and archive is the most important file-related task in Linux. tar command is known as Tape ARchive which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. ","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -76,8 +78,8 @@
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
 <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Portfolio-using-Github/">Left Sidebar</a>-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Links-in-Linux/">Right Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4001/Portfolio-using-Github/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4001/Links-in-Linux/">Right Sidebar</a>-->
 <!--                    </div>-->
 <!--                </li>-->
 
@@ -318,7 +320,7 @@
 
 			<!-- Post Content -->
 			<div class="article-post">
-				<p>Managing and working with file compression and archive is the most important file-related task in Linux. <code class="highlighter-rouge">tar</code> command is known as <code class="highlighter-rouge">Tape ARchive</code> which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. </p>
+				<p>Managing and working with file compression and archive is the most important file-related task in Linux. <code class="language-plaintext highlighter-rouge">tar</code> command is known as <code class="language-plaintext highlighter-rouge">Tape ARchive</code> which is used to create an archive of files in Linux. This command creates an archive without compression. For creating an archive file with compression, you need to use specific compression tools or need to specify an option that compresses the archive while it is created. In this article, we will learn how to manage and work with archives and compressed files. </p>
 
 <blockquote>
   <p><strong>Table Of Content</strong></p>
@@ -334,13 +336,13 @@
 </ul>
 
 <h1 id="create-archive">Create Archive</h1>
-<p>To create an archive we use <code class="highlighter-rouge">tar -cf  Archive-file-name.tar  /file-you-want-to-archive</code>.  In below example an archive is created with the name <code class="highlighter-rouge">myFiles.tar</code> for directory  <code class="highlighter-rouge">/home/alon/Documents/</code>.</p>
+<p>To create an archive we use <code class="language-plaintext highlighter-rouge">tar -cf  Archive-file-name.tar  /file-you-want-to-archive</code>.  In below example an archive is created with the name <code class="language-plaintext highlighter-rouge">myFiles.tar</code> for directory  <code class="language-plaintext highlighter-rouge">/home/alon/Documents/</code>.</p>
 
 <p><strong>Example:</strong></p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">cf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span> <span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span></code></pre></figure>
 
-<p>if you want to see what is happening while running above command, use <code class="highlighter-rouge">-v</code> option.</p>
+<p>if you want to see what is happening while running above command, use <code class="language-plaintext highlighter-rouge">-v</code> option.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">tar</span> <span class="o">-</span><span class="n">cvf</span> <span class="n">myFiles</span><span class="p">.</span><span class="nf">tar</span> <span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span>
 <span class="sr">/home/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span>
@@ -408,7 +410,7 @@
 <!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b>  In -cvf option ( - ) was not being used in old version of tar.</div>-->
 
 <h1 id="add-file-in-existing-archive">Add File in Existing Archive</h1>
-<p>While managing archives with tar,  there might also be a case to add a new file in the existing archive. For that, we use <code class="highlighter-rouge">-r</code> options. Syntax <code class="highlighter-rouge">tar -rvf  Archive-file-name.tar  /path-of/file-you-want-to-add-to-the-archive</code>.</p>
+<p>While managing archives with tar,  there might also be a case to add a new file in the existing archive. For that, we use <code class="language-plaintext highlighter-rouge">-r</code> options. Syntax <code class="language-plaintext highlighter-rouge">tar -rvf  Archive-file-name.tar  /path-of/file-you-want-to-add-to-the-archive</code>.</p>
 
 <p><strong>Example:</strong></p>
 
@@ -417,7 +419,7 @@
 
 <h1 id="update-existing-archive">Update Existing Archive</h1>
 
-<p>To update current existing archive file, we can use the <code class="highlighter-rouge">-u</code> options. Syntax <code class="highlighter-rouge">tar -uvf  Archive-file-name.tar </code></p>
+<p>To update current existing archive file, we can use the <code class="language-plaintext highlighter-rouge">-u</code> options. Syntax <code class="language-plaintext highlighter-rouge">tar -uvf  Archive-file-name.tar </code></p>
 
 <p><strong>Example:</strong></p>
 
@@ -425,7 +427,7 @@
 
 <h1 id="monitoring-archive">Monitoring Archive</h1>
 
-<p>You can also view all the files for the archive before extracting. For that, use <code class="highlighter-rouge">-t</code> option. Sytntax <code class="highlighter-rouge">tar -tvf  Archive-file-name.tar </code></p>
+<p>You can also view all the files for the archive before extracting. For that, use <code class="language-plaintext highlighter-rouge">-t</code> option. Sytntax <code class="language-plaintext highlighter-rouge">tar -tvf  Archive-file-name.tar </code></p>
 
 <p><strong>Example</strong></p>
 
@@ -497,7 +499,7 @@
 </style>
 
 <h1 id="extracting-archive">Extracting Archive</h1>
-<p>Now its time to extract the content of the archive. For that, use <code class="highlighter-rouge">-x</code> option. Syntax <code class="highlighter-rouge">tar -xvf Archive-file-name.tar</code></p>
+<p>Now its time to extract the content of the archive. For that, use <code class="language-plaintext highlighter-rouge">-x</code> option. Syntax <code class="language-plaintext highlighter-rouge">tar -xvf Archive-file-name.tar</code></p>
 
 <p><strong>Example:</strong></p>
 
@@ -511,7 +513,7 @@
 <span class="n">home</span><span class="o">/</span><span class="n">alon</span><span class="o">/</span><span class="no">Documents</span><span class="o">/</span><span class="n">hosts</span>
 <span class="n">etc</span><span class="o">/</span><span class="n">hosts</span></code></pre></figure>
 
-<p>The above command extracts the content of archive in the current directory. To specify your target directory where you want to extract the the file use <code class="highlighter-rouge">-C</code> option. Syntax <code class="highlighter-rouge">tar -xvf Archive-file-name.tar -C /your-path</code></p>
+<p>The above command extracts the content of archive in the current directory. To specify your target directory where you want to extract the the file use <code class="language-plaintext highlighter-rouge">-C</code> option. Syntax <code class="language-plaintext highlighter-rouge">tar -xvf Archive-file-name.tar -C /your-path</code></p>
 
 <p><strong>Example:</strong></p>
 
@@ -526,11 +528,11 @@
 <span class="n">etc</span><span class="o">/</span><span class="n">hosts</span></code></pre></figure>
 
 <h1 id="using-compression-in-archive">Using Compression in Archive</h1>
-<p>Using compression utility in archive allows you to make files that take less disk space by removing the redundancy. In the above example, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with separate utility such as <code class="highlighter-rouge">gzip</code> or <code class="highlighter-rouge">bzip2</code>.</p>
+<p>Using compression utility in archive allows you to make files that take less disk space by removing the redundancy. In the above example, none of the archive were compressed with a single byte. For compression archive, it had to be compressed with separate utility such as <code class="language-plaintext highlighter-rouge">gzip</code> or <code class="language-plaintext highlighter-rouge">bzip2</code>.</p>
 
-<p>You can compress the <code class="highlighter-rouge">Archive-file-name.tar</code> with <code class="highlighter-rouge">gzip</code> with <code class="highlighter-rouge">Archive-file-name.tar.gz</code>. For alternative to using <code class="highlighter-rouge">gzip</code>, we can use <code class="highlighter-rouge">bzip2</code> utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.</p>
+<p>You can compress the <code class="language-plaintext highlighter-rouge">Archive-file-name.tar</code> with <code class="language-plaintext highlighter-rouge">gzip</code> with <code class="language-plaintext highlighter-rouge">Archive-file-name.tar.gz</code>. For alternative to using <code class="language-plaintext highlighter-rouge">gzip</code>, we can use <code class="language-plaintext highlighter-rouge">bzip2</code> utility which uses more efficient encryption algorithm, but hardly there is no difference anymore between gzip and bzip2 utilities.</p>
 
-<p>For compression, simply include  <code class="highlighter-rouge">-z</code> option for <code class="highlighter-rouge">gzip</code> and <code class="highlighter-rouge">-j</code> option for <code class="highlighter-rouge">bzip2</code>.</p>
+<p>For compression, simply include  <code class="language-plaintext highlighter-rouge">-z</code> option for <code class="language-plaintext highlighter-rouge">gzip</code> and <code class="language-plaintext highlighter-rouge">-j</code> option for <code class="language-plaintext highlighter-rouge">bzip2</code>.</p>
 
 <p><strong>Example for tar.gz</strong></p>
 
@@ -692,12 +694,12 @@
             <div class="row PageNavigation mt-4 prevnextlinks">
               
                 <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/Portfolio-using-Github/">&laquo; How to Create a Portfolio in Github</a>
+                    <a class="thepostlink" href="http://localhost:4001/Portfolio-using-Github/">&laquo; How to Create a Portfolio in Github</a>
                 </div>
               
               
                 <div class="col-md-6 text-right pr-0">
-                    <a class="thepostlink" href="http://localhost:4000/Links-in-Linux/">Creating Hard and Soft Links in Linux &raquo;</a>
+                    <a class="thepostlink" href="http://localhost:4001/Links-in-Linux/">Creating Hard and Soft Links in Linux &raquo;</a>
                 </div>
               
             </div>
@@ -774,7 +776,7 @@
 <!--                </div>-->
                 <div class="col-md-4 text-center footersocial" style="text-align: center;">
                     <h5 style="text-align: center;" >Connect with Me</h5>
-                    <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    <a href="http://localhost:4001/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
                     <a href="https://www.facebook.com/Alons-Tech-Blog-100359161411871/" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://instagram.com/a.l_o.n" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a href="https://twitter.com/stechalon" target="_blank" ><i class="fa fa-twitter"></i></a>
@@ -838,7 +840,7 @@
             <div class="col-sm-12">
             <div class="copyright" style="text-align: center;">
                 <p style="text-align: center;">
-                    Copyright © 2020 Alon Shrestha <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    Copyright © 2020 Alon Shrestha <a href="http://localhost:4001/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
                 </p>
 <!--                Plese, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/-->
                 <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a>

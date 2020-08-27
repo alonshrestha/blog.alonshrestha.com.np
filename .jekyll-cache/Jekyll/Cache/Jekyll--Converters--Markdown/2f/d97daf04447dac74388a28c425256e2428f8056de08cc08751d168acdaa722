@@ -1,0 +1,209 @@
+I"Ú<p>VirtualBox is a powerful opensource <a href="https://alonshrestha.com.np/Introduction-to-Virtualization-Beginners-Guide/" target="_blank">virtualization</a> software or platform that provides you to manage and run multiple operating systems as an application at the same time.</p>
+
+<p>This masterpiece was developed by <a href="https://www.oracle.com/index.html" target="_blank">Oracle Corporation</a> for enterprise-level and home use. In 2007 the software was invented by <a href="https://www.virtualbox.org/wiki/innotek" target="_blank">Innotek GmbH</a> and later acquired by Oracle in 2010.  This <a href="https://en.wikipedia.org/wiki/VirtualBox" target="_blank">application</a> supports multiple guest operating systems such as Linux, Windows, Solaris, Mac OS, Unices and <a href="https://www.virtualbox.org/wiki/Guest_OSes" target="_blank">others</a>.</p>
+
+<blockquote>
+  <p><strong>Table of Content</strong></p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#installation" id="markdown-toc-installation">Installation</a>    <ul>
+      <li><a href="#step-1-download-virtualbox" id="markdown-toc-step-1-download-virtualbox">Step 1: Download VirtualBox</a></li>
+      <li><a href="#step-2-install-virtualbox" id="markdown-toc-step-2-install-virtualbox">Step 2: Install VirtualBox</a></li>
+      <li><a href="#step-3-setup-extension-in-virtualbox" id="markdown-toc-step-3-setup-extension-in-virtualbox">Step 3: Setup Extension in VirtualBox</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="installation">Installation</h1>
+<h2 id="step-1-download-virtualbox">Step 1: Download VirtualBox</h2>
+<ul>
+  <li><strong>Visit Oracle VirtualBox website <a href="https://www.virtualbox.org/" target="_blank">https://www.virtualbox.org/ </a> and go to the download as show in the picture below.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/1.png" alt="" /></p>
+
+<ul>
+  <li><strong>Now select the linux distribution platform.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/2.png" alt="" /></p>
+
+<ul>
+  <li><strong>Choose the distro that you are using. In my case its Ubuntu 16.04.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/3.png" alt="" /></p>
+
+<ul>
+  <li><strong>Now download the extension pack. This helps you to connect your virtual machine with USB 2.0 and USB 3.0.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/4.png" alt="" /></p>
+
+<div class="alert alert-info">
+    <i class="fa fa-info-circle"></i> <b>Note:</b> Extension is not required to run VirtualBox. **This is optional**
+</div>
+
+<style>
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block > p,
+    .alert-block > ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+</style>
+
+<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Extension is not required to run VirtualBox. **This is optional**</div>-->
+
+<h2 id="step-2-install-virtualbox">Step 2: Install VirtualBox</h2>
+<ul>
+  <li><strong>Open and run the download package from your Download directory.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/5.png" alt="" /></p>
+
+<ul>
+  <li><strong>You will see an installation window of VirtualBox in ubuntu software. Click on install.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/6.png" alt="" /></p>
+
+<ul>
+  <li><strong>After installation go to windows and  search for VirtualBox and open it.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/7.png" alt="" /></p>
+
+<ul>
+  <li><strong>You will be able to see the application similar down below.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/8.png" alt="" /></p>
+
+<h2 id="step-3-setup-extension-in-virtualbox">Step 3: Setup Extension in VirtualBox</h2>
+<ul>
+  <li><strong>Run the application. Go to Files -&gt; Preferences -&gt; Extensions and Add the extension from your Download Folder.</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/10.png" alt="" /></p>
+
+<ul>
+  <li><strong>Select the extension</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/12.png" alt="" /></p>
+
+<ul>
+  <li><strong>Agree on the policy and complete the setup. Now you will be able to see similar as shown below</strong></li>
+</ul>
+
+<p><img src="/assets/images/blog/2019-08-06/11.png" alt="" /></p>
+
+<div class="bs-callout bs-callout-success">
+    <h4>Congratulation!!</h4>
+    Your installation is completed. Feel free to write me  if you face any problem.
+</div>
+
+<style>
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+</style>
+
+:ET

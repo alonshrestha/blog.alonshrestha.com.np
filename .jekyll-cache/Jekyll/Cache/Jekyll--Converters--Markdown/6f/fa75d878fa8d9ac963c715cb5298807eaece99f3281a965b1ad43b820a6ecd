@@ -1,0 +1,6 @@
+I"²<p>Screen command on Linux is a useful utility for those people who work on multiple screen using SSH session. This command allows you to open multiple session in a terminal even if you are not in a graphical session. This also allows you to share a session with other users or to attach and detach to a remote terminal session. Screen command is used when you need to perform a long-running task on a remote machine.</p>
+<h1 id="installing-screen">Installing Screen</h1>
+<p><strong>Debian base system</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">stechalon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">screen</span></code></pre></figure>
+:ET

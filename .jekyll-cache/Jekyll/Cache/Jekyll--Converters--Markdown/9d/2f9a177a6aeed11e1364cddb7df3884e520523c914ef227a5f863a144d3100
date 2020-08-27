@@ -1,0 +1,205 @@
+I"F<p><code class="language-plaintext highlighter-rouge">Wildcards</code> make your workflow a lot easier when you are working with files. Wildcards are the character that allows you to <code class="language-plaintext highlighter-rouge">search</code> any class of characters in <code class="language-plaintext highlighter-rouge">shell command</code> in Linux or other operating systems. This increases your efficiency of search. There are different types of wildcards which are described below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Wildcards</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>*</td>
+      <td>Search for ultimate number of characters.</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td>Search for specific character that can be any.</td>
+    </tr>
+    <tr>
+      <td>[ ]</td>
+      <td>Search for the range of character that is specified between the square brackets.</td>
+    </tr>
+  </tbody>
+</table>
+
+<blockquote>
+  <p><strong>Table Of Content</strong></p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#an-asterisk---" id="markdown-toc-an-asterisk---">An Asterisk ( * )</a></li>
+  <li><a href="#question-mark---" id="markdown-toc-question-mark---">Question Mark ( ? )</a></li>
+  <li><a href="#bracket----" id="markdown-toc-bracket----">Bracket ( [ ] )</a></li>
+</ul>
+
+<h1 id="an-asterisk---">An Asterisk ( * )</h1>
+<p>Command used <code class="language-plaintext highlighter-rouge">ls -l /etc/sudo*</code>
+The below examle shows all  the matched files of string appearing after <code class="language-plaintext highlighter-rouge">sudo</code> from <code class="language-plaintext highlighter-rouge">/etc</code> directory.</p>
+
+<p><strong>Example</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="sr">/etc/su</span><span class="k">do</span><span class="o">*</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">-----.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">1786</span> <span class="no">Oct</span> <span class="mi">30</span>  <span class="mi">2018</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">sudo</span><span class="p">.</span><span class="nf">conf</span>
+<span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">-----.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4328</span> <span class="no">Oct</span> <span class="mi">30</span>  <span class="mi">2018</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">sudoers</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">-----.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">3181</span> <span class="no">Oct</span> <span class="mi">30</span>  <span class="mi">2018</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">sudo</span><span class="o">-</span><span class="n">ldap</span><span class="p">.</span><span class="nf">conf</span></code></pre></figure>
+
+<h1 id="question-mark---">Question Mark ( ? )</h1>
+<p>Command used <code class="language-plaintext highlighter-rouge">ls /etc/rc?.d</code>
+The below example show all the matched files beginning  wiht the string <code class="language-plaintext highlighter-rouge">rc</code> followed by any single character and end with <code class="language-plaintext highlighter-rouge">.d</code>.</p>
+
+<p><strong>Example for Single Character</strong></p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="sr">/etc/</span><span class="n">rc?</span><span class="p">.</span><span class="nf">d</span>
+<span class="sr">/etc/</span><span class="n">rc0</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">K90network</span>
+
+<span class="sr">/etc/</span><span class="n">rc1</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">K90network</span>
+
+<span class="sr">/etc/</span><span class="n">rc2</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">S10network</span>
+
+<span class="sr">/etc/</span><span class="n">rc3</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">S10network</span>
+
+<span class="sr">/etc/</span><span class="n">rc4</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">S10network</span>
+
+<span class="sr">/etc/</span><span class="n">rc5</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">S10network</span>
+
+<span class="sr">/etc/</span><span class="n">rc6</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">K90network</span></code></pre></figure>
+
+<p><strong>Example for Multiple Character</strong></p>
+
+<p>Command used <code class="language-plaintext highlighter-rouge">ls /etc/r??.d</code>. 
+The below example show all the matched files beginning  wiht the string <code class="language-plaintext highlighter-rouge">r</code> followed by any double character and end with <code class="language-plaintext highlighter-rouge">.d</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="sr">/etc/</span><span class="n">r?</span><span class="p">?.</span><span class="nf">d</span>
+<span class="sr">/etc/</span><span class="n">rc0</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">K90network</span>
+
+<span class="sr">/etc/</span><span class="n">rc1</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">K90network</span>
+
+<span class="sr">/etc/</span><span class="n">rc2</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">S10network</span>
+
+<span class="sr">/etc/</span><span class="n">rc3</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">S10network</span>
+
+<span class="sr">/etc/</span><span class="n">rc4</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">S10network</span>
+
+<span class="sr">/etc/</span><span class="n">rc5</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">S10network</span>
+
+<span class="sr">/etc/</span><span class="n">rc6</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="no">K50netconsole</span>  <span class="no">K90network</span></code></pre></figure>
+
+<h1 id="bracket----">Bracket ( [ ] )</h1>
+<p>Command used  <code class="language-plaintext highlighter-rouge">ls- l /etc/[w-y]*</code>
+The below example shows all the matched files starting with the range of <code class="language-plaintext highlighter-rouge">w-y</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="n">var</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span><span class="o">-</span> <span class="n">l</span> <span class="sr">/etc/</span><span class="p">[</span><span class="n">w</span><span class="o">-</span><span class="n">y</span><span class="p">]</span><span class="o">*</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4479</span> <span class="no">May</span> <span class="mi">16</span> <span class="mo">02</span><span class="p">:</span><span class="mi">46</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">wgetrc</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>  <span class="mi">970</span> <span class="no">Nov</span>  <span class="mi">5</span>  <span class="mi">2018</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">yum</span><span class="p">.</span><span class="nf">conf</span>
+
+<span class="sr">/etc/</span><span class="ss">wpa_supplicant:
+</span><span class="n">total</span> <span class="mi">4</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-------.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">67</span> <span class="no">Oct</span> <span class="mi">31</span>  <span class="mi">2018</span> <span class="n">wpa_supplicant</span><span class="p">.</span><span class="nf">conf</span>
+
+<span class="sr">/etc/</span><span class="no">X11</span><span class="p">:</span>
+<span class="n">total</span> <span class="mi">0</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>  <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">applnk</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>  <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">fontpath</span><span class="p">.</span><span class="nf">d</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">29</span> <span class="no">Jul</span> <span class="mi">31</span> <span class="mi">14</span><span class="p">:</span><span class="mo">00</span> <span class="n">xorg</span><span class="p">.</span><span class="nf">conf</span><span class="p">.</span><span class="nf">d</span>
+
+<span class="sr">/etc/x</span><span class="ss">dg:
+</span><span class="n">total</span> <span class="mi">0</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>  <span class="mi">6</span> <span class="no">Apr</span> <span class="mi">11</span>  <span class="mi">2018</span> <span class="n">autostart</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">17</span> <span class="no">Aug</span> <span class="mi">13</span> <span class="mi">09</span><span class="p">:</span><span class="mi">49</span> <span class="n">systemd</span>
+
+<span class="sr">/etc/xine</span><span class="n">td</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="n">total</span> <span class="mi">0</span>
+
+<span class="sr">/etc/</span><span class="ss">yum:
+</span><span class="n">total</span> <span class="mi">12</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>    <span class="mi">6</span> <span class="no">Nov</span>  <span class="mi">5</span>  <span class="mi">2018</span> <span class="n">fssnap</span><span class="p">.</span><span class="nf">d</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>   <span class="mi">52</span> <span class="no">Nov</span>  <span class="mi">5</span>  <span class="mi">2018</span> <span class="n">pluginconf</span><span class="p">.</span><span class="nf">d</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>   <span class="mi">25</span> <span class="no">Aug</span> <span class="mi">13</span> <span class="mi">09</span><span class="p">:</span><span class="mi">49</span> <span class="kp">protected</span><span class="p">.</span><span class="nf">d</span>
+<span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span> <span class="mi">2</span> <span class="n">root</span> <span class="n">root</span>   <span class="mi">35</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">06</span> <span class="n">vars</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span>  <span class="mi">444</span> <span class="no">Nov</span>  <span class="mi">5</span>  <span class="mi">2018</span> <span class="n">version</span><span class="o">-</span><span class="n">groups</span><span class="p">.</span><span class="nf">conf</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">2603</span> <span class="no">Aug</span>  <span class="mi">8</span> <span class="mi">17</span><span class="p">:</span><span class="mi">42</span> <span class="n">yum</span><span class="o">-</span><span class="n">cron</span><span class="p">.</span><span class="nf">conf</span>
+<span class="o">-</span><span class="n">rw</span><span class="o">-</span><span class="n">r</span><span class="o">--</span><span class="n">r</span><span class="o">--.</span> <span class="mi">1</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">2565</span> <span class="no">Aug</span>  <span class="mi">8</span> <span class="mi">17</span><span class="p">:</span><span class="mi">42</span> <span class="n">yum</span><span class="o">-</span><span class="n">cron</span><span class="o">-</span><span class="n">hourly</span><span class="p">.</span><span class="nf">conf</span>
+
+<span class="sr">/etc/</span><span class="n">yum</span><span class="p">.</span><span class="nf">repos</span><span class="p">.</span><span class="nf">d</span><span class="p">:</span>
+<span class="n">total</span> <span class="mi">96</span></code></pre></figure>
+
+<div class="bs-callout bs-callout-danger">
+    <h4>Summary</h4>
+    In this article, you learned about the wildcards and its use on Linux. Please feel free to write me if need any help.
+</div>
+
+<style>
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+</style>
+
+:ET

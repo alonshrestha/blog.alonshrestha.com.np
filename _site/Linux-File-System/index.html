@@ -5,25 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
 <title>Linux File System Hierarchy | Alon Shrestha</title>
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Linux File System Hierarchy | alon’sTech Blog</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Linux File System Hierarchy" />
 <meta name="author" content="alonshrestha" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="All the files on the Linux are organized into a single inverted tree directory which is also known as file system hierarchy. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy." />
 <meta property="og:description" content="All the files on the Linux are organized into a single inverted tree directory which is also known as file system hierarchy. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy." />
-<link rel="canonical" href="http://localhost:4000/Linux-File-System/" />
-<meta property="og:url" content="http://localhost:4000/Linux-File-System/" />
+<link rel="canonical" href="http://localhost:4001/Linux-File-System/" />
+<meta property="og:url" content="http://localhost:4001/Linux-File-System/" />
 <meta property="og:site_name" content="alon’sTech Blog" />
-<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-26/1.png" />
+<meta property="og:image" content="http://localhost:4001/assets/images/blog/2019-10-26/1.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-26T00:00:00+05:45" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4001/assets/images/blog/2019-10-26/1.png" />
+<meta property="twitter:title" content="Linux File System Hierarchy" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@alonshrestha" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"http://localhost:4000/assets/images/blog/2019-10-26/1.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Linux File System Hierarchy","dateModified":"2019-10-26T00:00:00+05:45","url":"http://localhost:4000/Linux-File-System/","datePublished":"2019-10-26T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Linux-File-System/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"All the files on the Linux are organized into a single inverted tree directory which is also known as file system hierarchy. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","image":"http://localhost:4001/assets/images/blog/2019-10-26/1.png","url":"http://localhost:4001/Linux-File-System/","headline":"Linux File System Hierarchy","datePublished":"2019-10-26T00:00:00+05:45","dateModified":"2019-10-26T00:00:00+05:45","author":{"@type":"Person","name":"alonshrestha"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4001/assets/images/personal/head.jpg"},"name":"alonshrestha"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4001/Linux-File-System/"},"description":"All the files on the Linux are organized into a single inverted tree directory which is also known as file system hierarchy. The file system handles your data on the storage, which allows the system to know and use it at the beginning and end of the operation. By default, Linux has organized directories which is similar to almost all Linux file system. In this article, we will know about different types of Linux file systems and the Linux file system hierarchy.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -76,8 +78,8 @@
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
 <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/VIM-in-Linux/">Left Sidebar</a>-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Types-of-command-on-Linux/">Right Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4001/VIM-in-Linux/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4001/Types-of-command-on-Linux/">Right Sidebar</a>-->
 <!--                    </div>-->
 <!--                </li>-->
 
@@ -372,7 +374,7 @@
 
 <p><img src="/assets/images/blog/2019-10-26/img1.png" alt="" /></p>
 
-<p>You can try in your machine <code class="highlighter-rouge">ls -l /</code> to see this directories as shown below.</p>
+<p>You can try in your machine <code class="language-plaintext highlighter-rouge">ls -l /</code> to see this directories as shown below.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ls</span> <span class="o">-</span><span class="n">l</span> <span class="o">/</span>
 <span class="n">total</span> <span class="mi">36</span>
@@ -397,7 +399,7 @@
 <span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">13</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Jul</span> <span class="mi">11</span> <span class="mi">09</span><span class="p">:</span><span class="mo">03</span> <span class="n">usr</span>
 <span class="n">drwxr</span><span class="o">-</span><span class="n">xr</span><span class="o">-</span><span class="n">x</span><span class="o">.</span>  <span class="mi">21</span> <span class="n">root</span> <span class="n">root</span> <span class="mi">4096</span> <span class="no">Jul</span> <span class="mi">22</span> <span class="mi">14</span><span class="p">:</span><span class="mo">05</span> <span class="n">var</span></code></pre></figure>
 
-<p>Form the above sketch you can see <code class="highlighter-rouge">-&gt;</code> symbol pointing multiple directories in  <code class="highlighter-rouge">/usr/</code> directory.  This indicates that the directories  <code class="highlighter-rouge">bin</code> , <code class="highlighter-rouge">lib</code> , <code class="highlighter-rouge">lib64</code> and <code class="highlighter-rouge">sbin</code> are the <a href="https://blog.alonshrestha.com.np/Understanding-Hard-and-Soft-Links-In-Linux/" target="_blank">symbolic links</a> from <code class="highlighter-rouge">/usr/</code>.</p>
+<p>Form the above sketch you can see <code class="language-plaintext highlighter-rouge">-&gt;</code> symbol pointing multiple directories in  <code class="language-plaintext highlighter-rouge">/usr/</code> directory.  This indicates that the directories  <code class="language-plaintext highlighter-rouge">bin</code> , <code class="language-plaintext highlighter-rouge">lib</code> , <code class="language-plaintext highlighter-rouge">lib64</code> and <code class="language-plaintext highlighter-rouge">sbin</code> are the <a href="https://blog.alonshrestha.com.np/Understanding-Hard-and-Soft-Links-In-Linux/" target="_blank">symbolic links</a> from <code class="language-plaintext highlighter-rouge">/usr/</code>.</p>
 
 <p>Table below describes the directories</p>
 
@@ -411,51 +413,51 @@
   <tbody>
     <tr>
       <td><strong>/</strong></td>
-      <td>Know as <code class="highlighter-rouge">root</code> directory where file system tree starts.</td>
+      <td>Know as <code class="language-plaintext highlighter-rouge">root</code> directory where file system tree starts.</td>
     </tr>
     <tr>
       <td><strong>/bin</strong></td>
-      <td>Contains <code class="highlighter-rouge">binaries files</code> of the application or program that can be run. Essential during boot.</td>
+      <td>Contains <code class="language-plaintext highlighter-rouge">binaries files</code> of the application or program that can be run. Essential during boot.</td>
     </tr>
     <tr>
       <td><strong>/boot</strong></td>
-      <td>Contains all the files and directories that are need to <code class="highlighter-rouge">boot</code> the Linux kernel.</td>
+      <td>Contains all the files and directories that are need to <code class="language-plaintext highlighter-rouge">boot</code> the Linux kernel.</td>
     </tr>
     <tr>
       <td><strong>/dev</strong></td>
-      <td>Contains device files that allows to access <code class="highlighter-rouge">physical devices</code>. Many of these file are generated at boot time. Essential during boot.</td>
+      <td>Contains device files that allows to access <code class="language-plaintext highlighter-rouge">physical devices</code>. Many of these file are generated at boot time. Essential during boot.</td>
     </tr>
     <tr>
       <td><strong>/etc</strong></td>
-      <td>Know as <code class="highlighter-rouge">every thing to configure</code>. Contains the configuration files that are used by the application and services.</td>
+      <td>Know as <code class="language-plaintext highlighter-rouge">every thing to configure</code>. Contains the configuration files that are used by the application and services.</td>
     </tr>
     <tr>
       <td><strong>/home</strong></td>
-      <td>This drectory is used for local user <code class="highlighter-rouge">home directory</code>.</td>
+      <td>This drectory is used for local user <code class="language-plaintext highlighter-rouge">home directory</code>.</td>
     </tr>
     <tr>
       <td><strong>/lib, /lib64</strong></td>
-      <td>Contains the shared libraries that are used by the application in <code class="highlighter-rouge">/boot</code>  <code class="highlighter-rouge">/sbin</code> and <code class="highlighter-rouge">bin</code></td>
+      <td>Contains the shared libraries that are used by the application in <code class="language-plaintext highlighter-rouge">/boot</code>  <code class="language-plaintext highlighter-rouge">/sbin</code> and <code class="language-plaintext highlighter-rouge">bin</code></td>
     </tr>
     <tr>
       <td><strong>/media</strong></td>
-      <td>Contains the files of the <code class="highlighter-rouge">external storage</code>.</td>
+      <td>Contains the files of the <code class="language-plaintext highlighter-rouge">external storage</code>.</td>
     </tr>
     <tr>
       <td><strong>/mnt</strong></td>
-      <td>Contains files that allows for <code class="highlighter-rouge">mounting</code> the devices.</td>
+      <td>Contains files that allows for <code class="language-plaintext highlighter-rouge">mounting</code> the devices.</td>
     </tr>
     <tr>
       <td><strong>/opt</strong></td>
-      <td>This is used to install <code class="highlighter-rouge">optional package</code> not from the Linux distribution repositories .</td>
+      <td>This is used to install <code class="language-plaintext highlighter-rouge">optional package</code> not from the Linux distribution repositories .</td>
     </tr>
     <tr>
       <td><strong>/sbin</strong></td>
-      <td>Similar to <code class="highlighter-rouge">/bin</code>. Contains all the binaries that superuser needs.</td>
+      <td>Similar to <code class="language-plaintext highlighter-rouge">/bin</code>. Contains all the binaries that superuser needs.</td>
     </tr>
     <tr>
       <td><strong>/srv</strong></td>
-      <td>Directory that may be used for data by services like <code class="highlighter-rouge">HTTP</code>, <code class="highlighter-rouge">NFS</code> and <code class="highlighter-rouge">TCP</code>.</td>
+      <td>Directory that may be used for data by services like <code class="language-plaintext highlighter-rouge">HTTP</code>, <code class="language-plaintext highlighter-rouge">NFS</code> and <code class="language-plaintext highlighter-rouge">TCP</code>.</td>
     </tr>
     <tr>
       <td><strong>/run</strong></td>
@@ -463,7 +465,7 @@
     </tr>
     <tr>
       <td><strong>/tmp</strong></td>
-      <td>This directory contains <code class="highlighter-rouge">temporary files</code> which gets <code class="highlighter-rouge">deleted</code> while system boot without waring.</td>
+      <td>This directory contains <code class="language-plaintext highlighter-rouge">temporary files</code> which gets <code class="language-plaintext highlighter-rouge">deleted</code> while system boot without waring.</td>
     </tr>
     <tr>
       <td><strong>/usr</strong></td>
@@ -471,23 +473,23 @@
     </tr>
     <tr>
       <td><strong>/var</strong></td>
-      <td>Contains <code class="highlighter-rouge">system log</code> files which size changes dynamically.</td>
+      <td>Contains <code class="language-plaintext highlighter-rouge">system log</code> files which size changes dynamically.</td>
     </tr>
     <tr>
       <td><strong>/root</strong></td>
-      <td>Home directory of <code class="highlighter-rouge">root user</code>.</td>
+      <td>Home directory of <code class="language-plaintext highlighter-rouge">root user</code>.</td>
     </tr>
     <tr>
       <td><strong>/proc</strong></td>
-      <td>Contains files that give information about <code class="highlighter-rouge">kernel and CPU</code>.</td>
+      <td>Contains files that give information about <code class="language-plaintext highlighter-rouge">kernel and CPU</code>.</td>
     </tr>
     <tr>
       <td><strong>/sys</strong></td>
-      <td>Similar to <code class="highlighter-rouge">/proc</code> that contains information about the connected devices from your computer.</td>
+      <td>Similar to <code class="language-plaintext highlighter-rouge">/proc</code> that contains information about the connected devices from your computer.</td>
     </tr>
     <tr>
       <td><strong>/lost+found</strong></td>
-      <td>Files that are saved during <code class="highlighter-rouge">system failures</code>.</td>
+      <td>Files that are saved during <code class="language-plaintext highlighter-rouge">system failures</code>.</td>
     </tr>
   </tbody>
 </table>
@@ -574,12 +576,12 @@
             <div class="row PageNavigation mt-4 prevnextlinks">
               
                 <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/VIM-in-Linux/">&laquo; Vim in linux with Cheat Sheet</a>
+                    <a class="thepostlink" href="http://localhost:4001/VIM-in-Linux/">&laquo; Vim in linux with Cheat Sheet</a>
                 </div>
               
               
                 <div class="col-md-6 text-right pr-0">
-                    <a class="thepostlink" href="http://localhost:4000/Types-of-command-on-Linux/">Types of Command in Linux &raquo;</a>
+                    <a class="thepostlink" href="http://localhost:4001/Types-of-command-on-Linux/">Types of Command in Linux &raquo;</a>
                 </div>
               
             </div>
@@ -656,7 +658,7 @@
 <!--                </div>-->
                 <div class="col-md-4 text-center footersocial" style="text-align: center;">
                     <h5 style="text-align: center;" >Connect with Me</h5>
-                    <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    <a href="http://localhost:4001/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
                     <a href="https://www.facebook.com/Alons-Tech-Blog-100359161411871/" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://instagram.com/a.l_o.n" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a href="https://twitter.com/stechalon" target="_blank" ><i class="fa fa-twitter"></i></a>
@@ -720,7 +722,7 @@
             <div class="col-sm-12">
             <div class="copyright" style="text-align: center;">
                 <p style="text-align: center;">
-                    Copyright © 2020 Alon Shrestha <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    Copyright © 2020 Alon Shrestha <a href="http://localhost:4001/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
                 </p>
 <!--                Plese, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/-->
                 <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a>

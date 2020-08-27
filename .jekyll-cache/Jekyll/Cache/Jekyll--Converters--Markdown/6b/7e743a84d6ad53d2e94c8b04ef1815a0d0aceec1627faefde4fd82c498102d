@@ -1,0 +1,439 @@
+I"�G<p>Editing <code class="language-plaintext highlighter-rouge">files</code> is the most frequent job done by the system admin on Linux. Most of the configuration of Linux is done through files. So, managing a Linux server often means working with the files on Linux. The important advantage of using files for config on Linux is that they can be moved or share between the system without any change and also can be edit with a variety of text editors available.</p>
+
+<blockquote>
+  <p><strong>Table Of Content</strong></p>
+</blockquote>
+
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#basic-workflow-of-vim" id="markdown-toc-basic-workflow-of-vim">Basic Workflow of Vim</a>    <ul>
+      <li><a href="#installing-vim" id="markdown-toc-installing-vim">Installing Vim</a></li>
+      <li><a href="#opening-files" id="markdown-toc-opening-files">Opening Files</a></li>
+      <li><a href="#editing-files" id="markdown-toc-editing-files">Editing Files</a></li>
+      <li><a href="#saving-files" id="markdown-toc-saving-files">Saving Files</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="introduction">Introduction</h1>
+<p><strong><a href="https://www.vim.org/" target="_blank">vi</a></strong>  which stands for <code class="language-plaintext highlighter-rouge">Visual Interface</code> is one of the oldest and widely used text editors among the other text editors. Even some other text editors are easier to use, vi is only the text editor which will be in the continuous update and available. This is the main reason why every Linux user should know about vi text editor.</p>
+
+<p><strong><a href="https://www.vim.org/" target="_blank">Vim</a></strong> is an improved version of the vi editor. Vim is highly configured and upgraded with many features such as:</p>
+<ul>
+  <li>Screen Editing</li>
+  <li>Syntax Highlighting</li>
+  <li>Colour Formatting</li>
+  <li>Spell Checking</li>
+  <li>Scripting Multiple Languages</li>
+</ul>
+
+<p>Vim uses important modes like command mode, visual mode, and input mode. In <code class="language-plaintext highlighter-rouge">Command Mode</code> user can just enter the command and cannot change the content of the file. <code class="language-plaintext highlighter-rouge">Input Mode</code> allows the user to change the content of the file. The user first opens the <code class="language-plaintext highlighter-rouge">Vim</code> enters the command mode and using <code class="language-plaintext highlighter-rouge">i</code> keystroke enters the insert mode and <code class="language-plaintext highlighter-rouge">v</code> for <code class="language-plaintext highlighter-rouge">Visual Mode</code>.</p>
+
+<h1 id="basic-workflow-of-vim">Basic Workflow of Vim</h1>
+<p>Working with all the commands of vim is not easy. Just use a minimal set of commands and use them often for remembrance. The below example shows you the minimum keystrokes that every vim user must know.</p>
+
+<h2 id="installing-vim">Installing Vim</h2>
+<p>By default <code class="language-plaintext highlighter-rouge">vi</code> is installed in your system. For using upgrade version you need to install <code class="language-plaintext highlighter-rouge">vim</code> manually.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1">#For Ubutnu</span>
+
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">vim</span> <span class="o">-</span><span class="n">y</span>
+
+<span class="c1">#For Centos</span>
+
+<span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">yum</span> <span class="n">install</span> <span class="n">vim</span> <span class="o">-</span><span class="n">y</span></code></pre></figure>
+
+<h2 id="opening-files">Opening Files</h2>
+<p>In the below example using vim command file hosts will open.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">vim</span> <span class="sr">/etc/</span><span class="n">hosts</span></code></pre></figure>
+
+<div class="alert alert-info">
+    <i class="fa fa-info-circle"></i> <b>Note:</b> When you try to open files in vim that does not exist, but the path is available, vim will inform you that you are editing a new file, and create the file when you save it.
+</div>
+
+<style>
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block > p,
+    .alert-block > ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+</style>
+
+<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> When you try to open files in vim that does not exist, but the path is available, vim will inform you that you are editing a new file, and create the file when you save it.</div>-->
+
+<p>Now vim will open the hosts file and start with <code class="language-plaintext highlighter-rouge">command mode</code> . You will find the information about the file in the <code class="language-plaintext highlighter-rouge">bottom  left</code> as (filename, number of lines, number of character) and <code class="language-plaintext highlighter-rouge">bottom right</code> current cursor position(line, character) and what part of file is displayed (ALL for all, Top for the first lines of file, Bot for bottom of a file or % to indicate where in the file you are).</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost4</span> <span class="n">localhost4</span><span class="p">.</span><span class="nf">localdomain4</span>
+<span class="o">::</span><span class="mi">1</span>         <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost6</span> <span class="n">localhost6</span><span class="p">.</span><span class="nf">localdomain6</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="s2">"/etc/hosts"</span> <span class="p">[</span><span class="n">readonly</span><span class="p">]</span> <span class="mi">2</span><span class="no">L</span><span class="p">,</span> <span class="mi">158</span><span class="no">C</span>                              <span class="mi">1</span><span class="p">,</span><span class="mi">1</span>           <span class="no">All</span></code></pre></figure>
+
+<h2 id="editing-files">Editing Files</h2>
+<p>For editing the file, first switch from <code class="language-plaintext highlighter-rouge">command mode</code> to <code class="language-plaintext highlighter-rouge">insert mode</code>, Use can use below command table for switching to insert mode.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td>Switches to insert mode. Start inserting before the current cursor position.</td>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>Switches to insert mode. Start inserting after the current cursor position.</td>
+    </tr>
+    <tr>
+      <td>I</td>
+      <td>Move the cursor to the start of the line and switch to insert mode.</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Move the cursor to the end of the line and switch to insert mode.</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>Switch to replace mode. Here text is not inserted, but the character of the file is replaced with the character you enter.</td>
+    </tr>
+    <tr>
+      <td>o</td>
+      <td>Open a new line below the current one, and switch to insert mode.</td>
+    </tr>
+    <tr>
+      <td>O</td>
+      <td>Open a new line above the current one, and switch to insert mode.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The below example shows editing a file by inserting <code class="language-plaintext highlighter-rouge">127.0.0.0      mylocalhost.com</code>.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost4</span> <span class="n">localhost4</span><span class="p">.</span><span class="nf">localdomain4</span>
+<span class="o">::</span><span class="mi">1</span>         <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost6</span> <span class="n">localhost6</span><span class="p">.</span><span class="nf">localdomain6</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">mylocalhost</span><span class="p">.</span><span class="nf">com</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">--</span> <span class="no">INSERT</span> <span class="o">--</span>                                                  <span class="mi">3</span><span class="p">,</span><span class="mi">28</span>          <span class="no">All</span></code></pre></figure>
+
+<p><code class="language-plaintext highlighter-rouge">--INSERT--</code> or <code class="language-plaintext highlighter-rouge">--REPLACE--</code> indicates that you are in insert or replace mode. Press <code class="language-plaintext highlighter-rouge">Esc</code> to return back to command mode.</p>
+
+<div class="alert alert-info">
+    <i class="fa fa-info-circle"></i> <b>Note:</b> Esc will always cancel the current command or returns to command mode. 
+</div>
+
+<style>
+    .alert {
+        padding: 8px 35px 8px 14px;
+        margin-bottom: 18px;
+        text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+        background-color: #fcf8e3;
+        border: 1px solid #fbeed5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #c09853;
+    }
+    .alert-heading {
+        color: inherit;
+    }
+    .alert .close {
+        position: relative;
+        top: -2px;
+        right: -21px;
+        line-height: 18px;
+    }
+    .alert-success {
+        background-color: #dff0d8;
+        border-color: #d6e9c6;
+        color: #468847;
+    }
+    .alert-danger,
+    .alert-error {
+        background-color: #f2dede;
+        border-color: #eed3d7;
+        color: #b94a48;
+    }
+    .alert-info {
+        background-color: #d9edf7;
+        border-color: #bce8f1;
+        color: #3a87ad;
+    }
+    .alert-block {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+    .alert-block > p,
+    .alert-block > ul {
+        margin-bottom: 0;
+    }
+    .alert-block p + p {
+        margin-top: 5px;
+    }
+
+</style>
+
+<!--<div markdown="span" class="note" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Esc will always cancel the current command or returns to command mode. </div>-->
+
+<h2 id="saving-files">Saving Files</h2>
+<p>In vim file is saved from <code class="language-plaintext highlighter-rouge">ex mode</code>. For entering ex mode simply press <code class="language-plaintext highlighter-rouge">:</code> within command mode. After entering ex mode use the below command as your need.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>:wq</td>
+      <td>Save and quit the file.</td>
+    </tr>
+    <tr>
+      <td>:w</td>
+      <td>Write the file and remain in the editor.</td>
+    </tr>
+    <tr>
+      <td>:w <filename></filename></td>
+      <td>Save the file name under the different file name.</td>
+    </tr>
+    <tr>
+      <td>:x</td>
+      <td>Save the file if there are unsaved changes and quit.</td>
+    </tr>
+    <tr>
+      <td>:q</td>
+      <td>Quit the file.</td>
+    </tr>
+    <tr>
+      <td>:q!</td>
+      <td>Quit the file ignoring any unsaved changes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The below example shows saving the file using <code class="language-plaintext highlighter-rouge">:wq</code> command and press enter.</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost4</span> <span class="n">localhost4</span><span class="p">.</span><span class="nf">localdomain4</span>
+<span class="o">::</span><span class="mi">1</span>         <span class="n">localhost</span> <span class="n">localhost</span><span class="p">.</span><span class="nf">localdomain</span> <span class="n">localhost6</span> <span class="n">localhost6</span><span class="p">.</span><span class="nf">localdomain6</span>
+<span class="mf">127.0</span><span class="o">.</span><span class="mf">0.1</span>   <span class="n">mylocalhost</span><span class="p">.</span><span class="nf">com</span>
+
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="o">~</span>
+<span class="ss">:wq!</span></code></pre></figure>
+
+<p>The below table shows some other useful command that allows you to work with vim more easily.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Command</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>v</td>
+      <td>Enters in visual mode. This allows you to select a block of text using the arrow keys. Use  d  to cut, or  y  to copy the selection.</td>
+    </tr>
+    <tr>
+      <td>dd</td>
+      <td>Deletes the current line</td>
+    </tr>
+    <tr>
+      <td>yy</td>
+      <td>Copies the current line</td>
+    </tr>
+    <tr>
+      <td>p</td>
+      <td>Pastes the current selection.</td>
+    </tr>
+    <tr>
+      <td>u</td>
+      <td>Undo the last command.</td>
+    </tr>
+    <tr>
+      <td>Ctrl+r</td>
+      <td>Redoes the last undo</td>
+    </tr>
+    <tr>
+      <td>gg</td>
+      <td>Goes to the first line in the document</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Goes to the last line in the document.</td>
+    </tr>
+    <tr>
+      <td>/key</td>
+      <td>Searches for the text key  from the current cursor position forward.</td>
+    </tr>
+    <tr>
+      <td>?key</td>
+      <td>Searches for  text key  from the current cursor position backward</td>
+    </tr>
+    <tr>
+      <td>^</td>
+      <td>Goes to the first position in the current line.</td>
+    </tr>
+    <tr>
+      <td>$</td>
+      <td>Goes to the last position in the current line.</td>
+    </tr>
+    <tr>
+      <td>!ls</td>
+      <td>Adds the output of  ls  (or any other command) in the current file</td>
+    </tr>
+    <tr>
+      <td>:%s/oldKey/newKey/g</td>
+      <td>Replaces all occurrences of  oldKey  with  newKey .</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="bs-callout bs-callout-danger">
+    <h4>Summary</h4>
+    In this articel, you learned the basic workflow of vim editor. Please feel free to write me if need any help.
+</div>
+
+<style>
+    .bs-callout {
+        padding: 20px;
+        margin: 20px 0;
+        border: 1px solid #eee;
+        border-left-width: 5px;
+        border-radius: 3px;
+    }
+    .bs-callout h4 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .bs-callout p:last-child {
+        margin-bottom: 0;
+    }
+    .bs-callout code {
+        border-radius: 3px;
+    }
+    .bs-callout+.bs-callout {
+        margin-top: -5px;
+    }
+    .bs-callout-default {
+        border-left-color: #777;
+    }
+    .bs-callout-default h4 {
+        color: #777;
+    }
+    .bs-callout-primary {
+        border-left-color: #428bca;
+    }
+    .bs-callout-primary h4 {
+        color: #428bca;
+    }
+    .bs-callout-success {
+        border-left-color: #5cb85c;
+    }
+    .bs-callout-success h4 {
+        color: #5cb85c;
+    }
+    .bs-callout-danger {
+        border-left-color: #d9534f;
+    }
+    .bs-callout-danger h4 {
+        color: #d9534f;
+    }
+    .bs-callout-warning {
+        border-left-color: #f0ad4e;
+    }
+    .bs-callout-warning h4 {
+        color: #f0ad4e;
+    }
+    .bs-callout-info {
+        border-left-color: #5bc0de;
+    }
+    .bs-callout-info h4 {
+        color: #5bc0de;
+    }
+</style>
+
+<blockquote>
+  <p><strong>Reference</strong></p>
+  <blockquote>
+    <p>Red Hat® RHCSA™/RHCE® 7 Cert Guide: Red Hat Enterprise Linux 7 (EX200 and EX300) Sander van Vugt.</p>
+  </blockquote>
+</blockquote>
+:ET

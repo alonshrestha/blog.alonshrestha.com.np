@@ -5,25 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
 <title>Hwo to Reset MYSQL/MariaDB Root Password in CentOS 8 | Alon Shrestha</title>
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Hwo to Reset MYSQL/MariaDB Root Password in CentOS 8 | alon’sTech Blog</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Hwo to Reset MYSQL/MariaDB Root Password in CentOS 8" />
 <meta name="author" content="alonshrestha" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centOS 8." />
 <meta property="og:description" content="MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centOS 8." />
-<link rel="canonical" href="http://localhost:4000/reset-root-password-mysql-mariadb/" />
-<meta property="og:url" content="http://localhost:4000/reset-root-password-mysql-mariadb/" />
+<link rel="canonical" href="http://localhost:4001/reset-root-password-mysql-mariadb/" />
+<meta property="og:url" content="http://localhost:4001/reset-root-password-mysql-mariadb/" />
 <meta property="og:site_name" content="alon’sTech Blog" />
-<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-11-15/1.png" />
+<meta property="og:image" content="http://localhost:4001/assets/images/blog/2019-11-15/1.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-11-15T00:00:00+05:45" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4001/assets/images/blog/2019-11-15/1.png" />
+<meta property="twitter:title" content="Hwo to Reset MYSQL/MariaDB Root Password in CentOS 8" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@alonshrestha" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"http://localhost:4000/assets/images/blog/2019-11-15/1.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Hwo to Reset MYSQL/MariaDB Root Password in CentOS 8","dateModified":"2019-11-15T00:00:00+05:45","url":"http://localhost:4000/reset-root-password-mysql-mariadb/","datePublished":"2019-11-15T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/reset-root-password-mysql-mariadb/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centOS 8.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","image":"http://localhost:4001/assets/images/blog/2019-11-15/1.png","url":"http://localhost:4001/reset-root-password-mysql-mariadb/","headline":"Hwo to Reset MYSQL/MariaDB Root Password in CentOS 8","datePublished":"2019-11-15T00:00:00+05:45","dateModified":"2019-11-15T00:00:00+05:45","author":{"@type":"Person","name":"alonshrestha"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4001/assets/images/personal/head.jpg"},"name":"alonshrestha"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4001/reset-root-password-mysql-mariadb/"},"description":"MariaDB root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on centOS 8.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -76,8 +78,8 @@
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
 <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/">Left Sidebar</a>-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/Using-Screen-Command-On-Linux/">Right Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4001/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4001/Using-Screen-Command-On-Linux/">Right Sidebar</a>-->
 <!--                    </div>-->
 <!--                </li>-->
 
@@ -402,16 +404,16 @@
 </ul>
 
 <h1 id="stop-mariadb-server">Stop MariaDB Server</h1>
-<p>First you need to down your mariaDB server. For that use the command <code class="highlighter-rouge">sudo systemctl stop mariadb</code>.</p>
+<p>First you need to down your mariaDB server. For that use the command <code class="language-plaintext highlighter-rouge">sudo systemctl stop mariadb</code>.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">stop</span> <span class="n">mariadb</span></code></pre></figure>
 
 <h1 id="start-mariadb-server-with-safe-mode">Start MariaDB Server with Safe Mode</h1>
-<p>Start mariadb server with safe mode using <code class="highlighter-rouge">mysqld_safe</code>. For that use the command <code class="highlighter-rouge">sudo mysqld_safe --skip-grant-tables &amp;</code>.</p>
+<p>Start mariadb server with safe mode using <code class="language-plaintext highlighter-rouge">mysqld_safe</code>. For that use the command <code class="language-plaintext highlighter-rouge">sudo mysqld_safe --skip-grant-tables &amp;</code>.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">mysqld_safe</span> <span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">grant</span><span class="o">-</span><span class="n">tables</span> <span class="o">&amp;</span></code></pre></figure>
 
-<p>After entering the above command, if you got <code class="highlighter-rouge">hang</code> as shown below, press <code class="highlighter-rouge">enter</code>.  This will redirect you again to command line.</p>
+<p>After entering the above command, if you got <code class="language-plaintext highlighter-rouge">hang</code> as shown below, press <code class="language-plaintext highlighter-rouge">enter</code>.  This will redirect you again to command line.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">root</span><span class="vi">@localhost</span> <span class="n">alon</span><span class="p">]</span><span class="c1"># mysqld_safe --skip-grant-tables &amp;</span>
 <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="mi">1892</span>
@@ -476,7 +478,7 @@
 </style>
 
 <h1 id="login-to-mariadb-server-as-root">Login to MariaDB Server as Root</h1>
-<p>Now, you will be able  to login in mariaDB as <code class="highlighter-rouge">root</code> user. For that use the command <code class="highlighter-rouge">mysql -u root</code>.</p>
+<p>Now, you will be able  to login in mariaDB as <code class="language-plaintext highlighter-rouge">root</code> user. For that use the command <code class="language-plaintext highlighter-rouge">mysql -u root</code>.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span></code></pre></figure>
 
@@ -494,15 +496,15 @@
 <span class="no">MariaDB</span> <span class="p">[(</span><span class="n">none</span><span class="p">)]</span><span class="o">&gt;</span></code></pre></figure>
 
 <h1 id="change-mariadb-root-password">Change MariaDB Root Password</h1>
-<p>First change the database. For that use the command <code class="highlighter-rouge">use mysql;</code>.</p>
+<p>First change the database. For that use the command <code class="language-plaintext highlighter-rouge">use mysql;</code>.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">MariaDB</span> <span class="p">[(</span><span class="n">none</span><span class="p">)]</span><span class="o">&gt;</span> <span class="n">use</span> <span class="n">mysql</span><span class="p">;</span></code></pre></figure>
 
-<p>After using the <code class="highlighter-rouge">mysql</code> database, update the password of root user. For that use the command <code class="highlighter-rouge">update user SET PASSWORD=PASSWORD("yourNewStrongPassword") WHERE USER='root';</code>.</p>
+<p>After using the <code class="language-plaintext highlighter-rouge">mysql</code> database, update the password of root user. For that use the command <code class="language-plaintext highlighter-rouge">update user SET PASSWORD=PASSWORD("yourNewStrongPassword") WHERE USER='root';</code>.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">MariaDB</span> <span class="p">[</span><span class="n">mysql</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">update</span> <span class="n">user</span> <span class="no">SET</span> <span class="no">PASSWORD</span><span class="o">=</span><span class="no">PASSWORD</span><span class="p">(</span><span class="s2">"yourNewStrongPassword"</span><span class="p">)</span> <span class="no">WHERE</span> <span class="no">USER</span><span class="o">=</span><span class="s1">'root'</span><span class="p">;</span></code></pre></figure>
 
-<p>Flush Privileges using command <code class="highlighter-rouge">flush privileges;</code></p>
+<p>Flush Privileges using command <code class="language-plaintext highlighter-rouge">flush privileges;</code></p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="no">MariaDB</span> <span class="p">[</span><span class="n">mysql</span><span class="p">]</span><span class="o">&gt;</span> <span class="n">flush</span> <span class="n">privileges</span><span class="p">;</span></code></pre></figure>
 
@@ -512,7 +514,7 @@
 <span class="no">Bye</span></code></pre></figure>
 
 <h1 id="kill-mysql-and-mysqld_safe-processor">Kill mysql and mysqld_safe processor</h1>
-<p>Find the pid value of <code class="highlighter-rouge">mysql</code> and <code class="highlighter-rouge">mysqld_safe</code> processor using command <code class="highlighter-rouge">ps aux | grep mysqld_safe</code> and <code class="highlighter-rouge">ps aux | grep mysql</code>.</p>
+<p>Find the pid value of <code class="language-plaintext highlighter-rouge">mysql</code> and <code class="language-plaintext highlighter-rouge">mysqld_safe</code> processor using command <code class="language-plaintext highlighter-rouge">ps aux | grep mysqld_safe</code> and <code class="language-plaintext highlighter-rouge">ps aux | grep mysql</code>.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">ps</span> <span class="n">aux</span> <span class="o">|</span> <span class="n">grep</span> <span class="n">mysqld_safe</span>
 
@@ -520,7 +522,7 @@
 <span class="n">root</span>      <span class="mi">2062</span>  <span class="mf">0.0</span>  <span class="mf">0.2</span> <span class="mi">239088</span>  <span class="mi">4160</span> <span class="n">pts</span><span class="o">/</span><span class="mi">0</span>    <span class="no">T</span>    <span class="mi">17</span><span class="p">:</span><span class="mi">28</span>   <span class="mi">0</span><span class="p">:</span><span class="mo">00</span> <span class="n">sudo</span> <span class="n">mysqld_safe</span> <span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">grant</span><span class="o">-</span><span class="n">tables</span>
 <span class="n">alon</span>      <span class="mi">2288</span>  <span class="mf">0.0</span>  <span class="mf">0.0</span> <span class="mi">112708</span>   <span class="mi">988</span> <span class="n">pts</span><span class="o">/</span><span class="mi">0</span>    <span class="no">R</span><span class="o">+</span>   <span class="mi">17</span><span class="p">:</span><span class="mi">56</span>   <span class="mi">0</span><span class="p">:</span><span class="mo">00</span> <span class="n">grep</span> <span class="o">--</span><span class="n">color</span><span class="o">=</span><span class="n">auto</span> <span class="n">mysqld_safe</span></code></pre></figure>
 
-<p>Now kill the processor using command <code class="highlighter-rouge">kill -9</code></p>
+<p>Now kill the processor using command <code class="language-plaintext highlighter-rouge">kill -9</code></p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">kill</span> <span class="o">-</span><span class="mi">9</span> <span class="mi">1892</span>
 
@@ -528,14 +530,14 @@
 <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span>  <span class="no">Killed</span>                  <span class="n">sudo</span> <span class="n">mysqld_safe</span> <span class="o">--</span><span class="n">skip</span><span class="o">-</span><span class="n">grant</span><span class="o">-</span><span class="n">tables</span></code></pre></figure>
 
 <h1 id="restart-mariadb">Restart MariaDB</h1>
-<p>Use the command <code class="highlighter-rouge">sudo systemctl stop mariadb</code> and <code class="highlighter-rouge">sudo systemctl stop mariadb</code></p>
+<p>Use the command <code class="language-plaintext highlighter-rouge">sudo systemctl stop mariadb</code> and <code class="language-plaintext highlighter-rouge">sudo systemctl stop mariadb</code></p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">stop</span> <span class="n">mariadb</span></code></pre></figure>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">sudo</span> <span class="n">systemctl</span> <span class="n">start</span> <span class="n">mariadb</span></code></pre></figure>
 
 <h1 id="login-to-mariadb">Login to MariaDB</h1>
-<p>Use Command <code class="highlighter-rouge">mysql -u root -p</code>.</p>
+<p>Use Command <code class="language-plaintext highlighter-rouge">mysql -u root -p</code>.</p>
 
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="p">[</span><span class="n">alon</span><span class="vi">@localhost</span> <span class="o">~</span><span class="p">]</span><span class="err">$</span> <span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="nb">p</span>
 
@@ -633,12 +635,12 @@
             <div class="row PageNavigation mt-4 prevnextlinks">
               
                 <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/">&laquo; SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? | Kubernetes</a>
+                    <a class="thepostlink" href="http://localhost:4001/The-connection-to-the-server-localhost-8080-was-refused-did-you-specify-the-right-host-or-port/">&laquo; SOLVED = The connection to the server localhost8080 was refused -did you specify the right host or port ? | Kubernetes</a>
                 </div>
               
               
                 <div class="col-md-6 text-right pr-0">
-                    <a class="thepostlink" href="http://localhost:4000/Using-Screen-Command-On-Linux/">Using Screen in Linux with Cheat Sheet &raquo;</a>
+                    <a class="thepostlink" href="http://localhost:4001/Using-Screen-Command-On-Linux/">Using Screen in Linux with Cheat Sheet &raquo;</a>
                 </div>
               
             </div>
@@ -715,7 +717,7 @@
 <!--                </div>-->
                 <div class="col-md-4 text-center footersocial" style="text-align: center;">
                     <h5 style="text-align: center;" >Connect with Me</h5>
-                    <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    <a href="http://localhost:4001/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
                     <a href="https://www.facebook.com/Alons-Tech-Blog-100359161411871/" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://instagram.com/a.l_o.n" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a href="https://twitter.com/stechalon" target="_blank" ><i class="fa fa-twitter"></i></a>
@@ -779,7 +781,7 @@
             <div class="col-sm-12">
             <div class="copyright" style="text-align: center;">
                 <p style="text-align: center;">
-                    Copyright © 2020 Alon Shrestha <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    Copyright © 2020 Alon Shrestha <a href="http://localhost:4001/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
                 </p>
 <!--                Plese, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/-->
                 <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a>

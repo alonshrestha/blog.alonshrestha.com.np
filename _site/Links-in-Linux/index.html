@@ -5,25 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="icon" href="/assets/images/favicon.png">    
 <title>Creating Hard and Soft Links in Linux | Alon Shrestha</title>
-<!-- Begin Jekyll SEO tag v2.5.0 -->
+<!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Creating Hard and Soft Links in Linux | alon’sTech Blog</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Creating Hard and Soft Links in Linux" />
 <meta name="author" content="alonshrestha" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux." />
 <meta property="og:description" content="Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux." />
-<link rel="canonical" href="http://localhost:4000/Links-in-Linux/" />
-<meta property="og:url" content="http://localhost:4000/Links-in-Linux/" />
+<link rel="canonical" href="http://localhost:4001/Links-in-Linux/" />
+<meta property="og:url" content="http://localhost:4001/Links-in-Linux/" />
 <meta property="og:site_name" content="alon’sTech Blog" />
-<meta property="og:image" content="http://localhost:4000/assets/images/blog/2019-10-20/4.png" />
+<meta property="og:image" content="http://localhost:4001/assets/images/blog/2019-10-20/4.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-20T00:00:00+05:45" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="http://localhost:4001/assets/images/blog/2019-10-20/4.png" />
+<meta property="twitter:title" content="Creating Hard and Soft Links in Linux" />
 <meta name="twitter:site" content="@" />
 <meta name="twitter:creator" content="@alonshrestha" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","image":"http://localhost:4000/assets/images/blog/2019-10-20/4.png","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/personal/head.jpg"},"name":"alonshrestha"},"headline":"Creating Hard and Soft Links in Linux","dateModified":"2019-10-20T00:00:00+05:45","url":"http://localhost:4000/Links-in-Linux/","datePublished":"2019-10-20T00:00:00+05:45","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/Links-in-Linux/"},"author":{"@type":"Person","name":"alonshrestha"},"description":"Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux.","@context":"http://schema.org"}</script>
+{"@type":"BlogPosting","image":"http://localhost:4001/assets/images/blog/2019-10-20/4.png","url":"http://localhost:4001/Links-in-Linux/","headline":"Creating Hard and Soft Links in Linux","datePublished":"2019-10-20T00:00:00+05:45","dateModified":"2019-10-20T00:00:00+05:45","author":{"@type":"Person","name":"alonshrestha"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4001/assets/images/personal/head.jpg"},"name":"alonshrestha"},"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4001/Links-in-Linux/"},"description":"Links are assigned to file on Linux which works as aliases. There are two types of links on Linux symbolic links and hard links. In this article, we will learn how to use and manage links on Linux.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -76,8 +78,8 @@
 <!--                <li class="nav-item dropdown">-->
 <!--                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Post</a>-->
 <!--                    <div class="dropdown-menu" aria-labelledby="dropdown01">-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/tar-in-Linux/">Left Sidebar</a>-->
-<!--                    <a class="dropdown-item" href="http://localhost:4000/VIM-in-Linux/">Right Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4001/tar-in-Linux/">Left Sidebar</a>-->
+<!--                    <a class="dropdown-item" href="http://localhost:4001/VIM-in-Linux/">Right Sidebar</a>-->
 <!--                    </div>-->
 <!--                </li>-->
 
@@ -298,7 +300,7 @@
 
 			<!-- Post Content -->
 			<div class="article-post">
-				<p><code class="highlighter-rouge">Links</code> are assigned to file on Linux which works as <code class="highlighter-rouge">aliases</code>. There are two types of links on Linux <code class="highlighter-rouge">symbolic links</code> and <code class="highlighter-rouge">hard links</code>. In this article, we will learn how to use and manage links on Linux.</p>
+				<p><code class="language-plaintext highlighter-rouge">Links</code> are assigned to file on Linux which works as <code class="language-plaintext highlighter-rouge">aliases</code>. There are two types of links on Linux <code class="language-plaintext highlighter-rouge">symbolic links</code> and <code class="language-plaintext highlighter-rouge">hard links</code>. In this article, we will learn how to use and manage links on Linux.</p>
 
 <blockquote>
   <p><strong>Table Of Content</strong></p>
@@ -316,11 +318,11 @@
 </blockquote>
 
 <ul>
-  <li>Must have basic knowledge about the organization of the <code class="highlighter-rouge">Linux file system</code>.</li>
+  <li>Must have basic knowledge about the organization of the <code class="language-plaintext highlighter-rouge">Linux file system</code>.</li>
 </ul>
 
 <h1 id="hard-links">Hard Links</h1>
-<p>On Linux, every file has an <code class="highlighter-rouge">inode</code>, and in the inode, administrative information is stored. Information like :</p>
+<p>On Linux, every file has an <code class="language-plaintext highlighter-rouge">inode</code>, and in the inode, administrative information is stored. Information like :</p>
 
 <ul>
   <li>Data block where the file content is stored</li>
@@ -329,9 +331,9 @@
   <li>File owners</li>
 </ul>
 
-<p>are stored in the inode.  From the above information, one important information is not stored in the inode i.e the <code class="highlighter-rouge">name</code> of the file. Names are itself stored in the directory, and each filename knows which inode to address for further file information.</p>
+<p>are stored in the inode.  From the above information, one important information is not stored in the inode i.e the <code class="language-plaintext highlighter-rouge">name</code> of the file. Names are itself stored in the directory, and each filename knows which inode to address for further file information.</p>
 
-<p>Simply understanding <code class="highlighter-rouge">hard links</code>, giving a name while creating a file, this name is called hard links. On Linux single file can have multiple hard links that enable you to access the file from multiple different locations.</p>
+<p>Simply understanding <code class="language-plaintext highlighter-rouge">hard links</code>, giving a name while creating a file, this name is called hard links. On Linux single file can have multiple hard links that enable you to access the file from multiple different locations.</p>
 
 <p>Some of the restrictions applied to hard links are as follows:</p>
 <ul>
@@ -343,7 +345,7 @@
 <p>When you create multiple hard links of a file, there is no difference between the first hard link and the last hard link you have created. If the first hard link that exists is removed, then it does not impact other hard links.</p>
 
 <h1 id="symbolic-links">Symbolic Links</h1>
-<p><code class="highlighter-rouge">Symbolic Links</code> are also known as <code class="highlighter-rouge">soft links</code>. This is more flexible than hard links. The advantages and disadvantage of symbolic links are:</p>
+<p><code class="language-plaintext highlighter-rouge">Symbolic Links</code> are also known as <code class="language-plaintext highlighter-rouge">soft links</code>. This is more flexible than hard links. The advantages and disadvantage of symbolic links are:</p>
 
 <p><strong>Advantages</strong></p>
 <ul>
@@ -357,7 +359,7 @@
 </ul>
 
 <h1 id="creating-links">Creating Links</h1>
-<p>For creating links on Linux <code class="highlighter-rouge">ln</code> command is used. If you want to create a symbolic link, use the <code class="highlighter-rouge">-s</code> option and then specify your source and target file or directory.</p>
+<p>For creating links on Linux <code class="language-plaintext highlighter-rouge">ln</code> command is used. If you want to create a symbolic link, use the <code class="language-plaintext highlighter-rouge">-s</code> option and then specify your source and target file or directory.</p>
 
 <p><strong>Example for Symbolic Link</strong></p>
 
@@ -621,12 +623,12 @@
             <div class="row PageNavigation mt-4 prevnextlinks">
               
                 <div class="col-md-6 rightborder pl-0">
-                    <a class="thepostlink" href="http://localhost:4000/tar-in-Linux/">&laquo; tar Command in Linux with Example</a>
+                    <a class="thepostlink" href="http://localhost:4001/tar-in-Linux/">&laquo; tar Command in Linux with Example</a>
                 </div>
               
               
                 <div class="col-md-6 text-right pr-0">
-                    <a class="thepostlink" href="http://localhost:4000/VIM-in-Linux/">Vim in linux with Cheat Sheet &raquo;</a>
+                    <a class="thepostlink" href="http://localhost:4001/VIM-in-Linux/">Vim in linux with Cheat Sheet &raquo;</a>
                 </div>
               
             </div>
@@ -703,7 +705,7 @@
 <!--                </div>-->
                 <div class="col-md-4 text-center footersocial" style="text-align: center;">
                     <h5 style="text-align: center;" >Connect with Me</h5>
-                    <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    <a href="http://localhost:4001/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
                     <a href="https://www.facebook.com/Alons-Tech-Blog-100359161411871/" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a href="https://instagram.com/a.l_o.n" target="_blank"><i class="fa fa-instagram"></i></a>
                     <a href="https://twitter.com/stechalon" target="_blank" ><i class="fa fa-twitter"></i></a>
@@ -767,7 +769,7 @@
             <div class="col-sm-12">
             <div class="copyright" style="text-align: center;">
                 <p style="text-align: center;">
-                    Copyright © 2020 Alon Shrestha <a href="http://localhost:4000/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
+                    Copyright © 2020 Alon Shrestha <a href="http://localhost:4001/feed.xml" target="_blank"><i class="fa fa-rss"></i></a>
                 </p>
 <!--                Plese, leave credit to author unless you own a commercial license: https://www.wowthemes.net/freebies-license/-->
                 <a target="_blank" href="https://www.wowthemes.net/free-jekyll-template-affiliates/">"Affiliates Theme"</a>
