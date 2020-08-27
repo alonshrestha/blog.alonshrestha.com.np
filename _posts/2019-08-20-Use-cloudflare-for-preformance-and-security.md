@@ -9,9 +9,11 @@ categories:
 - DNS
 - Domain Management
 image: assets/images/blog/2019-08-20/1.jpg
+redirect_to:
+   - https://stechalon.com/use-cloudfalre-performance-security
 ---
 
-Do you wait more than 5 sec for a site to load? As far as I am concerned, you surely don’t. Many of you haven't heard about [Cloudflare](https://www.cloudflare.com/){:target="_blank"}, unlike if you are interested in networking and cybersecurity. There is a full factor moving on the web worldwide through Cloudflare. In this article we will be discussing on Cloudflare, how does it work and why should we use it.  Cloudflare is an opensource web-based application that provides content delivery services with security and performance. Most of the people including me use this application for power their websites.
+Do you wait more than 5 sec for a site to load? As far as I am concerned, you surely don’t. Many of you haven't heard about [Cloudflare](https://www.cloudflare.com/){:target="_blank"}, unlike if you are interested in networking and cybersecurity. There is a full factor moving on the web worldwide through Cloudflare. In this article we will be discussing on Cloudflare, how does it work and why should we use it.  Cloudflare is a free web-based application that provides content delivery services with security and performance. Most of the people including me use this application for power their websites.
 
 > **Table Of Content**
 
