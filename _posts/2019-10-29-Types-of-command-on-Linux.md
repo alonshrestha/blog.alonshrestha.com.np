@@ -9,6 +9,8 @@ categories:
 - Types
 - Bash
 image: assets/images/blog/2019-10-29/cmd.png
+redirect_to:
+    - https://stechalon.com/linux-bash-shell-command-types
 ---
 
 There are three kind of command found on [Linux Bash Shell (Bourne Again Shell)](https://en.wikipedia.org/wiki/Bash_(Unix_shell)){:target="_blank"}. 
