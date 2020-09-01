@@ -1,2 +1,0 @@
-I"[<p><a href="https://mariadb.org/" target="_blank">MariaDB</a> root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on <a href="https://www.centos.org/" target="blank">centOS 8</a>.</p>
-:ET

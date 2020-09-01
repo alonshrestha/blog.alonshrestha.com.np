@@ -14,6 +14,8 @@ categories:
 - Linux tips
 image: assets/images/blog/2019-11-15/1.png
 featured: true
+redirect_to:
+    - https://stechalon.com/reset-root-password-mysql-mariadb-centos
 ---
 
 [MariaDB](https://mariadb.org/){:target="_blank"} root user has full privileges to access every data in the databases. Being human, users sometimes make mistakes or forget the root password. In this article, you will learn how to reset the root password of MariaDB on [centOS 8](https://www.centos.org/){:target="blank"}.
