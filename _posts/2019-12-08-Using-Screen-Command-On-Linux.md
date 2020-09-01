@@ -12,6 +12,8 @@ categories:
 - Linux tips
 image: assets/images/blog/2019-12-08/1.png
 featured: true
+redirect_to:
+        - https://stechalon.com/using-screen-command-linux
 ---
 
 Screen command on Linux is a useful utility for those people who work on multiple screen using SSH session. This command allows you to open multiple session in a terminal even if you are not in a graphical session. This also allows you to share a session with other users or to attach and detach to a remote terminal session. Screen command is used when you need to perform a long-running task on a remote machine.
